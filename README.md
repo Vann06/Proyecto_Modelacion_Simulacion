@@ -725,7 +725,9 @@ Departamento de Ciencias de la Computación
 # Integrantes
 
 - Ricardo Arturo Godínez Sánchez — 23247
-- Vianka Vanessa Castro Ordoñez — 23201
+- Vianka Vanessa Castro Ordoñez — 23201v
+- Diego Javier López Reinoso - 23747 
+- Paula Daniela de León Godoy - 23202 
 
 ---
 

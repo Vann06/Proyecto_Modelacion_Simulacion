@@ -54,13 +54,13 @@ PYTHONPATH=src python -c "from bee_sim.config import cargar, resumen; print(resu
 | F0 | Generadores de variables aleatorias | **completa** | nada |
 | F1 | Configuración: YAML y cargador | **completa** | nada |
 | F2 | Modelos de datos | **completa** | F1 |
-| F3 | Los seis módulos de paso del viaje | **3 de 6** | F0, F1 |
-| F4 | Motor y métricas | pendiente | **F3 completa** |
+| F3 | Los seis módulos de paso del viaje | **completa** | F0, F1 |
+| F4 | Motor y métricas | **completa** | **F3 completa** |
 | F5 | Persistencia de resultados | pendiente | F4 |
 | F6 | Experimentos y campaña | pendiente | F5 |
 | F7 | Validación y comparación de métodos | **módulo listo, falta el script** | F0 |
 | F8 | Figuras | pendiente | F5 (necesita CSV guardados) |
-| F9 | Pruebas automatizadas | pendiente | avanza junto con F3 y F4 |
+| F9 | Pruebas automatizadas | **parcial: motor y métricas cubiertos** | avanza junto con F3 y F4 |
 | F10 | Informe y presentación | pendiente | F6 y F8 para la parte de resultados |
 
 ### Mapa de dependencias
@@ -77,8 +77,7 @@ F5 ─► F8 figuras ───────────────────�
 F9 pruebas: se escribe en paralelo con F3 y F4, no al final
 ```
 
-**F3 es la ruta crítica.** Nadie puede cerrar el motor hasta que estén los tres
-módulos que faltan.
+**F3 y F4 están completas.** La siguiente fase pendiente es F5, persistencia.
 
 ---
 
@@ -161,6 +160,8 @@ config/                               base.yaml y siete escenarios
 
 ## 4. F3. Los tres módulos de paso restantes
 
+**Estado: completa.** Los tres módulos descritos a continuación ya están implementados.
+
 **Paralelizable.** Los tres son independientes entre sí. Cada uno es una función
 corta que lee parámetros de la configuración y llama a un generador ya probado.
 No hay matemática nueva: toda vive en `generators/`.
@@ -227,6 +228,9 @@ positivos, y `duracion_total >= t_vuelo`.
 
 ## 5. F4. Motor y métricas
 
+**Estado: completa.** Se implementaron el motor, el resumen y la verificación
+de invariantes, con pruebas en `tests/test_engine.py` y `tests/test_metrics.py`.
+
 ```python
 # simulation/engine.py
 def simular_jornada(cfg, rng, run_id=0) -> list[Trip]
@@ -251,6 +255,53 @@ réplica.
 **Terminado cuando:** una jornada corre completa, `verificar_invariantes` pasa
 sin excepciones, y dos corridas con la misma configuración y semilla producen
 listas de viajes idénticas campo por campo.
+
+### Uso de F4 sin persistencia
+
+Con `src` en `PYTHONPATH` y desde la raíz del repositorio:
+
+```python
+from bee_sim.config import cargar
+from bee_sim.generators import crear_fuente
+from bee_sim.simulation.engine import simular_jornada
+from bee_sim.simulation.metrics import resumir, verificar_invariantes
+
+cfg = cargar("config/base.yaml")
+rng = crear_fuente(cfg["simulation"]["rng_source"], cfg["simulation"]["seed"])
+viajes = simular_jornada(cfg, rng, run_id=0)
+verificar_invariantes(viajes, cfg)
+resumen_jornada = resumir(viajes, viajes.colonia, cfg)
+```
+
+La salida es `Jornada`, una subclase de `list` que conserva la colonia final en
+`viajes.colonia`. Esto permite mantener la firma acordada y contar las salidas
+no atendidas sin reconstruirlas a partir de los viajes ni guardar estado global.
+El motor no escribe archivos ni reinicia el generador recibido.
+
+Los identificadores de viaje son únicos dentro de la réplica; el identificador
+de réplica se repite en sus registros, y una abeja puede realizar varios viajes
+sin solaparse y siempre que haya retornado del anterior.
+
+Las métricas separan néctar recolectado y entregado. Las tasas son fracciones y
+devuelven `None` si su denominador es cero. Tiempo y distancia totales se etiquetan
+como **planificados**, ya que el modelo no registra dónde ni cuándo se pierde una
+abeja. No se inventa una trayectoria realizada ni se trunca el rendimiento.
+El no retorno se divide en fuera de horizonte y fallo de distancia dentro del
+horizonte; el registro actual no permite recuperar el resultado Bernoulli de
+los viajes que terminarían fuera de jornada.
+
+Validación: ocho escenarios, fuentes LCG y NumPy, métodos de salida A y B,
+repetición por semilla, variante Binomial Negativa, saturación, retiro,
+casos vacíos y métricas contrastadas con valores calculados a mano.
+Las pruebas usan `unittest` y también son compatibles con `pytest`:
+
+```powershell
+$env:PYTHONPATH="src"
+python -B -m unittest discover -s tests -v
+```
+
+`scripts/run_simulation.py` y la exportación de resultados siguen pendientes
+para F5; el ejemplo anterior ejecuta directamente la API de F4.
 
 ---
 
