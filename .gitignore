@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Resultados de corridas (se regeneran desde el codigo)
+results/runs/
+results/figures/
+results/tables/
+
+# Herramientas
+.ipynb_checkpoints/
+.pytest_cache/
+Claude outputs/
+
+# scripts temporales de construccion de notebooks
+.build/

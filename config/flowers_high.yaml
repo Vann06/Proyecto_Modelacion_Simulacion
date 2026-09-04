@@ -1,0 +1,4 @@
+extends: base.yaml
+# FLORES-ALTA: dia de abundancia. El nivel se FIJA, no se sortea.
+environment:
+  flower_availability: alta

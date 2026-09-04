@@ -1,0 +1,4 @@
+extends: base.yaml
+# ABEJAS-ALTA: mas fuerza de forrajeo, para buscar el techo por disponibilidad.
+colony:
+  active_bees: 150

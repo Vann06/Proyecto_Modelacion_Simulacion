@@ -1,0 +1,4 @@
+extends: base.yaml
+# ABEJAS-BAJA: menos fuerza de forrajeo, para ver la saturacion.
+colony:
+  active_bees: 30

@@ -1,0 +1,5 @@
+extends: base.yaml
+# DIST-CERCA: recursos cercanos. Mueve la escala de la Weibull, no la forma.
+foraging:
+  distance:
+    scale: 0.8

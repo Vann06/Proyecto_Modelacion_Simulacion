@@ -1,0 +1,7 @@
+extends: base.yaml
+# COMBINADO: menos flores y mayor distancia, la condicion de mayor presion.
+environment:
+  flower_availability: baja
+foraging:
+  distance:
+    scale: 3.0

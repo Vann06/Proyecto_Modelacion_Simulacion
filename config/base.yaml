@@ -1,0 +1,59 @@
+# Condicion de referencia (BASE).
+# Los demas escenarios heredan de este archivo y solo escriben lo que cambian.
+#
+# Los valores marcados como SUPUESTO no provienen de datos observados.
+# Deben quedar declarados como tales en docs/assumptions.md.
+
+simulation:
+  seed: 2026
+  day_minutes: 600.0        # 10 horas de actividad
+  replications: 1000
+  rng_source: lcg           # lcg | numpy  (ver decision D-10)
+
+colony:
+  active_bees: 90           # calibrado con el barrido de saturacion
+
+departures:
+  generation_method: A      # A = interarribos exponenciales | B = conteo Poisson
+  lambda_per_min: 2.0       # intensidad de salidas de la colmena
+
+environment:
+  # 'sample' sortea el nivel por viaje (paisaje heterogeneo, escenario BASE).
+  # 'baja' | 'media' | 'alta' lo fijan: ahi es factor experimental, no variable.
+  flower_availability: sample
+  availability_probs: [0.30, 0.50, 0.20]
+  levels:
+    baja:                   # SUPUESTO: los tres juegos de parametros
+      mu_flowers: 4.0       # flores esperadas por viaje
+      search_scale: 2.5     # escala de la Gamma del tiempo de busqueda
+      nectar_scale: 0.020   # escala de la Gamma del nectar por flor (ml)
+    media:
+      mu_flowers: 8.0
+      search_scale: 1.2
+      nectar_scale: 0.033
+    alta:
+      mu_flowers: 14.0
+      search_scale: 0.7     # un parche rico cuesta MENOS encontrarlo
+      nectar_scale: 0.045
+
+foraging:
+  distance:
+    model: weibull
+    shape: 2.0              # forma fija en los tres escenarios de distancia
+    scale: 1.5              # el escenario mueve esta escala, no la forma
+  velocity_km_min: 0.33     # ~20 km/h
+  flower_count_model: poisson   # poisson | negbin
+  overdispersion: null      # forma r de la binomial negativa; null = usar Poisson
+  search_shape: 2.5         # SUPUESTO: forma k_b de la Gamma de busqueda
+  time_per_flower_mean: 0.35   # minutos por flor, media de la exponencial
+
+pollination:
+  p_success: 0.65
+
+nectar:
+  shape: 1.8                # forma k_q de la Gamma del nectar por flor
+
+return:
+  model: logistic
+  sensitivity: 1.2          # SUPUESTO: parametro a de p_ret(D)
+  midpoint_km: 4.0          # SUPUESTO: parametro d0 de p_ret(D)

@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+matplotlib
+pyyaml
+pytest
+
+# para abrir y ejecutar los notebooks de notebooks/
+jupyterlab

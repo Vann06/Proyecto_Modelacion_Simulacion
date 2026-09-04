@@ -1,0 +1,5 @@
+extends: base.yaml
+# DIST-LEJOS: recursos lejanos.
+foraging:
+  distance:
+    scale: 3.0

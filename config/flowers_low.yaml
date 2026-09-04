@@ -1,0 +1,4 @@
+extends: base.yaml
+# FLORES-BAJA: dia de escasez. El nivel se FIJA, no se sortea.
+environment:
+  flower_availability: baja
