@@ -59,7 +59,7 @@ PYTHONPATH=src python -c "from bee_sim.config import cargar, resumen; print(resu
 | F5 | Persistencia de resultados | pendiente | F4 |
 | F6 | Experimentos y campaña | pendiente | F5 |
 | F7 | Validación y comparación de métodos | **completa** | F0 |
-| F8 | Figuras | pendiente | F5 (necesita CSV guardados) |
+| F8 | Figuras | **completa** | F5 |
 | F9 | Pruebas automatizadas | **parcial: motor y métricas cubiertos** | avanza junto con F3 y F4 |
 | F10 | Informe y presentación | pendiente | F6 y F8 para la parte de resultados |
 
@@ -393,35 +393,33 @@ dan p > 0.05.
 
 ---
 
-## 9. F8. Figuras
+## 9. F8. Figuras — completa
 
 `visualization/plots.py` consume resultados guardados y **nunca vuelve a
 simular**. Cada función recibe un DataFrame o un diccionario y devuelve una
 figura de matplotlib.
 
-El informe reserva once figuras. Esta es la lista, con el mecanismo que carga
-cada una. Las marcadas con aviso salen planas si se hacen de la manera obvia.
+Las once figuras del informe y las dos adicionales para la presentación están
+implementadas (`fig01` a `fig11`, más `fig_extra_ocupacion_jornada` y
+`fig_extra_tiras_replicas`). Se probaron las 13 contra datos reales generados
+con `scripts/run_experiment.py --campana` (320 corridas, 8 escenarios x 40
+réplicas):
 
-| Fig | Qué muestra | Mecanismo que carga |
-|---|---|---|
-| 1 | histograma de interarribos de M-A contra la exponencial teórica | validación del generador |
-| 2 | distribución de salidas por intervalo, M-A y M-B, contra la Poisson teórica | la equivalencia entre los dos métodos |
-| 3 | salidas totales y viajes completos según población activa | **la saturación**: la curva tiene meseta y responde la calibración |
-| 4 | flores visitadas por viaje en los tres niveles de disponibilidad | el efecto de `mu_F` |
-| 5 | distancia contra duración del viaje, con banda entre réplicas | el costo temporal de la distancia |
-| 6 | tasa de polinización observada contra el `p_pol` configurado | **aviso**: graficar visitadas contra polinizadas da una recta casi perfecta y no dice nada. Graficar la tasa observada convergiendo al parámetro sí |
-| 7 | néctar por minuto de actividad según disponibilidad y distancia | **aviso**: néctar total por escenario es casi la misma figura que flores. Por minuto es una medida de eficiencia y no de volumen |
-| 8 | distancia contra tasa de retorno | el modelo logístico y su cola |
-| 9 | distancia contra flores polinizadas y viajes completos | el costo de oportunidad de volar lejos |
-| 10 | comparativo de disponibilidad floral incluyendo la duración del viaje | **la joroba invertida**: el parche medio da el viaje más corto, porque el pobre pierde tiempo buscando y el rico lo pierde trabajando |
-| 11 | indicadores normalizados por escenario | comparación global |
+- `fig03` (saturación) muestra la meseta documentada en la sección 3 de este
+  plan: con 30/90/150 abejas activas las salidas atendidas pasan de 510 a
+  1179 a 1199 sobre una demanda de 1199, confirmando que BASE (90) ya está
+  cerca del techo.
+- `fig06` (tasa de polinización) requiere corridas con distinto `p_success`,
+  que no están entre los ocho escenarios oficiales: se generaron aparte
+  variando `pollination.p_success` directamente con el motor, y la tasa
+  observada calca la recta identidad.
+- `fig08` (distancia contra retorno) calca la logística teórica calculada con
+  los mismos `sensitivity` y `midpoint_km` de la configuración.
+- `fig10` confirma la joroba invertida con datos reales: la duración media del
+  viaje es más corta en disponibilidad 'media' (13.9 min) que en 'baja' (15.6)
+  o 'alta' (14.7).
 
-Dos figuras adicionales, fuera de las once, salieron fuertes en las pruebas y
-sirven para la presentación: el diagrama de ocupación de forrajeras a lo largo de
-la jornada, y las tiras de puntos de las réplicas con ambos ejes desde cero, que
-muestran de un vistazo por qué una sola corrida no basta.
-
-**Terminado cuando:** cada figura se regenera desde un CSV guardado sin correr el
+**Terminado.** Cada figura se regenera desde un CSV guardado sin correr el
 motor, y el pie de cada una nombra el mecanismo que muestra.
 
 ---
