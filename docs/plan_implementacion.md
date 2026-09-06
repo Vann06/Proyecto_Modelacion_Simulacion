@@ -56,11 +56,11 @@ PYTHONPATH=src python -c "from bee_sim.config import cargar, resumen; print(resu
 | F2 | Modelos de datos | **completa** | F1 |
 | F3 | Los seis módulos de paso del viaje | **completa** | F0, F1 |
 | F4 | Motor y métricas | **completa** | **F3 completa** |
-| F5 | Persistencia de resultados | pendiente | F4 |
-| F6 | Experimentos y campaña | pendiente | F5 |
+| F5 | Persistencia de resultados | **completa** | F4 |
+| F6 | Experimentos y campaña | **completa** | F5 |
 | F7 | Validación y comparación de métodos | **completa** | F0 |
 | F8 | Figuras | **completa** | F5 |
-| F9 | Pruebas automatizadas | **parcial: motor y métricas cubiertos** | avanza junto con F3 y F4 |
+| F9 | Pruebas automatizadas | **completa** | F3 y F4 |
 | F10 | Informe y presentación | pendiente | F6 y F8 para la parte de resultados |
 
 ### Mapa de dependencias
@@ -74,10 +74,10 @@ F0 ─► F7 validación y comparación ─────────────�
                                                                                       │
 F5 ─► F8 figuras ─────────────────────────────────────────────────────────────────────┘
 
-F9 pruebas: se escribe en paralelo con F3 y F4, no al final
+F9 pruebas: se escribio en paralelo con F3 y F4
 ```
 
-** F0 y F7 están completas.** La siguiente fase pendiente es F8, persistencia.
+**F0 a F9 están completas.** La siguiente fase pendiente es F10, el informe.
 
 ---
 
@@ -351,7 +351,6 @@ total está medido con 50 réplicas antes de subir a 1,000.
 
 ## 8. F7. Validación y comparación de métodos — completa
 
-
 `analysis/validation.py` estaba escrito y probado, y el notebook 01 ya lo
 ejecutaba. Se agrego lo que faltaba:
 
@@ -424,23 +423,26 @@ motor, y el pie de cada una nombra el mecanismo que muestra.
 
 ---
 
-## 10. F9. Pruebas
+## 10. F9. Pruebas — completa
 
-Prioridad por riesgo, no por cobertura. Archivos según `tests/README.md`:
+Todos los archivos de `tests/README.md` existen. Los últimos seis en
+completarse:
 
-| Orden | Archivo | Qué protege |
-|---|---|---|
-| 1 | `test_engine.py` | invariantes del motor y reproducibilidad con semilla fija |
-| 2 | `test_departures.py` | los dos métodos producen listas ordenadas dentro del horizonte |
-| 3 | `test_pollination.py` | `X <= F` siempre, y el adelgazamiento con nivel fijo |
-| 4 | `test_nectar.py` | `Q >= 0`, y `Q = 0` si y solo si `F = 0` |
-| 5 | `test_return_model.py` | las dos condiciones del retorno por separado |
-| 6 | `test_poisson.py`, `test_exponential.py` | momentos teóricos y el caso de mu grande |
+| Archivo | Qué protege |
+|---|---|
+| `test_departures.py` | los dos métodos producen listas ordenadas dentro del horizonte, y cerca de lambda*horizonte con semillas dispersas |
+| `test_pollination.py` | `X <= F` siempre, y el adelgazamiento con nivel fijo |
+| `test_nectar.py` | `Q >= 0`, y `Q = 0` si y solo si `F = 0` |
+| `test_return_model.py` | las dos condiciones del retorno por separado |
+| `test_poisson.py` | momentos teóricos y el caso de mu grande (mu=1200) |
+| `test_exponential.py` | momentos teóricos y bondad de ajuste |
 
-El caso de mu grande en `test_poisson.py` no es opcional: es el bug que ya se
-encontró una vez y una prueba evita que vuelva.
+El caso de mu grande en `test_poisson.py` cubre el bug que ya se encontró una
+vez, para que no vuelva.
 
-**Terminado cuando:** `pytest` corre limpio y cubre los seis archivos.
+**Terminado.** `pytest` corre limpio: 85 pruebas y 149 subpruebas, todas
+conformes (`PYTHONPATH=src python -m pytest tests/ -q`).
+
 
 ---
 
