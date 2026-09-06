@@ -61,7 +61,7 @@ PYTHONPATH=src python -c "from bee_sim.config import cargar, resumen; print(resu
 | F7 | Validación y comparación de métodos | **completa** | F0 |
 | F8 | Figuras | **completa** | F5 |
 | F9 | Pruebas automatizadas | **completa** | F3 y F4 |
-| F10 | Informe y presentación | pendiente | F6 y F8 para la parte de resultados |
+| F10 | Informe y presentación | **único pendiente** | F6 y F8, ya disponibles |
 
 ### Mapa de dependencias
 
@@ -125,8 +125,8 @@ config/                               base.yaml y siete escenarios
 |---|---|---|
 | `00_verificacion_del_motor.ipynb` | verificación de las seis etapas construidas | ejecutado, 16 de 16 comprobaciones conformes |
 | `01_generator_validation.ipynb` | validación estadística de los nueve generadores | ejecutado, 9 de 9 con p > 0.05 |
-| `02_scenario_analysis.ipynb` | análisis de escenarios | pendiente, requiere F6 |
-| `03_final_figures.ipynb` | figuras finales del informe | pendiente, requiere F8 |
+| `02_scenario_analysis.ipynb` | análisis de los ocho escenarios de la campaña | ejecutado, 4 gráficas |
+| `03_final_figures.ipynb` | las figuras del informe | ejecutado, 12 guardadas en PNG |
 
 ### Hallazgos registrados
 
@@ -446,7 +446,89 @@ conformes (`PYTHONPATH=src python -m pytest tests/ -q`).
 
 ---
 
-## 11. F10. Informe y presentación
+## 10 bis. La campaña experimental, ejecutada
+
+```
+results/campana/<escenario>/   500 réplicas por escenario, 6,000 en total
+results/tables/                las ocho tablas consolidadas
+results/figures/               las once figuras a 200 dpi
+```
+
+Semillas compartidas entre los doce escenarios (`semillas_campana.json`), de modo
+que todos se comparan sobre la misma suerte. Costo medido: **0.25 s por réplica**,
+763 MB en disco.
+
+### Resultados principales
+
+| Escenario | Polinizadas | Néctar (ml) | Retorno % | Salidas perdidas |
+|---|---|---|---|---|
+| ABEJAS-BAJA | 5,223 | 496 | 97.3 | 198 |
+| BASE | 6,252 | 593 | 97.1 | 0 |
+| ABEJAS-ALTA | 6,245 | 592 | 97.1 | 0 |
+| FLORES-BAJA | 3,121 | 168 | 96.9 | 0 |
+| FLORES-ALTA | 10,954 | 1,325 | 97.1 | 0 |
+| DIST-CERCA | 6,246 | 599 | 98.2 | 0 |
+| DIST-LEJOS | 2,506 | 200 | 81.2 | 719 |
+| COMBINADO | 1,248 | 56 | 81.1 | 722 |
+
+### Hallazgo que matiza una hipótesis del informe
+
+El informe anticipaba que aumentar la población activa subiría la polinización
+**hasta que la disponibilidad floral se volviera el límite**. La campaña muestra
+que el techo llega antes y por otra razón: BASE con 90 forrajeras y ABEJAS-ALTA
+con 150 producen prácticamente lo mismo, 6,252 contra 6,245 flores polinizadas.
+
+El límite no son las flores sino **la intensidad del proceso de salidas**: con
+lambda fijo solo se generan unas 1,200 salidas por jornada, así que forrajeras
+adicionales no tienen a qué salir. Conviene decirlo explícitamente en la
+discusión, porque es un resultado distinto del que se había hipotetizado.
+
+### Corrección de rendimiento aplicada durante la campaña
+
+`run_experiment.py` dejaba que `guardar_corrida` autocalculara el número de
+corrida, lo que hacía que `siguiente_run_id` reescaneara la carpeta completa en
+cada réplica, con costo cuadrático. Medido: la campaña pasaba de 0.25 s a 1.26 s
+por réplica al llegar a 166 archivos, y habría tardado horas en vez de minutos.
+
+Se resolvió resolviendo el número una sola vez antes del bucle. Conviene agregar
+una prueba de regresión que verifique que el tiempo por réplica no crece con el
+número de corridas ya guardadas.
+
+---
+
+### La matriz experimental quedó completa
+
+Se agregaron los cuatro escenarios que el informe definía como factores pero no
+tenía configurados: `lambda_low`, `lambda_high`, `pollination_low` y
+`pollination_high`. Con eso la matriz cubre los cinco factores declarados en la
+metodología.
+
+**Resultado del barrido de intensidad de salidas.** La polinización escala de
+forma exactamente proporcional a lambda: 3,128 flores con lambda 1.0, 6,252 con
+2.0 y 12,485 con 4.0. En todo el rango el sistema está limitado por la demanda,
+no por la capacidad de la colonia, que se estimó en unos 3,703 viajes por jornada
+(lambda equivalente de 6.17). Queda como recomendación un escenario cercano a ese
+valor para mostrar la transición entre los dos regímenes.
+
+**Resultado del barrido de probabilidad de polinización.** La tasa observada
+reproduce el parámetro configurado con error menor al 0.06% en los tres niveles,
+y las flores visitadas no cambian entre escenarios, lo que confirma que el
+parámetro está bien aislado del resto del modelo.
+
+---
+
+## 11. Documento de resultados
+
+`docs/f10_resultados.md` reúne el pipeline, la tabla de distribuciones, las nueve
+tablas del informe con datos reales, las doce figuras con su pie y el mecanismo
+que carga cada una, y borradores de análisis, conclusiones y recomendaciones.
+
+Se genera con `.build/gen_f10.py`, así que ningún número está escrito a mano y se
+rehace con un comando si cambia la campaña.
+
+---
+
+## 12. F10. Informe y presentación
 
 **Este es el entregable que se califica.** El documento
 `Informe_Modelacion_Abejas_Polinizacion.docx` está completo hasta Metodología.
@@ -454,20 +536,21 @@ Falta:
 
 | Sección del informe | Qué falta | Depende de |
 |---|---|---|
-| Resultados | 9 tablas, todas en "Pendiente" | F6 |
-| Resultados | 11 figuras por insertar | F8 |
+| Resultados | 9 tablas, todas en "Pendiente" | listo: notebook 02 y `results/tables/` |
+| Resultados | 11 figuras por insertar | listo: `results/figures/` |
 | Análisis y discusión | redactar | F6 y F8 |
 | Conclusiones | entre cuatro y seis, cada una citando el escenario que la sustenta | F6 |
 | Recomendaciones | derivadas de resultados | F6 |
-| Apéndice de supuestos | transcribir `docs/assumptions.md` | escribir assumptions.md |
+| Apéndice de supuestos | transcribir `docs/assumptions.md`, ya escrito | listo |
 | Anexo 4 | enlace de la presentación en Canva | armar la presentación |
 | Anexo 5 | URL del repositorio | ya existe, solo pegarla |
 | Portada | faltan dos carnés de integrantes | nada |
 
 También hay que actualizar la sección "Distribuciones a implementar" del informe,
 porque las decisiones acordadas cambiaron respecto de lo que quedó escrito ahí:
-la duración del viaje se construye y no se sortea, la distancia usa Weibull, y el
-néctar cuelga de las flores visitadas. Todo eso está en `docs/decisions.md` con
+la duración del viaje se construye y no se sortea, la distancia usa Weibull, el
+néctar cuelga de las flores visitadas, y la sensibilidad de la logística de
+retorno pasó de 1.2 a 3.0 (D-11). Todo eso está en `docs/decisions.md` con
 su justificación.
 
 La presentación debe incluir la pregunta central, el modelo, los métodos de
@@ -479,23 +562,17 @@ anexos tienen su enlace.
 
 ---
 
-## 12. Reparto sugerido para cuatro personas
+## 12. Reparto de lo que queda
 
-| Persona | Se encarga de | Puede empezar | Bloqueos |
-|---|---|---|---|
-| **B** | F3, los tres módulos de paso | de una | ninguno. **Es la ruta crítica** |
-| **A** | F4 motor, F5 persistencia | de una, con reservas | puede escribir la estructura del motor, pero no lo cierra hasta que B termine |
-| **C** | F7 validación y comparación, F9 pruebas | de una | ninguno |
-| **D** | F8 figuras, F10 informe | de una | puede redactar metodología, supuestos y la presentación desde ahora; las figuras esperan a F5 |
+El código está terminado. Todo lo que queda es F10, y se reparte por secciones
+del informe, ninguna dependiente de otra:
 
-**Recomendación para A y B:** que A escriba `engine.py` llamando a las tres
-funciones de B con sus firmas ya acordadas (están en la sección 4), aunque
-todavía no existan. Cuando B las entregue, el motor debería correr sin cambios.
-Por eso las firmas están escritas aquí y no se deben improvisar.
-
-**Sugerencia de orden para C:** empezar por `scripts/validate_generators.py`, que
-no depende de nada y produce una tabla que el informe ya tiene reservada. Después
-las pruebas, que se pueden ir escribiendo conforme B entrega módulos.
+| Persona | Sección del informe | Insumo que ya existe |
+|---|---|---|
+| A | Resultados: las 9 tablas | notebook 02, `results/tables/` |
+| B | Resultados: insertar las 11 figuras con su pie | `results/figures/`, notebook 03 |
+| C | Análisis y discusión, Conclusiones | notebooks 02 y 03 |
+| D | Apéndice de supuestos, los dos anexos, la presentación | `docs/assumptions.md` |
 
 ---
 
@@ -531,16 +608,8 @@ docs: add executed notebooks for engine and generator verification
 
 ## 15. Parámetros sin fuente
 
-Siguen siendo supuestos de modelo y deben quedar declarados como tales en
-`docs/assumptions.md`, que aún está vacío:
+Ya están documentados en `docs/assumptions.md`, con nueve entradas y una sección
+final que distingue lo que **no** es supuesto, es decir, los resultados que se
+sostienen aunque se recalibren todos los parámetros.
 
-- `search_shape` y las tres `search_scale` del tiempo de búsqueda
-- si la velocidad de vuelo se mantiene constante o se sortea
-- `sensitivity` y `midpoint_km` de la logística de retorno
-- los nueve valores de los tres niveles de disponibilidad floral
-- la independencia entre distancia y disponibilidad floral: el modelo no las
-  correlaciona, y en la realidad probablemente lo estén
-- el número final de réplicas, que depende de medir el costo
-
-En `config/base.yaml` cada uno de estos aparece marcado con un comentario
-`SUPUESTO`, de modo que escribir `assumptions.md` es transcribir esa lista.
+Esa lista es la que hay que transcribir al apéndice del informe.

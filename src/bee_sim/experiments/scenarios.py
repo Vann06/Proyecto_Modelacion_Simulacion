@@ -19,6 +19,10 @@ ESCENARIOS = {
     "distance_near": CONFIG_DIR / "distance_near.yaml",
     "flowers_high": CONFIG_DIR / "flowers_high.yaml",
     "flowers_low": CONFIG_DIR / "flowers_low.yaml",
+    "lambda_high": CONFIG_DIR / "lambda_high.yaml",
+    "lambda_low": CONFIG_DIR / "lambda_low.yaml",
+    "pollination_high": CONFIG_DIR / "pollination_high.yaml",
+    "pollination_low": CONFIG_DIR / "pollination_low.yaml",
 }
 
 

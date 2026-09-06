@@ -55,5 +55,9 @@ nectar:
 
 return:
   model: logistic
-  sensitivity: 1.2          # SUPUESTO: parametro a de p_ret(D)
+  sensitivity: 3.0          # SUPUESTO: parametro a de p_ret(D). Ver decision D-11:
+                            # con a=1.2 la colonia perdia el 90% de sus forrajeras
+                            # en una jornada, porque cada abeja hace ~41 viajes y
+                            # 0.9466^41 = 0.105. Con a=3.0 el riesgo se concentra
+                            # cerca de d0 y deja de castigar los viajes cortos.
   midpoint_km: 4.0          # SUPUESTO: parametro d0 de p_ret(D)

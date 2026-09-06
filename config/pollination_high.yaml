@@ -1,0 +1,4 @@
+extends: base.yaml
+# POLIN-ALTA: mayor probabilidad de que una visita cuaje.
+pollination:
+  p_success: 0.85

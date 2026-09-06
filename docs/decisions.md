@@ -139,6 +139,51 @@ y medirlo, no en atravesar con él 10,000 corridas.
 
 ---
 
+## D-11. La sensibilidad de la logística de retorno sube de 1.2 a 3.0
+
+**Decisión:** `return.sensitivity` pasa de 1.2 a 3.0. `midpoint_km` se queda en 4.0.
+
+**Alternativa descartada:** subir `midpoint_km` a 6 u 8 km.
+
+**Por qué:** con `a = 1.2` la corrida de BASE terminaba con 4 forrajeras vivas de
+90. No era un error del código: cada abeja alcanza a hacer unos 41 viajes en una
+jornada de 600 minutos, y con una probabilidad de retorno media de 0.9466 por
+viaje, sobrevivir el día tiene probabilidad 0.9466^41 = 0.105. La repetición
+castiga muchísimo.
+
+El defecto de fondo de una pendiente suave es que filtra riesgo hacia distancias
+donde no debería haberlo: con `a = 1.2`, una abeja que volara cero kilómetros
+tenía 0.8% de probabilidad de no volver. Subir `a` concentra el riesgo alrededor
+de `d0` y deja de castigar los viajes cortos.
+
+**Por qué no se movió `midpoint_km`:** desplazar la curva a la derecha también
+resuelve la supervivencia, pero aplana la diferencia entre escenarios de
+distancia, que es una de las preguntas de investigación. Con `d0 = 8` la
+separación de la tasa de retorno entre DIST-CERCA y DIST-LEJOS cae de 0.223 a
+0.008, o sea que la hipótesis sobre distancia se queda sin nada que medir. Subir
+`a` conserva esa separación en 0.185.
+
+**Efecto medido** (escenario BASE, semilla 2026, misma corrida antes y después):
+
+| | a = 1.2 | a = 3.0 |
+|---|---|---|
+| abejas vivas al cierre | 4 de 90 | **53 de 90** |
+| tasa de retorno por viaje | 0.930 | 0.970 |
+| no retorno por horizonte | 30 | 33 |
+| no retorno por distancia | 56 | **4** |
+| néctar entregado | 560.7 ml | 588.8 ml |
+
+**Consecuencia interpretativa.** Con el valor nuevo, la causa dominante de no
+retorno pasa a ser el horizonte de la jornada y no la logística. Eso es más
+defendible en el informe, porque el horizonte sale de la estructura del modelo
+mientras que la logística sigue siendo un supuesto sin calibración.
+
+**Sigue siendo un supuesto.** Los dos parámetros no provienen de datos. Lo que
+cambia es que ahora existe un argumento cuantitativo de por qué esos valores y
+no otros.
+
+---
+
 ## Pendientes de decisión
 
 - Valor de `k_b` y `theta_b` base para `T_busqueda` (no hay fuente, quedan como

@@ -24,7 +24,7 @@ from bee_sim.generators import crear_fuente
 from bee_sim.simulation.engine import simular_jornada
 from bee_sim.simulation.metrics import resumir
 
-from _persistence import guardar_corrida
+from _persistence import guardar_corrida, siguiente_run_id
 
 
 def parsear_argumentos(argv=None):
@@ -68,11 +68,16 @@ def _correr_y_guardar(nombre, n_replicas, semillas, carpeta_out):
     Jornada completa (no solo el resumen), porque el runner no toca disco."""
     cfg = cargar_escenario(nombre)
     fuente = cfg["simulation"]["rng_source"]
+    # El numero de corrida se resuelve UNA sola vez. Dejar que guardar_corrida
+    # lo autocalculara hacia que siguiente_run_id reescaneara la carpeta en cada
+    # replica, con costo cuadratico en el numero de corridas: medido, la campana
+    # pasaba de 0.25 s a 1.26 s por replica al llegar a 166 archivos.
+    primero = siguiente_run_id(carpeta_out)
     for i in range(n_replicas):
         rng = crear_fuente(fuente, semillas[i])
         viajes = simular_jornada(cfg, rng, run_id=i)
         resumen = resumir(viajes, viajes.colonia, cfg)
-        guardar_corrida(viajes, cfg, resumen, carpeta_out)
+        guardar_corrida(viajes, cfg, resumen, carpeta_out, run_numero=primero + i)
 
 
 def main(argv=None) -> int:

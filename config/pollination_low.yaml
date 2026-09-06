@@ -1,0 +1,5 @@
+extends: base.yaml
+# POLIN-BAJA: menor probabilidad de que una visita cuaje.
+# Factor de la matriz experimental que faltaba cubrir.
+pollination:
+  p_success: 0.40

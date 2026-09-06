@@ -17,3 +17,4 @@ Claude outputs/
 
 # scripts temporales de construccion de notebooks
 .build/
+results/campana/

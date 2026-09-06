@@ -1,0 +1,7 @@
+extends: base.yaml
+# LAMBDA-ALTA: mayor intensidad de salidas de la colmena.
+# Con 4.0/min se generan ~2400 salidas por jornada, por encima de la
+# capacidad efectiva de 90 forrajeras: aqui deberia aparecer el techo
+# por capacidad de la colonia y no por demanda del entorno.
+departures:
+  lambda_per_min: 4.0

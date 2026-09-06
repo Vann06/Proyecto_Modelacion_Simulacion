@@ -1,0 +1,6 @@
+extends: base.yaml
+# LAMBDA-BAJA: menor intensidad de salidas de la colmena.
+# Con 1.0/min se generan ~600 salidas por jornada, muy por debajo
+# de la capacidad de la colonia: el limite deberia ser la demanda.
+departures:
+  lambda_per_min: 1.0
