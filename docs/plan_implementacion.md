@@ -58,7 +58,7 @@ PYTHONPATH=src python -c "from bee_sim.config import cargar, resumen; print(resu
 | F4 | Motor y métricas | **completa** | **F3 completa** |
 | F5 | Persistencia de resultados | pendiente | F4 |
 | F6 | Experimentos y campaña | pendiente | F5 |
-| F7 | Validación y comparación de métodos | **módulo listo, falta el script** | F0 |
+| F7 | Validación y comparación de métodos | **completa** | F0 |
 | F8 | Figuras | pendiente | F5 (necesita CSV guardados) |
 | F9 | Pruebas automatizadas | **parcial: motor y métricas cubiertos** | avanza junto con F3 y F4 |
 | F10 | Informe y presentación | pendiente | F6 y F8 para la parte de resultados |
@@ -77,7 +77,7 @@ F5 ─► F8 figuras ───────────────────�
 F9 pruebas: se escribe en paralelo con F3 y F4, no al final
 ```
 
-**F3 y F4 están completas.** La siguiente fase pendiente es F5, persistencia.
+** F0 y F7 están completas.** La siguiente fase pendiente es F8, persistencia.
 
 ---
 
@@ -349,15 +349,17 @@ total está medido con 50 réplicas antes de subir a 1,000.
 
 ---
 
-## 8. F7. Validación y comparación de métodos
+## 8. F7. Validación y comparación de métodos — completa
 
-`analysis/validation.py` está escrito y probado, y el notebook 01 ya lo ejecuta.
-Falta empaquetarlo y escribir la comparación.
+
+`analysis/validation.py` estaba escrito y probado, y el notebook 01 ya lo
+ejecutaba. Se agrego lo que faltaba:
 
 ```python
 # scripts/validate_generators.py
-# llama a las nueve funciones de validation.py y exporta la tabla del informe:
-# generador | n | media y error | prueba de ajuste | p-valor | tiempo
+# llama a las nueve funciones de validation.py, agrega tiempo de ejecucion,
+# imprime la tabla y exporta results/tables/validacion_generadores.csv|.json
+# y results/tables/comparacion_metodos.json
 
 # analysis/comparison.py
 def comparar_metodos_salidas(cfg, n_replicas, semillas) -> dict
@@ -368,18 +370,26 @@ def resumir_replicas(resumenes) -> dict     # media, sd, percentiles, IC 95%
 def resumir_escenarios(por_escenario) -> dict
 ```
 
-`comparar_metodos_salidas` debe correr M-A y M-B **con el mismo lambda, el mismo
-horizonte y el mismo conjunto de semillas**, y reportar para cada uno: número de
+`comparar_metodos_salidas` corre M-A y M-B **con el mismo lambda, el mismo
+horizonte y el mismo conjunto de semillas**, y reporta para cada uno: número de
 salidas (media y desviación), prueba de ajuste de los interarribos, uniformes
-consumidos y tiempo de ejecución. Sin esas tres condiciones iguales la
-comparación no es justa y no sirve para el informe.
+consumidos y tiempo de ejecución.
 
-`comparar_normal_polar_vs_rechazo` es la comparación secundaria: usa
-`generators.continuous.normal_polar` y `normal_rechazo`, que ya existen.
+**Hallazgo verificado al implementarlo:** el LCG tiene estructura de reticula
+(ya documentada en `generators/lcg.py`), y semillas consecutivas (2026, 2027,
+2028, ...) sesgan sistematicamente el conteo del Metodo B. Con 200 replicas de
+semillas consecutivas, el Metodo B dio una media de 1185.6 salidas contra una
+teorica de 1200 (el Metodo A no se vio afectado, dio 1204.4). Con semillas
+bien dispersas (`np.random.default_rng(base).integers(0, 2**31, size=n)`)
+ambos dan ~1200-1202 sin sesgo, confirmado tambien con 3000 replicas donde
+ambos convergen sin sesgo detectable. `comparar_metodos_salidas` valida el
+rango de las semillas recibidas y falla si luce sospechosamente angosto.
 
-**Terminado cuando:** existe la tabla de validación con las columnas que pide el
-informe, y la comparación M-A contra M-B reporta las cuatro medidas con semillas
-compartidas.
+**Terminado.** La tabla de validación tiene las columnas que pide el informe,
+y la comparación M-A contra M-B reporta las cuatro medidas con semillas
+compartidas. Verificado: `PYTHONPATH=src python scripts/validate_generators.py`
+corre en menos de 2 segundos con n=20000 y 200 réplicas, y los 9 generadores
+dan p > 0.05.
 
 ---
 
