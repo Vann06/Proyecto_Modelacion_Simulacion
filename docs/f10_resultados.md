@@ -5,7 +5,7 @@
 | **Institución** | Universidad del Valle de Guatemala, Facultad de Ingeniería |
 | **Curso** | CC2017 Modelación y Simulación, Sección 20 |
 | **Docente** | Ing. Pablo Koch |
-| **Integrantes** | Ricardo Arturo Godínez Sánchez (23247), Vianka Vanessa Castro Ordoñez (23201) |
+| **Integrantes** | Ricardo Arturo Godínez Sánchez (23247), Vianka Vanessa Castro Ordoñez (23201), Diego Javier López Reinoso (23747), Paula Daniela de León Godoy - (23202) | 
 | **Repositorio** | github.com/Vann06/Proyecto_Modelacion_Simulacion |
 | **Fecha** | 06/09/2026 |
 
