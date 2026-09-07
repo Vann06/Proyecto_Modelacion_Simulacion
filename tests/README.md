@@ -1,8 +1,17 @@
-├── tests/
-│   ├── test_exponential.py
-│   ├── test_poisson.py
-│   ├── test_departures.py
-│   ├── test_pollination.py
-│   ├── test_nectar.py
-│   ├── test_return_model.py
-│   └── test_engine.py
+# Pruebas
+
+La suite cubre generadores, motor, métricas, persistencia, experimentos,
+comparación de métodos y lectura de campañas.
+
+Desde la raíz del repositorio:
+
+```powershell
+$env:PYTHONPATH = "src"
+python -m pytest
+```
+
+También es compatible con `unittest`:
+
+```bash
+python -c "import sys, unittest; sys.path.insert(0, 'src'); result=unittest.TextTestRunner().run(unittest.defaultTestLoader.discover('tests')); raise SystemExit(not result.wasSuccessful())"
+```

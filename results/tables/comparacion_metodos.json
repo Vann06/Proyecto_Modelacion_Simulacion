@@ -1,0 +1,79 @@
+{
+  "salidas_M_A_vs_M_B": {
+    "lambda_per_min": 2.0,
+    "horizonte_min": 600.0,
+    "A": {
+      "metodo": "A",
+      "n_replicas": 200,
+      "salidas_media": 1194.025,
+      "salidas_sd": 32.40423657083582,
+      "salidas_teorica": 1200.0,
+      "interarribos_n": 238805,
+      "interarribos_ks_estadistico": 0.002094754417326261,
+      "interarribos_ks_pvalor": 0.24515761916487855,
+      "uniformes_media": 1195.025,
+      "tiempo_total_seg": 0.19562660006340593,
+      "tiempo_por_replica_seg": 0.0009781330003170296
+    },
+    "B": {
+      "metodo": "B",
+      "n_replicas": 200,
+      "salidas_media": 1201.195,
+      "salidas_sd": 33.62140642283196,
+      "salidas_teorica": 1200.0,
+      "interarribos_n": 240239,
+      "interarribos_ks_estadistico": 0.0015366546046714502,
+      "interarribos_ks_pvalor": 0.62124697947581,
+      "uniformes_media": 1208.195,
+      "tiempo_total_seg": 0.1505458999890834,
+      "tiempo_por_replica_seg": 0.000752729499945417
+    },
+    "comparacion": {
+      "diferencia_medias": -7.169999999999845,
+      "diferencia_relativa_pct": -0.6004899394903662,
+      "t_estadistico": -2.0903852587994525,
+      "t_pvalor": 0.03785337359596277,
+      "t_pvalor_diferencia_pareada": 0.03785337359596277,
+      "margen_relativo_pct": 1.0,
+      "margen_absoluto": 12.0,
+      "alpha": 0.05,
+      "ic_equivalencia": [
+        -12.83821839186464,
+        -1.50178160813536
+      ],
+      "p_inferior": 0.08032090489998844,
+      "p_superior": 3.727979906619407e-08,
+      "equivalentes": false,
+      "nota": "La equivalencia se decide con TOST y un margen practico predefinido; el p-valor de diferencia por si solo no prueba equivalencia.",
+      "razon_tiempo_B_sobre_A": 0.769557411621369
+    }
+  },
+  "normal_polar_vs_rechazo": {
+    "polar": {
+      "metodo": "polar",
+      "n": 50000,
+      "media": 0.0024877417360523266,
+      "varianza": 1.0021474420462964,
+      "uniformes_consumidos": 127370,
+      "uniformes_por_muestra": 2.5474,
+      "tiempo_seg": 0.06908200006000698,
+      "ks_estadistico": 0.003495929009632026,
+      "ks_pvalor": 0.5729297786674201
+    },
+    "rechazo": {
+      "metodo": "rechazo",
+      "n": 50000,
+      "media": -0.00029846961850594063,
+      "varianza": 1.0007147008148254,
+      "uniformes_consumidos": 182034,
+      "uniformes_por_muestra": 3.64068,
+      "tiempo_seg": 0.09940079995431006,
+      "ks_estadistico": 0.002302898697988276,
+      "ks_pvalor": 0.9530161587350469
+    },
+    "comparacion": {
+      "razon_tiempo_rechazo_sobre_polar": 1.4388813275233368,
+      "razon_uniformes_rechazo_sobre_polar": 1.4291748449399388
+    }
+  }
+}

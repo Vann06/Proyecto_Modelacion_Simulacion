@@ -7,7 +7,7 @@
 simulation:
   seed: 2026
   day_minutes: 600.0        # 10 horas de actividad
-  replications: 1000
+  replications: 500         # campaña final: 12 escenarios x 500 réplicas
   rng_source: lcg           # lcg | numpy  (ver decision D-10)
 
 colony:

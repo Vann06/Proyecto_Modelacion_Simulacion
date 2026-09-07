@@ -1,4 +1,4 @@
-"""Comparacion de metodos de generacion equivalentes.
+"""Comparacion y prueba de equivalencia de metodos de generacion.
 
 Dos comparaciones, ambas bajo la misma regla: los metodos corren con el
 mismo parametro, el mismo horizonte o tamano de muestra, y el mismo conjunto
@@ -31,7 +31,41 @@ from ..generators.lcg import LCG
 from ..simulation.departures import metodo_a_interarribos, metodo_b_conteo
 
 
-def comparar_metodos_salidas(cfg, n_replicas, semillas):
+def _prueba_equivalencia_pareada(a, b, margen, alpha=0.05):
+    """TOST pareada: equivalencia si el IC 90% cae dentro de +/- margen."""
+    diferencias = np.asarray(a, dtype=float) - np.asarray(b, dtype=float)
+    if diferencias.size < 2:
+        return {
+            "margen_absoluto": float(margen), "alpha": float(alpha),
+            "ic_equivalencia": [float("nan"), float("nan")],
+            "p_inferior": float("nan"), "p_superior": float("nan"),
+            "equivalentes": None,
+        }
+    media = float(diferencias.mean())
+    se = float(diferencias.std(ddof=1) / np.sqrt(diferencias.size))
+    gl = diferencias.size - 1
+    if se == 0.0:
+        p_inferior = 0.0 if media > -margen else 1.0
+        p_superior = 0.0 if media < margen else 1.0
+        equivalentes = bool(p_inferior < alpha and p_superior < alpha)
+        ic = [media, media]
+    else:
+        t_inferior = (media + margen) / se
+        t_superior = (media - margen) / se
+        p_inferior = float(1.0 - stats.t.cdf(t_inferior, gl))
+        p_superior = float(stats.t.cdf(t_superior, gl))
+        critico = float(stats.t.ppf(1.0 - alpha, gl))
+        ic = [media - critico * se, media + critico * se]
+        equivalentes = bool(p_inferior < alpha and p_superior < alpha)
+    return {
+        "margen_absoluto": float(margen), "alpha": float(alpha),
+        "ic_equivalencia": [float(ic[0]), float(ic[1])],
+        "p_inferior": p_inferior, "p_superior": p_superior,
+        "equivalentes": equivalentes,
+    }
+
+
+def comparar_metodos_salidas(cfg, n_replicas, semillas, margen_relativo=0.01):
     """Corre M-A y M-B bajo condiciones identicas y los compara.
 
     `semillas` debe tener al menos `n_replicas` elementos y estar bien
@@ -41,10 +75,12 @@ def comparar_metodos_salidas(cfg, n_replicas, semillas):
     Para cada metodo devuelve, sobre las `n_replicas` corridas: numero de
     salidas (media y desviacion), prueba de Kolmogorov-Smirnov de los
     interarribos contra la Exponencial teorica, uniformes consumidos en
-    promedio y tiempo total de ejecucion. Ademas, una prueba t de dos
-    muestras sobre el numero de salidas entre A y B: es la comparacion que
-    responde si los dos metodos son estadisticamente equivalentes.
+    promedio y tiempo total de ejecucion. La diferencia se evalua con una
+    prueba t pareada y la equivalencia practica con TOST usando
+    `margen_relativo` sobre el conteo teorico esperado.
     """
+    if not 0 < margen_relativo < 1:
+        raise ValueError("margen_relativo debe estar entre 0 y 1")
     if len(semillas) < n_replicas:
         raise ValueError(
             "se pidieron %d replicas pero solo hay %d semillas" % (n_replicas, len(semillas))
@@ -101,12 +137,19 @@ def comparar_metodos_salidas(cfg, n_replicas, semillas):
         }
 
     if n_replicas > 1:
-        t_stat, t_pvalor = stats.ttest_ind(crudo["A"], crudo["B"], equal_var=False)
+        # Las replicas estan bloqueadas por semilla. El test pareado detecta
+        # diferencias; la equivalencia practica se decide aparte con TOST.
+        t_stat, t_pvalor = stats.ttest_rel(crudo["A"], crudo["B"])
     else:
         t_stat, t_pvalor = float("nan"), float("nan")
 
     diferencia_medias = resultado["A"]["salidas_media"] - resultado["B"]["salidas_media"]
     diferencia_relativa_pct = diferencia_medias / resultado["A"]["salidas_media"] * 100.0
+
+    margen = margen_relativo * lam * horizonte
+    equivalencia = _prueba_equivalencia_pareada(
+        crudo["A"], crudo["B"], margen,
+    )
 
     return {
         "lambda_per_min": lam,
@@ -118,12 +161,13 @@ def comparar_metodos_salidas(cfg, n_replicas, semillas):
             "diferencia_relativa_pct": diferencia_relativa_pct,
             "t_estadistico": float(t_stat),
             "t_pvalor": float(t_pvalor),
-            "equivalentes": bool(t_pvalor > 0.05) if n_replicas > 1 else None,
+            "t_pvalor_diferencia_pareada": float(t_pvalor),
+            "margen_relativo_pct": float(margen_relativo * 100.0),
+            **equivalencia,
             "nota": (
-                "Con n_replicas grande el t-test detecta diferencias formalmente "
-                "significativas aunque sean de una fraccion de punto porcentual: "
-                "interpretar 'equivalentes' junto con diferencia_relativa_pct, no "
-                "solo con t_pvalor."
+                "La equivalencia se decide con TOST y un margen practico "
+                "predefinido; el p-valor de diferencia por si solo no prueba "
+                "equivalencia."
             ),
             "razon_tiempo_B_sobre_A": (
                 resultado["B"]["tiempo_total_seg"] / resultado["A"]["tiempo_total_seg"]

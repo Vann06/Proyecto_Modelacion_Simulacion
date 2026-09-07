@@ -183,9 +183,8 @@ def fig06_tasa_polinizacion_vs_p(df_escenarios):
 
     `df_escenarios` necesita una fila por corrida con columnas
     p_success_configurado y tasa_polinizacion (metrics.resumir la llama
-    'tasa_polinizacion'). Requiere corridas con distintos p_success, que no
-    estan entre los ocho escenarios oficiales: hay que generarlas aparte
-    variando pollination.p_success.
+    'tasa_polinizacion'). Usa los escenarios oficiales de probabilidad baja,
+    base y probabilidad alta guardados en la campaña.
     """
     df = df_escenarios.sort_values("p_success_configurado")
     resumen = df.groupby("p_success_configurado")["tasa_polinizacion"].agg(["mean", "std"])

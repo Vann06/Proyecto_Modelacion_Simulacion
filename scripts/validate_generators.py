@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""F7: valida los generadores y compara los metodos equivalentes del proyecto.
+"""F7: valida los generadores y compara los metodos del proyecto.
 
 Empaqueta lo que `notebooks/01_generator_validation.ipynb` ya corrio y
 verifico a mano (9 de 9 validaciones con p > 0.05), y agrega lo que al
@@ -154,17 +154,18 @@ def imprimir_comparacion_salidas(comp):
             f"uniformes~{r['uniformes_media']:.1f}  tiempo={r['tiempo_total_seg']:.4f}s"
         )
     c = comp["comparacion"]
-    veredicto = "compatibles" if c["equivalentes"] else "estadisticamente distintos"
+    veredicto = "equivalentes" if c["equivalentes"] else "equivalencia no demostrada"
     print(
         f"  Diferencia de medias: {c['diferencia_medias']:+.3f}  "
-        f"({c['diferencia_relativa_pct']:+.3f}%)   t_p={c['t_pvalor']:.4f}  ({veredicto})   "
+        f"({c['diferencia_relativa_pct']:+.3f}%)   "
+        f"TOST margen={c['margen_relativo_pct']:.1f}% ({veredicto})   "
         f"B tarda {c['razon_tiempo_B_sobre_A']:.2f}x lo que A"
     )
-    if not c["equivalentes"] and abs(c["diferencia_relativa_pct"]) < 1.0:
-        print(
-            "  Nota: diferencia formalmente significativa pero menor a 1%; con este "
-            "n_replicas el t-test tiene potencia para detectar diferencias diminutas."
-        )
+    print(
+        "  IC 90% de la diferencia: "
+        f"[{c['ic_equivalencia'][0]:.3f}, {c['ic_equivalencia'][1]:.3f}] salidas; "
+        f"p diferencia pareada={c['t_pvalor_diferencia_pareada']:.4f}"
+    )
 
 
 def imprimir_comparacion_normal(comp):
@@ -188,9 +189,8 @@ def parsear_argumentos(argv=None):
     ap.add_argument("--config", default="config/base.yaml")
     ap.add_argument("--n", type=int, default=20000, help="tamano de muestra por validacion")
     ap.add_argument("--replicas", type=int, default=200,
-                     help="replicas para comparar_metodos_salidas (con menos de "
-                          "~150 el t-test entre A y B se vuelve ruidoso y puede "
-                          "marcar 'distintos' por casualidad, no por un problema real)")
+                     help="replicas para comparar_metodos_salidas y su prueba "
+                          "TOST con margen practico de 1%%")
     ap.add_argument("--seed", type=int, default=2026,
                      help="semilla base para generar las semillas dispersas de la comparacion")
     ap.add_argument("--out", default="results/tables")

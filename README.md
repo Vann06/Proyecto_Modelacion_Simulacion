@@ -116,122 +116,71 @@ Análisis estadístico
 
 ## Escenarios de simulación
 
-La estructura permite ejecutar diferentes configuraciones sin modificar el código principal.
+La campaña contiene 12 configuraciones sin modificar el código principal:
 
-### Condición base
-
-Representa una jornada bajo parámetros intermedios de actividad, distancia y disponibilidad floral.
-
-### Pocas flores
-
-Reduce la disponibilidad floral para observar su efecto sobre flores visitadas, polinización, néctar, duración y eficiencia.
-
-### Muchas flores
-
-Incrementa la disponibilidad floral para analizar cómo cambia el rendimiento global.
-
-### Flores cercanas
-
-Las zonas florales se encuentran a menor distancia de la colmena.
-
-### Flores lejanas
-
-Las zonas florales se encuentran a mayor distancia, permitiendo analizar su efecto sobre duración, distancia total, viajes completados, retorno y polinización.
-
-### Variación de población activa
-
-Permite modificar la cantidad de abejas activas para estudiar cómo cambia el desempeño general de la colonia.
+- `base`: condición de referencia;
+- `bees_low` y `bees_high`: 30 y 150 forrajeras activas;
+- `flowers_low` y `flowers_high`: disponibilidad floral fija baja y alta;
+- `distance_near` y `distance_far`: menor y mayor escala de distancia;
+- `lambda_low` y `lambda_high`: menor y mayor intensidad de salidas;
+- `pollination_low` y `pollination_high`: probabilidad de polinización de 0.40 y 0.85;
+- `combined`: baja disponibilidad junto con distancia lejana.
 
 ---
 
 # Arquitectura del repositorio
 
 ```text
-proyecto-abejas-polinizacion/
-│
+Proyecto_Modelacion_Simulacion/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── pyproject.toml
-│
 ├── config/
 │   ├── base.yaml
-│   ├── escenario_pocas_flores.yaml
-│   ├── escenario_muchas_flores.yaml
-│   ├── escenario_cercano.yaml
-│   └── escenario_lejano.yaml
-│
+│   └── *.yaml                    # once variaciones que heredan de BASE
 ├── src/
 │   └── bee_sim/
-│       ├── __init__.py
 │       ├── generators/
-│       │   ├── __init__.py
-│       │   ├── uniform.py
-│       │   ├── exponential.py
-│       │   ├── poisson.py
-│       │   ├── bernoulli.py
-│       │   ├── binomial.py
-│       │   └── lcg.py
+│       │   ├── uniform.py, lcg.py
+│       │   ├── exponential.py, poisson.py, bernoulli.py
+│       │   └── continuous.py
 │       ├── models/
-│       │   ├── __init__.py
-│       │   ├── bee.py
-│       │   ├── trip.py
-│       │   ├── colony.py
-│       │   └── environment.py
+│       │   ├── bee.py, colony.py, environment.py
+│       │   └── trip.py
 │       ├── simulation/
-│       │   ├── __init__.py
-│       │   ├── engine.py
-│       │   ├── departures.py
-│       │   ├── flowers.py
-│       │   ├── pollination.py
-│       │   ├── nectar.py
-│       │   ├── travel.py
-│       │   ├── return_model.py
+│       │   ├── engine.py, departures.py, distance.py
+│       │   ├── flowers.py, pollination.py, nectar.py
+│       │   ├── trip_duration.py, return_model.py
 │       │   └── metrics.py
 │       ├── analysis/
-│       │   ├── __init__.py
-│       │   ├── validation.py
-│       │   ├── experiments.py
-│       │   └── comparison.py
+│       │   ├── validation.py, comparison.py, summaries.py
+│       │   └── campaign_io.py
+│       ├── experiments/
+│       │   ├── scenarios.py
+│       │   └── runner.py
 │       └── visualization/
-│           ├── __init__.py
-│           ├── plots.py
-│           └── animation.py
-│
+│           └── plots.py
 ├── scripts/
 │   ├── run_simulation.py
-│   ├── run_experiments.py
-│   └── validate_generators.py
-│
-├── tests/
-│   ├── test_exponential.py
-│   ├── test_poisson.py
-│   ├── test_bernoulli.py
-│   ├── test_binomial.py
-│   ├── test_return_model.py
-│   └── test_simulation.py
-│
+│   ├── run_experiment.py
+│   ├── validate_generators.py
+│   └── export_results.py
+├── tests/                       # pruebas unitarias y de integración
 ├── notebooks/
-│   ├── 01_validacion_generadores.ipynb
-│   └── 02_analisis_resultados.ipynb
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
+│   ├── 00_verificacion_del_motor.ipynb
+│   ├── 01_generator_validation.ipynb
+│   ├── 02_scenario_analysis.ipynb
+│   └── 03_final_figures.ipynb
 ├── results/
-│   ├── tables/
-│   ├── figures/
-│   └── runs/
-│
+│   ├── runs/                    # CSV, configuración y resumen por réplica
+│   ├── tables/                  # salidas de validación y tablas consolidadas
+│   └── figures/                 # figuras regenerables desde runs/
 ├── docs/
-│   ├── modelo.md
-│   ├── metodologia.md
-│   ├── supuestos.md
-│   └── decisiones.md
-│
-└── presentation/
-    └── assets/
+│   ├── model.md, methodology.md
+│   ├── assumptions.md, decisions.md
+│   ├── f10_resultados.md
+│   └── presentacion.md
+└── data/
 ```
 
 ---
@@ -319,7 +268,7 @@ Contiene la lógica del sistema.
 - `flowers.py`: modela flores disponibles y visitadas.
 - `pollination.py`: determina eventos de polinización.
 - `nectar.py`: modela la recolección de néctar.
-- `travel.py`: calcula desplazamientos y duración.
+- `distance.py` y `trip_duration.py`: calculan desplazamiento y duración.
 - `return_model.py`: determina el retorno.
 - `metrics.py`: calcula métricas de cada corrida.
 
@@ -328,8 +277,13 @@ Contiene la lógica del sistema.
 Contiene la parte estadística.
 
 - `validation.py`: validación de muestras.
-- `experiments.py`: ejecución de escenarios y repeticiones.
 - `comparison.py`: comparación de métodos y configuraciones.
+- `campaign_io.py`: lectura de campañas planas o históricas.
+
+## `experiments/`
+
+- `scenarios.py`: catálogo de los 12 escenarios.
+- `runner.py`: ejecución en memoria de escenarios y repeticiones.
 
 ## `visualization/`
 
@@ -340,8 +294,7 @@ Contiene la representación visual de resultados:
 - curvas de distancia;
 - gráficas de polinización;
 - gráficas de retorno;
-- comparación de escenarios;
-- animación de la simulación.
+- comparación de escenarios.
 
 La visualización no modifica la lógica del motor.
 
@@ -355,7 +308,7 @@ Cada corrida puede producir:
 - tiempo promedio entre salidas;
 - viajes iniciados;
 - viajes completados;
-- distancia total recorrida;
+- distancia total planificada;
 - distancia promedio por viaje;
 - flores visitadas;
 - flores polinizadas;
@@ -364,6 +317,8 @@ Cada corrida puede producir:
 - duración promedio de los viajes;
 - tasa de retorno;
 - flores polinizadas por viaje;
+- flores polinizadas en viajes que caben dentro de la jornada;
+- flores polinizadas en viajes con retorno exitoso;
 - flores polinizadas por unidad de tiempo;
 - flores polinizadas por unidad de distancia.
 
@@ -376,7 +331,7 @@ Todas las simulaciones deben utilizar una semilla controlada.
 Ejemplo:
 
 ```python
-rng = np.random.default_rng(seed)
+rng = crear_fuente(cfg["simulation"]["rng_source"], cfg["simulation"]["seed"])
 ```
 
 La semilla debe provenir del archivo de configuración.
@@ -397,7 +352,7 @@ fecha de ejecución
 
 ## Requisitos
 
-- Python 3.11 o superior
+- Python 3.10 o superior
 - `pip`
 - entorno virtual recomendado
 
@@ -436,6 +391,7 @@ scipy
 matplotlib
 pytest
 pyyaml
+jupyterlab
 ```
 
 ---
@@ -451,7 +407,16 @@ python scripts/run_simulation.py --config config/base.yaml
 ## Experimentos
 
 ```bash
-python scripts/run_experiments.py
+python scripts/run_experiment.py --campana --n-replicas 500
+```
+
+Si una campaña fue iniciada con una versión anterior del script, sus YAML y
+resúmenes pueden actualizarse al terminar sin volver a simular. Primero se
+revisa y luego se aplica:
+
+```bash
+python scripts/update_campaign_metadata.py --n-replicas 500
+python scripts/update_campaign_metadata.py --n-replicas 500 --apply
 ```
 
 ## Validación de generadores
@@ -462,8 +427,17 @@ python scripts/validate_generators.py
 
 ## Pruebas
 
+Ejecute las pruebas con `src/` en la ruta de importación. En PowerShell:
+
+```powershell
+$env:PYTHONPATH = "src"
+python -m pytest
+```
+
+En Bash:
+
 ```bash
-pytest
+PYTHONPATH=src python -m pytest
 ```
 
 ---
@@ -479,7 +453,8 @@ results/
 └── runs/
 ```
 
-- `runs/`: resultados individuales.
+- `runs/`: resultados individuales de todos los escenarios en una carpeta
+  plana. Cada CSV se asocia con su escenario mediante el YAML compañero.
 - `tables/`: tablas consolidadas.
 - `figures/`: gráficas generadas.
 
@@ -644,10 +619,12 @@ pytest
 
 La carpeta `docs/` mantiene la documentación técnica complementaria.
 
-- `modelo.md`: variables y relaciones del sistema.
-- `metodologia.md`: procedimiento experimental.
-- `supuestos.md`: supuestos utilizados para simplificar el sistema.
-- `decisiones.md`: decisiones técnicas y metodológicas relevantes.
+- `model.md`: variables y relaciones del sistema.
+- `methodology.md`: procedimiento experimental.
+- `assumptions.md`: supuestos utilizados para simplificar el sistema.
+- `decisions.md`: decisiones técnicas y metodológicas relevantes.
+- `f10_resultados.md`: informe final con las 6,000 réplicas de la campaña.
+- `presentacion.md`: guion de 12 diapositivas, notas orales y cobertura de la rúbrica.
 
 ---
 
@@ -662,7 +639,7 @@ La carpeta `docs/` mantiene la documentación técnica complementaria.
 7. Las funciones matemáticas pueden probarse de forma aislada.
 8. Cada corrida conserva información suficiente para reconstruir el experimento.
 9. Los supuestos se documentan.
-10. La simulación y el análisis estadístico se mantienen separados de la animación.
+10. La simulación y el análisis estadístico se mantienen separados de las visualizaciones.
 
 ---
 

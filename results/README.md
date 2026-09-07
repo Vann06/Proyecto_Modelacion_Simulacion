@@ -1,16 +1,28 @@
-Cada corrida debe guardar:
+# Resultados
 
-results/runs/run_0001.csv
-results/runs/run_0001_config.yaml
-results/runs/run_0001_summary.json
-Nunca guardar únicamente una gráfica.
+La disposición canónica de una campaña es plana:
 
-La gráfica siempre debe poder reconstruirse desde los datos.
+```text
+results/
+├── runs/
+│   ├── semillas_campana.json
+│   ├── run_0001.csv
+│   ├── run_0001_config.yaml
+│   └── run_0001_summary.json
+├── tables/
+└── figures/
+```
 
-11. Semillas
-Crear el RNG una sola vez desde la configuración.
+Cada réplica conserva el CSV de viajes, la configuración exacta y el resumen.
+El YAML registra escenario, semilla realmente utilizada, índice de réplica,
+número de réplicas solicitado y fecha UTC.
 
-rng = np.random.default_rng(seed)
-Pasarlo a los módulos que lo necesiten.
+Los notebooks 02 y 03 identifican el escenario mediante el YAML compañero y
+también pueden leer la estructura histórica con una subcarpeta por escenario.
+Para no mezclar ejecuciones, seleccionan las 500 corridas más recientes de cada
+escenario.
 
-No crear semillas aleatorias escondidas dentro de funciones.
+Nunca se debe conservar únicamente una gráfica: todas las figuras deben poder
+reconstruirse desde los archivos de `runs/`. Las carpetas voluminosas se ignoran
+en Git; antes de entregar el informe debe verificarse que sus figuras hayan sido
+exportadas o incorporadas al documento final.

@@ -41,7 +41,7 @@ def correr_escenario(nombre, n_replicas, semillas) -> list[dict]:
 
 
 def correr_campana(n_replicas, semillas) -> dict:
-    """Corre los ocho escenarios de ESCENARIOS con el mismo conjunto de semillas.
+    """Corre los doce escenarios de ESCENARIOS con el mismo conjunto de semillas.
 
     Devuelve {nombre_escenario: [resumenes...]}. Las semillas se pasan tal
     cual a cada escenario, para que la comparacion entre escenarios corra

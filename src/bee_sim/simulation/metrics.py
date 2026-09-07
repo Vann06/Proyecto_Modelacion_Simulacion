@@ -125,6 +125,12 @@ def resumir(viajes, colonia, cfg) -> dict:
             "colonia no coincide con las abejas retiradas")
     visitadas = sum(v.flowers_visited for v in viajes)
     polinizadas = sum(v.flowers_pollinated for v in viajes)
+    polinizadas_que_caben = sum(
+        v.flowers_pollinated for v in viajes if v.fits_in_day
+    )
+    polinizadas_completos = sum(
+        v.flowers_pollinated for v in viajes if v.returned
+    )
     nectar = sum((v.nectar_collected for v in viajes), 0.0)
     duracion = sum((v.trip_duration_min for v in viajes), 0.0)
     distancia_ida = sum((v.distance_km for v in viajes), 0.0)
@@ -142,6 +148,10 @@ def resumir(viajes, colonia, cfg) -> dict:
         "abejas_retiradas": len(colonia) - colonia.activas(),
         "flores_visitadas": visitadas,
         "flores_polinizadas": polinizadas,
+        # La metrica historica incluye el resultado planificado de todo viaje
+        # iniciado. Estas variantes eliminan la ambiguedad del horizonte.
+        "flores_polinizadas_viajes_que_caben": polinizadas_que_caben,
+        "flores_polinizadas_viajes_completos": polinizadas_completos,
         "tasa_polinizacion": _cociente(polinizadas, visitadas),
         "nectar_recolectado_ml": nectar,
         "nectar_entregado_ml": sum((v.nectar_collected for v in viajes if v.returned), 0.0),

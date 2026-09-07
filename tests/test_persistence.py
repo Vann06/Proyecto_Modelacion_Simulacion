@@ -20,6 +20,7 @@ from bee_sim.simulation.metrics import resumir
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from _persistence import guardar_corrida, siguiente_run_id  # noqa: E402
+from run_experiment import resolver_semillas  # noqa: E402
 
 CONFIG = Path(__file__).resolve().parents[1] / "config"
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
@@ -45,6 +46,15 @@ class PersistenceTests(unittest.TestCase):
             (carpeta / "run_0001.csv").write_text("x")
             (carpeta / "run_0007.csv").write_text("x")
             self.assertEqual(siguiente_run_id(carpeta), 8)
+
+    def test_semillas_de_campana_son_dispersas_y_reutilizables(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            ruta = Path(tmp) / "semillas.json"
+            primera = resolver_semillas(ruta, 20, 2026)
+            segunda = resolver_semillas(ruta, 20, 2026)
+            self.assertEqual(primera, segunda)
+            self.assertEqual(len(set(primera)), 20)
+            self.assertGreater(max(primera) - min(primera), 2000)
 
     def test_guardar_corrida_escribe_los_tres_archivos(self):
         with tempfile.TemporaryDirectory() as tmp:

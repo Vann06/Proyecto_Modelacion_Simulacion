@@ -89,8 +89,9 @@ paso a paso.
 
 ## 9. El número de réplicas
 
-500 por escenario, 4,000 en total. El informe planteaba mil como mínimo,
-ajustable tras medir el costo. Medido el costo en 0.25 s por réplica, se optó
+500 por escenario, 6,000 en total para los 12 escenarios. La configuración base
+y la campaña final fijan explícitamente 500, valor elegido tras medir el costo.
+Medido el costo en 0.25 s por réplica, se optó
 por 500 porque el intervalo de confianza de la media ya resulta suficientemente
 angosto (ver notebook 02, sección 6); subir a mil lo estrecharía en un factor de
 1.41 a cambio de duplicar el tiempo y el espacio en disco.

@@ -5,10 +5,10 @@ __pycache__/
 venv/
 *.egg-info/
 
-# Resultados de corridas (se regeneran desde el codigo)
+# Corridas crudas: son pesadas y se regeneran desde el codigo.
 results/runs/
-results/figures/
-results/tables/
+# Las figuras y tablas consolidadas si se versionan porque forman parte
+# del informe y de la presentacion.
 
 # Herramientas
 .ipynb_checkpoints/
@@ -17,4 +17,5 @@ Claude outputs/
 
 # scripts temporales de construccion de notebooks
 .build/
+tmp/
 results/campana/

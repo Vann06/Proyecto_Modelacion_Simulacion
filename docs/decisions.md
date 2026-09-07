@@ -126,16 +126,19 @@ permite reportar cuánto del no retorno viene de cada causa.
 
 ---
 
-## D-10. LCG para validación, NumPy para la campaña
+## D-10. LCG como fuente principal y NumPy como alternativa de rendimiento
 
-**Decisión:** el LCG propio se usa en la validación de generadores y en la
-comparación M-A vs M-B. La campaña experimental completa usa NumPy vectorizado.
+**Decisión:** la configuración base y la campaña usan el LCG propio para mantener
+visible la aplicación académica del generador. `NumpyStream` queda disponible
+como alternativa configurable cuando se prioriza tiempo de ejecución.
 
-**Por qué:** la campaña completa supera 5×10^8 llamadas a `uniform()`, que en
-Python puro son horas de cómputo. El valor académico del LCG está en demostrarlo
-y medirlo, no en atravesar con él 10,000 corridas.
+**Por qué:** el requisito central es aplicar y validar métodos propios de
+generación. Usar el LCG en la campaña conecta directamente esa validación con los
+resultados. La contrapartida es un costo mayor, que debe reportarse y no
+confundirse con un error del modelo.
 
-**Control:** medir el costo real con 50 réplicas antes de fijar el número final.
+**Control:** las réplicas usan semillas dispersas generadas por un flujo maestro,
+no semillas consecutivas, para reducir correlación entre inicializaciones.
 
 ---
 
@@ -184,10 +187,11 @@ no otros.
 
 ---
 
-## Pendientes de decisión
+## Trabajo futuro, no decisiones pendientes del modelo entregado
 
-- Valor de `k_b` y `theta_b` base para `T_busqueda` (no hay fuente, quedan como
-  supuestos configurables).
-- Si `V` (velocidad de vuelo) se mantiene constante o se sortea Normal truncada.
-- Valores de `a` y `d0` de la logística de retorno.
-- Número final de réplicas, tras medir costo.
+- Calibrar `k_b`, `theta_b`, `a`, `d0` y la velocidad de vuelo con datos de campo.
+- Evaluar una velocidad aleatoria si existe evidencia que justifique su
+  distribución.
+- Agregar un escenario que varíe distancia manteniendo fijo el retorno para
+  separar ambos mecanismos.
+- Revisar el margen práctico de equivalencia de ±1% con el criterio del curso.

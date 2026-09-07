@@ -9,7 +9,7 @@ from bee_sim.experiments.scenarios import ESCENARIOS, cargar_escenario
 
 
 class ScenariosTests(unittest.TestCase):
-    def test_los_ocho_escenarios_cargan_sin_error(self):
+    def test_los_doce_escenarios_cargan_sin_error(self):
         for nombre in ESCENARIOS:
             with self.subTest(escenario=nombre):
                 cfg = cargar_escenario(nombre)
@@ -51,7 +51,7 @@ class RunnerTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             correr_escenario("no_existe", 1, self.semillas)
 
-    def test_correr_campana_cubre_los_ocho_escenarios(self):
+    def test_correr_campana_cubre_los_doce_escenarios(self):
         resultado = correr_campana(2, self.semillas)
         self.assertEqual(set(resultado.keys()), set(ESCENARIOS.keys()))
         for nombre, resumenes in resultado.items():

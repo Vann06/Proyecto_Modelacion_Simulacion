@@ -22,12 +22,16 @@ El modelo genera nueve variables aleatorias mediante métodos de transformada
 inversa, aceptación y rechazo, composición y convolución, a partir de un
 generador congruencial lineal propio. Se validaron los nueve generadores contra
 sus distribuciones teóricas y se ejecutó una campaña de **6,000 réplicas**
-repartidas en **12 escenarios** con semillas compartidas.
+repartidas en **12 escenarios** con un conjunto documentado de semillas.
 
-Bajo la condición de referencia, una colonia de 90 forrajeras poliniza **6,251.7
-flores por jornada** (IC 95%: 6,233.3 a 6,270.2). La disponibilidad floral
-resultó el factor de mayor efecto y la distancia opera por consumo de tiempo
-antes que por riesgo de no retorno.
+Bajo la condición de referencia se estiman **6,244.5 polinizaciones asociadas a
+viajes iniciados durante la jornada** (IC 95%: 6,226.5 a 6,262.5). De ellas,
+6,089.8 corresponden a viajes que caben en la jornada y 6,061.5 a viajes que
+efectivamente retornan. La
+intensidad de salidas produjo una respuesta casi proporcional, mientras que la
+disponibilidad floral dominó el rendimiento por viaje y el néctar. La distancia
+afecta simultáneamente la duración y el riesgo de no retorno; el diseño actual
+no separa causalmente esos dos mecanismos.
 
 ---
 
@@ -90,9 +94,8 @@ recolección de néctar, la distancia y las condiciones de disponibilidad floral
 
 ### 2.2 Objetivos específicos
 
-1. Modelar las salidas de la colmena mediante un proceso de Poisson, generado
-   por dos métodos equivalentes, y verificar que producen resultados
-   compatibles.
+1. Modelar las salidas de la colmena mediante dos construcciones del proceso de
+   Poisson y comparar su ajuste, costo y equivalencia práctica.
 2. Representar las variables del viaje con distribuciones apropiadas, aplicando
    los cinco métodos de generación vistos en el curso.
 3. Implementar un generador de números pseudoaleatorios propio y validarlo.
@@ -245,17 +248,28 @@ ordenada de tiempos de salida dentro del horizonte.
 | Escenarios | 12 |
 | Réplicas por escenario | 500 |
 | Réplicas totales | 6,000 |
-| Semillas | conjunto fijo compartido entre todos los escenarios |
+| Semillas | 2026 a 2525, compartidas entre todos los escenarios |
 | Horizonte | 600 minutos |
-| Costo medido | 0.25 s por réplica |
+| Costo medido | 0.214 s por réplica en la campaña final |
 
-Compartir el conjunto de semillas es lo que permite comparar escenarios sobre la
-misma suerte. Se varió un factor a la vez, salvo en el escenario COMBINADO, que
-cruza dos deliberadamente.
+Se reutilizó el mismo conjunto de semillas en los escenarios para reducir
+variación ajena a los factores. La campaña final conservó un archivo heredado
+con semillas consecutivas de 2026 a 2525. Esto facilita comparaciones emparejadas,
+pero los flujos de un LCG iniciados con estados cercanos pueden estar
+correlacionados; por ello, los intervalos que suponen réplicas independientes se
+interpretan con cautela. La versión actual del ejecutor genera semillas
+dispersas para campañas futuras. Algunos escenarios consumen
+uniformes en distinto orden, por lo que la comparación se realiza sobre las
+distribuciones agregadas y no viaje por viaje. Se varió un factor a la vez,
+salvo en COMBINADO, que cruza dos deliberadamente.
 
 ---
 
 ## 5. Resultados obtenidos
+
+Salvo indicación contraria, las tablas usan `flores_polinizadas`: el
+resultado planificado de todos los viajes iniciados. No debe confundirse con la
+métrica más estricta de viajes que caben completamente en la jornada.
 
 ### 5.1 Validación de generadores
 
@@ -263,15 +277,15 @@ cruza dos deliberadamente.
 
 | Generador | Prueba | Estadístico | p-valor | Error % | t (s) |
 |---|---|---|---|---|---|
-| LCG(a=1664525, c=1013904223, m=4294967296) | KS | 0.0059 | 0.4887 | 0.447 | 0.0132 |
-| Exponencial(2) | KS | 0.0090 | 0.0784 | 1.342 | 0.0140 |
-| Weibull(2, 1.5) | KS | 0.0046 | 0.7910 | 0.191 | 0.0159 |
-| Gamma(2.5, 1.2) | KS | 0.0059 | 0.4970 | 0.033 | 0.0517 |
-| Poisson(8) via poisson_inversa | chi2 | 13.8167 | 0.8397 | 0.370 | 0.0301 |
-| Poisson(8) via poisson_knuth | chi2 | 16.0525 | 0.7134 | 0.272 | 0.0793 |
-| Binomial(10, 0.65) | chi2 | 9.6460 | 0.3799 | 0.045 | 0.1022 |
-| BinNeg(mu=8, forma=3) | chi2 | 43.2564 | 0.1594 | 0.499 | 0.0797 |
-| Adelgazamiento: Poisson(8) filtrada con p=0.65 | chi2 | 19.1196 | 0.2084 | 0.233 | 0.1064 |
+| LCG(a=1664525, c=1013904223, m=4294967296) | KS | 0.0059 | 0.4887 | 0.447 | 0.0207 |
+| Exponencial(2) | KS | 0.0090 | 0.0784 | 1.342 | 0.0154 |
+| Weibull(2, 1.5) | KS | 0.0046 | 0.7910 | 0.191 | 0.0165 |
+| Gamma(2.5, 1.2) | KS | 0.0059 | 0.4970 | 0.033 | 0.0562 |
+| Poisson(8) via poisson_inversa | chi2 | 13.8167 | 0.8397 | 0.370 | 0.0305 |
+| Poisson(8) via poisson_knuth | chi2 | 16.0525 | 0.7134 | 0.272 | 0.0740 |
+| Binomial(10, 0.65) | chi2 | 9.6460 | 0.3799 | 0.045 | 0.1101 |
+| BinNeg(mu=8, forma=3) | chi2 | 43.2564 | 0.1594 | 0.499 | 0.0845 |
+| Adelgazamiento: Poisson(8) filtrada con p=0.65 | chi2 | 19.1196 | 0.2084 | 0.233 | 0.1161 |
 
 Los nueve superan su prueba de ajuste. La última fila corresponde a la
 **validación por adelgazamiento**: si las flores visitadas son Poisson(μ) y cada
@@ -283,24 +297,31 @@ correctos a la vez.
 
 ### 5.2 Comparación de los métodos del proceso de salidas
 
-**Tabla 2.** Métodos A y B con el mismo λ, horizonte y semillas.
+**Tabla 2.** Métodos A y B con el mismo λ, horizonte y semillas. Estos resultados
+son descriptivos; una ausencia de diferencia significativa no demuestra por sí
+sola equivalencia. Esta comparación usa 200 semillas dispersas, distintas del
+archivo consecutivo heredado por la campaña de escenarios.
 
 | Método | Salidas (media) | sd | KS p-valor | Uniformes | Tiempo (s) |
 |---|---|---|---|---|---|
-| M-A interarribos | 1194.15 | 38.12 | 0.5190 | 1195.2 | 0.0313 |
-| M-B conteo | 1203.30 | 38.51 | 0.6831 | 1210.3 | 0.0288 |
+| M-A interarribos | 1194.03 | 32.40 | 0.2452 | 1195.0 | 0.1956 |
+| M-B conteo | 1201.19 | 33.62 | 0.6212 | 1208.2 | 0.1505 |
 | Teórica | 1200.00 | 34.64 | | | |
 
-Diferencia de medias: -9.150 salidas (-0.766%), con p = 0.2889. Los dos métodos
-son estadísticamente compatibles, como corresponde si ambos están bien
-implementados.
+Diferencia observada de medias: -7.170 salidas (-0.600%). La prueba pareada de
+diferencia produce p = 0.0379. En la prueba TOST pareada, el intervalo del 90%
+de la diferencia es [-12.838, -1.502] y rebasa por poco el margen práctico de
+±12 salidas (1% del valor teórico). Por ello, **la equivalencia dentro del 1%
+no quedó demostrada**, aunque ambos métodos se ajustan al proceso teórico y la
+diferencia puntual es pequeña. El Método B tardó 0.77 veces lo que el Método A
+en esta ejecución.
 
 **Tabla 3.** Comparación secundaria de dos métodos para la Normal.
 
 | Método | Uniformes por muestra | KS p-valor | Tiempo (s) |
 |---|---|---|---|
-| Polar (Marsaglia) | 2.55 | 0.5729 | 0.0665 |
-| Aceptación y rechazo | 3.64 | 0.9530 | 0.0865 |
+| Polar (Marsaglia) | 2.55 | 0.5729 | 0.0691 |
+| Aceptación y rechazo | 3.64 | 0.9530 | 0.0994 |
 
 El consumo del método polar coincide con el valor teórico π/4 predicho por la
 razón de áreas.
@@ -309,48 +330,48 @@ razón de áreas.
 
 **Tabla 4.** Media sobre 500 réplicas por escenario.
 
-| Escenario | Salidas | Perdidas | Viajes compl. | Visitadas | Polinizadas | Néctar (ml) | Retorno % | Duración (min) |
-|---|---|---|---|---|---|---|---|---|
-| ABEJAS-BAJA | 1,202.7 | 197.9 | 977.5 | 8,034.5 | 5,223.1 | 496.0 | 97.27 | 14.59 |
-| BASE | 1,203.2 | 0.0 | 1,168.3 | 9,619.4 | 6,251.7 | 592.6 | 97.10 | 14.58 |
-| ABEJAS-ALTA | 1,201.2 | 0.0 | 1,166.5 | 9,610.9 | 6,244.5 | 592.4 | 97.11 | 14.58 |
-| FLORES-BAJA | 1,201.2 | 0.0 | 1,164.2 | 4,802.2 | 3,120.7 | 167.5 | 96.92 | 15.71 |
-| FLORES-ALTA | 1,203.4 | 0.0 | 1,168.0 | 16,845.4 | 10,953.7 | 1,324.5 | 97.06 | 14.70 |
-| DIST-CERCA | 1,201.5 | 0.0 | 1,179.6 | 9,612.0 | 6,245.7 | 599.0 | 98.17 | 10.82 |
-| DIST-LEJOS | 1,201.2 | 719.0 | 392.3 | 3,857.7 | 2,505.7 | 199.5 | 81.18 | 22.67 |
-| LAMBDA-BAJA | 602.2 | 0.0 | 585.0 | 4,814.7 | 3,128.1 | 296.8 | 97.14 | 14.58 |
-| LAMBDA-ALTA | 2,403.7 | 1.6 | 2,332.8 | 19,212.9 | 12,485.1 | 1,184.2 | 97.11 | 14.57 |
-| POLIN-BAJA | 1,201.2 | 0.0 | 1,166.5 | 9,610.9 | 3,842.4 | 592.4 | 97.11 | 14.58 |
-| POLIN-ALTA | 1,201.2 | 0.0 | 1,166.5 | 9,610.9 | 8,165.9 | 592.4 | 97.11 | 14.58 |
-| COMBINADO | 1,201.2 | 721.9 | 389.3 | 1,918.8 | 1,247.6 | 56.2 | 81.06 | 23.82 |
+| Escenario | Salidas | Perdidas | Viajes compl. | Visitadas | Polin. planif. | Polin. en jornada | Polin. retornos | Néctar (ml) | Retorno % | Duración (min) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ABEJAS-BAJA | 1,201.2 | 196.8 | 976.9 | 8,037.6 | 5,222.8 | 5,102.0 | 5,078.7 | 496.3 | 97.26 | 14.58 |
+| BASE | 1,201.2 | 0.0 | 1,166.5 | 9,610.9 | 6,244.5 | 6,089.8 | 6,061.5 | 592.4 | 97.11 | 14.58 |
+| ABEJAS-ALTA | 1,201.2 | 0.0 | 1,166.5 | 9,610.9 | 6,244.5 | 6,089.8 | 6,061.5 | 592.4 | 97.11 | 14.58 |
+| FLORES-BAJA | 1,201.2 | 0.0 | 1,164.2 | 4,802.2 | 3,120.7 | 3,036.3 | 3,022.2 | 167.5 | 96.92 | 15.71 |
+| FLORES-ALTA | 1,201.2 | 0.0 | 1,166.0 | 16,822.2 | 10,933.2 | 10,658.5 | 10,607.7 | 1,322.4 | 97.07 | 14.71 |
+| DIST-CERCA | 1,201.2 | 0.0 | 1,179.3 | 9,610.9 | 6,244.5 | 6,129.2 | 6,128.5 | 599.0 | 98.18 | 10.82 |
+| DIST-LEJOS | 1,201.2 | 719.0 | 392.3 | 3,857.7 | 2,505.7 | 2,502.8 | 2,037.5 | 199.5 | 81.18 | 22.67 |
+| LAMBDA-BAJA | 602.2 | 0.0 | 585.0 | 4,814.7 | 3,128.1 | 3,051.1 | 3,037.4 | 296.8 | 97.14 | 14.58 |
+| LAMBDA-ALTA | 2,401.9 | 1.5 | 2,331.1 | 19,204.9 | 12,479.4 | 12,173.5 | 12,117.8 | 1,183.8 | 97.12 | 14.58 |
+| POLIN-BAJA | 1,201.2 | 0.0 | 1,166.5 | 9,610.9 | 3,842.4 | 3,747.1 | 3,729.6 | 592.4 | 97.11 | 14.58 |
+| POLIN-ALTA | 1,201.2 | 0.0 | 1,166.5 | 9,610.9 | 8,165.9 | 7,963.4 | 7,926.2 | 592.4 | 97.11 | 14.58 |
+| COMBINADO | 1,201.2 | 721.9 | 389.3 | 1,918.8 | 1,247.6 | 1,245.8 | 1,013.2 | 56.2 | 81.06 | 23.82 |
 
 ### 5.4 Población activa
 
 **Tabla 5.** Efecto del tamaño de la fuerza de forrajeo.
 
-| Escenario | Abejas | Polinizadas | sd | IC 95% | Salidas perdidas | % perdidas |
+| Escenario | Abejas | Polinizadas planif. | sd | IC 95% | Salidas perdidas | % perdidas |
 |---|---|---|---|---|---|---|
-| ABEJAS-BAJA | 30 | 5,223.1 | 206.5 | [5,205.0, 5,241.2] | 197.9 | 16.41 |
-| BASE | 90 | 6,251.7 | 210.5 | [6,233.3, 6,270.2] | 0.0 | 0.00 |
+| ABEJAS-BAJA | 30 | 5,222.8 | 214.1 | [5,204.0, 5,241.6] | 196.8 | 16.34 |
+| BASE | 90 | 6,244.5 | 205.2 | [6,226.5, 6,262.5] | 0.0 | 0.00 |
 | ABEJAS-ALTA | 150 | 6,244.5 | 205.2 | [6,226.5, 6,262.5] | 0.0 | 0.00 |
 
 ### 5.5 Disponibilidad floral
 
 **Tabla 6.** Efecto del nivel del parche.
 
-| Escenario | Visitadas | Polinizadas | Néctar (ml) | Duración (min) | Néctar/min |
+| Escenario | Visitadas | Polinizadas planif. | Néctar (ml) | Duración (min) | Néctar/min |
 |---|---|---|---|---|---|
 | FLORES-BAJA | 4,802.2 | 3,120.7 | 167.5 | 15.71 | 0.0092 |
-| BASE | 9,619.4 | 6,251.7 | 592.6 | 14.58 | 0.0348 |
-| FLORES-ALTA | 16,845.4 | 10,953.7 | 1,324.5 | 14.70 | 0.0772 |
+| BASE | 9,610.9 | 6,244.5 | 592.4 | 14.58 | 0.0348 |
+| FLORES-ALTA | 16,822.2 | 10,933.2 | 1,322.4 | 14.71 | 0.0772 |
 
 **Tabla 7.** Flores visitadas por viaje, separando por nivel dentro del escenario BASE.
 
 | Nivel | μ_F configurado | Media observada | Varianza observada | n viajes |
 |---|---|---|---|---|
-| baja | 4 | 3.979 | 3.948 | 14,472 |
-| media | 8 | 8.020 | 8.060 | 23,964 |
-| alta | 14 | 13.980 | 14.030 | 9,516 |
+| baja | 4 | 3.993 | 3.958 | 179,871 |
+| media | 8 | 8.004 | 7.978 | 300,510 |
+| alta | 14 | 13.989 | 14.022 | 120,227 |
 
 La media y la varianza coinciden entre sí y con `μ_F`, como exige la Poisson.
 
@@ -360,8 +381,8 @@ La media y la varianza coinciden entre sí y con `μ_F`, como exige la Poisson.
 
 | Escenario | D media (km) | Duración (min) | Viajes compl. | Retorno % | No ret. horizonte | No ret. distancia | Polin./km |
 |---|---|---|---|---|---|---|---|
-| DIST-CERCA | 0.709 | 10.82 | 1,179.6 | 98.17 | 21.8 | 0.1 | 3.666 |
-| BASE | 1.331 | 14.58 | 1,168.3 | 97.10 | 29.4 | 5.5 | 1.953 |
+| DIST-CERCA | 0.709 | 10.82 | 1,179.3 | 98.18 | 21.8 | 0.1 | 3.665 |
+| BASE | 1.330 | 14.58 | 1,166.5 | 97.11 | 29.3 | 5.5 | 1.955 |
 | DIST-LEJOS | 2.665 | 22.67 | 392.3 | 81.18 | 0.6 | 89.4 | 0.975 |
 | COMBINADO | 2.666 | 23.82 | 389.3 | 81.06 | 0.7 | 89.3 | 0.488 |
 
@@ -369,42 +390,43 @@ La media y la varianza coinciden entre sí y con `μ_F`, como exige la Poisson.
 
 | Escenario | D media (km) | Media | P50 | P90 | Solo vuelo (2D/V) |
 |---|---|---|---|---|---|
-| DIST-CERCA | 0.708 | 10.79 | 10.41 | 15.57 | 4.29 |
-| BASE | 1.328 | 14.55 | 14.06 | 21.38 | 8.05 |
-| DIST-LEJOS | 2.653 | 22.61 | 21.70 | 34.51 | 16.08 |
+| DIST-CERCA | 0.709 | 10.82 | 10.38 | 15.68 | 4.30 |
+| BASE | 1.330 | 14.58 | 14.05 | 21.49 | 8.06 |
+| DIST-LEJOS | 2.661 | 22.64 | 21.70 | 34.75 | 16.13 |
 
 ### 5.7 Intensidad de salidas
 
 **Tabla 10.** Barrido de λ con la colonia fija en 90 forrajeras.
 
-| λ (por min) | Salidas | Atendidas | Perdidas | Viajes compl. | Polinizadas | vs λ=1 |
+| λ (por min) | Salidas | Atendidas | Perdidas | Viajes compl. | Polinizadas planif. | vs λ=1 |
 |---|---|---|---|---|---|---|
 | 1.0 | 602.2 | 602.2 | 0.0 | 585.0 | 3,128.1 | 1.000x |
-| 2.0 | 1,203.2 | 1,203.2 | 0.0 | 1,168.3 | 6,251.7 | 1.999x |
-| 4.0 | 2,403.7 | 2,402.1 | 1.6 | 2,332.8 | 12,485.1 | 3.991x |
+| 2.0 | 1,201.2 | 1,201.2 | 0.0 | 1,166.5 | 6,244.5 | 1.996x |
+| 4.0 | 2,401.9 | 2,400.3 | 1.5 | 2,331.1 | 12,479.4 | 3.990x |
 
 ### 5.8 Probabilidad de polinización
 
 **Tabla 11.** Barrido de `p_pol`.
 
-| p configurado | Visitadas | Polinizadas | Tasa observada | Error relativo | Néctar (ml) |
+| p configurado | Visitadas | Polinizadas planif. | Tasa observada | Error relativo | Néctar (ml) |
 |---|---|---|---|---|---|
 | 0.40 | 9,610.9 | 3,842.4 | 0.3998 | 0.052% | 592.4 |
-| 0.65 | 9,619.4 | 6,251.7 | 0.6499 | 0.014% | 592.6 |
+| 0.65 | 9,610.9 | 6,244.5 | 0.6497 | 0.041% | 592.4 |
 | 0.85 | 9,610.9 | 8,165.9 | 0.8497 | 0.041% | 592.4 |
 
 ### 5.9 Escenario combinado
 
 **Tabla 12.** Aditividad de los efectos de disponibilidad y distancia.
 
-| Concepto | Flores polinizadas |
+| Concepto | Flores polinizadas planificadas |
 |---|---|
-| BASE | 6,251.7 |
-| FLORES-BAJA | 3,120.7 (efecto -3,131.0) |
-| DIST-LEJOS | 2,505.7 (efecto -3,746.0) |
-| Suma de efectos (predicción aditiva) | -625.3 |
+| BASE | 6,244.5 |
+| FLORES-BAJA | 3,120.7 (efecto -3,123.8) |
+| DIST-LEJOS | 2,505.7 (efecto -3,738.9) |
+| Suma de efectos (predicción aditiva) | -618.1 |
 | COMBINADO observado | 1,247.6 |
-| **Interacción** | **1,872.9** |
+| **Interacción aditiva** | **1,865.7** |
+| Predicción multiplicativa | 1,252.2 |
 
 ---
 
@@ -413,7 +435,7 @@ La media y la varianza coinciden entre sí y con `μ_F`, como exige la Poisson.
 ### 6.1 El sistema opera limitado por la demanda, no por la capacidad
 
 El barrido de intensidad de salidas muestra proporcionalidad casi exacta: la
-polinización pasa de 3,128.1 a 12,485.1 flores al multiplicar λ por cuatro, y se
+polinización pasa de 3,128.1 a 12,479.4 flores al multiplicar λ por cuatro, y se
 pierden menos de dos salidas incluso en el nivel más alto. En el mismo sentido,
 subir la colonia de 90 a 150 forrajeras no cambia el resultado.
 
@@ -422,42 +444,48 @@ la colonia soporta unos 3,703 viajes por jornada, equivalentes a un λ de 6.17
 por minuto. El máximo ensayado, 4.0, representa el 65% de esa capacidad.
 
 El régimen limitado por capacidad aparece por el otro lado de la matriz: al
-reducir la colonia a 30 forrajeras se pierden 197.9 salidas por jornada. Los dos
+reducir la colonia a 30 forrajeras se pierden 196.8 salidas por jornada. Los dos
 regímenes quedan así documentados por vías distintas.
 
-### 6.2 La distancia opera por consumo de tiempo
+### 6.2 La distancia actúa mediante tiempo y riesgo de retorno
 
-Entre DIST-CERCA y DIST-LEJOS la polinización cae de 6,245.7 a 2,505.7 flores,
+Entre DIST-CERCA y DIST-LEJOS la polinización cae de 6,244.5 a 2,505.7 flores,
 pero la polinización **por viaje** apenas cambia: un viaje lejano visita y
 poliniza casi lo mismo que uno cercano.
 
 Lo que cambia es cuántos viajes caben en la jornada. La duración media sube de
-10.82 a 22.67 minutos y los viajes completos caen de 1,179.6 a 392.3. Las
+10.82 a 22.67 minutos y los viajes completos caen de 1,179.3 a 392.3. Las
 forrajeras quedan ocupadas más tiempo y se pierden 719.0 salidas por falta de
-abeja disponible.
+abeja disponible. Parte de esa pérdida también puede originarse en forrajeras
+retiradas por la regla logística de retorno.
 
-La descomposición del no retorno respalda la interpretación: en DIST-LEJOS hay
-0.6 no retornos por horizonte contra 89.4 por la logística. La causa dominante
-es estructural y no depende de un parámetro supuesto.
+En DIST-LEJOS hay 0.6 no retornos por horizonte contra 89.4 atribuidos a la
+logística. Por tanto, el riesgo configurado es importante y depende de parámetros
+supuestos. Como la distancia modifica a la vez el tiempo de vuelo y esa
+probabilidad, estos resultados no permiten asignar una fracción causal exacta a
+cada mecanismo. Para aislarlos se necesitaría un escenario adicional que cambie
+la distancia manteniendo fija la probabilidad de retorno.
 
-### 6.3 La disponibilidad floral es el factor de mayor efecto
+### 6.3 La disponibilidad floral controla el rendimiento por viaje
 
-Entre FLORES-BAJA y FLORES-ALTA la polinización varía por un factor de 3.51 y el
-néctar por un factor de 7.91, porque el nivel mueve a la vez la cantidad de
+Entre FLORES-BAJA y FLORES-ALTA la polinización varía por un factor de 3.50 y el
+néctar por un factor de 7.89, porque el nivel mueve a la vez la cantidad de
 flores y el rendimiento de cada una.
 
 El efecto sobre la duración del viaje **no es monótono**: FLORES-BAJA produce
-viajes de 15.71 minutos y FLORES-ALTA de 14.70, con BASE en el mínimo con 14.58.
+viajes de 15.71 minutos y FLORES-ALTA de 14.71, con BASE en el mínimo con 14.58.
 Un parche pobre es lento porque cuesta encontrarlo y uno rico es lento porque
 hay más flores que trabajar; los dos efectos se cancelan cerca del nivel medio.
 
 ### 6.4 Los factores no son aditivos
 
-La suma de los efectos individuales de FLORES-BAJA y DIST-LEJOS predeciría
--625.3 flores polinizadas. El COMBINADO observado da 1,247.6, es decir 1,872.9
-respecto de esa predicción: los dos factores **se refuerzan**. El viaje largo ya
-cuesta tiempo y además rinde menos, de modo que la pérdida de eficiencia se
-multiplica en lugar de sumarse.
+La suma de los efectos individuales de FLORES-BAJA y DIST-LEJOS produciría una
+predicción imposible de -618.1 flores, lo que demuestra que la escala aditiva no
+es adecuada para un conteo limitado inferiormente por cero. En esa escala los
+efectos **se atenúan**, no se refuerzan. Una referencia multiplicativa predice
+1,252.2 flores y el COMBINADO observado da 1,247.6; bajo esa escala
+los efectos son casi independientes. La interacción debe interpretarse indicando
+si se trabaja en escala aditiva o multiplicativa.
 
 ### 6.5 La conversión de visitas está aislada del resto del modelo
 
@@ -473,7 +501,8 @@ Robustos, porque salen de la estructura matemática del modelo:
 - La saturación cuando la demanda de salidas supera la capacidad de la colonia.
 - La convergencia de la tasa de polinización al parámetro configurado.
 - La imposibilidad de completar un viaje que no cabe en el horizonte.
-- La equivalencia entre los métodos A y B.
+- Que ambos métodos A y B representan teóricamente el mismo proceso de Poisson;
+  la equivalencia empírica depende del margen práctico y de la prueba TOST.
 
 Sensibles a los parámetros declarados como supuestos:
 
@@ -567,10 +596,11 @@ qué factor pesa más sobre cada métrica.
 
 ## 8. Conclusiones
 
-1. **Una colonia de 90 forrajeras poliniza 6,251.7 flores por jornada de diez
-   horas bajo la condición de referencia**, con un intervalo de confianza del
-   95% de [6,233.3, 6,270.2] sobre 500 réplicas. La respuesta a la pregunta del
-   proyecto es una distribución, no un valor puntual.
+1. **En la condición de referencia se estiman 6,244.5 polinizaciones en los
+   viajes iniciados durante una jornada de diez horas**, con un intervalo de
+   confianza del 95% de [6,226.5, 6,262.5] sobre 500 réplicas. De ese total
+   planificado, 6,089.8 corresponden a viajes que caben en la jornada y 6,061.5
+   a viajes que retornan.
 
 2. **En la configuración estudiada el sistema está limitado por la demanda y no
    por la capacidad de la colonia.** La polinización escala de forma
@@ -578,24 +608,28 @@ qué factor pesa más sobre cada métrica.
    régimen limitado por capacidad solo aparece al reducir la colonia a 30
    forrajeras.
 
-3. **La disponibilidad floral es el factor de mayor efecto individual**, con una
-   variación de 3.51 veces en polinización y 7.91 veces en néctar entre sus
-   niveles extremos.
+3. **La disponibilidad floral controla la productividad de cada viaje**, con una
+   variación de 3.50 veces en polinización y 7.89 veces en néctar entre sus
+   niveles extremos. La intensidad de salidas controla el volumen de actividad
+   y duplicarla casi duplica el resultado mientras la colonia no se satura.
 
-4. **La distancia reduce la polinización por consumo de tiempo y no por menor
-   rendimiento del viaje**, como muestra que la polinización por viaje se
-   mantenga mientras los viajes completos caen de 1,179.6 a 392.3.
+4. **La distancia reduce la polinización mediante dos mecanismos simultáneos:**
+   aumenta la duración y reduce la probabilidad logística de retorno. La
+   polinización por viaje se mantiene, pero el diseño actual no permite separar
+   causalmente cuánto corresponde a cada mecanismo.
 
-5. **Los factores no son aditivos**: el escenario COMBINADO produce 1,247.6
-   flores frente a las -625.3 que predeciría sumar los efectos por separado.
+5. **La escala aditiva no es apropiada para combinar estas reducciones:** genera
+   una predicción negativa imposible. En escala multiplicativa, la predicción
+   de 1,252.2 flores casi coincide con las 1,247.6 observadas.
 
 6. **La conversión de visitas en polinizaciones está correctamente aislada**:
    con p en 0.40, 0.65 y 0.85 la tasa observada lo reproduce con error menor al
    0.06% sin alterar las demás variables.
 
-7. **Los dos métodos de generación del proceso de salidas son intercambiables**,
-   con una diferencia de medias de -0.766% y p = 0.2889. La elección entre ellos
-   debe basarse en costo de implementación y no en el resultado.
+7. **Los dos métodos generan resultados cercanos y se ajustan al mismo proceso
+   teórico.** La diferencia observada fue -0.600%. Sin embargo, el intervalo
+   TOST del 90% [-12.838, -1.502] rebasa por poco el margen práctico de ±12
+   salidas, por lo que la equivalencia dentro del 1% no quedó demostrada.
 
 ---
 
@@ -605,15 +639,18 @@ qué factor pesa más sobre cada métrica.
   mostraría la transición entre los dos regímenes en una sola figura, que sería
   la evidencia más directa para la conclusión 2.
 - **Calibrar primero la disponibilidad floral** si se consiguen datos de campo,
-  porque es el factor de mayor efecto y el que concentra más supuestos.
+  porque determina la productividad por viaje y concentra varios supuestos.
 - **Reportar el no retorno como "no regresó dentro de la jornada"** y no como
   mortalidad, que es lo que el modelo efectivamente representa.
 - **Conservar los registros por viaje.** Todas las figuras se regeneran desde
-  `results/campana/` sin volver a simular, lo que permite auditar cualquier
+  `results/runs/` sin volver a simular, lo que permite auditar cualquier
   gráfica del informe.
 - **Documentar la independencia entre distancia y disponibilidad floral** como
   limitación: en la realidad es plausible que estén correlacionadas, y el modelo
   las trata por separado.
+- **Repetir la campaña con semillas dispersas** si el tiempo de entrega lo
+  permite. La campaña actual usa semillas consecutivas; esto no cambia el código
+  del modelo, pero limita la interpretación de los intervalos entre réplicas.
 
 ---
 
@@ -623,11 +660,12 @@ Toda cifra de este documento proviene de ejecutar el código. Para reproducir la
 campaña completa:
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
+python -m venv .venv
+# Activar el entorno según el sistema operativo (ver README.md).
 pip install -r requirements.txt
 
-PYTHONPATH=src python scripts/validate_generators.py --n 20000
-PYTHONPATH=src python scripts/run_experiment.py --campana --n-replicas 500
+python scripts/validate_generators.py --n 20000 --replicas 200
+python scripts/run_experiment.py --campana --n-replicas 500
 
 cd notebooks && jupyter lab     # ejecutar 02 y 03
 ```
@@ -637,11 +675,13 @@ cd notebooks && jupyter lab     # ejecutar 02 y 03
 | Especificación del modelo | `docs/model.md` |
 | Decisiones de diseño | `docs/decisions.md` |
 | Supuestos declarados | `docs/assumptions.md` |
-| Resultados por réplica | `results/campana/<escenario>/` |
+| Resultados por réplica | `results/runs/` |
 | Tablas consolidadas | `results/tables/` |
 | Figuras | `results/figures/` |
 | Análisis reproducible | `notebooks/02_scenario_analysis.ipynb` |
 | Generación de figuras | `notebooks/03_final_figures.ipynb` |
 
-La simulación es reproducible bit a bit: dos ejecuciones con la misma
-configuración y semilla producen archivos idénticos.
+Los resultados numéricos son reproducibles al usar la misma versión del código,
+la misma configuración, dependencias equivalentes y la misma semilla. Los
+archivos de metadatos incluyen una fecha de generación, por lo que no se espera
+que sus bytes sean idénticos entre ejecuciones.

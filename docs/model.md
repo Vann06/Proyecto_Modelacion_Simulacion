@@ -353,4 +353,19 @@ El orden importa, porque hay dependencias:
 - `D > 0`, `T_viaje > 0`
 - ningún viaje inicia después de `day_minutes`
 - `run_id`, `bee_id`, `trip_id` únicos dentro de cada réplica
-- misma semilla y misma configuración producen salida idéntica bit a bit
+- misma semilla, configuración y entorno compatible producen los mismos
+  resultados numéricos
+
+## Alcance de la métrica de polinización
+
+El resumen conserva tres definiciones para evitar confundir viajes iniciados con
+actividad completada dentro del horizonte:
+
+- `flores_polinizadas`: resultado planificado de todos los viajes iniciados;
+- `flores_polinizadas_viajes_que_caben`: viajes cuya duración completa cabe en
+  la jornada, aunque la abeja falle el retorno probabilístico;
+- `flores_polinizadas_viajes_completos`: únicamente viajes con retorno exitoso.
+
+El primer indicador se mantiene por compatibilidad con las tablas existentes.
+Cuando se afirme estrictamente "durante la jornada", debe usarse el segundo o
+explicarse de forma explícita el alcance del indicador.

@@ -11,10 +11,15 @@ comparen sobre la misma suerte (docs/plan_implementacion.md, F6).
 """
 
 import argparse
+import copy
+from datetime import datetime, timezone
 import json
 import sys
 import time
+import warnings
 from pathlib import Path
+
+import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
@@ -31,7 +36,7 @@ def parsear_argumentos(argv=None):
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[1])
     grupo = parser.add_mutually_exclusive_group(required=True)
     grupo.add_argument("--escenario", choices=sorted(ESCENARIOS), help="un solo escenario")
-    grupo.add_argument("--campana", action="store_true", help="los ocho escenarios")
+    grupo.add_argument("--campana", action="store_true", help="los doce escenarios")
     parser.add_argument("--n-replicas", type=int, required=True)
     parser.add_argument("--out", default="results/runs", help="carpeta de salida")
     parser.add_argument("--semillas", default=None,
@@ -50,12 +55,25 @@ def resolver_semillas(ruta, n_minimo, seed_base):
         with open(ruta, "r", encoding="utf-8") as f:
             semillas = json.load(f)["semillas"]
         if len(semillas) >= n_minimo:
+            usadas = semillas[:n_minimo]
+            if len(usadas) > 1 and max(usadas) - min(usadas) < n_minimo * 100:
+                warnings.warn(
+                    "el archivo existente usa semillas muy cercanas; se conserva "
+                    "para no invalidar corridas en curso, pero conviene generar una "
+                    "campana nueva con semillas dispersas",
+                    RuntimeWarning,
+                )
             return semillas
-        # el archivo existe pero se quedo corto: se extiende sin tocar las ya usadas
-        faltantes = n_minimo - len(semillas)
-        semillas = semillas + [seed_base + len(semillas) + i for i in range(faltantes)]
+        # El archivo existe pero se quedo corto: se extiende sin tocar las ya usadas.
+        generador = np.random.default_rng(seed_base)
+        candidatas = generador.integers(0, 2 ** 31, size=n_minimo).tolist()
+        semillas = semillas + candidatas[len(semillas):]
     else:
-        semillas = [seed_base + i for i in range(n_minimo)]
+        # Evita flujos correlacionados al inicializar repetidamente un LCG con
+        # semillas consecutivas.
+        semillas = np.random.default_rng(seed_base).integers(
+            0, 2 ** 31, size=n_minimo
+        ).tolist()
 
     ruta.parent.mkdir(parents=True, exist_ok=True)
     with open(ruta, "w", encoding="utf-8") as f:
@@ -74,10 +92,24 @@ def _correr_y_guardar(nombre, n_replicas, semillas, carpeta_out):
     # pasaba de 0.25 s a 1.26 s por replica al llegar a 166 archivos.
     primero = siguiente_run_id(carpeta_out)
     for i in range(n_replicas):
-        rng = crear_fuente(fuente, semillas[i])
-        viajes = simular_jornada(cfg, rng, run_id=i)
-        resumen = resumir(viajes, viajes.colonia, cfg)
-        guardar_corrida(viajes, cfg, resumen, carpeta_out, run_numero=primero + i)
+        semilla = int(semillas[i])
+        cfg_corrida = copy.deepcopy(cfg)
+        cfg_corrida["simulation"]["seed"] = semilla
+        cfg_corrida["simulation"]["replications"] = int(n_replicas)
+        cfg_corrida["_run_metadata"] = {
+            "scenario": nombre,
+            "replica_index": i,
+            "replications": int(n_replicas),
+            "seed": semilla,
+            "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        }
+        rng = crear_fuente(fuente, semilla)
+        viajes = simular_jornada(cfg_corrida, rng, run_id=i)
+        resumen = resumir(viajes, viajes.colonia, cfg_corrida)
+        guardar_corrida(
+            viajes, cfg_corrida, resumen, carpeta_out,
+            run_numero=primero + i,
+        )
 
 
 def main(argv=None) -> int:
