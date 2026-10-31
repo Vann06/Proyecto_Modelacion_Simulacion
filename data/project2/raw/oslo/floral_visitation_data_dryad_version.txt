@@ -1,0 +1,1298 @@
+trap_number	inventory_date	observer1	observer2	observation_start	observation_end	temperature_C	sky_cover	wind	rain	additional_comments	pollinator_species_latin	sex	individuals_flying	individuals_sitting	plant_species_latin
+101	29.07.2017	SD	N/A	11:32	11:42	15	80	N/A	some rain	N/A	Apis mellifera	N/A	1	0	N/A
+101	19.07.2017	AK	N/A	10:32	10:49	16.5	80	windy	N/A	N/A	Apis mellifera	N/A	0	5	Bunias orientalis
+101	21.07.2017	AK	N/A	11:10	11:22	16	100	no wind	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+101	21.07.2017	AK	N/A	11:10	11:22	16	100	no wind	N/A	N/A	Apis mellifera	N/A	0	1	Rubus idaeus
+101	29.07.2017	SD	N/A	11:32	11:42	15	80	N/A	some rain	N/A	Bombus hypnorum	N/A	0	2	Chamerion angustifolium
+101	19.07.2017	AK	N/A	10:32	10:49	16.5	80	windy	N/A	N/A	Bombus hypnorum	N/A	0	1	Chamerion angustifolium
+101	21.07.2017	AK	N/A	11:10	11:22	16	100	no wind	N/A	N/A	Bombus hypnorum	N/A	0	1	Rubus idaeus
+101	21.07.2017	AK	N/A	11:10	11:22	16	100	no wind	N/A	N/A	Bombus hypnorum	N/A	0	1	Bunias orientalis
+101	29.07.2017	SD	N/A	11:32	11:42	15	80	N/A	some rain	N/A	Bombus lapidarius	N/A	0	1	Lotus corniculatus
+101	19.07.2017	AK	N/A	10:32	10:49	16.5	80	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Lathyrus pratensis
+101	29.07.2017	SD	N/A	11:32	11:42	15	80	N/A	some rain	N/A	Bombus lucorum Coll.	N/A	0	1	Chamerion angustifolium
+101	19.07.2017	AK	N/A	10:32	10:49	16.5	80	windy	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Bunias orientalis
+101	19.07.2017	AK	N/A	10:32	10:49	16.5	80	windy	N/A	N/A	Bombus pascuorum	N/A	0	2	Chamerion angustifolium
+101	31.07.2017	SH	N/A	11:33	11:40	21	80	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Leucanthemum vulgare
+101	29.07.2017	SD	N/A	11:32	11:42	15	80	N/A	some rain	N/A	Bombus pratorum	N/A	0	2	Chamerion angustifolium
+101	29.07.2017	SD	N/A	11:32	11:42	15	80	N/A	some rain	N/A	Bombus pratorum	N/A	0	3	Chamerion angustifolium
+101	19.07.2017	AK	N/A	10:32	10:49	16.5	80	windy	N/A	N/A	Bombus pratorum	N/A	0	2	Chamerion angustifolium
+101	29.07.2017	SD	N/A	11:32	11:42	15	80	N/A	some rain	N/A	Bombus terrestris	N/A	1	0	N/A
+101	29.07.2017	SD	N/A	11:32	11:42	15	80	N/A	some rain	N/A	Syrphidae	N/A	3	0	N/A
+101	29.07.2017	SD	N/A	11:32	11:42	15	80	N/A	some rain	N/A	Syrphidae	N/A	0	2	Aegopodium podagraria
+101	19.07.2017	AK	N/A	10:32	10:49	16.5	80	windy	N/A	N/A	Syrphidae	N/A	0	1	Chamerion angustifolium
+101	19.07.2017	AK	N/A	10:32	10:49	16.5	80	windy	N/A	N/A	Syrphidae	N/A	0	1	Taraxacum
+101	19.07.2017	AK	N/A	10:32	10:49	16.5	80	windy	N/A	N/A	Syrphidae	N/A	0	1	Leucanthemum vulgare
+101	19.07.2017	AK	N/A	10:32	10:49	16.5	80	windy	N/A	N/A	Syrphidae	N/A	0	4	Bunias orientalis
+101	19.07.2017	AK	N/A	10:32	10:49	16.5	80	windy	N/A	N/A	Syrphidae	N/A	0	3	Achillea millefolium
+101	31.07.2017	SH	N/A	11:33	11:40	21	80	N/A	N/A	N/A	Syrphidae	N/A	0	2	Anthriscus sylvestris
+102	19.07.2017	JS	N/A	14:10	14:30	17	75	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Cirsium arvense
+102	19.07.2017	JS	N/A	14:10	14:30	17	75	N/A	N/A	N/A	Apis mellifera	N/A	13	0	N/A
+102	19.07.2017	JS	N/A	14:10	14:30	17	75	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Trifolium repens
+102	19.07.2017	JS	N/A	14:10	14:30	17	75	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Galium album
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Chamerion angustifolium
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Melilotus albus
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Arctium lappa
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Apis mellifera	N/A	0	8	Cirsium arvense
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Trifolium pratense
+102	19.07.2017	JS	N/A	14:10	14:30	17	75	N/A	N/A	N/A	Bombus hypnorum	N/A	2	0	N/A
+102	19.07.2017	JS	N/A	14:10	14:30	17	75	N/A	N/A	N/A	Bombus hypnorum	N/A	0	2	Trifolium pratense
+102	19.07.2017	JS	N/A	14:10	14:30	17	75	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium pratense
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium repens
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	6	Trifolium pratense
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+102	31.07.2017	SE	N/A	14:15	14:30	16	80	windy	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium pratense
+102	31.07.2017	SE	N/A	14:15	14:30	16	80	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Hylotelephium maximum
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Bombus pascuorum	N/A	0	8	Trifolium pratense
+102	29.07.2017	SE	N/A	13:27	13:50	14	100	windy	some rain	N/A	Bombus ruderarius	N/A	0	1	Linaria vulgaris
+102	29.07.2017	SE	N/A	13:27	13:50	14	100	windy	some rain	N/A	Bombus ruderarius	N/A	0	1	Trifolium pratense
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+102	31.07.2017	SE	N/A	14:15	14:30	16	80	windy	N/A	N/A	Bombus sp.	N/A	3	0	N/A
+102	29.07.2017	SE	N/A	13:27	13:50	14	100	windy	some rain	N/A	Bombus sylvarum	N/A	0	1	Trifolium pratense
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Bombus sylvarum	N/A	0	8	Trifolium pratense
+102	19.07.2017	JS	N/A	14:10	14:30	17	75	N/A	N/A	N/A	Lepidoptera	N/A	12	0	N/A
+102	19.07.2017	JS	N/A	14:10	14:30	17	75	N/A	N/A	N/A	Lepidoptera	N/A	2	0	N/A
+102	19.07.2017	JS	N/A	14:10	14:30	17	75	N/A	N/A	N/A	Syrphidae	N/A	0	1	Trifolium pratense
+102	19.07.2017	JS	N/A	14:10	14:30	17	75	N/A	N/A	N/A	Syrphidae	N/A	0	4	Cirsium arvense
+102	21.07.2017	JS	N/A	14:13	14:24	20	90	N/A	N/A	N/A	Syrphidae	N/A	0	1	Trifolium repens
+103	19.07.2017	AK	N/A	11:38	11:49	16.5	95	N/A	N/A	construction area, few open flowers	Apis mellifera	N/A	0	1	Lathyrus pratensis
+103	19.07.2017	AK	N/A	11:38	11:49	16.5	95	N/A	N/A	construction area, few open flowers. Collected	Bombus hypnorum	male	0	1	Chamerion angustifolium
+103	21.07.2017	AK	N/A	11:46	11:58	19	90	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+105	18.07.2017	SD	N/A	16:48	N/A	21	70	N/A	N/A	N/A	Apis mellifera	N/A	0	25	Melilotus albus
+105	18.07.2017	SD	N/A	16:48	N/A	21	70	N/A	N/A	N/A	Apis mellifera	N/A	0	8	Melilotus officinalis
+105	20.07.2017	SD	N/A	15:13	15:20	24	10	N/A	N/A	N/A	Apis mellifera	N/A	0	25	Melilotus albus
+105	20.07.2017	SD	N/A	15:13	15:20	24	10	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Melilotus officinalis
+105	31.07.2017	SH	N/A	10:29	10:42	17	30	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Melilotus albus
+105	18.07.2017	SD	N/A	16:48	N/A	21	70	N/A	N/A	N/A	Bombus lapidarius	N/A	0	15	Melilotus albus
+105	18.07.2017	SD	N/A	16:48	N/A	21	70	N/A	N/A	N/A	Bombus lapidarius	N/A	0	16	Melilotus officinalis
+105	20.07.2017	SD	N/A	15:13	15:20	24	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	7	Melilotus albus
+105	20.07.2017	SD	N/A	15:13	15:20	24	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	12	Melilotus officinalis
+105	31.07.2017	SH	N/A	10:29	10:42	17	30	N/A	N/A	N/A	Bombus lapidarius	N/A	1	0	N/A
+105	31.07.2017	SH	N/A	10:29	10:42	17	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Melilotus albus
+105	31.07.2017	SH	N/A	10:29	10:42	17	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Melilotus officinalis
+105	31.07.2017	SH	N/A	10:29	10:42	17	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Hieracium
+105	31.07.2017	SH	N/A	10:29	10:42	17	30	N/A	N/A	collected	Bombus lapidarius	male	0	1	Cirsium arvense
+105	18.07.2017	SD	N/A	16:48	N/A	21	70	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	8	Melilotus officinalis
+105	20.07.2017	SD	N/A	15:13	15:20	24	10	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Melilotus albus
+105	18.07.2017	SD	N/A	16:48	N/A	21	70	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+105	31.07.2017	SH	N/A	10:29	10:42	17	30	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	missing
+105	18.07.2017	SD	N/A	16:48	N/A	21	70	N/A	N/A	collected	Colletes daviesanus	female	0	1	Tripleurospermum inodorum
+105	20.07.2017	SD	N/A	15:13	15:20	24	10	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Tripleurospermum inodorum
+105	20.07.2017	SD	N/A	15:13	15:20	24	10	N/A	N/A	N/A	Syrphidae	N/A	0	1	Tripleurospermum inodorum
+105	31.07.2017	SH	N/A	10:29	10:42	17	30	N/A	N/A	N/A	Syrphidae	N/A	0	1	Tripleurospermum inodorum
+106	21.07.2017	JS	IF	12:45	12:52	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium repens
+106	19.07.2017	IF	N/A	12:42	12:53	17	85	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Trifolium repens
+106	21.07.2017	JS	IF	12:45	12:52	19	100	N/A	N/A	N/A	Bombus hortorum	N/A	0	1	Trifolium pratense
+106	21.07.2017	JS	IF	12:45	12:52	19	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Campanula rapunculoides
+106	19.07.2017	IF	N/A	12:42	12:53	17	85	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium pratense
+106	19.07.2017	IF	N/A	12:42	12:53	17	85	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Campanula rapunculoides
+106	29.07.2017	SD	N/A	10:28	10:43	18	70	N/A	N/A	N/A	Bombus lapidarius	N/A	1	0	N/A
+106	31.07.2017	AK	N/A	10:06	10:13	17	20	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Campanula rapunculoides
+106	21.07.2017	JS	IF	12:45	12:52	19	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Campanula rapunculoides
+106	29.07.2017	SD	N/A	10:28	10:43	18	70	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+106	21.07.2017	JS	IF	12:45	12:52	19	100	N/A	N/A	N/A	Bombus soroeensis	N/A	0	3	Campanula rapunculoides
+106	19.07.2017	IF	N/A	12:42	12:53	17	85	N/A	N/A	N/A	Bombus soroeensis	N/A	0	1	Campanula rapunculoides
+106	29.07.2017	SD	N/A	10:28	10:43	18	70	N/A	N/A	N/A	Bombus soroeensis	N/A	0	1	Campanula rapunculoides
+106	29.07.2017	SD	N/A	10:28	10:43	18	70	N/A	N/A	collected	Bombus soroeensis	male	0	1	Campanula trachelium
+106	19.07.2017	IF	N/A	12:42	12:53	17	85	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+106	19.07.2017	IF	N/A	12:42	12:53	17	85	N/A	N/A	N/A	Bombus sp.	N/A	0	1	Campanula rapunculoides
+106	21.07.2017	JS	IF	12:45	12:52	19	100	N/A	N/A	collected	Melitta haemorrhoidalis	N/A	1	0	N/A
+106	21.07.2017	JS	IF	12:45	12:52	19	100	N/A	N/A	N/A	Syrphidae	N/A	5	0	N/A
+106	19.07.2017	IF	N/A	12:42	12:53	17	85	N/A	N/A	N/A	Syrphidae	N/A	2	0	N/A
+107	31.07.2017	SE	N/A	13:46	13:54	17	60	N/A	N/A	N/A	Apis mellifera	N/A	0	2	garden plant
+107	31.07.2017	SE	N/A	13:46	13:54	17	60	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Rosa rugosa
+107	21.07.2017	SD	IF	15:30	15:35	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	garden plant
+107	31.07.2017	SE	N/A	13:46	13:54	17	60	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Rosa rugosa
+107	29.07.2017	SE	N/A	12:39	N/A	15	80	N/A	wet vegetation	N/A	Bombus sp.	N/A	1	0	N/A
+107	23.07.2017	SD	N/A	15:18	15:24	26	50	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+108	21.07.2017	IF	AK	14:57	15:01	20	90	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+108	19.07.2017	AK	N/A	15:11	15:24	21	20	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Trifolium repens
+108	29.07.2017	SE	N/A	11:34	11:40	17	70	N/A	some rain	N/A	Bombus lapidarius	N/A	0	1	Prunella vulgaris
+108	29.07.2017	SE	N/A	11:34	11:40	17	70	N/A	some rain	N/A	Bombus lapidarius	N/A	0	1	Trifolium repens
+108	19.07.2017	AK	N/A	15:11	15:24	21	20	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium repens
+108	21.07.2017	IF	AK	14:57	15:01	20	90	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium repens
+108	19.07.2017	AK	N/A	15:11	15:24	21	20	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium repens
+108	31.07.2017	SE	N/A	12:20	12:30	18	60	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+109	21.07.2017	IF	JS	16:04	16:16	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Cirsium
+109	19.07.2017	IF	JS	15:50	15:59	21	10	N/A	N/A	N/A	Apis mellifera	N/A	0	6	Trifolium repens
+109	19.07.2017	IF	JS	15:50	15:59	21	10	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Cirsium arvense
+109	21.07.2017	IF	JS	16:04	16:16	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Stellaria graminea
+109	21.07.2017	IF	JS	16:04	16:16	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Trifolium repens
+109	19.07.2017	IF	JS	15:50	15:59	21	10	N/A	N/A	N/A	Bombus humilis	male	0	1	Trifolium repens
+109	19.07.2017	IF	JS	15:50	15:59	21	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium repens
+109	21.07.2017	IF	JS	16:04	16:16	19	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Campanula latifolia
+109	19.07.2017	IF	JS	15:50	15:59	21	10	N/A	N/A	N/A	Bombus ruderarius	N/A	1	0	N/A
+109	19.07.2017	IF	JS	15:50	15:59	21	10	N/A	N/A	N/A	Bombus terrestris	N/A	0	1	Trifolium repens
+109	19.07.2017	IF	JS	15:50	15:59	21	10	N/A	N/A	N/A	Lepidoptera	N/A	14	0	N/A
+109	21.07.2017	IF	JS	16:04	16:16	19	100	N/A	N/A	N/A	Lepidoptera	N/A	1	0	N/A
+109	19.07.2017	IF	JS	15:50	15:59	21	10	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Arctium lappa
+109	19.07.2017	IF	JS	15:50	15:59	21	10	N/A	N/A	N/A	Syrphidae	N/A	4	0	N/A
+109	21.07.2017	IF	JS	16:04	16:16	19	100	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+109	31.07.2017	SE	IK	11:15	11:23	18	40	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+109	29.07.2017	SE	N/A	10:24	10:30	15	60	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+111	20.07.2017	JS	N/A	11:43	11:53	18	0	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium repens
+111	21.07.2017	SD	N/A	10:39	10:43	20	40	N/A	N/A	grass interspersed with clover on transect	Bombus lapidarius	N/A	0	1	garden plant
+111	20.07.2017	JS	N/A	11:43	11:53	18	0	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Lathyrus pratensis
+111	20.07.2017	JS	N/A	11:43	11:53	18	0	N/A	N/A	N/A	Bombus lapidarius	N/A	1	0	N/A
+111	20.07.2017	JS	N/A	11:43	11:53	18	0	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium repens
+111	21.07.2017	SD	N/A	10:39	10:43	20	40	N/A	N/A	grass interspersed with clover on transect	Bombus lucorum Coll.	N/A	0	1	garden plant
+111	20.07.2017	JS	N/A	11:43	11:53	18	0	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	garden plant
+111	21.07.2017	SD	N/A	10:39	10:43	20	40	N/A	N/A	grass interspersed with clover on transect	Bombus terrestris	N/A	0	3	garden plant
+111	20.07.2017	JS	N/A	11:43	11:53	18	0	N/A	N/A	N/A	Syrphidae	N/A	0	1	Lathyrus pratensis
+112	20.07.2017	SD	N/A	10:39	N/A	18	0	N/A	N/A	60m transect along forest edge	Bombus soroeensis	N/A	0	1	Campanula latifolia
+112	21.07.2017	SD	SE	10:12	10:17	20	80	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+113	22.07.2017	SD	N/A	12:07	12:20	19	40	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium repens
+113	22.07.2017	SD	N/A	12:07	12:20	19	40	N/A	N/A	N/A	Apis mellifera	N/A	0	8	Filipendula ulmaria
+113	24.07.2017	AK	N/A	16:52	17:06	19	80	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Hypericum
+113	24.07.2017	AK	N/A	16:52	17:06	19	80	N/A	N/A	N/A	Bombus hypnorum	N/A	0	1	Filipendula ulmaria
+113	22.07.2017	SD	N/A	12:07	12:20	19	40	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Filipendula ulmaria
+113	24.07.2017	AK	N/A	16:52	17:06	19	80	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Trifolium repens
+113	22.07.2017	SD	N/A	12:07	12:20	19	40	N/A	N/A	N/A	Bombus pascuorum	N/A	0	5	Vicia cracca
+113	22.07.2017	SD	N/A	12:07	12:20	19	40	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Epilobium montanum
+113	22.07.2017	SD	N/A	12:07	12:20	19	40	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Trifolium pratense
+113	24.07.2017	AK	N/A	16:52	17:06	19	80	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Vicia cracca
+113	24.07.2017	AK	N/A	16:52	17:06	19	80	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Trifolium repens
+113	24.07.2017	AK	N/A	16:52	17:06	19	80	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+113	24.07.2017	AK	N/A	16:52	17:06	19	80	N/A	N/A	N/A	Bombus pratorum	N/A	1	0	N/A
+114	23.07.2017	SD	N/A	12:13	12:20	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	38	Chamerion angustifolium
+114	25.07.2017	AK	N/A	11:11	11:23	19	40	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+114	25.07.2017	AK	N/A	11:11	11:23	19	40	N/A	N/A	N/A	Apis mellifera	N/A	0	27	Chamerion angustifolium
+114	25.07.2017	AK	N/A	11:11	11:23	19	40	N/A	N/A	N/A	Bombus hortorum	N/A	0	2	Chamerion angustifolium
+114	23.07.2017	SD	N/A	12:13	12:20	19	30	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Chamerion angustifolium
+114	25.07.2017	AK	N/A	11:11	11:23	19	40	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Chamerion angustifolium
+114	23.07.2017	SD	N/A	12:13	12:20	19	30	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Chamerion angustifolium
+114	23.07.2017	SD	N/A	12:13	12:20	19	30	N/A	N/A	N/A	Syrphidae	N/A	0	1	Chamerion angustifolium
+115	10.08.2017	SH	SE	13:05	13:12	21	40	no wind	N/A	N/A	Bombus lapidarius	N/A	0	1	garden plant
+115	10.08.2017	SH	SE	13:05	13:12	21	40	no wind	N/A	N/A	Bombus lapidarius	N/A	0	2	Arctium lappa
+115	10.08.2017	SH	SE	13:05	13:12	21	40	no wind	N/A	N/A	Bombus ruderarius	N/A	0	2	garden plant
+115	10.08.2017	SH	SE	13:05	13:12	21	40	no wind	N/A	N/A	Bombus ruderarius	N/A	0	1	Hieracium umbellatum
+115	10.08.2017	SH	SE	13:05	13:12	21	40	no wind	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	garden plant
+115	27.07.2017	AK	N/A	14:36	14:50	19	100	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+115	27.07.2017	AK	N/A	14:36	14:50	19	100	N/A	N/A	N/A	Syrphidae	N/A	0	1	Alliaria petiolata
+116	25.07.2017	AK	N/A	13:32	13:44	21	50	N/A	N/A	N/A	Bombus lapidarius	N/A	1	0	N/A
+116	08.08.2017	SE	SH	16:55	N/A	19	40	no wind	N/A	mowed approximately one week previously. Dead Bombus lapidarius observed in the area	Bombus pratorum	N/A	0	2	Trifolium repens
+116	25.07.2017	AK	N/A	13:32	13:44	21	50	N/A	N/A	N/A	Vespidae	N/A	1	0	N/A
+117	25.07.2017	AK	N/A	14:20	14:32	23	50	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Chamerion angustifolium
+117	25.07.2017	AK	N/A	14:20	14:32	23	50	N/A	N/A	N/A	Apis mellifera	N/A	0	6	Crepis biennis
+117	08.08.2017	SH	SE	13:16	N/A	18	50	no wind	N/A	most plants in transect are finished blooming	Bombus lapidarius	N/A	0	1	Chamerion angustifolium
+117	25.07.2017	AK	N/A	14:20	14:32	23	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Chamerion angustifolium
+117	25.07.2017	AK	N/A	14:20	14:32	23	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+117	08.08.2017	SH	SE	13:16	N/A	18	50	no wind	N/A	most plants in transect are finished blooming	Bombus sp.	N/A	1	0	N/A
+117	08.08.2017	SH	SE	13:16	N/A	18	50	no wind	N/A	most plants in transect are finished blooming	Syrphidae	N/A	2	0	N/A
+118	25.07.2017	AK	N/A	15:11	15:26	22	50	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Campanula rapunculoides
+118	25.07.2017	AK	N/A	15:11	15:26	22	50	N/A	N/A	N/A	Bombus hortorum	N/A	0	1	Campanula rapunculoides
+118	08.08.2017	SE	SH	12:51	13:02	19	50	no wind	N/A	N/A	Bombus lapidarius	N/A	0	1	Hieracium
+118	25.07.2017	AK	N/A	15:11	15:26	22	50	N/A	N/A	N/A	Syrphidae	N/A	0	2	Achillea millefolium
+118	25.07.2017	AK	N/A	15:11	15:26	22	50	N/A	N/A	N/A	Vespidae	N/A	1	0	N/A
+119	27.07.2017	AK	N/A	16:17	16:30	12.5	100	N/A	some rain	very wet, few pollinators flying, most are sitting	Bombus hortorum	N/A	0	1	Centaurea jacea
+119	10.08.2017	SH	SE	11:10	11:30	19	15	no wind	wet vegetation	N/A	Bombus lapidarius	N/A	0	2	Succisa pratensis
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Bombus lapidarius	N/A	0	1	Succisa pratensis
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Bombus lapidarius	N/A	0	5	Succisa pratensis
+119	10.08.2017	SH	SE	11:10	11:30	19	15	no wind	wet vegetation	N/A	Bombus lucorum Coll.	N/A	1	0	N/A
+119	10.08.2017	SH	SE	11:10	11:30	19	15	no wind	wet vegetation	N/A	Bombus lucorum Coll.	N/A	0	3	Succisa pratensis
+119	10.08.2017	SH	SE	11:10	11:30	19	15	no wind	wet vegetation	N/A	Bombus lucorum Coll.	N/A	0	1	Knautia arvensis
+119	10.08.2017	SH	SE	11:10	11:30	19	15	no wind	wet vegetation	N/A	Bombus pascuorum	N/A	0	1	Succisa pratensis
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Bombus pascuorum	N/A	0	1	Tripleurospermum inodorum
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Bombus pascuorum	N/A	0	1	Succisa pratensis
+119	10.08.2017	SH	SE	11:10	11:30	19	15	no wind	wet vegetation	N/A	Bombus pratorum	N/A	0	3	Succisa pratensis
+119	27.07.2017	AK	N/A	16:17	16:30	12.5	100	N/A	some rain	very wet, few pollinators flying, most are sitting	Bombus pratorum	N/A	0	1	Centaurea jacea
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Bombus ruderarius	N/A	1	0	N/A
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Bombus ruderarius	N/A	0	1	Succisa pratensis
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Bombus sylvarum	N/A	0	1	Succisa pratensis
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Bombus sylvarum	N/A	0	2	Succisa pratensis
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Bombus terrestris	N/A	0	1	Succisa pratensis
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Bombus terrestris	N/A	0	1	Succisa pratensis
+119	10.08.2017	SH	SE	11:10	11:30	19	15	no wind	wet vegetation	N/A	Syrphidae	N/A	0	4	Succisa pratensis
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Syrphidae	N/A	2	0	N/A
+119	08.08.2017	SH	SE	11:28	11:48	17	20	no wind	N/A	N/A	Syrphidae	N/A	0	2	Succisa pratensis
+120	26.07.2017	AK	N/A	16:22	16:31	22	100	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Achillea millefolium
+120	28.07.2017	SH	N/A	17:50	18:00	20	10	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium repens
+120	30.07.2017	SE	N/A	14:25	14:38	17	100	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Trifolium repens
+120	30.07.2017	SE	N/A	14:25	14:38	17	100	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Achillea millefolium
+120	26.07.2017	AK	N/A	16:22	16:31	22	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Achillea millefolium
+120	28.07.2017	SH	N/A	17:50	18:00	20	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Achillea millefolium
+120	30.07.2017	SE	N/A	14:25	14:38	17	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Trifolium repens
+120	30.07.2017	SE	N/A	14:25	14:38	17	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Achillea millefolium
+120	28.07.2017	SH	N/A	17:50	18:00	20	10	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+120	28.07.2017	SH	N/A	17:50	18:00	20	10	N/A	N/A	N/A	Syrphidae	N/A	0	1	Achillea millefolium
+121	26.07.2017	AK	N/A	10:26	10:41	20	90	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Melampyrum pratense
+121	30.07.2017	SE	N/A	11:05	11:27	18	80	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Melampyrum pratense
+121	26.07.2017	AK	N/A	10:26	10:41	20	90	N/A	N/A	N/A	Bombus pratorum	N/A	0	4	Vaccinium album
+121	30.07.2017	SE	N/A	11:05	11:27	18	80	N/A	N/A	N/A	Bombus pratorum	N/A	0	2	Vaccinium album
+121	30.07.2017	SE	N/A	11:05	11:27	18	80	N/A	N/A	N/A	Bombus ruderarius	N/A	1	0	N/A
+121	30.07.2017	SE	N/A	11:05	11:27	18	80	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+121	30.07.2017	SE	N/A	11:05	11:27	18	80	N/A	N/A	N/A	Bombus sp.	N/A	0	1	Vaccinium album
+121	28.07.2017	SE	N/A	17:05	17:10	19	40	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+122	20.07.2017	IF	AK	15:48	15:54	24	10	N/A	N/A	N/A	Apis mellifera	N/A	0	25	Vaccinium album
+122	20.07.2017	IF	AK	12:41	12:47	23	30	N/A	N/A	first two transects are 15 meters long. The third transect is 30 meters long. SD 2019: antatt at tistel i brorparten av tilfellene betyr åkertistel. Derfor er Cirsium satt som slektsnavn.	Apis mellifera	N/A	0	38	Cirsium
+122	20.07.2017	IF	AK	12:41	12:47	23	30	N/A	N/A	first two transects are 15 meters long. The third transect is 30 meters long. 	Apis mellifera	N/A	0	8	Cirsium arvense
+122	20.07.2017	IF	AK	15:48	15:54	24	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium repens
+122	20.07.2017	IF	AK	12:41	12:47	23	30	N/A	N/A	first two transects are 15 meters long. The third transect is 30 meters long. 	Bombus lapidarius	N/A	0	4	Trifolium pratense
+122	22.07.2017	SH	N/A	15:16	15:27	27	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Campanula latifolia
+122	22.07.2017	SH	N/A	15:16	15:27	27	30	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Trifolium repens
+122	20.07.2017	IF	AK	15:48	15:54	24	10	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+122	20.07.2017	IF	AK	15:48	15:54	24	10	N/A	N/A	collected	Macropis europaea	female	0	1	Galeopsis
+122	20.07.2017	IF	AK	15:48	15:54	24	10	N/A	N/A	N/A	Syrphidae	N/A	0	1	Vaccinium album
+122	22.07.2017	SH	N/A	15:16	15:27	27	30	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+122	22.07.2017	SH	N/A	15:16	15:27	27	30	N/A	N/A	N/A	Syrphidae	N/A	0	1	Vaccinium album
+122	28.07.2017	SE	N/A	16:30	16:37	20	15	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+123	22.07.2017	SH	N/A	11:47	12:05	22	50	N/A	N/A	N/A	Apis mellifera	N/A	0	7	Trifolium pratense
+123	22.07.2017	SH	N/A	11:47	12:05	22	50	N/A	N/A	N/A	Apis mellifera	N/A	0	46	Cirsium arvense
+123	22.07.2017	SH	N/A	11:47	12:05	22	50	N/A	N/A	N/A	Bombus hortorum	N/A	0	1	Trifolium pratense
+123	22.07.2017	SH	N/A	11:47	12:05	22	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	4	Trifolium pratense
+123	22.07.2017	SH	N/A	11:47	12:05	22	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Cirsium arvense
+123	22.07.2017	SH	N/A	11:47	12:05	22	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	3	Trifolium pratense
+124	20.07.2017	SD	SE	16:50	16:57	24	20	N/A	N/A	N/A	Apis mellifera	N/A	0	7	Filipendula ulmaria
+124	20.07.2017	SD	SE	16:50	16:57	24	20	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Cirsium palustre
+124	22.07.2017	SD	SE	15:58	N/A	24	40	N/A	N/A	N/A	Apis mellifera	N/A	5	0	N/A
+124	22.07.2017	SD	SE	15:58	N/A	24	40	N/A	N/A	N/A	Apis mellifera	N/A	0	11	Filipendula ulmaria
+124	22.07.2017	SD	SE	15:58	N/A	24	40	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Cirsium palustre
+124	20.07.2017	SD	SE	16:50	16:57	24	20	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium palustre
+124	22.07.2017	SD	SE	15:58	N/A	24	40	N/A	N/A	collected	Bombus lapidarius	male	0	1	Cirsium palustre
+124	20.07.2017	SD	SE	16:50	16:57	24	20	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	3	Filipendula ulmaria
+124	22.07.2017	SD	SE	15:58	N/A	24	40	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Filipendula ulmaria
+124	22.07.2017	SD	SE	15:58	N/A	24	40	N/A	N/A	N/A	Bombus sp.	N/A	0	2	Filipendula ulmaria
+124	22.07.2017	SD	SE	15:58	N/A	24	40	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Cirsium palustre
+124	20.07.2017	SD	SE	16:50	16:57	24	20	N/A	N/A	N/A	Bombus terrestris	N/A	0	1	Filipendula ulmaria
+125	20.07.2017	IF	AK	16:57	17:04	24	20	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Chamerion angustifolium
+125	22.07.2017	AK	N/A	15:51	16:03	22	10	N/A	N/A	N/A	Apis mellifera	N/A	2	0	N/A
+125	22.07.2017	AK	N/A	15:51	16:03	22	10	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Chamerion angustifolium
+125	22.07.2017	AK	N/A	15:51	16:03	22	10	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium pratense
+125	22.07.2017	AK	N/A	15:51	16:03	22	10	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium pratense
+125	22.07.2017	AK	N/A	15:51	16:03	22	10	N/A	N/A	N/A	Bombus hortorum	N/A	0	1	Trifolium pratense
+125	20.07.2017	IF	AK	16:57	17:04	24	20	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Melampyrum
+125	20.07.2017	IF	AK	16:57	17:04	24	20	N/A	N/A	N/A	Bombus hypnorum	N/A	0	5	Chamerion angustifolium
+125	22.07.2017	AK	N/A	15:51	16:03	22	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Lathyrus pratensis
+125	22.07.2017	AK	N/A	15:51	16:03	22	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium pratense
+125	20.07.2017	IF	AK	16:57	17:04	24	20	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Trifolium pratense
+125	22.07.2017	AK	N/A	15:51	16:03	22	10	N/A	N/A	N/A	Bombus pascuorum	N/A	0	7	Trifolium pratense
+125	20.07.2017	IF	AK	16:57	17:04	24	20	N/A	N/A	N/A	Bombus pratorum	N/A	0	7	Chamerion angustifolium
+125	22.07.2017	AK	N/A	15:51	16:03	22	10	N/A	N/A	N/A	Bombus pratorum	N/A	0	5	Chamerion angustifolium
+125	22.07.2017	AK	N/A	15:51	16:03	22	10	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Lysimachia punctata
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium hybridum
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Tripleurospermum inodorum
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Melilotus albus
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Melilotus officinalis
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Melilotus officinalis
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium pratense
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Apis mellifera	N/A	0	14	Cirsium arvense
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Apis mellifera	N/A	0	15	Cirsium arvense
+126	22.07.2017	AK	N/A	11:16	11:27	22	40	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium repens
+126	22.07.2017	AK	N/A	11:16	11:27	22	40	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Melilotus albus
+126	22.07.2017	AK	N/A	11:16	11:27	22	40	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Achillea millefolium
+126	22.07.2017	AK	N/A	11:16	11:27	22	40	N/A	N/A	N/A	Apis mellifera	N/A	0	25	Cirsium arvense
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Melilotus officinalis
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Trifolium pratense
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium hybridum
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Bombus lapidarius	N/A	0	4	Melilotus officinalis
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium pratense
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+126	22.07.2017	AK	N/A	11:16	11:27	22	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	4	Trifolium repens
+126	22.07.2017	AK	N/A	11:16	11:27	22	40	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Trifolium repens
+126	22.07.2017	AK	N/A	11:16	11:27	22	40	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Cirsium arvense
+126	22.07.2017	AK	N/A	11:16	11:27	22	40	N/A	N/A	N/A	Bombus pascuorum	N/A	0	4	Trifolium pratense
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Melilotus albus
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Melilotus officinalis
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Cirsium arvense
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium hybridum
+126	22.07.2017	AK	N/A	11:16	11:27	22	40	N/A	N/A	N/A	Lepidoptera	N/A	0	3	Cirsium arvense
+126	20.07.2017	IF	AK	12:10	12:19	N/A	N/A	N/A	N/A	N/A	Syrphidae	N/A	0	1	Cirsium arvense
+127	22.07.2017	SH	N/A	12:42	12:49	23	60	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+127	20.07.2017	IF	AK	13:07	13:11	23	40	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+128	22.07.2017	AK	AK	14:11	14:24	24	20	N/A	N/A	collected	Andrena tarsata	female	1	0	N/A
+128	20.07.2017	IF	AK	14:17	14:25	23	40	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Calystegia sepium
+128	22.07.2017	AK	AK	14:11	14:24	24	20	N/A	N/A	N/A	Apis mellifera	N/A	2	0	N/A
+129	20.07.2017	IF	AK	15:22	15:30	24	15	N/A	N/A	N/A	Bombus hypnorum	N/A	0	1	Melampyrum
+129	22.07.2017	IF	N/A	14:39	14:48	25	10	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Melampyrum
+129	20.07.2017	IF	AK	15:22	15:30	24	15	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Melampyrum
+129	22.07.2017	IF	N/A	14:39	14:48	25	10	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Melampyrum
+129	22.07.2017	IF	N/A	14:39	14:48	25	10	N/A	N/A	N/A	Lepidoptera	N/A	1	0	N/A
+129	22.07.2017	IF	N/A	14:39	14:48	25	10	N/A	N/A	N/A	Syrphidae	N/A	2	0	N/A
+130	20.07.2017	IF	AK	17:56	18:03	24	10	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Chamerion angustifolium
+130	22.07.2017	SH	N/A	17:02	17:13	22	70	N/A	N/A	N/A	Apis mellifera	N/A	2	0	N/A
+130	22.07.2017	SH	N/A	17:02	17:13	22	70	N/A	N/A	N/A	Apis mellifera	N/A	0	15	Chamerion angustifolium
+130	28.07.2017	SE	N/A	15:50	16:02	20	20	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+130	28.07.2017	SE	N/A	15:50	16:02	20	20	N/A	N/A	N/A	Bombus hypnorum	N/A	0	1	Geranium robertianum
+130	20.07.2017	IF	AK	17:56	18:03	24	10	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Filipendula ulmaria
+130	20.07.2017	IF	AK	17:56	18:03	24	10	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Solanum dulcamara
+130	22.07.2017	SH	N/A	17:02	17:13	22	70	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	1	0	N/A
+130	22.07.2017	SH	N/A	17:02	17:13	22	70	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Chamerion angustifolium
+130	22.07.2017	SH	N/A	17:02	17:13	22	70	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Filipendula ulmaria
+130	28.07.2017	SE	N/A	15:50	16:02	20	20	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Rhodiola rosea
+130	20.07.2017	IF	AK	17:56	18:03	24	10	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+130	22.07.2017	SH	N/A	17:02	17:13	22	70	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+130	22.07.2017	SH	N/A	17:02	17:13	22	70	N/A	N/A	N/A	Syrphidae	N/A	0	3	Filipendula ulmaria
+131	03.08.2017	SE	IK	14:45	14:59	20	60	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Calluna vulgaris
+131	28.07.2017	SE	N/A	15:10	N/A	20	10	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Calluna vulgaris
+131	03.08.2017	SE	IK	14:45	14:59	20	60	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	6	Calluna vulgaris
+131	28.07.2017	SE	N/A	15:10	N/A	20	10	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Calluna vulgaris
+131	20.07.2017	IF	N/A	18:25	?	24	10	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Melampyrum pratense
+131	03.08.2017	SE	IK	14:45	14:59	20	60	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Calluna vulgaris
+131	03.08.2017	SE	IK	14:45	14:59	20	60	N/A	N/A	N/A	Bombus pascuorum	N/A	0	3	Melampyrum pratense
+131	28.07.2017	SE	N/A	15:10	N/A	20	10	N/A	N/A	N/A	Bombus pascuorum	N/A	1	0	N/A
+132	20.07.2017	SD	SE	17:26	N/A	24	5	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+132	20.07.2017	SD	SE	17:26	N/A	24	5	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Filipendula ulmaria
+132	22.07.2017	SD	N/A	16:33	16:40	24	30	N/A	N/A	N/A	Apis mellifera	N/A	0	6	Filipendula ulmaria
+132	20.07.2017	SD	SE	17:26	N/A	24	5	N/A	N/A	N/A	Bombus lapidarius	N/A	1	0	N/A
+132	20.07.2017	SD	SE	17:26	N/A	24	5	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium hybridum
+132	20.07.2017	SD	SE	17:26	N/A	24	5	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Vicia cracca
+132	22.07.2017	SD	N/A	16:33	16:40	24	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Vicia cracca
+132	20.07.2017	SD	SE	17:26	N/A	24	5	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Filipendula ulmaria
+132	20.07.2017	SD	SE	17:26	N/A	24	5	N/A	N/A	N/A	Bombus pascuorum	N/A	1	0	N/A
+132	20.07.2017	SD	SE	17:26	N/A	24	5	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Vicia cracca
+132	22.07.2017	SD	N/A	16:33	16:40	24	30	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Vicia cracca
+132	20.07.2017	SD	SE	17:26	N/A	24	5	N/A	N/A	collected	Macropis europaea	male	0	1	Lysimachia vulgaris
+133	27.07.2017	AK	N/A	11:12	11:38	19	100	N/A	N/A	N/A	Apis mellifera	N/A	2	0	N/A
+133	27.07.2017	AK	N/A	11:12	11:38	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	14	Cirsium arvense
+133	28.07.2017	AK	N/A	14:11	14:20	21	50	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+133	28.07.2017	AK	N/A	14:11	14:20	21	50	N/A	N/A	N/A	Apis mellifera	N/A	0	21	Cirsium arvense
+133	30.07.2017	SH	N/A	13:26	13:36	19	100	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+133	30.07.2017	SH	N/A	13:26	13:36	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	11	Cirsium arvense
+133	27.07.2017	AK	N/A	11:12	11:38	19	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+133	30.07.2017	SH	N/A	13:26	13:36	19	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Cirsium arvense
+133	28.07.2017	AK	N/A	14:11	14:20	21	50	N/A	N/A	collected	Bombus lapidarius	male	0	1	Cirsium arvense
+133	27.07.2017	AK	N/A	11:12	11:38	19	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Cirsium arvense
+133	28.07.2017	AK	N/A	14:11	14:20	21	50	N/A	N/A	collected	Bombus pascuorum	N/A	0	1	Cirsium arvense
+133	27.07.2017	AK	N/A	11:12	11:38	19	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Cirsium arvense
+133	28.07.2017	AK	N/A	14:11	14:20	21	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Cirsium arvense
+133	30.07.2017	SH	N/A	13:26	13:36	19	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Cirsium arvense
+133	27.07.2017	AK	N/A	11:12	11:38	19	100	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+133	27.07.2017	AK	N/A	11:12	11:38	19	100	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Linaria vulgaris
+133	27.07.2017	AK	N/A	11:12	11:38	19	100	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+133	28.07.2017	AK	N/A	14:11	14:20	21	50	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+133	30.07.2017	SH	N/A	13:26	13:36	19	100	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+133	30.07.2017	SH	N/A	13:26	13:36	19	100	N/A	N/A	N/A	Syrphidae	N/A	0	1	Cirsium arvense
+133	27.07.2017	AK	N/A	11:12	11:38	19	100	N/A	N/A	N/A	Vespidae	N/A	1	0	N/A
+133	28.07.2017	AK	N/A	14:11	14:20	21	50	N/A	N/A	N/A	Vespidae	N/A	0	1	Cirsium arvense
+134	27.07.2017	AK	N/A	11:50	12:02	19	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	1	0	N/A
+134	27.07.2017	AK	N/A	11:50	12:02	19	100	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+134	28.07.2017	SH	N/A	13:44	13:53	22	50	N/A	N/A	N/A	Vespidae	N/A	1	0	N/A
+134	30.07.2017	AK	N/A	13:00	13:11	19	100	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+135	30.07.2017	AK	N/A	14:00	14:13	19	100	N/A	N/A	collected	Andrena denticulata	female	0	1	Cirsium arvense
+135	28.07.2017	SH	N/A	15:31	15:41	21	30	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Cirsium arvense
+135	30.07.2017	AK	N/A	14:00	14:13	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Melilotus officinalis
+135	30.07.2017	AK	N/A	14:00	14:13	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	7	Cirsium arvense
+135	28.07.2017	SH	N/A	15:31	15:41	21	30	N/A	N/A	N/A	Bombus hortorum	N/A	0	1	Cirsium arvense
+135	26.07.2017	SD	SE	17:27	17:43	20	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Melilotus officinalis
+135	26.07.2017	SD	SE	17:27	17:43	20	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	4	Tanacetum vulgare
+135	26.07.2017	SD	SE	17:27	17:43	20	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Lotus corniculatus
+135	26.07.2017	SD	SE	17:27	17:43	20	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+135	28.07.2017	SH	N/A	15:31	15:41	21	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	7	Tanacetum vulgare
+135	30.07.2017	AK	N/A	14:00	14:13	19	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Melilotus officinalis
+135	30.07.2017	AK	N/A	14:00	14:13	19	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	11	Tanacetum vulgare
+135	30.07.2017	AK	N/A	14:00	14:13	19	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Cirsium arvense
+135	30.07.2017	AK	N/A	14:00	14:13	19	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Chamerion angustifolium
+135	26.07.2017	SD	SE	17:27	17:43	20	90	N/A	N/A	collected	Colletes daviesanus	female	0	1	Tanacetum vulgare
+135	30.07.2017	AK	N/A	14:00	14:13	19	100	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Melilotus officinalis
+135	28.07.2017	SH	N/A	15:31	15:41	21	30	N/A	N/A	N/A	Syrphidae	N/A	4	0	N/A
+135	30.07.2017	AK	N/A	14:00	14:13	19	100	N/A	N/A	N/A	Syrphidae	N/A	0	1	Tanacetum vulgare
+136	23.07.2017	SD	N/A	11:33	11:45	18	30	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Melampyrum pratense
+136	23.07.2017	SD	N/A	11:33	11:45	18	30	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Aegopodium podagraria
+136	25.07.2017	AK	N/A	10:45	10:55	20	30	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+137	23.07.2017	SD	N/A	10:34	N/A	21	20	N/A	N/A	Apis mellifera observed on Cirsium arvense in the area	Bombus lucorum Coll.	N/A	0	1	Melampyrum pratense
+137	25.07.2017	AK	N/A	10:01	10:13	20	10	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Melampyrum pratense
+137	23.07.2017	SD	N/A	10:34	N/A	21	20	N/A	N/A	Apis mellifera observed on Cirsium arvense in the area	Bombus pratorum	N/A	0	1	Melampyrum pratense
+137	25.07.2017	AK	N/A	10:01	10:13	20	10	N/A	N/A	N/A	Syrphidae	N/A	5	0	N/A
+137	25.07.2017	AK	N/A	10:01	10:13	20	10	N/A	N/A	N/A	Syrphidae	N/A	0	4	Hypericum
+138	23.07.2017	SD	N/A	12:41	12:50	19	10	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+138	23.07.2017	SD	N/A	12:41	12:50	19	10	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium repens
+138	23.07.2017	SD	N/A	12:41	12:50	19	10	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Hieracium
+138	25.07.2017	AK	N/A	11:46	11:59	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium repens
+138	25.07.2017	AK	N/A	11:46	11:59	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Achillea millefolium
+138	25.07.2017	AK	N/A	11:46	11:59	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	11	Crepis biennis
+138	25.07.2017	AK	N/A	11:46	11:59	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Rorippa sylvestris
+138	23.07.2017	SD	N/A	12:41	12:50	19	10	N/A	N/A	N/A	Bombus hortorum	N/A	0	2	Trifolium pratense
+138	23.07.2017	SD	N/A	12:41	12:50	19	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	4	Trifolium pratense
+138	25.07.2017	AK	N/A	11:46	11:59	19	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Rorippa sylvestris
+138	23.07.2017	SD	N/A	12:41	12:50	19	10	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium repens
+138	23.07.2017	SD	N/A	12:41	12:50	19	10	N/A	N/A	N/A	Bombus pascuorum	N/A	0	3	Trifolium pratense
+138	25.07.2017	AK	N/A	11:46	11:59	19	30	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Trifolium pratense
+138	23.07.2017	SD	N/A	12:41	12:50	19	10	N/A	N/A	collected	Bombus ruderarius	N/A	0	1	Trifolium pratense
+138	25.07.2017	AK	N/A	11:46	11:59	19	30	N/A	N/A	N/A	Bombus ruderarius	N/A	0	1	Trifolium pratense
+138	25.07.2017	AK	N/A	11:46	11:59	19	30	N/A	N/A	N/A	Bombus sp.	N/A	2	0	N/A
+138	23.07.2017	SD	N/A	12:41	12:50	19	10	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium pratense
+138	25.07.2017	AK	N/A	11:46	11:59	19	30	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium pratense
+138	25.07.2017	AK	N/A	11:46	11:59	19	30	N/A	N/A	N/A	Vespidae	N/A	0	1	Trifolium pratense
+139	22.07.2017	SD	N/A	11:26	11:33	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Filipendula ulmaria
+139	22.07.2017	SD	N/A	11:26	11:33	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Cirsium palustre
+139	22.07.2017	SD	N/A	11:26	11:33	19	30	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Filipendula ulmaria
+139	22.07.2017	SD	N/A	11:26	11:33	19	30	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Cirsium palustre
+139	22.07.2017	SD	N/A	11:26	11:33	19	30	N/A	N/A	N/A	Syrphidae	N/A	0	1	Cirsium palustre
+139	24.07.2017	AK	N/A	17:40	N/A	N/A	N/A	N/A	N/A	no pollinators observed. all plants in the area mowed	N/A	N/A	0	0	N/A
+140	31.07.2017	AK	N/A	11:05	11:18	17	60	N/A	N/A	N/A	Bombus lapidarius	N/A	1	0	N/A
+140	18.07.2017	AK	N/A	12:46	13:01	20	10	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Melampyrum
+140	20.07.2017	SD	N/A	12:30	12:36	21	0	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Melampyrum
+140	18.07.2017	AK	N/A	12:46	13:01	20	10	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Solidago virgaurea
+140	18.07.2017	AK	N/A	12:46	13:01	20	10	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Melampyrum
+140	20.07.2017	SD	N/A	12:30	12:36	21	0	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Melampyrum
+140	31.07.2017	AK	N/A	11:05	11:18	17	60	N/A	N/A	N/A	Bombus ruderarius	N/A	2	0	N/A
+140	29.07.2017	SH	N/A	12:03	12:15	15	80	N/A	N/A	collected	Bombus rupestris	male	0	1	Melampyrum
+140	31.07.2017	AK	N/A	11:05	11:18	17	60	N/A	N/A	collected	Bombus rupestris	male	1	0	N/A
+140	20.07.2017	SD	N/A	12:30	12:36	21	0	N/A	N/A	N/A	Bombus sp.	N/A	0	1	Melampyrum
+140	29.07.2017	SH	N/A	12:03	12:15	15	80	N/A	N/A	N/A	Bombus wurflenii	N/A	2	0	N/A
+140	29.07.2017	SH	N/A	12:03	12:15	15	80	N/A	N/A	N/A	Bombus wurflenii	N/A	0	1	Melampyrum
+140	18.07.2017	AK	N/A	12:46	13:01	20	10	N/A	N/A	N/A	Syrphidae	N/A	0	1	Melampyrum
+140	29.07.2017	SH	N/A	12:03	12:15	15	80	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+141	18.07.2017	AK	N/A	15:16	15:30	20	80	N/A	N/A	60m transect (30m on either side of the trap)	Apis mellifera	N/A	0	3	Melilotus albus
+141	29.07.2017	SD	N/A	13:24	13:31	17	90	N/A	some rain	N/A	Apis mellifera	N/A	1	0	N/A
+141	29.07.2017	SD	N/A	13:24	13:31	17	90	N/A	some rain	N/A	Apis mellifera	N/A	0	3	Melilotus albus
+141	20.07.2017	SD	N/A	14:27	14:33	24	0	N/A	N/A	N/A	Bombus hortorum	N/A	0	3	Trifolium pratense
+141	18.07.2017	AK	N/A	15:16	15:30	20	80	N/A	N/A	60m transect (30m on either side of the trap)	Bombus lapidarius	N/A	0	1	Trifolium pratense
+141	29.07.2017	SD	N/A	13:24	13:31	17	90	N/A	some rain	N/A	Bombus lapidarius	N/A	0	1	Melilotus albus
+141	29.07.2017	SD	N/A	13:24	13:31	17	90	N/A	some rain	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+141	20.07.2017	SD	N/A	14:27	14:33	24	0	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium hybridum
+141	20.07.2017	SD	N/A	14:27	14:33	24	0	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Trifolium pratense
+141	31.07.2017	AK	N/A	12:10	12:22	18	70	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+141	29.07.2017	SD	N/A	13:24	13:31	17	90	N/A	some rain	N/A	Bombus lapidarius	male	0	1	Arctium lappa
+141	29.07.2017	SD	N/A	13:24	13:31	17	90	N/A	some rain	N/A	Bombus lapidarius	male	0	1	Cirsium arvense
+141	31.07.2017	AK	N/A	12:10	12:22	18	70	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Chamerion angustifolium
+141	18.07.2017	AK	N/A	15:16	15:30	20	80	N/A	N/A	60m transect (30m on either side of the trap)	Bombus pascuorum	N/A	0	1	Melampyrum
+141	29.07.2017	SD	N/A	13:24	13:31	17	90	N/A	some rain	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+141	20.07.2017	SD	N/A	14:27	14:33	24	0	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Vicia cracca
+141	31.07.2017	AK	N/A	12:10	12:22	18	70	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Vicia cracca
+141	31.07.2017	AK	N/A	12:10	12:22	18	70	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+141	18.07.2017	AK	N/A	15:16	15:30	20	80	N/A	N/A	60m transect (30m on either side of the trap)	Bombus pratorum	N/A	0	1	Melilotus albus
+141	29.07.2017	SD	N/A	13:24	13:31	17	90	N/A	some rain	N/A	Bombus ruderarius	N/A	1	0	N/A
+141	29.07.2017	SD	N/A	13:24	13:31	17	90	N/A	some rain	N/A	Bombus terrestris	N/A	1	0	N/A
+141	18.07.2017	AK	N/A	15:16	15:30	20	80	N/A	N/A	60m transect (30m on either side of the trap)	Syrphidae	N/A	0	2	Trifolium pratense
+141	29.07.2017	SD	N/A	13:24	13:31	17	90	N/A	some rain	N/A	Syrphidae	N/A	0	1	Arctium lappa
+142	18.07.2017	IF	N/A	15:54	16:02	21	70	N/A	N/A	N/A	Apis mellifera	N/A	3	0	N/A
+142	18.07.2017	IF	N/A	15:54	16:02	21	70	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Campanula latifolia
+142	20.07.2017	SD	N/A	14:49	14:55	24	0	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+142	20.07.2017	SD	N/A	14:49	14:55	24	0	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Campanula latifolia
+142	20.07.2017	SD	N/A	14:49	14:55	24	0	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium pratense
+142	18.07.2017	IF	N/A	15:54	16:02	21	70	N/A	N/A	N/A	Bombus soroeensis	N/A	0	2	Campanula latifolia
+142	20.07.2017	SD	N/A	14:49	14:55	24	0	N/A	N/A	N/A	Bombus soroeensis	N/A	0	1	Campanula latifolia
+142	20.07.2017	SD	N/A	14:49	14:55	24	0	N/A	N/A	N/A	Bombus sp.	N/A	0	1	Campanula latifolia
+142	18.07.2017	IF	N/A	15:54	16:02	21	70	N/A	N/A	N/A	Lepidoptera	N/A	0	1	Aegopodium podagraria
+142	20.07.2017	SD	N/A	14:49	14:55	24	0	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	1	0	N/A
+143	21.07.2017	SD	N/A	18:25	18:29	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	10	Arctium lappa
+143	23.07.2017	SD	N/A	15:59	16:02	26	80	N/A	N/A	N/A	Apis mellifera	N/A	0	26	Arctium lappa
+143	21.07.2017	SD	N/A	18:25	18:29	19	100	N/A	N/A	N/A	Bombus hypnorum	N/A	0	2	Arctium lappa
+143	23.07.2017	SD	N/A	15:59	16:02	26	80	N/A	N/A	N/A	Bombus hypnorum	male	0	3	Arctium lappa
+143	23.07.2017	SD	N/A	15:59	16:02	26	80	N/A	N/A	N/A	Bombus lapidarius	male	0	1	Arctium lappa
+144	21.07.2017	IF	AK	17:47	17:49	19	100	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+144	23.07.2017	SD	N/A	16:36	N/A	26	100	N/A	N/A	Bombus hortorum observed outside of transect	Bombus lapidarius	N/A	0	3	Trifolium hybridum
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Anthophora furcata	female	0	1	missing
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Apis mellifera	N/A	0	4	Tripleurospermum inodorum
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Apis mellifera	N/A	0	2	Succisa pratensis
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Apis mellifera	N/A	0	1	Centaurea jacea
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Apis mellifera	N/A	0	1	Achillea millefolium
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Apis mellifera	N/A	0	9	Knautia arvensis
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Apis mellifera	N/A	0	7	Cirsium
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Thymus pulegioides
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium repens
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Filipendula vulgaris
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Achillea millefolium
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Knautia arvensis
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus hortorum	N/A	0	1	Trifolium pratense
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus hypnorum	N/A	0	1	Achillea millefolium
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus hypnorum	N/A	0	1	Knautia arvensis
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus lapidarius	N/A	0	2	Centaurea jacea
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus lapidarius	N/A	0	1	Achillea millefolium
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus lapidarius	N/A	0	5	Trifolium pratense
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Cirsium
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Thymus pulegioides
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Centaurea jacea
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium pratense
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Knautia arvensis
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus lucorum Coll.	N/A	1	0	N/A
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus lucorum Coll.	N/A	0	1	Hypericum maculatum
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Knautia arvensis
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus pascuorum	N/A	0	1	Knautia arvensis
+145	28.07.2017	AK	N/A	18:21	18:31	22	10	N/A	N/A	mowed	Bombus pascuorum	N/A	0	4	Trifolium pratense
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	3	Trifolium pratense
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Knautia arvensis
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus pratorum	N/A	0	6	Cirsium
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Centaurea jacea
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Filipendula vulgaris
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Bombus pratorum	N/A	0	2	Knautia arvensis
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus terrestris	N/A	0	1	Succisa pratensis
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus terrestris	N/A	0	2	Trifolium pratense
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	N/A	Bombus terrestris	N/A	0	2	Knautia arvensis
+145	30.07.2017	SE	N/A	13:40	14:15	16	100	N/A	some rain	individual flew away before it could be identified to species	solitary bee	N/A	0	2	Achillea millefolium
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+145	26.07.2017	AK	N/A	15:14	15:29	21	100	N/A	N/A	N/A	Syrphidae	N/A	0	1	Centaurea jacea
+146	28.07.2017	AK	N/A	10:58	11:09	17	80	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Filipendula ulmaria
+146	28.07.2017	AK	N/A	10:58	11:09	17	80	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Chamerion angustifolium
+146	30.07.2017	SH	N/A	11:20	11:27	17	90	N/A	N/A	N/A	Syrphidae	N/A	2	0	N/A
+146	28.07.2017	AK	N/A	10:58	11:09	17	80	N/A	N/A	N/A	Vespidae	N/A	3	0	N/A
+147	24.07.2017	AK	N/A	11:21	11:36	19	100	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+147	24.07.2017	AK	N/A	11:21	11:36	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	11	Cirsium arvense
+147	26.07.2017	AK	N/A	11:23	11:35	19	90	N/A	N/A	N/A	Apis mellifera	N/A	0	18	Cirsium arvense
+147	24.07.2017	AK	N/A	11:21	11:36	19	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+147	26.07.2017	AK	N/A	11:23	11:35	19	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Melilotus officinalis
+148	26.07.2017	SD	N/A	12:00	12:10	20	100	N/A	N/A	N/A	Bombus hortorum	N/A	0	1	Trifolium medium
+148	26.07.2017	SD	N/A	12:00	12:10	20	100	N/A	N/A	N/A	Bombus hypnorum	N/A	1	0	N/A
+148	28.07.2017	SH	N/A	11:40	11:47	18	70	N/A	N/A	N/A	Syrphidae	N/A	0	0	N/A
+148	30.07.2017	AK	N/A	11:44	11:52	17	100	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+149	27.07.2017	AK	N/A	13:00	13:12	20	100	N/A	N/A	N/A	Apis mellifera	N/A	0	7	Arctium lappa
+149	28.07.2017	AK	N/A	12:10	12:21	19	60	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Arctium lappa
+149	30.07.2017	SH	N/A	12:24	12:32	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Arctium lappa
+149	27.07.2017	AK	N/A	13:00	13:12	20	100	N/A	N/A	N/A	Bombus hypnorum	N/A	0	4	Arctium lappa
+149	30.07.2017	SH	N/A	12:24	12:32	19	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Trifolium repens
+149	27.07.2017	AK	N/A	13:00	13:12	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Trifolium repens
+149	27.07.2017	AK	N/A	13:00	13:12	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Arctium lappa
+149	27.07.2017	AK	N/A	13:00	13:12	20	100	N/A	N/A	N/A	Bombus pratorum	N/A	0	4	Arctium lappa
+149	27.07.2017	AK	N/A	13:00	13:12	20	100	N/A	N/A	N/A	Syrphidae	N/A	2	0	N/A
+149	27.07.2017	AK	N/A	13:00	13:12	20	100	N/A	N/A	N/A	Syrphidae	N/A	0	3	Arctium lappa
+149	30.07.2017	SH	N/A	12:24	12:32	19	100	N/A	N/A	N/A	Syrphidae	N/A	0	1	Trifolium repens
+149	30.07.2017	SH	N/A	12:24	12:32	19	100	N/A	N/A	N/A	Syrphidae	N/A	0	2	Arctium lappa
+149	27.07.2017	AK	N/A	13:00	13:12	20	100	N/A	N/A	N/A	Vespidae	N/A	1	0	N/A
+150	26.07.2017	SD	N/A	13:36	N/A	20	100	N/A	N/A	collected	Andrena denticulata	female	0	1	Centaurea jacea
+150	24.07.2017	AK	N/A	13:00	13:16	16	100	N/A	N/A	N/A	Apis mellifera	N/A	0	14	Chamerion angustifolium
+150	24.07.2017	AK	N/A	13:00	13:16	16	100	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Cirsium arvense
+150	26.07.2017	SD	N/A	13:36	N/A	20	100	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+150	26.07.2017	SD	N/A	13:36	N/A	20	100	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Centaurea jacea
+150	26.07.2017	SD	N/A	13:36	N/A	20	100	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Chamerion angustifolium
+150	24.07.2017	AK	N/A	13:00	13:16	16	100	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Centaurea jacea
+150	26.07.2017	SD	N/A	13:36	N/A	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Centaurea jacea
+150	26.07.2017	SD	N/A	13:36	N/A	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Hypericum maculatum
+150	26.07.2017	SD	N/A	13:36	N/A	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	4	Solidago virgaurea
+150	24.07.2017	AK	N/A	13:00	13:16	16	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Chamerion angustifolium
+150	26.07.2017	SD	N/A	13:36	N/A	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Chamerion angustifolium
+150	24.07.2017	AK	N/A	13:00	13:16	16	100	N/A	N/A	N/A	Bombus sp.	N/A	0	1	Solidago virgaurea
+150	26.07.2017	SD	N/A	13:36	N/A	20	100	N/A	N/A	N/A	Syrphidae	N/A	0	1	Centaurea jacea
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Cirsium arvense
+151	26.07.2017	SD	N/A	14:13	14:32	20	100	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Melilotus albus
+151	26.07.2017	SD	N/A	14:13	14:32	20	100	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Tanacetum vulgare
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	N/A	Bombus hortorum	N/A	0	2	Trifolium pratense
+151	26.07.2017	SD	N/A	14:13	14:32	20	100	N/A	N/A	N/A	Bombus hortorum	N/A	0	2	Trifolium pratense
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Trifolium pratense
+151	26.07.2017	SD	N/A	14:13	14:32	20	100	N/A	N/A	N/A	Bombus humilis	N/A	0	2	Trifolium pratense
+151	26.07.2017	SD	N/A	14:13	14:32	20	100	N/A	N/A	N/A	Bombus hypnorum	male	0	1	Melilotus albus
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	N/A	Bombus lapidarius	N/A	1	0	N/A
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium repens
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Melilotus albus
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Tanacetum vulgare
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	16	Trifolium pratense
+151	26.07.2017	SD	N/A	14:13	14:32	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	2	0	N/A
+151	26.07.2017	SD	N/A	14:13	14:32	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium hybridum
+151	26.07.2017	SD	N/A	14:13	14:32	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	12	Tanacetum vulgare
+151	26.07.2017	SD	N/A	14:13	14:32	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Trifolium pratense
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	N/A	Bombus pascuorum	N/A	1	0	N/A
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	N/A	Bombus pascuorum	N/A	0	6	Trifolium pratense
+151	26.07.2017	SD	N/A	14:13	14:32	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	3	Trifolium pratense
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+151	26.07.2017	SD	N/A	14:13	14:32	20	100	N/A	N/A	N/A	Bombus sylvarum	N/A	0	5	Trifolium pratense
+151	24.07.2017	AK	N/A	14:00	14:21	16	90	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Tanacetum vulgare
+152	24.07.2017	AK	N/A	15:00	15:13	19	70	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Cyanus montanus
+152	24.07.2017	AK	N/A	15:00	15:13	19	70	N/A	N/A	N/A	Bombus hortorum	N/A	0	1	Cyanus montanus
+152	26.07.2017	SD	N/A	15:05	15:15	20	100	N/A	N/A	few plants in bloom, mostly raspberry	Bombus hypnorum	N/A	1	0	N/A
+152	24.07.2017	AK	N/A	15:00	15:13	19	70	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Chamerion angustifolium
+152	24.07.2017	AK	N/A	15:00	15:13	19	70	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Cyanus montanus
+152	24.07.2017	AK	N/A	15:00	15:13	19	70	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Galeopsis tetrahit
+152	26.07.2017	SD	N/A	15:05	15:15	20	100	N/A	N/A	few plants in bloom, mostly raspberry	Bombus pratorum	N/A	0	6	Rubus idaeus
+152	26.07.2017	SD	N/A	15:05	15:15	20	100	N/A	N/A	few plants in bloom, mostly raspberry	Bombus pratorum	N/A	0	1	Chamerion angustifolium
+152	24.07.2017	AK	N/A	15:00	15:13	19	70	N/A	N/A	N/A	Bombus pratorum	N/A	1	0	N/A
+152	24.07.2017	AK	N/A	15:00	15:13	19	70	N/A	N/A	N/A	Bombus pratorum	N/A	0	2	Rubus idaeus
+152	24.07.2017	AK	N/A	15:00	15:13	19	70	N/A	N/A	N/A	Bombus pratorum	N/A	0	2	Cyanus montanus
+152	24.07.2017	AK	N/A	15:00	15:13	19	70	N/A	N/A	N/A	Vespidae	N/A	0	1	Hesperis matronalis
+153	26.07.2017	SD	N/A	15:53	16:03	20	100	N/A	N/A	N/A	Bombus hortorum	N/A	0	3	Trifolium medium
+153	26.07.2017	SD	N/A	15:53	16:03	20	100	N/A	N/A	N/A	Bombus hypnorum	N/A	1	0	N/A
+153	26.07.2017	SD	N/A	15:53	16:03	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Epilobium montanum
+153	26.07.2017	SD	N/A	15:53	16:03	20	100	N/A	N/A	N/A	Bombus pratorum	N/A	0	2	Hieracium umbellatum
+153	24.07.2017	AK	N/A	16:07	16:19	19	60	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+154	30.07.2017	AK	N/A	10:40	10:50	16	90	N/A	N/A	N/A	Bombus hortorum	N/A	1	0	N/A
+154	28.07.2017	SH	N/A	10:21	10:29	17	80	N/A	N/A	N/A	Bombus pascuorum	N/A	1	0	N/A
+154	30.07.2017	AK	N/A	10:40	10:50	16	90	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Melampyrum pratense
+155	28.07.2017	SE	N/A	10:34	N/A	17	50	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+155	26.07.2017	SD	SE	16:51	17:02	20	100	N/A	N/A	N/A	Bombus hortorum	N/A	0	3	Trifolium pratense
+155	26.07.2017	SD	SE	16:51	17:02	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Lotus corniculatus
+155	28.07.2017	SE	N/A	10:34	N/A	17	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium pratense
+155	26.07.2017	SD	SE	16:51	17:02	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	3	Trifolium pratense
+155	28.07.2017	SE	N/A	10:34	N/A	17	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+155	28.07.2017	SE	N/A	10:34	N/A	17	50	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+155	26.07.2017	SD	SE	16:51	17:02	20	100	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Vicia sepium
+155	26.07.2017	SD	SE	16:51	17:02	20	100	N/A	N/A	N/A	Bombus sylvarum	N/A	0	7	Trifolium pratense
+155	28.07.2017	SE	N/A	10:34	N/A	17	50	N/A	N/A	N/A	Bombus terrestris	N/A	0	1	Rosa rugosa
+155	28.07.2017	SE	N/A	10:34	N/A	17	50	N/A	N/A	N/A	Bombus terrestris	N/A	0	1	Campanula latifolia
+155	28.07.2017	SE	N/A	10:34	N/A	17	50	N/A	N/A	collected	Melitta haemorrhoidalis	N/A	1	0	N/A
+156	27.07.2017	AK	N/A	10:47	10:58	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	15	Cirsium arvense
+156	28.07.2017	AK	N/A	16:03	16:13	20	40	N/A	N/A	N/A	Apis mellifera	N/A	0	13	Hypericum
+156	28.07.2017	AK	N/A	16:03	16:13	20	40	N/A	N/A	N/A	Apis mellifera	N/A	0	10	Cirsium arvense
+156	30.07.2017	SH	N/A	14:36	14:49	19	80	N/A	N/A	N/A	Apis mellifera	N/A	0	7	Solidago virgaurea
+156	30.07.2017	SH	N/A	14:36	14:49	19	80	N/A	N/A	N/A	Apis mellifera	N/A	0	11	Cirsium arvense
+156	27.07.2017	AK	N/A	10:47	10:58	19	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Cirsium arvense
+156	28.07.2017	AK	N/A	16:03	16:13	20	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	5	Hypericum
+156	28.07.2017	AK	N/A	16:03	16:13	20	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Tanacetum vulgare
+156	28.07.2017	AK	N/A	16:03	16:13	20	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+156	30.07.2017	SH	N/A	14:36	14:49	19	80	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Solidago virgaurea
+156	30.07.2017	SH	N/A	14:36	14:49	19	80	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Tanacetum vulgare
+156	28.07.2017	AK	N/A	16:03	16:13	20	40	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Hypericum
+156	28.07.2017	AK	N/A	16:03	16:13	20	40	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Cirsium arvense
+156	27.07.2017	AK	N/A	10:47	10:58	19	100	N/A	N/A	N/A	Bombus sylvarum	N/A	0	2	Cirsium arvense
+156	30.07.2017	SH	N/A	14:36	14:49	19	80	N/A	N/A	N/A	Bombus sylvarum	N/A	0	2	Cirsium arvense
+156	27.07.2017	AK	N/A	10:47	10:58	19	100	N/A	N/A	N/A	Syrphidae	N/A	0	1	Cirsium arvense
+156	30.07.2017	SH	N/A	14:36	14:49	19	80	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+157	25.07.2017	AK	N/A	18:00	18:15	23	40	N/A	N/A	N/A	Apis mellifera	N/A	0	8	Trifolium repens
+157	28.07.2017	SE	N/A	12:28	12:39	20	50	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium repens
+157	25.07.2017	AK	N/A	18:00	18:15	23	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium repens
+157	25.07.2017	AK	N/A	18:00	18:15	23	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	8	Lotus corniculatus
+157	28.07.2017	SE	N/A	12:28	12:39	20	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Trifolium repens
+157	25.07.2017	AK	N/A	18:00	18:15	23	40	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Trifolium repens
+157	25.07.2017	AK	N/A	18:00	18:15	23	40	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Lotus corniculatus
+157	28.07.2017	SE	N/A	12:28	12:39	20	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium repens
+157	25.07.2017	AK	N/A	18:00	18:15	23	40	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium repens
+157	28.07.2017	SE	N/A	12:28	12:39	20	50	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium repens
+157	28.07.2017	SE	N/A	12:28	12:39	20	50	N/A	N/A	N/A	Bombus terrestris	N/A	0	3	Trifolium repens
+158	01.08.2017	SE	IK	13:56	14:05	21	70	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Campanula trachelium
+158	01.08.2017	SE	IK	13:56	14:05	21	70	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Centaurea nigra
+158	25.07.2017	AK	N/A	17:08	17:18	24	60	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Lotus corniculatus
+158	01.08.2017	SE	IK	13:56	14:05	21	70	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Trifolium pratense
+158	25.07.2017	AK	N/A	17:08	17:18	24	60	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Vicia cracca
+158	25.07.2017	AK	N/A	17:08	17:18	24	60	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium pratense
+158	01.08.2017	SE	IK	13:56	14:05	21	70	N/A	N/A	N/A	Bombus terrestris	N/A	0	2	Campanula trachelium
+158	25.07.2017	AK	N/A	17:08	17:18	24	60	N/A	N/A	N/A	Vespidae	N/A	2	0	N/A
+159	25.07.2017	AK	N/A	16:19	16:33	24	60	N/A	N/A	collected	Andrena bicolor	female	0	1	Campanula rapunculoides
+159	28.07.2017	SE	N/A	11:53	12:03	17	70	N/A	N/A	additional bees observed outside of transect	Apis mellifera	N/A	0	7	Tanacetum vulgare
+159	28.07.2017	SE	N/A	11:53	12:03	17	70	N/A	N/A	additional bees observed outside of transect	Apis mellifera	N/A	0	7	Cirsium arvense
+159	25.07.2017	AK	N/A	16:19	16:33	24	60	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Melilotus albus
+159	25.07.2017	AK	N/A	16:19	16:33	24	60	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Tanacetum vulgare
+159	25.07.2017	AK	N/A	16:19	16:33	24	60	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Arctium lappa
+159	25.07.2017	AK	N/A	16:19	16:33	24	60	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Cirsium arvense
+159	28.07.2017	SE	N/A	11:53	12:03	17	70	N/A	N/A	additional bees observed outside of transect	Bombus lapidarius	N/A	0	1	Cirsium arvense
+159	25.07.2017	AK	N/A	16:19	16:33	24	60	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Melilotus albus
+159	25.07.2017	AK	N/A	16:19	16:33	24	60	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Tanacetum vulgare
+159	25.07.2017	AK	N/A	16:19	16:33	24	60	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Arctium lappa
+159	28.07.2017	SE	N/A	11:53	12:03	17	70	N/A	N/A	individual flew away before it could be identified to species.additional bees observed outside of transect	solitary bee	N/A	0	1	Tanacetum vulgare
+159	25.07.2017	AK	N/A	16:19	16:33	24	60	N/A	N/A	N/A	Syrphidae	N/A	2	0	N/A
+159	25.07.2017	AK	N/A	16:19	16:33	24	60	N/A	N/A	N/A	Syrphidae	N/A	0	1	Tanacetum vulgare
+160	27.07.2017	AK	N/A	10:15	10:30	18.5	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium pratense
+160	28.07.2017	SH	N/A	16:40	16:50	21	20	N/A	N/A	N/A	Bombus ruderarius	N/A	0	1	Achillea millefolium
+160	30.07.2017	AK	N/A	15:25	N/A	20	100	N/A	N/A	N/A	Bombus sylvarum	N/A	0	2	Trifolium repens
+160	30.07.2017	AK	N/A	15:25	N/A	20	100	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium pratense
+160	27.07.2017	AK	N/A	10:15	10:30	18.5	100	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium repens
+160	27.07.2017	AK	N/A	10:15	10:30	18.5	100	N/A	N/A	N/A	Syrphidae	N/A	2	0	N/A
+161	26.07.2017	AK	N/A	17:05	17:16	22	100	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+161	28.07.2017	AK	N/A	17:17	17:30	21	30	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Cirsium arvense
+161	30.07.2017	SE	N/A	14:55	15:10	16	100	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Cirsium arvense
+161	26.07.2017	AK	N/A	17:05	17:16	22	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Trifolium pratense
+161	26.07.2017	AK	N/A	17:05	17:16	22	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Lotus corniculatus
+161	28.07.2017	AK	N/A	17:17	17:30	21	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium pratense
+161	30.07.2017	SE	N/A	14:55	15:10	16	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Melilotus officinalis
+161	30.07.2017	SE	N/A	14:55	15:10	16	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Calystegia sepium
+161	28.07.2017	AK	N/A	17:17	17:30	21	30	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+161	28.07.2017	AK	N/A	17:17	17:30	21	30	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Cirsium arvense
+161	30.07.2017	SE	N/A	14:55	15:10	16	100	N/A	N/A	N/A	Bombus pratorum	N/A	0	3	Cirsium arvense
+161	30.07.2017	SE	N/A	14:55	15:10	16	100	N/A	N/A	N/A	Bombus ruderarius	N/A	0	1	Calystegia sepium
+161	30.07.2017	SE	N/A	14:55	15:10	16	100	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+161	26.07.2017	AK	N/A	17:05	17:16	22	100	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium pratense
+161	28.07.2017	AK	N/A	17:17	17:30	21	30	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium pratense
+161	30.07.2017	SE	N/A	14:55	15:10	16	100	N/A	N/A	N/A	Bombus terrestris	N/A	0	2	Cirsium arvense
+162	30.07.2017	SE	N/A	15:30	15:45	15	100	N/A	some rain	N/A	Apis mellifera	N/A	0	55	Solidago virgaurea
+162	20.07.2017	JS	SE	15:53	16:05	24	5	N/A	N/A	N/A	Apis mellifera	N/A	7	0	N/A
+162	20.07.2017	JS	SE	15:53	16:05	24	5	N/A	N/A	N/A	Apis mellifera	N/A	0	9	Cirsium arvense
+162	28.07.2017	SE	N/A	13:17	N/A	19	40	N/A	N/A	N/A	Apis mellifera	N/A	0	33	Solidago virgaurea
+162	28.07.2017	SE	N/A	13:17	N/A	19	40	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Cirsium arvense
+162	30.07.2017	SE	N/A	15:30	15:45	15	100	N/A	some rain	N/A	Bombus hortorum	N/A	0	2	Trifolium pratense
+162	28.07.2017	SE	N/A	13:17	N/A	19	40	N/A	N/A	N/A	Bombus hortorum	N/A	0	1	Trifolium pratense
+162	30.07.2017	SE	N/A	15:30	15:45	15	100	N/A	some rain	N/A	Bombus lapidarius	N/A	0	7	Solidago virgaurea
+162	30.07.2017	SE	N/A	15:30	15:45	15	100	N/A	some rain	N/A	Bombus lapidarius	N/A	0	2	Cirsium arvense
+162	28.07.2017	SE	N/A	13:17	N/A	19	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	5	Solidago virgaurea
+162	28.07.2017	SE	N/A	13:17	N/A	19	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+162	30.07.2017	SE	N/A	15:30	15:45	15	100	N/A	some rain	N/A	Bombus lucorum Coll.	N/A	0	1	Solidago virgaurea
+162	30.07.2017	SE	N/A	15:30	15:45	15	100	N/A	some rain	N/A	Bombus lucorum Coll.	N/A	0	1	Trifolium pratense
+162	28.07.2017	SE	N/A	13:17	N/A	19	40	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Solidago virgaurea
+162	28.07.2017	SE	N/A	13:17	N/A	19	40	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Solidago virgaurea
+162	28.07.2017	SE	N/A	13:17	N/A	19	40	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Cirsium arvense
+162	30.07.2017	SE	N/A	15:30	15:45	15	100	N/A	some rain	N/A	Bombus pratorum	N/A	0	4	Solidago virgaurea
+162	20.07.2017	JS	SE	15:53	16:05	24	5	N/A	N/A	N/A	Lepidoptera	N/A	2	0	N/A
+163	20.07.2017	SD	SE	18:55	19:01	24	20	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+163	20.07.2017	SD	SE	18:55	19:01	24	20	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Melilotus albus
+163	20.07.2017	SD	SE	18:55	19:01	24	20	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Aegopodium podagraria
+163	22.07.2017	SD	N/A	18:14	18:24	24	50	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Chamerion angustifolium
+163	22.07.2017	SD	N/A	18:14	18:24	24	50	N/A	N/A	N/A	Apis mellifera	N/A	0	14	Melilotus albus
+163	22.07.2017	SD	N/A	18:14	18:24	24	50	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Cirsium vulgare
+163	22.07.2017	SD	N/A	18:14	18:24	24	50	N/A	N/A	N/A	Bombus hortorum	N/A	0	1	missing
+163	20.07.2017	SD	SE	18:55	19:01	24	20	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Melilotus albus
+163	22.07.2017	SD	N/A	18:14	18:24	24	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Melilotus albus
+163	20.07.2017	SD	SE	18:55	19:01	24	20	N/A	N/A	N/A	Bombus pascuorum	N/A	1	0	N/A
+163	22.07.2017	SD	N/A	18:14	18:24	24	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Vicia sepium
+163	20.07.2017	SD	SE	18:55	19:01	24	20	N/A	N/A	N/A	Bombus soroeensis	N/A	0	3	Campanula latifolia
+163	22.07.2017	SD	N/A	18:14	18:24	24	50	N/A	N/A	N/A	Bombus soroeensis	N/A	0	1	Campanula latifolia
+163	20.07.2017	SD	SE	18:55	19:01	24	20	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Campanula latifolia
+164	20.07.2017	SD	SE	18:15	18:25	24	10	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Arctium lappa
+164	22.07.2017	SD	SE	17:32	17:43	24	60	N/A	N/A	N/A	Apis mellifera	N/A	0	7	Arctium lappa
+164	22.07.2017	SD	SE	17:32	17:43	24	60	N/A	N/A	N/A	Bombus hortorum	male	0	1	Cirsium arvense
+164	20.07.2017	SD	SE	18:15	18:25	24	10	N/A	N/A	N/A	Bombus pascuorum	N/A	0	12	Vicia cracca
+164	20.07.2017	SD	SE	18:15	18:25	24	10	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium repens
+164	22.07.2017	SD	SE	17:32	17:43	24	60	N/A	N/A	N/A	Bombus pascuorum	N/A	0	7	Vicia cracca
+164	22.07.2017	SD	SE	17:32	17:43	24	60	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Lathyrus pratensis
+164	22.07.2017	SD	SE	17:32	17:43	24	60	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+165	20.07.2017	IF	AK	10:58	11:06	21	5	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Cirsium arvense
+165	22.07.2017	AK	N/A	09:54	10:09	21	70	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Cirsium arvense
+165	22.07.2017	AK	N/A	09:54	10:09	21	70	N/A	N/A	N/A	Bombus hypnorum	N/A	1	0	N/A
+165	22.07.2017	AK	N/A	09:54	10:09	21	70	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Stachys sylvatica
+165	20.07.2017	IF	AK	10:58	11:06	21	5	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Cirsium arvense
+165	20.07.2017	IF	AK	10:58	11:06	21	5	N/A	N/A	collected	Macropis europaea	female	0	1	Lysimachia punctata
+165	22.07.2017	AK	N/A	09:54	10:09	21	70	N/A	N/A	collected	Macropis europaea	female	0	5	Lysimachia punctata
+165	20.07.2017	IF	AK	10:58	11:06	21	5	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Lysimachia punctata
+165	20.07.2017	IF	AK	10:58	11:06	21	5	N/A	N/A	N/A	Syrphidae	N/A	2	0	N/A
+165	20.07.2017	IF	AK	10:58	11:06	21	5	N/A	N/A	N/A	Syrphidae	N/A	0	3	Lysimachia punctata
+165	20.07.2017	IF	AK	10:58	11:06	21	5	N/A	N/A	N/A	Syrphidae	N/A	0	1	Cirsium arvense
+165	22.07.2017	AK	N/A	09:54	10:09	21	70	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+165	20.07.2017	IF	AK	10:58	11:06	21	5	N/A	N/A	N/A	Vespidae	N/A	0	1	Aegopodium podagraria
+166	22.07.2017	IF	N/A	10:46	10:56	21	50	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Cirsium arvense
+166	20.07.2017	IF	AK	11:41	11:49	21	20	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Vicia cracca
+166	20.07.2017	IF	AK	11:41	11:49	21	20	N/A	N/A	N/A	Bombus humilis	N/A	0	1	missing
+166	20.07.2017	IF	AK	11:41	11:49	21	20	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Trifolium pratense
+166	22.07.2017	IF	N/A	10:46	10:56	21	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Prunella vulgaris
+166	22.07.2017	IF	N/A	10:46	10:56	21	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Lotus corniculatus
+166	20.07.2017	IF	AK	11:41	11:49	21	20	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium hybridum
+166	20.07.2017	IF	AK	11:41	11:49	21	20	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Lathyrus pratensis
+166	20.07.2017	IF	AK	11:41	11:49	21	20	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+166	22.07.2017	IF	N/A	10:46	10:56	21	50	N/A	N/A	N/A	Lepidoptera	N/A	2	0	N/A
+166	20.07.2017	IF	AK	11:41	11:49	21	20	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+167	22.07.2017	SE	SD	14:55	15:05	21	15	windy	N/A	N/A	Bombus pascuorum	N/A	1	0	N/A
+167	22.07.2017	SE	SD	14:55	15:05	21	15	windy	N/A	collected	Halictus rubicundus	female	1	0	N/A
+168	20.07.2017	IF	AK	17:28	17:37	24	30	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Filipendula ulmaria
+168	20.07.2017	IF	AK	17:28	17:37	24	30	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Filipendula ulmaria
+168	22.07.2017	IF	N/A	16:28	16:38	23	10	N/A	N/A	N/A	Apis mellifera	N/A	4	0	N/A
+168	22.07.2017	IF	N/A	16:28	16:38	23	10	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Filipendula ulmaria
+168	20.07.2017	IF	AK	17:28	17:37	24	30	N/A	N/A	N/A	Bombus humilis	N/A	0	2	Vicia cracca
+168	22.07.2017	IF	N/A	16:28	16:38	23	10	N/A	N/A	N/A	Bombus lapidarius	N/A	1	0	N/A
+168	20.07.2017	IF	AK	17:28	17:37	24	30	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Filipendula ulmaria
+168	22.07.2017	IF	N/A	16:28	16:38	23	10	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Vicia cracca
+168	22.07.2017	IF	N/A	16:28	16:38	23	10	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Stachys sylvatica
+168	20.07.2017	IF	AK	17:28	17:37	24	30	N/A	N/A	N/A	Lepidoptera	N/A	2	0	N/A
+168	20.07.2017	IF	AK	17:28	17:37	24	30	N/A	N/A	collected	Macropis europaea	female	0	1	Epilobium montanum
+168	22.07.2017	IF	N/A	16:28	16:38	23	10	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Epilobium montanum
+168	20.07.2017	IF	AK	17:28	17:37	24	30	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+168	20.07.2017	IF	AK	17:28	17:37	24	30	N/A	N/A	N/A	Syrphidae	N/A	0	1	Filipendula ulmaria
+168	22.07.2017	IF	N/A	16:28	16:38	23	10	N/A	N/A	N/A	Syrphidae	N/A	0	1	Filipendula ulmaria
+169	20.07.2017	IF	AK	18:48	18:54	24	5	N/A	N/A	N/A	Bombus humilis	N/A	0	3	Trifolium pratense
+169	20.07.2017	IF	AK	18:48	18:54	24	5	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Vicia cracca
+169	20.07.2017	IF	AK	18:48	18:54	24	5	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Vicia cracca
+169	20.07.2017	IF	AK	18:48	18:54	24	5	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium repens
+169	22.07.2017	AK	N/A	17:40	17:47	24	40	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Vicia cracca
+169	22.07.2017	AK	N/A	17:40	17:47	24	40	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+169	20.07.2017	IF	AK	18:48	18:54	24	5	N/A	N/A	N/A	Syrphidae	N/A	2	0	N/A
+169	22.07.2017	AK	N/A	17:40	17:47	24	40	N/A	N/A	N/A	Syrphidae	N/A	0	1	Hypericum
+170	26.07.2017	AK	N/A	11:13	11:24	20	100	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Cirsium arvense
+170	30.07.2017	SE	N/A	11:45	12:00	16	100	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Arctium lappa
+170	30.07.2017	SE	N/A	11:45	12:00	16	100	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Cirsium arvense
+170	30.07.2017	SE	N/A	11:45	12:00	16	100	N/A	N/A	N/A	Bombus hypnorum	N/A	0	1	Galeopsis tetrahit
+170	26.07.2017	AK	N/A	11:13	11:24	20	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Urtica dioica
+170	26.07.2017	AK	N/A	11:13	11:24	20	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Cirsium arvense
+170	30.07.2017	SE	N/A	11:45	12:00	16	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	3	Cirsium arvense
+170	26.07.2017	AK	N/A	11:13	11:24	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+170	26.07.2017	AK	N/A	11:13	11:24	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Campanula rapunculoides
+170	26.07.2017	AK	N/A	11:13	11:24	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	6	Cirsium arvense
+170	30.07.2017	SE	N/A	11:45	12:00	16	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	3	Cirsium arvense
+170	30.07.2017	SE	N/A	11:45	12:00	16	100	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Cirsium arvense
+170	26.07.2017	AK	N/A	11:13	11:24	20	100	N/A	N/A	N/A	Syrphidae	N/A	4	0	N/A
+170	26.07.2017	AK	N/A	11:13	11:24	20	100	N/A	N/A	N/A	Syrphidae	N/A	0	1	Cirsium arvense
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium medium
+171	28.07.2017	SE	N/A	17:22	17:48	20	50	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Centaurea jacea
+171	28.07.2017	SE	N/A	17:22	17:48	20	50	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Centaurea jacea
+171	30.07.2017	SE	N/A	10:30	11:00	18	80	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Centaurea jacea
+171	30.07.2017	SE	N/A	10:30	11:00	18	80	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Centaurea jacea
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Bombus hypnorum	N/A	0	1	Origanum vulgare
+171	28.07.2017	SE	N/A	17:22	17:48	20	50	N/A	N/A	N/A	Bombus hypnorum	N/A	0	1	Origanum vulgare
+171	30.07.2017	SE	N/A	10:30	11:00	18	80	N/A	N/A	N/A	Bombus hypnorum	N/A	0	1	Origanum vulgare
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium arvense
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Hypericum
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Origanum vulgare
+171	28.07.2017	SE	N/A	17:22	17:48	20	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Centaurea jacea
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	1	0	N/A
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Origanum vulgare
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Hypericum
+171	28.07.2017	SE	N/A	17:22	17:48	20	50	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	3	Origanum vulgare
+171	30.07.2017	SE	N/A	10:30	11:00	18	80	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	3	Origanum vulgare
+171	30.07.2017	SE	N/A	10:30	11:00	18	80	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Centaurea jacea
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Origanum vulgare
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Knautia arvensis
+171	28.07.2017	SE	N/A	17:22	17:48	20	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Origanum vulgare
+171	28.07.2017	SE	N/A	17:22	17:48	20	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	3	Centaurea jacea
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Bombus pratorum	N/A	0	4	Origanum vulgare
+171	28.07.2017	SE	N/A	17:22	17:48	20	50	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Origanum vulgare
+171	30.07.2017	SE	N/A	10:30	11:00	18	80	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Trifolium hybridum
+171	30.07.2017	SE	N/A	10:30	11:00	18	80	N/A	N/A	N/A	Bombus pratorum	N/A	0	2	Origanum vulgare
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Bombus ruderarius	N/A	1	0	N/A
+171	28.07.2017	SE	N/A	17:22	17:48	20	50	N/A	N/A	N/A	Bombus ruderarius	N/A	0	1	Centaurea jacea
+171	30.07.2017	SE	N/A	10:30	11:00	18	80	N/A	N/A	N/A	Bombus terrestris	N/A	0	2	Centaurea jacea
+171	30.07.2017	SE	N/A	10:30	11:00	18	80	N/A	N/A	N/A	Bombus terrestris	N/A	0	1	Hypericum maculatum
+171	26.07.2017	AK	N/A	11:56	12:11	20	100	N/A	N/A	N/A	Syrphidae	N/A	3	0	N/A
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Apis mellifera	N/A	0	6	Tripleurospermum inodorum
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Apis mellifera	N/A	0	4	Phacelia tanacetifolia
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Apis mellifera	N/A	0	1	Trifolium repens
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Apis mellifera	N/A	0	18	Trifolium repens
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Apis mellifera	N/A	0	1	Melilotus albus
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Apis mellifera	N/A	0	3	Persicaria maculosa
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Apis mellifera	N/A	0	4	Cyanus segetum
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Apis mellifera	N/A	2	0	N/A
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Apis mellifera	N/A	0	8	Tripleurospermum inodorum
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Apis mellifera	N/A	0	1	Chamerion angustifolium
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Apis mellifera	N/A	0	1	Phacelia tanacetifolia
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Apis mellifera	N/A	0	1	Cyanus segetum
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Apis mellifera	N/A	0	1	Rorippa sylvestris
+172	28.07.2017	AK	N/A	18:42	18:53	22	10	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Phacelia tanacetifolia
+172	28.07.2017	AK	N/A	18:42	18:53	22	10	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Trifolium repens
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Bombus lapidarius	N/A	0	1	Tripleurospermum inodorum
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Bombus lapidarius	N/A	0	3	Phacelia tanacetifolia
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Bombus lapidarius	N/A	0	1	Trifolium repens
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Bombus lapidarius	N/A	0	1	Persicaria maculosa
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Bombus lapidarius	N/A	0	5	Cyanus segetum
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Bombus lapidarius	N/A	0	6	Phacelia tanacetifolia
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Persicaria maculosa
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Bombus lapidarius	N/A	0	4	Cyanus segetum
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Rorippa sylvestris
+172	28.07.2017	AK	N/A	18:42	18:53	22	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Phacelia tanacetifolia
+172	28.07.2017	AK	N/A	18:42	18:53	22	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	missing
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Bombus lucorum Coll.	N/A	0	4	Tripleurospermum inodorum
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Bombus lucorum Coll.	N/A	0	2	Lamium album
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Bombus lucorum Coll.	N/A	0	3	Phacelia tanacetifolia
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Bombus lucorum Coll.	N/A	1	0	N/A
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Lamium album
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Bombus lucorum Coll.	N/A	0	3	Phacelia tanacetifolia
+172	28.07.2017	AK	N/A	18:42	18:53	22	10	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	3	Phacelia tanacetifolia
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium repens
+172	28.07.2017	AK	N/A	18:42	18:53	22	10	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	missing
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Bombus pratorum	N/A	0	1	Cyanus segetum
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Bombus pratorum	N/A	0	1	Cyanus segetum
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Bombus sp.	N/A	4	0	N/A
+172	30.07.2017	SE	N/A	12:25	12:55	14	100	windy	N/A	N/A	Bombus sp.	N/A	0	1	Raphanus raphanistrum
+172	26.07.2017	AK	N/A	13:24	13:50	21	90	N/A	N/A	First two transects are 15m long, third transect is 30m long	Bombus sylvarum	N/A	0	1	Phacelia tanacetifolia
+174	29.07.2017	SE	N/A	10:48	11:05	16	20	N/A	some rain	N/A	Apis mellifera	N/A	0	3	Filipendula ulmaria
+174	29.07.2017	SE	N/A	10:48	11:05	16	20	N/A	some rain	N/A	Apis mellifera	N/A	0	8	Cirsium arvense
+174	31.07.2017	SE	IK	11:47	12:04	19	50	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Filipendula ulmaria
+174	31.07.2017	SE	IK	11:47	12:04	19	50	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Achillea millefolium
+174	31.07.2017	SE	IK	11:47	12:04	19	50	N/A	N/A	N/A	Apis mellifera	N/A	0	9	Cirsium arvense
+174	19.07.2017	AK	SD	17:07	17:13	21	10	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Lysimachia vulgaris
+174	19.07.2017	AK	SD	17:07	17:13	21	10	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Lythrum salicaria
+174	19.07.2017	AK	SD	17:07	17:13	21	10	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Filipendula ulmaria
+174	19.07.2017	AK	SD	17:07	17:13	21	10	N/A	N/A	N/A	Apis mellifera	N/A	0	27	Cirsium arvense
+174	21.07.2017	SD	SE	16:46	16:53	20	90	N/A	some rain	N/A	Apis mellifera	N/A	7	0	N/A
+174	21.07.2017	SD	SE	16:46	16:53	20	90	N/A	some rain	N/A	Apis mellifera	N/A	0	4	Filipendula ulmaria
+174	21.07.2017	SD	SE	16:46	16:53	20	90	N/A	some rain	N/A	Apis mellifera	N/A	0	5	Cirsium arvense
+174	31.07.2017	SE	IK	11:47	12:04	19	50	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Cirsium arvense
+174	19.07.2017	AK	SD	17:07	17:13	21	10	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Lythrum salicaria
+174	19.07.2017	AK	SD	17:07	17:13	21	10	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Cirsium arvense
+174	29.07.2017	SE	N/A	10:48	11:05	16	20	N/A	some rain	N/A	Bombus lapidarius	N/A	0	4	Cirsium arvense
+174	31.07.2017	SE	IK	11:47	12:04	19	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Solidago virgaurea
+174	31.07.2017	SE	IK	11:47	12:04	19	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	missing
+174	31.07.2017	SE	IK	11:47	12:04	19	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	4	Cirsium arvense
+174	21.07.2017	SD	SE	16:46	16:53	20	90	N/A	some rain	N/A	Bombus lapidarius	N/A	0	1	Centaurea
+174	21.07.2017	SD	SE	16:46	16:53	20	90	N/A	some rain	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+174	31.07.2017	SE	IK	11:47	12:04	19	50	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Solidago virgaurea
+174	31.07.2017	SE	IK	11:47	12:04	19	50	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	missing
+174	31.07.2017	SE	IK	11:47	12:04	19	50	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Filipendula ulmaria
+174	21.07.2017	SD	SE	16:46	16:53	20	90	N/A	some rain	N/A	Bombus lucorum Coll.	N/A	0	2	Filipendula ulmaria
+174	29.07.2017	SE	N/A	10:48	11:05	16	20	N/A	some rain	N/A	Bombus pratorum	male	0	1	Cirsium arvense
+174	29.07.2017	SE	N/A	10:48	11:05	16	20	N/A	some rain	N/A	Bombus sp.	N/A	2	0	N/A
+174	29.07.2017	SE	N/A	10:48	11:05	16	20	N/A	some rain	N/A	Bombus terrestris	N/A	0	1	Filipendula ulmaria
+174	29.07.2017	SE	N/A	10:48	11:05	16	20	N/A	some rain	N/A	Macropis europaea	male	0	1	Cirsium arvense
+175	29.07.2017	SE	N/A	11:50	12:00	17	90	N/A	some rain	N/A	Apis mellifera	N/A	0	2	Cirsium vulgare
+175	21.07.2017	JS	N/A	13:33	13:45	22	100	N/A	N/A	N/A	Apis mellifera	N/A	4	0	N/A
+175	21.07.2017	JS	N/A	13:33	13:45	22	100	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Vicia cracca
+175	21.07.2017	JS	N/A	13:33	13:45	22	100	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Trifolium repens
+175	21.07.2017	JS	N/A	13:33	13:45	22	100	N/A	N/A	N/A	Apis mellifera	N/A	0	7	Filipendula ulmaria
+175	21.07.2017	JS	N/A	13:33	13:45	22	100	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Arctium lappa
+175	21.07.2017	JS	N/A	13:33	13:45	22	100	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Cirsium arvense
+175	23.07.2017	SD	N/A	14:54	15:02	27	40	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium repens
+175	23.07.2017	SD	N/A	14:54	15:02	27	40	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Filipendula ulmaria
+175	23.07.2017	SD	N/A	14:54	15:02	27	40	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Arctium lappa
+175	23.07.2017	SD	N/A	14:54	15:02	27	40	N/A	N/A	N/A	Apis mellifera	N/A	0	5	Cirsium arvense
+175	31.07.2017	SE	N/A	13:15	13:50	19	35	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Solidago virgaurea
+175	31.07.2017	SE	N/A	13:15	13:50	19	35	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Filipendula ulmaria
+175	31.07.2017	SE	N/A	13:15	13:50	19	35	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium pratense
+175	31.07.2017	SE	N/A	13:15	13:50	19	35	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Lotus corniculatus
+175	31.07.2017	SE	N/A	13:15	13:50	19	35	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Cirsium arvense
+175	21.07.2017	JS	N/A	13:33	13:45	22	100	N/A	N/A	N/A	Bombus humilis	N/A	0	2	Vicia cracca
+175	23.07.2017	SD	N/A	14:54	15:02	27	40	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Vicia cracca
+175	31.07.2017	SE	N/A	13:15	13:50	19	35	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Lythrum salicaria
+175	23.07.2017	SD	N/A	14:54	15:02	27	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Lotus corniculatus
+175	31.07.2017	SE	N/A	13:15	13:50	19	35	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Tanacetum vulgare
+175	31.07.2017	SE	N/A	13:15	13:50	19	35	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Lythrum salicaria
+175	29.07.2017	SE	N/A	11:50	12:00	17	90	N/A	some rain	N/A	Bombus pascuorum	N/A	0	2	Vicia cracca
+175	21.07.2017	JS	N/A	13:33	13:45	22	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Vicia cracca
+175	23.07.2017	SD	N/A	14:54	15:02	27	40	N/A	N/A	N/A	Bombus pratorum	N/A	0	2	Cirsium arvense
+175	31.07.2017	SE	N/A	13:15	13:50	19	35	N/A	N/A	N/A	Bombus sp.	N/A	0	1	Cirsium arvense
+176	23.07.2017	SD	N/A	09:50	10:05	21	10	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+176	23.07.2017	SD	N/A	09:50	10:05	21	10	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Trifolium pratense
+176	23.07.2017	SD	N/A	09:50	10:05	21	10	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Trifolium repens
+176	23.07.2017	SD	N/A	09:50	10:05	21	10	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Achillea millefolium
+176	21.07.2017	AK	N/A	09:40	09:55	N/A	95	N/A	N/A	N/A	Bombus hortorum	N/A	0	6	Trifolium pratense
+176	23.07.2017	SD	N/A	09:50	10:05	21	10	N/A	N/A	N/A	Bombus hortorum	N/A	0	4	Trifolium pratense
+176	21.07.2017	AK	N/A	09:40	09:55	N/A	95	N/A	N/A	N/A	Bombus humilis	N/A	0	3	Trifolium pratense
+176	23.07.2017	SD	N/A	09:50	10:05	21	10	N/A	N/A	N/A	Bombus humilis	N/A	0	3	Trifolium pratense
+176	21.07.2017	AK	N/A	09:40	09:55	N/A	95	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Melampyrum
+176	21.07.2017	AK	N/A	09:40	09:55	N/A	95	N/A	N/A	N/A	Bombus lapidarius	N/A	0	24	Trifolium pratense
+176	23.07.2017	SD	N/A	09:50	10:05	21	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium repens
+176	23.07.2017	SD	N/A	09:50	10:05	21	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	19	Trifolium pratense
+176	21.07.2017	AK	N/A	09:40	09:55	N/A	95	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Trifolium pratense
+176	21.07.2017	AK	N/A	09:40	09:55	N/A	95	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+176	23.07.2017	SD	N/A	09:50	10:05	21	10	N/A	N/A	collected	Bombus ruderarius	male	1	0	N/A
+176	23.07.2017	SD	N/A	09:50	10:05	21	10	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium repens
+176	23.07.2017	SD	N/A	09:50	10:05	21	10	N/A	N/A	N/A	Bombus sylvarum	N/A	0	5	Trifolium pratense
+176	24.07.2017	AK	N/A	12:27	12:40	16	100	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+178	01.08.2017	SH	N/A	14:50	15:10	20	80	N/A	N/A	collected	Andrena denticulata	female	0	1	Hypericum
+178	02.08.2017	SE	IK	13:32	13:42	19	60	windy 	N/A	N/A	Apis mellifera	N/A	0	2	Arctium lappa
+178	01.08.2017	SH	N/A	14:50	15:10	20	80	N/A	N/A	N/A	Bombus hortorum	N/A	0	1	Trifolium pratense
+178	02.08.2017	SE	IK	13:32	13:42	19	60	windy 	N/A	N/A	Bombus lapidarius	N/A	0	2	Campanula trachelium
+178	01.08.2017	SH	N/A	14:50	15:10	20	80	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium pratense
+178	04.08.2017	SE	N/A	13:00	13:10	20	60	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Lapsana communis
+178	04.08.2017	SE	N/A	13:00	13:10	20	60	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Campanula trachelium
+178	02.08.2017	SE	IK	13:32	13:42	19	60	windy 	N/A	N/A	Bombus pascuorum	N/A	0	1	Arctium lappa
+178	01.08.2017	SH	N/A	14:50	15:10	20	80	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Hieracium
+178	03.08.2017	SH	N/A	12:56	13:07	16	60	no wind	N/A	N/A	Bombus pascuorum	N/A	0	3	Trifolium pratense
+178	01.08.2017	SH	N/A	14:50	15:10	20	80	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Centaurea jacea
+178	04.08.2017	SE	N/A	13:00	13:10	20	60	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Arctium lappa
+178	01.08.2017	SH	N/A	14:50	15:10	20	80	N/A	N/A	N/A	Bombus ruderarius	N/A	0	1	Trifolium pratense
+178	01.08.2017	SH	N/A	14:50	15:10	20	80	N/A	N/A	N/A	Bombus sp.	N/A	0	1	Hypericum
+178	02.08.2017	SE	IK	13:32	13:42	19	60	windy 	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	2	Tanacetum vulgare
+178	04.08.2017	SE	N/A	13:00	13:10	20	60	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	2	Lapsana communis
+178	01.08.2017	SH	N/A	14:50	15:10	20	80	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	collected	Andrena denticulata	female	0	1	Seseli libanotis
+179	01.08.2017	SE	IK	12:25	12:40	20	40	N/A	N/A	N/A	Apis mellifera	N/A	0	9	Seseli libanotis
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	N/A	Apis mellifera	N/A	0	6	Seseli libanotis
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	N/A	Apis mellifera	N/A	0	1	Anthriscus sylvestris
+179	01.08.2017	SE	IK	12:25	12:40	20	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Origanum vulgare
+179	01.08.2017	SE	IK	12:25	12:40	20	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Succisa pratensis
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	N/A	Bombus lapidarius	N/A	0	2	Succisa pratensis
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	N/A	Bombus lapidarius	N/A	0	2	Solidago virgaurea
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	N/A	Bombus lapidarius	N/A	0	3	Centaurea
+179	01.08.2017	SE	IK	12:25	12:40	20	40	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Succisa pratensis
+179	01.08.2017	SE	IK	12:25	12:40	20	40	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Crepis
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	N/A	Bombus pratorum	N/A	0	1	Centaurea
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	N/A	Bombus ruderarius	N/A	0	1	Succisa pratensis
+179	01.08.2017	SE	IK	12:25	12:40	20	40	N/A	N/A	N/A	Bombus terrestris	N/A	0	1	Succisa pratensis
+179	01.08.2017	SE	IK	12:25	12:40	20	40	N/A	N/A	N/A	Bombus terrestris	N/A	0	1	Hypericum maculatum
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	N/A	Bombus terrestris	N/A	0	1	Hypericum maculatum
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	N/A	Bombus terrestris	N/A	0	2	Seseli libanotis
+179	03.08.2017	SE	N/A	11:05	11:26	20	25	no wind	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	2	Seseli libanotis
+180	02.08.2017	SH	N/A	17:25	N/A	17	30	windy	N/A	N/A	Bombus pascuorum	N/A	0	4	Centaurea jacea
+180	02.08.2017	SH	N/A	17:25	N/A	17	30	windy	N/A	N/A	Bombus pascuorum	N/A	0	1	Vicia cracca
+180	02.08.2017	SH	N/A	17:25	N/A	17	30	windy	N/A	N/A	Bombus pascuorum	N/A	0	1	Filipendula ulmaria
+180	02.08.2017	SH	N/A	17:25	N/A	17	30	windy	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+180	02.08.2017	SH	N/A	17:25	N/A	17	30	windy	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+181	01.08.2017	SE	IK	10:15	10:26	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Chamerion angustifolium
+181	01.08.2017	SE	IK	10:15	10:26	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Melilotus officinalis
+181	01.08.2017	SE	IK	10:15	10:26	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	14	Tanacetum vulgare
+181	03.08.2017	SE	N/A	10:00	10:11	18	10	windy	N/A	N/A	Apis mellifera	N/A	0	1	Artemisia vulgaris
+181	03.08.2017	SE	N/A	10:00	10:11	18	10	windy	N/A	N/A	Apis mellifera	N/A	0	1	Chamerion angustifolium
+181	03.08.2017	SE	N/A	10:00	10:11	18	10	windy	N/A	N/A	Apis mellifera	N/A	0	6	Tanacetum vulgare
+181	01.08.2017	SE	IK	10:15	10:26	19	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Artemisia vulgaris
+181	01.08.2017	SE	IK	10:15	10:26	19	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Chamerion angustifolium
+181	01.08.2017	SE	IK	10:15	10:26	19	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Solidago virgaurea
+181	01.08.2017	SE	IK	10:15	10:26	19	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Melilotus officinalis
+181	01.08.2017	SE	IK	10:15	10:26	19	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	9	Tanacetum vulgare
+181	01.08.2017	SE	IK	10:15	10:26	19	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+181	03.08.2017	SE	N/A	10:00	10:11	18	10	windy	N/A	N/A	Bombus lapidarius	N/A	0	2	Berteroa incana
+181	03.08.2017	SE	N/A	10:00	10:11	18	10	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Tanacetum vulgare
+181	01.08.2017	SE	IK	10:15	10:26	19	30	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+181	03.08.2017	SE	N/A	10:00	10:11	18	10	windy	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Berteroa incana
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	collected	Anthophora furcata	female	0	1	Campanula rotundifolia
+182	03.08.2017	SH	N/A	10:36	11:02	18	30	N/A	N/A	mowed	Apis mellifera	N/A	1	0	N/A
+182	03.08.2017	SH	N/A	10:36	11:02	18	30	N/A	N/A	mowed	Apis mellifera	N/A	0	1	Solidago virgaurea
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Galium verum
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Seseli libanotis
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Hypericum
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Allium oleraceum
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Solidago virgaurea
+182	03.08.2017	SH	N/A	10:36	11:02	18	30	N/A	N/A	mowed	Bombus lucorum Coll.	N/A	0	1	Campanula rapunculoides
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Campanula rotundifolia
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Solidago virgaurea
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	N/A	Bombus pratorum	N/A	0	4	Solidago virgaurea
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	N/A	Bombus ruderarius	N/A	1	0	N/A
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	collected	Bombus rupestris	male	0	1	Solidago virgaurea
+182	01.08.2017	SH	N/A	11:23	11:31	17	60	N/A	N/A	N/A	Bombus soroeensis	N/A	0	3	Campanula rotundifolia
+183	31.07.2017	SH	N/A	15:10	15:25	21	70	N/A	N/A	collected	Bombus pascuorum	N/A	0	1	Selinum carvifolia
+183	31.07.2017	SH	N/A	15:10	15:25	21	70	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium repens
+183	31.07.2017	SH	N/A	15:10	15:25	21	70	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Hieracium umbellatum
+183	31.07.2017	SH	N/A	15:10	15:25	21	70	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Stachys palustris
+183	02.08.2017	AK	N/A	16:22	16:32	17	50	windy	N/A	N/A	Bombus pascuorum	N/A	0	2	Knautia arvensis
+183	31.07.2017	SH	N/A	15:10	15:25	21	70	N/A	N/A	N/A	bombus sp.	N/A	0	1	Hypericum
+183	31.07.2017	SH	N/A	15:10	15:25	21	70	N/A	N/A	N/A	Syrphidae	N/A	0	3	Selinum carvifolia
+183	31.07.2017	SH	N/A	15:10	15:25	21	70	N/A	N/A	N/A	Syrphidae	N/A	0	1	Achillea ptarmica
+183	02.08.2017	AK	N/A	16:22	16:32	17	50	windy	N/A	N/A	Syrphidae	N/A	0	1	Vicia cracca
+184	01.08.2017	AK	N/A	10:35	10:45	16	60	N/A	N/A	collected	Andrena denticulata	female	0	1	Solidago virgaurea
+184	01.08.2017	AK	N/A	10:35	10:45	16	60	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Solidago virgaurea
+184	03.08.2017	AK	N/A	10:18	10:30	17	10	no wind	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+184	03.08.2017	AK	N/A	10:18	10:30	17	10	no wind	N/A	N/A	Apis mellifera	N/A	0	1	Solidago virgaurea
+184	01.08.2017	AK	N/A	10:35	10:45	16	60	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Solidago virgaurea
+184	01.08.2017	AK	N/A	10:35	10:45	16	60	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Solidago virgaurea
+184	03.08.2017	AK	N/A	10:18	10:30	17	10	no wind	N/A	N/A	Bombus pascuorum	N/A	0	1	Solidago virgaurea
+184	01.08.2017	AK	N/A	10:35	10:45	16	60	N/A	N/A	N/A	Bombus pratorum	N/A	0	5	Solidago virgaurea
+184	03.08.2017	AK	N/A	10:18	10:30	17	10	no wind	N/A	N/A	Bombus pratorum	N/A	0	2	Solidago virgaurea
+184	01.08.2017	AK	N/A	10:35	10:45	16	60	N/A	N/A	N/A	Syrphidae	N/A	0	1	Solidago virgaurea
+184	03.08.2017	AK	N/A	10:18	10:30	17	10	no wind	N/A	N/A	Syrphidae	N/A	1	0	N/A
+185	04.08.2017	SE	IK	11:00	11:06	18	90	windy	N/A	mowed	Bombus humilis	N/A	0	1	Trifolium pratense
+185	03.08.2017	SE	N/A	11:40	11:50	20	50	no wind	N/A	N/A	Bombus pratorum	N/A	0	1	Centaurea
+185	03.08.2017	SE	N/A	11:40	11:50	20	50	no wind	N/A	N/A	Bombus terrestris	N/A	0	3	Campanula trachelium
+186	24.07.2017	AK	N/A	10:37	10:52	17	90	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Chamerion angustifolium
+186	26.07.2017	SD	N/A	10:40	10:50	19	90	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Chamerion angustifolium
+186	26.07.2017	SD	N/A	10:40	10:50	19	90	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Filipendula ulmaria
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Centaurea jacea
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Anthriscus sylvestris
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Hieracium umbellatum
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Centaurea jacea
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Hypericum
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Bombus hortorum	N/A	0	1	Anthriscus sylvestris
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Bombus hortorum	N/A	0	2	Trifolium pratense
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Bombus hortorum	N/A	0	2	Knautia arvensis
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Centaurea jacea
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Bombus humilis	N/A	0	2	Trifolium pratense
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Centaurea jacea
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Centaurea jacea
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium pratense
+186	26.07.2017	SD	N/A	10:40	10:50	19	90	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	3	Filipendula ulmaria
+186	26.07.2017	SD	N/A	10:40	10:50	19	90	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Chamerion angustifolium
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Anthriscus sylvestris
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	5	Trifolium pratense
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Hieracium umbellatum
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	3	Centaurea jacea
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Apiaceae
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Bombus ruderarius	N/A	0	1	Trifolium pratense
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Bombus sp.	N/A	2	0	N/A
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium pratense
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	collected	Melitta haemorrhoidalis	N/A	0	1	Campanula rotundifolia
+186	24.07.2017	AK	N/A	10:37	10:52	17	90	N/A	N/A	N/A	Syrphidae	N/A	5	0	N/A
+186	24.07.2017	AK	N/A	10:37	10:52	17	90	N/A	N/A	N/A	Syrphidae	N/A	0	1	Filipendula ulmaria
+186	26.07.2017	SD	N/A	10:40	10:50	19	90	N/A	N/A	N/A	Syrphidae	N/A	2	0	N/A
+186	26.07.2017	SD	N/A	10:40	10:50	19	90	N/A	N/A	N/A	Syrphidae	N/A	0	1	Filipendula ulmaria
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+186	01.08.2017	AK	N/A	12:27	12:43	18	50	N/A	N/A	N/A	Syrphidae	N/A	0	1	Anthriscus sylvestris
+186	03.08.2017	AK	N/A	11:22	11:41	18	50	N/A	N/A	N/A	Syrphidae	N/A	0	1	Trifolium pratense
+186	24.07.2017	AK	N/A	10:37	10:52	17	90	N/A	N/A	N/A	Vespidae	N/A	3	0	N/A
+187	03.08.2017	SE	N/A	12:20	12:36	21	50	N/A	N/A	beehive observed c. 110m away, honeybees were localised on half of the transect	Apis mellifera	N/A	0	41	Seseli libanotis
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	N/A	Apis mellifera	N/A	0	46	Seseli libanotis
+187	03.08.2017	SE	N/A	12:20	12:36	21	50	N/A	N/A	beehive observed c. 110m away, honeybees were localised on half of the transect	Bombus lapidarius	N/A	0	1	Tanacetum vulgare
+187	03.08.2017	SE	N/A	12:20	12:36	21	50	N/A	N/A	beehive observed c. 110m away, honeybees were localised on half of the transect	Bombus lapidarius	N/A	0	2	Trifolium pratense
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Tanacetum vulgare
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Trifolium pratense
+187	03.08.2017	SE	N/A	12:20	12:36	21	50	N/A	N/A	beehive observed c. 110m away, honeybees were localised on half of the transect	Bombus lucorum Coll.	N/A	0	1	Seseli libanotis
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	4	Seseli libanotis
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Crepis
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Tanacetum vulgare
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	N/A	Bombus ruderarius	N/A	0	1	Hieracium umbellatum
+187	03.08.2017	SE	N/A	12:20	12:36	21	50	N/A	N/A	beehive observed c. 110m away, honeybees were localised on half of the transect	Bombus sp.	N/A	2	0	N/A
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	N/A	Bombus terrestris	N/A	0	5	Seseli libanotis
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	N/A	Bombus terrestris	N/A	0	1	Tanacetum vulgare
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	collected	Colletes daviesanus	female	0	1	Seseli libanotis
+187	03.08.2017	SE	N/A	12:20	12:36	21	50	N/A	N/A	individual flew away before it could be identified to species. beehive observed c. 110m away, honeybees were localised on half of the transect	solitary bee	N/A	0	2	Seseli libanotis
+187	01.08.2017	SE	IK	14:55	15:12	20	90	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Seseli libanotis
+188	01.08.2017	SE	IK	11:36	11:50	20	30	N/A	N/A	N/A	Apis mellifera	N/A	0	18	Seseli libanotis
+188	01.08.2017	SE	IK	11:36	11:50	20	30	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Inula salicina
+188	01.08.2017	SE	IK	11:36	11:50	20	30	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Inula salicina
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Apis mellifera	N/A	0	5	Seseli libanotis
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Apis mellifera	N/A	0	2	Inula salicina
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Apis mellifera	N/A	0	1	Achillea millefolium
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Apis mellifera	N/A	0	0	N/A
+188	01.08.2017	SE	IK	11:36	11:50	20	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Centaurea jacea
+188	01.08.2017	SE	IK	11:36	11:50	20	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Seseli libanotis
+188	01.08.2017	SE	IK	11:36	11:50	20	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	7	Inula salicina
+188	01.08.2017	SE	IK	11:36	11:50	20	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Trifolium pratense
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Bombus lapidarius	N/A	0	2	Centaurea jacea
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Bombus lapidarius	N/A	0	3	Inula salicina
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium pratense
+188	01.08.2017	SE	IK	11:36	11:50	20	30	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Inula salicina
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Inula salicina
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Bombus ruderarius	N/A	0	1	Trifolium pratense
+188	01.08.2017	SE	IK	11:36	11:50	20	30	N/A	N/A	N/A	Bombus sp.	N/A	2	0	N/A
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Bombus sp.	N/A	3	0	N/A
+188	01.08.2017	SE	IK	11:36	11:50	20	30	N/A	N/A	N/A	Bombus terrestris	N/A	0	2	Seseli libanotis
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Bombus terrestris	N/A	0	2	Inula salicina
+188	03.08.2017	SE	N/A	10:25	10:45	19	10	windy	N/A	N/A	Bombus terrestris	N/A	0	1	Trifolium pratense
+188	01.08.2017	SE	IK	11:36	11:50	20	30	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Seseli libanotis
+189	01.08.2017	SE	IK	16:36	16:46	19	80	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Seseli libanotis
+189	03.08.2017	SE	N/A	13:57	14:04	20	80	N/A	N/A	N/A	Apis mellifera	N/A	0	11	Seseli libanotis
+189	03.08.2017	SE	N/A	13:57	14:04	20	80	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Achillea millefolium
+189	03.08.2017	SE	N/A	13:57	14:04	20	80	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Trifolium repens
+189	03.08.2017	SE	N/A	13:57	14:04	20	80	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Rhodiola rosea
+189	01.08.2017	SE	IK	16:36	16:46	19	80	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Seseli libanotis
+189	01.08.2017	SE	IK	16:36	16:46	19	80	N/A	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+189	01.08.2017	SE	IK	16:36	16:46	19	80	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Seseli libanotis
+189	03.08.2017	SE	N/A	13:57	14:04	20	80	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	1	Seseli libanotis
+190	03.08.2017	SE	N/A	14:20	14:32	19	95	no wind	N/A	N/A	Apis mellifera	N/A	0	2	Tripleurospermum inodorum
+190	03.08.2017	SE	N/A	14:20	14:32	19	95	no wind	N/A	N/A	Apis mellifera	N/A	0	2	Achillea millefolium
+190	03.08.2017	SE	N/A	14:20	14:32	19	95	no wind	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Achillea millefolium
+190	03.08.2017	SE	N/A	14:20	14:32	19	95	no wind	N/A	N/A	Bombus pratorum	N/A	0	1	Achillea millefolium
+190	03.08.2017	SE	N/A	14:20	14:32	19	95	no wind	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	2	Tripleurospermum inodorum
+190	01.08.2017	SE	IK	17:30	17:40	19	90	N/A	N/A	no pollinators observed	N/A	N/A	0	0	N/A
+191	03.08.2017	AK	N/A	13:38	13:54	20	80	no wind	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+191	03.08.2017	AK	N/A	13:38	13:54	20	80	no wind	N/A	N/A	Apis mellifera	N/A	0	6	Cirsium arvense
+191	03.08.2017	AK	N/A	13:38	13:54	20	80	no wind	N/A	N/A	Apis mellifera	N/A	0	2	Melilotus officinalis
+191	03.08.2017	AK	N/A	13:38	13:54	20	80	no wind	N/A	N/A	Bombus humilis	N/A	0	1	Vicia cracca
+191	01.08.2017	AK	N/A	15:34	15:53	23	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium repens
+191	01.08.2017	AK	N/A	15:34	15:53	23	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Melilotus officinalis
+191	03.08.2017	AK	N/A	13:38	13:54	20	80	no wind	N/A	N/A	Bombus lapidarius	N/A	0	4	Melilotus officinalis
+191	01.08.2017	AK	N/A	15:34	15:53	23	90	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Vicia cracca
+191	01.08.2017	AK	N/A	15:34	15:53	23	90	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+191	01.08.2017	AK	N/A	15:34	15:53	23	90	N/A	N/A	N/A	Bombus pratorum	N/A	0	5	Cirsium arvense
+191	03.08.2017	AK	N/A	13:38	13:54	20	80	no wind	N/A	N/A	Bombus ruderarius	N/A	0	1	Vicia cracca
+191	03.08.2017	AK	N/A	13:38	13:54	20	80	no wind	N/A	N/A	Bombus sylvarum	N/A	0	1	Vicia cracca
+191	03.08.2017	AK	N/A	13:38	13:54	20	80	no wind	N/A	N/A	Bombus sylvarum	N/A	0	1	Linaria vulgaris
+192	03.08.2017	SH	N/A	14:19	14:28	20	100	N/A	N/A	N/A	Apis mellifera	N/A	2	0	N/A
+192	03.08.2017	SH	N/A	14:19	14:28	20	100	N/A	N/A	plant was not in bloom	Apis mellifera	N/A	0	2	Rubus idaeus
+192	03.08.2017	SH	N/A	14:19	14:28	20	100	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Arctium lappa
+192	01.08.2017	SH	N/A	16:42	16:52	21	80	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Solidago canadensis
+192	01.08.2017	SH	N/A	16:42	16:52	21	80	N/A	N/A	N/A	Apis mellifera	N/A	0	3	Arctium lappa
+192	03.08.2017	SH	N/A	14:19	14:28	20	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Arctium lappa
+192	01.08.2017	SH	N/A	16:42	16:52	21	80	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Arctium lappa
+192	01.08.2017	SH	N/A	16:42	16:52	21	80	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	2	Arctium lappa
+192	03.08.2017	SH	N/A	14:19	14:28	20	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium repens
+192	01.08.2017	SH	N/A	16:42	16:52	21	80	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Chamerion angustifolium
+192	01.08.2017	SH	N/A	16:42	16:52	21	80	N/A	N/A	N/A	Bombus pascuorum	N/A	0	3	Trifolium repens
+192	03.08.2017	SH	N/A	14:19	14:28	20	100	N/A	N/A	N/A	Bombus terrestris	N/A	0	1	Trifolium repens
+192	01.08.2017	SH	N/A	16:42	16:52	21	80	N/A	N/A	N/A	Syrphidae	N/A	2	0	N/A
+193	03.08.2017	AK	N/A	15:00	15:11	19	100	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Cirsium arvense
+193	01.08.2017	AK	N/A	17:36	17:50	17	80	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Trifolium pratense
+193	01.08.2017	AK	N/A	17:36	17:50	17	80	N/A	N/A	N/A	Bombus lapidarius	N/A	0	4	Cirsium arvense
+193	03.08.2017	AK	N/A	15:00	15:11	19	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	7	Trifolium repens
+193	03.08.2017	AK	N/A	15:00	15:11	19	100	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Achillea millefolium
+193	03.08.2017	AK	N/A	15:00	15:11	19	100	N/A	N/A	N/A	Bombus lapidarius	male	0	14	Cirsium arvense
+193	03.08.2017	AK	N/A	15:00	15:11	19	100	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Cirsium arvense
+194	04.08.2017	AK	N/A	09:35	09:50	18	90	no wind	wet vegetation	very wet, few pollinators flying, most are sitting	Bombus lapidarius	N/A	0	8	Solidago canadensis
+194	04.08.2017	AK	N/A	09:35	09:50	18	90	no wind	wet vegetation	very wet, few pollinators flying, most are sitting	Bombus lapidarius	N/A	0	1	Tanacetum vulgare
+194	04.08.2017	AK	N/A	09:35	09:50	18	90	no wind	wet vegetation	very wet, few pollinators flying, most are sitting	Bombus lapidarius	N/A	0	1	Cirsium arvense
+194	04.08.2017	AK	N/A	09:35	09:50	18	90	no wind	wet vegetation	very wet, few pollinators flying, most are sitting	Bombus terrestris	N/A	0	1	Tanacetum vulgare
+195	N/A	SH	N/A	N/A	N/A	18	100	N/A	wet vegetation	very wet, few pollinators flying, most are sitting	Bombus terrestris	N/A	0	1	Rhodiola rosea
+196	04.08.2017	AK	N/A	10:55	11:07	18	90	N/A	N/A	mowed	Apis mellifera	N/A	0	2	missing
+196	04.08.2017	AK	N/A	10:55	11:07	18	90	N/A	N/A	mowed	Bombus lapidarius	N/A	0	1	Achillea millefolium
+196	04.08.2017	AK	N/A	10:55	11:07	18	90	N/A	N/A	mowed	Bombus lapidarius	N/A	0	2	Trifolium pratense
+196	04.08.2017	AK	N/A	10:55	11:07	18	90	N/A	N/A	mowed	Bombus ruderarius	N/A	0	1	Centaurea jacea
+196	04.08.2017	AK	N/A	10:55	11:07	18	90	N/A	N/A	mowed	Bombus ruderarius	N/A	0	1	Melilotus albus
+196	04.08.2017	AK	N/A	10:55	11:07	18	90	N/A	N/A	mowed	Bombus sp.	N/A	1	0	N/A
+197	04.08.2017	SH	N/A	12:49	13:00	19	30	N/A	N/A	N/A	Apis mellifera	N/A	3	0	N/A
+197	04.08.2017	SH	N/A	12:49	13:00	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium hybridum
+197	04.08.2017	SH	N/A	12:49	13:00	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium hybridum
+197	04.08.2017	SH	N/A	12:49	13:00	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Vicia cracca
+197	04.08.2017	SH	N/A	12:49	13:00	19	30	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium pratense
+197	04.08.2017	SH	N/A	12:49	13:00	19	30	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Barbarea vulgaris
+197	04.08.2017	SH	N/A	12:49	13:00	19	30	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Vicia cracca
+197	04.08.2017	SH	N/A	12:49	13:00	19	30	N/A	N/A	N/A	Syrphidae	N/A	1	0	N/A
+197	04.08.2017	SH	N/A	12:49	13:00	19	30	N/A	N/A	N/A	Syrphidae	N/A	0	1	Bunias orientalis
+198	02.08.2017	AK	N/A	14:31	14:45	17	50	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Arctium lappa
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Apis mellifera	N/A	0	10	Arctium lappa
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Bombus humilis	N/A	0	2	Trifolium pratense
+198	02.08.2017	AK	N/A	14:31	14:45	17	50	N/A	N/A	N/A	Bombus lapidarius	N/A	0	4	Arctium lappa
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Bombus lapidarius	N/A	0	5	Arctium lappa
+198	02.08.2017	AK	N/A	14:31	14:45	17	50	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Arctium lappa
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Trifolium repens
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Trifolium pratense
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Trifolium pratense
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Arctium lappa
+198	02.08.2017	AK	N/A	14:31	14:45	17	50	N/A	N/A	N/A	Bombus pascuorum	N/A	0	5	Trifolium pratense
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Trifolium repens
+198	02.08.2017	AK	N/A	14:31	14:45	17	50	N/A	N/A	N/A	Bombus ruderarius	N/A	0	1	Trifolium pratense
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Bombus ruderarius	N/A	0	1	Trifolium repens
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Bombus ruderarius	N/A	0	2	Trifolium pratense
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Bombus ruderarius	N/A	0	9	Arctium lappa
+198	02.08.2017	AK	N/A	14:31	14:45	17	50	N/A	N/A	N/A	Bombus sylvarum	N/A	0	1	Trifolium repens
+198	04.08.2017	AK	N/A	13:50	14:12	21	60	N/A	N/A	N/A	Syrphidae	N/A	2	0	N/A
+199	04.08.2017	SE	IK	11:15	11:28	19	90	windy	N/A	N/A	Apis mellifera	N/A	0	3	Arctium lappa
+199	04.08.2017	SE	IK	11:15	11:28	19	90	windy	N/A	N/A	Apis mellifera	N/A	0	5	Cirsium vulgare
+199	04.08.2017	SE	IK	11:15	11:28	19	90	windy	N/A	N/A	Bombus humilis	N/A	0	4	Cirsium vulgare
+199	04.08.2017	SE	IK	11:15	11:28	19	90	windy	N/A	N/A	Bombus lapidarius	N/A	0	3	Solidago canadensis
+199	04.08.2017	SE	IK	11:15	11:28	19	90	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Arctium lappa
+199	04.08.2017	SE	IK	11:15	11:28	19	90	windy	N/A	N/A	Bombus lapidarius	N/A	0	5	Cirsium vulgare
+199	04.08.2017	SE	IK	11:15	11:28	19	90	windy	N/A	N/A	Bombus pratorum	N/A	0	1	Solidago virgaurea
+199	04.08.2017	SE	IK	11:15	11:28	19	90	windy	N/A	N/A	Bombus pratorum	N/A	0	4	Cirsium vulgare
+199	04.08.2017	SE	IK	11:15	11:28	19	90	windy	N/A	N/A	Bombus sp.	N/A	3	0	N/A
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	N/A	Apis mellifera	N/A	0	1	Solidago canadensis
+201	04.08.2017	SE	IK	11:45	12:00	19	90	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Vicia cracca
+201	04.08.2017	SE	IK	11:45	12:00	19	90	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Melilotus officinalis
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	N/A	Bombus humilis	N/A	0	1	Vicia cracca
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	N/A	Bombus humilis	N/A	0	1	Trifolium pratense
+201	04.08.2017	SE	IK	11:45	12:00	19	90	N/A	N/A	N/A	Bombus humilis	N/A	0	2	Vicia cracca
+201	04.08.2017	SE	IK	11:45	12:00	19	90	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Trifolium pratense
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Chamerion angustifolium
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	N/A	Bombus lapidarius	N/A	0	3	Cirsium arvense
+201	04.08.2017	SE	IK	11:45	12:00	19	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Melilotus officinalis
+201	04.08.2017	SE	IK	11:45	12:00	19	90	N/A	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	N/A	Bombus lucorum Coll.	N/A	0	1	Cirsium arvense
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium hybridum
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	N/A	Bombus pascuorum	N/A	0	3	Vicia cracca
+201	04.08.2017	SE	IK	11:45	12:00	19	90	N/A	N/A	N/A	Bombus pascuorum	N/A	0	2	Vicia cracca
+201	04.08.2017	SE	IK	11:45	12:00	19	90	N/A	N/A	N/A	Bombus pascuorum	N/A	0	1	Linaria vulgaris
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	N/A	Bombus pratorum	N/A	0	1	Cirsium arvense
+201	04.08.2017	SE	IK	11:45	12:00	19	90	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Cirsium vulgare
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	N/A	Bombus ruderarius	N/A	0	1	Trifolium pratense
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+201	04.08.2017	SE	IK	11:45	12:00	19	90	N/A	N/A	N/A	Bombus sp.	N/A	2	0	N/A
+201	02.08.2017	SE	IK	11:43	N/A	17	80	windy	N/A	collected	Macropis europaea	male	0	1	Cirsium arvense
+201	04.08.2017	SE	IK	11:45	12:00	19	90	N/A	N/A	individual flew away before it could be identified to species	solitary bee	N/A	0	2	Stellaria graminea
+203	04.08.2017	SE	N/A	13:35	13:50	20	30	N/A	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Apis mellifera	N/A	0	30	Solidago canadensis
+203	04.08.2017	SE	N/A	13:35	13:50	20	30	N/A	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Apis mellifera	N/A	0	1	Tanacetum vulgare
+203	04.08.2017	SE	N/A	13:35	13:50	20	30	N/A	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Apis mellifera	N/A	0	1	Achillea millefolium
+203	04.08.2017	SE	N/A	13:35	13:50	20	30	N/A	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Apis mellifera	N/A	0	1	Cirsium arvense
+203	02.08.2017	SE	IK	14:55	15:14	16	50	windy	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Apis mellifera	N/A	0	19	Solidago virgaurea
+203	02.08.2017	SE	IK	14:55	15:14	16	50	windy	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus humilis	N/A	0	1	Trifolium hybridum
+203	04.08.2017	SE	N/A	13:35	13:50	20	30	N/A	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus lapidarius	N/A	0	4	Solidago canadensis
+203	04.08.2017	SE	N/A	13:35	13:50	20	30	N/A	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus lapidarius	N/A	0	3	Tanacetum vulgare
+203	04.08.2017	SE	N/A	13:35	13:50	20	30	N/A	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus lapidarius	N/A	0	1	Cirsium vulgare
+203	04.08.2017	SE	N/A	13:35	13:50	20	30	N/A	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus lapidarius	N/A	0	1	Cirsium arvense
+203	02.08.2017	SE	IK	14:55	15:14	16	50	windy	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus lapidarius	N/A	0	2	Trifolium hybridum
+203	02.08.2017	SE	IK	14:55	15:14	16	50	windy	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus lapidarius	N/A	0	3	Solidago canadensis
+203	04.08.2017	SE	N/A	13:35	13:50	20	30	N/A	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus pratorum	N/A	0	3	Solidago canadensis
+203	04.08.2017	SE	N/A	13:35	13:50	20	30	N/A	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus pratorum	N/A	0	1	Cirsium arvense
+203	02.08.2017	SE	IK	14:55	15:14	16	50	windy	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus pratorum	N/A	0	1	Cirsium arvense
+203	02.08.2017	SE	IK	14:55	15:14	16	50	windy	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus pratorum	male	0	5	Solidago virgaurea
+203	02.08.2017	SE	IK	14:55	15:14	16	50	windy	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus ruderarius	N/A	0	1	Cirsium arvense
+203	02.08.2017	SE	IK	14:55	15:14	16	50	windy	N/A	6 beehives c. 30m away, many Apis mellifera in the area	Bombus sp.	N/A	0	1	Solidago virgaurea
+203	04.08.2017	SE	N/A	13:35	13:50	20	30	N/A	N/A	individual flew away before it could be identified to species. 6 beehives c. 30m away, many Apis mellifera in the area	solitary bee	N/A	0	1	Centaurea
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Apis mellifera	N/A	0	2	Solidago virgaurea
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Apis mellifera	N/A	0	1	Tanacetum vulgare
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Apis mellifera	N/A	0	1	Chamerion angustifolium
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Apis mellifera	N/A	0	21	Solidago canadensis
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Apis mellifera	N/A	0	2	Tanacetum vulgare
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus humilis	N/A	0	1	garden plant
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus humilis	N/A	0	1	Cirsium vulgare
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus humilis	N/A	0	1	Cirsium arvense
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Bombus humilis	N/A	0	1	Cirsium vulgare
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Hypericum maculatum
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Vicia cracca
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus lapidarius	N/A	0	8	Solidago virgaurea
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus lapidarius	N/A	0	3	Tanacetum vulgare
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus lapidarius	N/A	0	5	Cirsium vulgare
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Cirsium arvense
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Solidago canadensis
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	7	Tanacetum vulgare
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	2	Cirsium vulgare
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Bombus lapidarius	N/A	0	3	Cirsium arvense
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus pratorum	N/A	0	2	Solidago virgaurea
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus pratorum	N/A	0	3	Cirsium arvense
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Solidago canadensis
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Cirsium arvense
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus ruderarius	N/A	0	2	Solidago virgaurea
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus ruderarius	N/A	0	1	Cirsium arvense
+204	02.08.2017	SE	IK	15:42	15:50	18	40	windy	N/A	N/A	Bombus sp.	N/A	0	1	Chamerion angustifolium
+204	04.08.2017	SE	N/A	13:55	N/A	20	40	N/A	N/A	N/A	Bombus sp.	N/A	3	0	N/A
+205	27.07.2017	AK	N/A	15:57	16:09	18.5	100	N/A	some rain	N/A	Apis mellifera	N/A	0	1	Centaurea jacea
+205	10.08.2017	SH	SE	10:41	11:00	19	15	no wind	wet vegetation	N/A	Apis mellifera	N/A	0	3	Centaurea
+205	08.08.2017	SH	SE	10:57	11:18	17	10	N/A	N/A	N/A	Apis mellifera	N/A	1	0	N/A
+205	08.08.2017	SH	SE	10:57	11:18	17	10	N/A	N/A	N/A	Apis mellifera	N/A	0	4	Centaurea
+205	10.08.2017	SH	SE	10:41	11:00	19	15	no wind	wet vegetation	N/A	Bombus bohemicus	N/A	0	1	Centaurea
+205	08.08.2017	SH	SE	10:57	11:18	17	10	N/A	N/A	N/A	Bombus hortorum	N/A	0	4	Centaurea
+205	10.08.2017	SH	SE	10:41	11:00	19	15	no wind	wet vegetation	N/A	Bombus lapidarius	N/A	0	7	Centaurea
+205	08.08.2017	SH	SE	10:57	11:18	17	10	N/A	N/A	N/A	Bombus lapidarius	N/A	0	13	Centaurea
+205	27.07.2017	AK	N/A	15:57	16:09	18.5	100	N/A	some rain	N/A	Bombus lucorum Coll.	N/A	0	1	Centaurea jacea
+205	10.08.2017	SH	SE	10:41	11:00	19	15	no wind	wet vegetation	N/A	Bombus lucorum Coll.	N/A	0	2	Centaurea
+205	10.08.2017	SH	SE	10:41	11:00	19	15	no wind	wet vegetation	N/A	Bombus pratorum	N/A	0	4	Centaurea
+205	08.08.2017	SH	SE	10:57	11:18	17	10	N/A	N/A	N/A	Bombus pratorum	N/A	0	1	Centaurea
+205	08.08.2017	SH	SE	10:57	11:18	17	10	N/A	N/A	N/A	Bombus pratorum	N/A	0	4	Centaurea
+205	10.08.2017	SH	SE	10:41	11:00	19	15	no wind	wet vegetation	N/A	Bombus ruderarius	N/A	0	2	Centaurea
+205	08.08.2017	SH	SE	10:57	11:18	17	10	N/A	N/A	N/A	Bombus ruderarius	N/A	0	6	Centaurea
+205	08.08.2017	SH	SE	10:57	11:18	17	10	N/A	N/A	N/A	Bombus ruderarius	N/A	0	1	Achillea millefolium
+205	08.08.2017	SH	SE	10:57	11:18	17	10	N/A	N/A	N/A	Bombus terrestris	N/A	0	1	Centaurea
+208	02.08.2017	SH	N/A	15:17	15:34	19	40	windy	N/A	N/A	Apis mellifera	N/A	0	2	Arctium lappa
+208	02.08.2017	SH	N/A	15:17	15:34	19	40	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Arctium lappa
+208	02.08.2017	SH	N/A	15:17	15:34	19	40	windy	N/A	N/A	Bombus pascuorum	N/A	0	2	Arctium lappa
+208	02.08.2017	SH	N/A	15:17	15:34	19	40	windy	N/A	N/A	Bombus pratorum	N/A	0	2	Arctium lappa
+208	02.08.2017	SH	N/A	15:17	15:34	19	40	windy	N/A	N/A	Bombus sp.	N/A	1	0	N/A
+209	01.08.2017	SH	N/A	11:32	11:55	17	80	windy	N/A	N/A	Apis mellifera	N/A	0	1	Trifolium pratense
+209	01.08.2017	SH	N/A	11:32	11:55	17	80	windy	N/A	N/A	Bombus lapidarius	N/A	1	0	N/A
+209	01.08.2017	SH	N/A	11:32	11:55	17	80	windy	N/A	N/A	Bombus lapidarius	N/A	0	1	Achillea millefolium
+209	01.08.2017	SH	N/A	11:32	11:55	17	80	windy	N/A	N/A	Bombus lapidarius	N/A	0	3	Trifolium pratense
+209	01.08.2017	SH	N/A	11:32	11:55	17	80	windy	N/A	N/A	Bombus lucorum Coll.	N/A	1	0	N/A
+209	01.08.2017	SH	N/A	11:32	11:55	17	80	windy	N/A	N/A	Bombus pascuorum	N/A	0	1	Trifolium pratense
+209	01.08.2017	SH	N/A	11:32	11:55	17	80	windy	N/A	N/A	Bombus ruderarius	N/A	1	0	N/A
+209	01.08.2017	SH	N/A	11:32	11:55	17	80	windy	N/A	N/A	Bombus ruderarius	N/A	0	2	Trifolium repens

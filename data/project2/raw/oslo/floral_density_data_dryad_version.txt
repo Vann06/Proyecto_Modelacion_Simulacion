@@ -1,0 +1,594 @@
+trap_number	inventory_date	plant_species_latin_name	flower_number	transect_width_cm	transect_length_m	comments
+101	19.jul	Galeopsis	1	40	20	NA
+101	19.jul	Alchemilla	1	40	20	NA
+101	19.jul	Vicia sp.	25	40	20	NA
+101	19.jul	Chamerion angustifolium	1	40	20	NA
+101	19.jul	Stellaria graminea	6	40	20	NA
+101	19.jul	Lathyrus pratensis	2	40	20	NA
+101	19.jul	Epilobium montanum	1	40	20	NA
+101	19.jul	Leucanthemum sp.	32	40	20	NA
+101	19.jul	Bunias orientalis	3	40	20	NA
+101	19.jul	Veronica sp.	5	40	20	NA
+101	19.jul	Vicia sp.	1	40	20	NA
+101	19.jul	Myosotis sp.	22	40	20	NA
+102	19.jul	Vicia sp.	3	40	20	NA
+102	19.jul	Trifolium repens	6	40	20	NA
+102	19.jul	Achillea sp.	1	40	20	NA
+102	19.jul	Trifolium sp.	15	40	20	NA
+102	19.jul	Galium album	37	40	20	NA
+102	19.jul	Cirsium arvense	70	40	20	NA
+103	19.jul	Lathyrus pratensis	3.333333333	40	20	NA
+103	19.jul	Trifolium sp.	98	40	20	NA
+105	18.jul	Tripleurospermum sp.	230	40	10	Short transect, not possible to record at full length
+105	18.jul	Vicia sp.	56	40	10	Short transect, not possible to record at full length
+105	18.jul	Melilotus sp.	18.1	40	10	Short transect, not possible to record at full length
+105	18.jul	Melilotus sp.	26	40	10	Short transect, not possible to record at full length
+105	18.jul	Trifolium sp.	55	40	10	Short transect, not possible to record at full length
+106	19.jul	Trifolium sp.	56	40	20	Two 10m transects surveyed, each 40cm in width
+106	19.jul	Campanula rapunculoides	5	40	20	Two 10m transects surveyed, each 40cm in width
+106	19.jul	Campanula rapunculoides	18	40	20	Two 10m transects surveyed, each 40cm in width
+108	19.jul	Prunella sp.	4	40	20	Two 10m transects surveyed, each 40cm in width
+108	19.jul	Prunella sp.	6	40	20	Two 10m transects surveyed, each 40cm in width
+108	19.jul	Trifolium repens	21	40	20	Two 10m transects surveyed, each 40cm in width
+108	19.jul	Trifolium repens	50	40	20	Two 10m transects surveyed, each 40cm in width
+108	19.jul	Ranunculus	3	40	20	Two 10m transects surveyed, each 40cm in width
+109	19.jul	Lathyrus pratensis	0.666666667	40	20	Estimated transect length, not measured
+109	19.jul	Trifolium repens	9	40	20	Estimated transect length, not measured
+109	19.jul	Trifolium sp.	6	40	20	Estimated transect length, not measured
+109	19.jul	Campanula latifolia	4	40	20	Estimated transect length, not measured
+112	22.jul	Vicia sp.	2	40	20	NA
+112	22.jul	Trifolium repens	19	40	20	NA
+112	22.jul	Epilobium montanum	3	40	20	NA
+112	22.jul	Trifolium sp.	50	40	20	NA
+112	22.jul	Campanula latifolia	4	40	20	NA
+112	22.jul	Galium album	20	40	20	NA
+112	22.jul	Lotus sp.	12	40	20	NA
+112	22.jul	Cirsium arvense	10	40	20	NA
+113	22.jul	Trifolium sp.	39	40	20	NA
+113	22.jul	Chenopodiaceae	6	40	20	NA
+113	22.jul	Vicia sp.	84	40	20	NA
+113	22.jul	Trifolium repens	28	40	20	NA
+113	22.jul	Epilobium montanum	10	40	20	NA
+113	22.jul	Filipendula ulmaria	8	40	20	NA
+113	22.jul	Trifolium sp.	8	40	20	NA
+113	22.jul	Hieracium sp.	3	40	20	NA
+114	25.jul	Chamerion angustifolium	3	40	20	NA
+114	25.jul	Galium album	1	40	20	NA
+115	27.jul	Scorzoneroides autumnalis	2	40	20	NA
+115	27.jul	Lapsana communis	2	40	20	NA
+115	27.jul	Trifolium repens	88	40	20	NA
+115	27.jul	Alliaria petiolata	4	40	20	NA
+115	27.jul	Trifolium sp.	3	40	20	NA
+115	27.jul	Myosotis sp.	1	40	20	NA
+115	27.jul	Stachys sylvatica	1	40	20	NA
+115	27.jul	Arctium sp.	3	40	20	NA
+115	27.jul	Stellaria media	18	40	20	NA
+115	27.jul	Myosotis sp.	10	40	20	NA
+116	25.jul	Trifolium repens	0	40	20	NA
+117	25.jul	Lysimachia vulgaris	3	40	20	Recorded from a garden
+117	25.jul	Epilobium montanum	0.5	40	20	NA
+117	25.jul	Epilobium montanum	1.5	40	20	NA
+117	25.jul	Alchemilla	4	40	20	NA
+117	25.jul	Alchemilla	5	40	20	NA
+117	25.jul	Trifolium sp.	9	40	20	NA
+117	25.jul	Calystegia sp.	2	40	20	NA
+117	25.jul	Crepis sp.	13	40	20	NA
+117	25.jul	Crepis sp.	13	40	20	NA
+118	25.jul	Alchemilla	4	40	20	NA
+118	25.jul	Bunias orientalis	3	40	20	NA
+118	25.jul	Achillea sp.	29	40	20	NA
+118	25.jul	Trifolium sp.	3	40	20	NA
+118	25.jul	Campanula rapunculoides	16	40	20	NA
+119	27.jul	Cerastium fontanum	6	40	20	NA
+119	27.jul	Succisa pratensis	2	40	20	NA
+119	27.jul	Stellaria graminea	420	40	20	NA
+119	27.jul	Ranunculus repens	63	40	20	NA
+119	27.jul	Alchemilla	2	40	20	NA
+119	27.jul	Verbascum sp.	1	40	20	NA
+119	27.jul	Leucanthemum sp.	8	40	20	NA
+119	27.jul	Silene dioica	2	40	20	NA
+119	27.jul	Knautia arvensis	3	40	20	NA
+120	26.jul	Cerastium fontanum	18	40	20	NA
+120	26.jul	Plantago sp.	17	40	20	NA
+120	26.jul	Trifolium repens	10	40	20	NA
+120	26.jul	Bunias orientalis	3	40	20	NA
+120	26.jul	Achillea sp.	81	40	20	NA
+120	26.jul	Trifolium sp.	24	40	20	NA
+120	26.jul	Medicago lupulina	52	40	20	NA
+120	26.jul	Polygonum aviculare	1	40	20	NA
+120	26.jul	Rorippa sp.	18	40	20	NA
+121	26.jul	Vicia sp.	0	40	20	not in bloom
+121	26.jul	Drymocallis rupestris	0	40	20	not in bloom
+121	26.jul	Rosa dumalis	0	40	20	not in bloom
+121	26.jul	Lathyrus linifolius	0	40	20	not in bloom
+121	26.jul	Geum sp.	0	40	20	not in bloom
+121	26.jul	Fragaria vesca	0	40	20	not in bloom
+121	26.jul	Sorbus aucuparia	0	40	20	not in bloom
+121	26.jul	Rosa canina	0	40	20	not in bloom
+121	26.jul	Lotus sp.	0	40	20	not in bloom
+121	26.jul	Vaccinium vitis-idaea	0	40	20	not in bloom
+121	26.jul	Hieracium sp.	0	40	20	present at site, not in transect
+121	26.jul	Rubus idaeus	0	40	20	present at site, not in transect,not in bloom
+121	26.jul	Campanula rotundifolia	10	40	20	NA
+121	26.jul	Galium verum	2	40	20	NA
+121	26.jul	Symphoricarpos albus	24	40	20	NA
+122	28.jul	Berteroa sp.	1	40	20	NA
+122	28.jul	Trifolium repens	3	40	20	NA
+122	28.jul	Geranium sp.	1	40	20	NA
+123	22.jul	Trifolium sp.	153	40	20	Two 10m transects surveyed, each 40cm in width
+123	22.jul	Trifolium sp.	11	40	20	NA
+123	22.jul	Lathyrus pratensis	12	40	20	NA
+123	22.jul	Cirsium arvense	7	40	20	NA
+123	22.jul	Cirsium arvense	40	40	20	NA
+124	22.jul	Epilobium montanum	6	40	20	Two 10m transects surveyed, each 40cm in width. 80% of transect is grass
+124	22.jul	Filipendula ulmaria	78	40	20	Two 10m transects surveyed, each 40cm in width. 80% of transect is grass
+124	22.jul	Cirsium sp.	6	40	20	Two 10m transects surveyed, each 40cm in width. 80% of transect is grass
+125	22.jul	Lathyrus pratensis	2.5	40	20	NA
+125	22.jul	Trifolium sp.	214	40	20	NA
+126	22.jul	Trifolium sp.	55	40	20	Ten percent of transect is bare sand
+126	22.jul	Trifolium sp.	3	40	20	Ten percent of transect is bare sand
+126	22.jul	Melilotus sp.	5	40	20	Ten percent of transect is bare sand
+126	22.jul	Achillea sp.	6	40	20	Ten percent of transect is bare sand
+126	22.jul	Galium album	1	40	20	Ten percent of transect is bare sand
+126	22.jul	Cirsium arvense	33	40	20	Ten percent of transect is bare sand
+127	22.jul	Melampyrum	142	40	20	One 5m and one 15m transect surveyed
+128	22.jul	Filipendula ulmaria	11	40	20	NA
+129	22.jul	Melampyrum	80	40	20	Estimated transect length, not measured
+129	22.jul	Achillea sp.	3	40	20	Estimated transect length, not measured
+129	22.jul	Lotus sp.	4	40	20	Estimated transect length, not measured
+130	28.jul	Alchemilla	1	40	20	NA
+130	28.jul	Melampyrum	0.333333333	40	20	NA
+130	28.jul	Stellaria graminea	66	40	20	NA
+130	28.jul	Trifolium repens	23	40	20	NA
+130	28.jul	Galeopsis tetrahit	10	40	20	NA
+130	28.jul	Filipendula ulmaria	1	40	20	NA
+130	28.jul	Geranium sp.	5	40	20	NA
+130	28.jul	Melampyrum pratense	20	40	20	NA
+131	28.jul	Calluna vulgaris	20	40	20	NA
+131	28.jul	Melampyrum pratense	5	40	20	NA
+131	28.jul	Potentilla sp.	71	40	20	NA
+132	22.jul	Lysimachia vulgaris	3	40	20	NA
+132	22.jul	Vicia sp.	117	40	20	NA
+132	22.jul	Lathyrus pratensis	4	40	20	NA
+132	22.jul	Filipendula ulmaria	4	40	20	NA
+132	22.jul	Achillea sp.	2	40	20	NA
+133	27.jul	Epilobium montanum	1	40	20	NA
+133	27.jul	Linaria sp.	1	40	20	NA
+133	27.jul	Fragaria vesca	1	40	20	NA
+133	27.jul	Galium album	3	40	20	NA
+133	27.jul	Cirsium arvense	53	40	20	NA
+134	27.jul	Vaccinium myrtillus	0	40	20	In fruit
+134	27.jul	Vaccinium vitis-idaea	0	40	20	In fruit
+135	04.aug	Artemisia sp.	1	40	20	NA
+135	04.aug	Solidago sp.	10	40	20	NA
+135	04.aug	Melilotus sp.	30	40	20	NA
+135	04.aug	Achillea sp.	1	40	20	NA
+135	04.aug	Tanacetum sp.	73	40	20	NA
+135	04.aug	Achillea sp.	18	40	20	NA
+136	25.jul	Aegopodium podagraria	13	40	20	NA
+136	25.jul	Melampyrum pratense	5	40	20	NA
+136	25.jul	Melampyrum pratense	27	40	20	NA
+137	25.jul	Chenopodiaceae	2.5	40	20	Urban agricultural field
+137	25.jul	Stellaria graminea	5	40	20	Urban agricultural field
+137	25.jul	Alchemilla	1	40	20	Urban agricultural field
+137	25.jul	Leucanthemum sp.	1	40	20	Urban agricultural field
+137	25.jul	Trifolium sp.	1	40	20	Urban agricultural field
+137	25.jul	Melampyrum pratense	70	40	20	Urban agricultural field
+137	25.jul	Galium album	5	40	20	Urban agricultural field
+138	25.jul	Stellaria graminea	5	40	20	NA
+138	25.jul	Stellaria graminea	44	40	20	NA
+138	25.jul	Trifolium repens	31	40	20	NA
+138	25.jul	Ranunculus repens	2	40	20	NA
+138	25.jul	Tanacetum sp.	4	40	20	NA
+138	25.jul	Trifolium sp.	82	40	20	NA
+138	25.jul	Campanula rapunculoides	4	40	20	NA
+138	25.jul	Crepis sp.	56	40	20	NA
+139	22.jul	Campanula rotundifolia	17	40	20	NA
+139	22.jul	Hypericum sp.	15	40	20	NA
+139	22.jul	Stellaria graminea	10	40	20	NA
+139	22.jul	Filipendula ulmaria	7	40	20	NA
+139	22.jul	Potentilla sp.	7	40	20	NA
+140	18.jul	Melampyrum	118	20	20	NA
+140	18.jul	Potentilla sp.	2	20	20	NA
+141	18.jul	Trifolium sp.	8	40	20	NA
+141	18.jul	Ranunculus acris	1	40	20	NA
+141	18.jul	Vicia sp.	32	40	20	NA
+141	18.jul	Trifolium sp.	24	40	20	NA
+141	18.jul	Hieracium sp.	11	40	20	NA
+142	18.jul	Geum sp.	1	40	20	NA
+142	18.jul	Epilobium montanum	1	40	20	NA
+142	18.jul	Lysimachia nummularia	103	40	20	NA
+142	18.jul	Aegopodium podagraria	5	40	20	NA
+142	18.jul	Campanula latifolia	7	40	20	NA
+144	04.aug	Taraxacum sp.	1	40	20	Newly mown
+145	26.jul	Cerastium fontanum	1	40	20	Urban garden
+145	26.jul	Prunella sp.	169	40	20	Urban garden
+145	26.jul	Alchemilla	44	40	20	Urban garden
+145	26.jul	Hypericum sp.	2	40	20	Urban garden
+145	26.jul	Vicia sp.	13	40	20	Urban garden
+145	26.jul	Trifolium repens	7	40	20	Urban garden
+145	26.jul	Galium boreale	1	40	20	Urban garden
+145	26.jul	Ranunculus repens	8	40	20	Urban garden
+145	26.jul	Leucanthemum sp.	141	40	20	Urban garden
+145	26.jul	Achillea sp.	52	40	20	Urban garden
+145	26.jul	Trifolium sp.	205	40	20	Urban garden
+145	26.jul	Knautia arvensis	1	40	20	Urban garden
+145	26.jul	Valeriana sambucifolia	7	40	20	Urban garden
+146	24.jul	Filipendula ulmaria	78	40	20	NA
+147	24.jul	Solidago sp.	0	40	20	almost in bloom
+147	24.jul	Hypericum sp.	8.5	40	20	NA
+147	24.jul	Tanacetum sp.	10	40	20	NA
+147	24.jul	Galium album	46	40	20	NA
+147	24.jul	Cirsium arvense	142	40	20	NA
+148	24.jul	Alchemilla	10	40	20	NA
+148	24.jul	Trifolium sp.	20	40	20	NA
+149	27.jul	Solidago sp.	1	40	20	NA
+149	27.jul	Epilobium montanum	1	40	20	NA
+149	27.jul	Galium palustre	2	40	20	NA
+149	27.jul	Cirsium sp.	1	40	20	NA
+149	27.jul	Mycelis muralis	7	40	20	NA
+149	27.jul	Mycelis muralis	12	40	20	NA
+149	27.jul	Angelica sylvestris	2	40	20	NA
+149	27.jul	Melampyrum sylvaticum	1	40	20	NA
+150	24.jul	Alchemilla	7	40	20	NA
+150	24.jul	Solidago sp.	26	40	20	NA
+150	24.jul	Tanacetum sp.	3	40	20	NA
+150	24.jul	Galium album	6	40	20	NA
+150	24.jul	Cirsium arvense	2	40	20	NA
+151	24.jul	Epilobium ciliatum	9	40	20	NA
+151	24.jul	Tripleurospermum sp.	10	40	20	NA
+151	24.jul	Vicia sp.	12	40	20	NA
+151	24.jul	Stellaria graminea	2	40	20	NA
+151	24.jul	Trifolium repens	7	40	20	NA
+151	24.jul	Melilotus sp.	11	40	20	NA
+151	24.jul	Epilobium montanum	1	40	20	NA
+151	24.jul	Ranunculus repens	1	40	20	NA
+151	24.jul	Linaria sp.	1	40	20	NA
+151	24.jul	Alliaria petiolata	3	40	20	NA
+151	24.jul	Malva moschata	30	40	20	NA
+151	24.jul	Leucanthemum sp.	6	40	20	NA
+151	24.jul	Tanacetum sp.	53	40	20	NA
+151	24.jul	Achillea sp.	68	40	20	NA
+151	24.jul	Trifolium sp.	106	40	20	NA
+151	24.jul	Myosotis sp.	3	40	20	NA
+151	24.jul	Cirsium arvense	4	40	20	NA
+152	24.jul	Geum sp.	1	40	20	NA
+153	24.jul	Melampyrum pratense	59	40	20	NA
+153	24.jul	Hieracium sp.	4	40	20	NA
+154	27.jul	Vaccinium myrtillus	0	40	20	In fruit
+154	27.jul	Melampyrum pratense	5	40	20	NA
+155	28.jul	Tragopogon sp.	1	40	20	NA
+155	28.jul	Stellaria graminea	294	40	20	NA
+155	28.jul	Trifolium repens	16	40	20	NA
+155	28.jul	Achillea sp.	72	40	20	NA
+155	28.jul	Trifolium sp.	268	40	20	NA
+155	28.jul	Galium album	142	40	20	NA
+155	28.jul	Potentilla sp.	2	40	20	NA
+155	28.jul	Lotus sp.	5	40	20	NA
+155	28.jul	Polygonum aviculare	4	40	20	NA
+155	28.jul	Campanula rapunculoides	9	40	20	NA
+156	27.jul	Rubiaceae	2	40	20	NA
+156	27.jul	Tanacetum sp.	26	40	20	NA
+156	27.jul	Galium album	27	40	20	NA
+156	27.jul	Cirsium arvense	20	40	20	NA
+157	25.jul	Trifolium repens	96	40	20	NA
+157	25.jul	Achillea sp.	1	40	20	NA
+157	25.jul	Trifolium sp.	4	40	20	NA
+157	25.jul	Lotus sp.	19	40	20	NA
+158	25.jul	Vicia sp.	2	40	20	NA
+158	25.jul	Stellaria graminea	25	40	20	NA
+158	25.jul	Lathyrus pratensis	2	40	20	NA
+158	25.jul	Epilobium montanum	5	40	20	NA
+158	25.jul	Trifolium sp.	26	40	20	NA
+158	25.jul	Galium album	49	40	20	NA
+159	25.jul	Campanula rotundifolia	0.75	40	20	NA
+159	25.jul	Trifolium repens	1	40	20	NA
+159	25.jul	Alchemilla	1	40	20	NA
+159	25.jul	Tanacetum sp.	3	40	20	NA
+159	25.jul	Achillea sp.	6	40	20	NA
+159	25.jul	Medicago lupulina	129	40	20	NA
+159	25.jul	Galium album	15	40	20	NA
+159	25.jul	Campanula rapunculoides	7	40	20	NA
+159	25.jul	Rorippa sp.	1	40	20	NA
+159	25.jul	Cirsium arvense	100	40	20	NA
+160	27.jul	Artemisia sp.	1	40	20	NA
+160	27.jul	Stellaria graminea	6	40	20	NA
+160	27.jul	Trifolium repens	1	40	20	NA
+160	27.jul	Tanacetum sp.	4	40	20	NA
+160	27.jul	Achillea sp.	3	40	20	NA
+160	27.jul	Trifolium sp.	0	40	20	NA
+160	27.jul	Galium album	1	40	20	NA
+161	26.jul	Artemisia sp.	3	40	20	NA
+161	26.jul	Capsella sp.	3	40	20	NA
+161	26.jul	Trifolium repens	13	40	20	NA
+161	26.jul	Melilotus sp.	70	40	20	NA
+161	26.jul	Achillea sp.	1	40	20	NA
+161	26.jul	Trifolium sp.	11	40	20	NA
+161	26.jul	Aegopodium podagraria	2	40	20	NA
+161	26.jul	Medicago lupulina	5	40	20	NA
+161	26.jul	Lepidotheca suaveolens	2	40	20	NA
+161	26.jul	Polygonum aviculare	6	40	20	NA
+161	26.jul	Campanula rapunculoides	9	40	20	NA
+161	26.jul	Senecio vulgaris	6	40	20	NA
+161	26.jul	Cirsium arvense	7	40	20	NA
+162	28.jul	Lathyrus pratensis	12	40	20	NA
+162	28.jul	Solidago sp.	41	40	20	NA
+162	28.jul	Linaria sp.	1	40	20	NA
+162	28.jul	Trifolium sp.	46	40	20	NA
+162	28.jul	Galium album	2	40	20	NA
+162	28.jul	Cirsium arvense	4	40	20	NA
+163	22.jul	Vicia sp.	6	40	20	Roadside
+163	22.jul	Filipendula ulmaria	5	40	20	Roadside
+163	22.jul	Aegopodium podagraria	13	40	20	Roadside
+163	22.jul	Cirsium sp.	2	40	20	Roadside
+164	22.jul	Vicia sp.	70	40	20	NA
+164	22.jul	Lathyrus pratensis	11	40	20	NA
+164	22.jul	Trifolium sp.	6	40	20	NA
+164	22.jul	Trifolium sp.	1	40	20	NA
+164	22.jul	Arctium sp.	1	40	20	NA
+165	22.jul	Epilobium montanum	0.25	40	20	NA
+165	22.jul	Alchemilla	31	40	20	NA
+165	22.jul	Vicia sp.	1	40	20	NA
+165	22.jul	Lupinus sp.	2	40	20	NA
+165	22.jul	Bunias orientalis	1	40	20	NA
+165	22.jul	Aegopodium podagraria	2	40	20	NA
+165	22.jul	Cirsium arvense	8	40	20	NA
+166	22.jul	Trifolium sp.	6	40	20	NA
+166	22.jul	Vicia sp.	6	40	20	NA
+166	22.jul	Lathyrus pratensis	3.833333333	40	20	NA
+166	22.jul	Leucanthemum sp.	4	40	20	NA
+166	22.jul	Trifolium sp.	1	40	20	NA
+166	22.jul	Galium album	46	40	20	NA
+166	22.jul	Cirsium arvense	5	40	20	NA
+167	22.jul	Hieracium sp.	1	40	20	NA
+168	22.jul	Vicia sp.	8	40	20	Estimated transect length, not measured
+168	22.jul	Epilobium montanum	10	40	20	Estimated transect length, not measured
+168	22.jul	Hypericum sp.	22	40	20	Estimated transect length, not measured
+169	22.jul	Melampyrum	164	40	20	NA
+169	22.jul	Trifolium repens	19	40	20	NA
+169	22.jul	Trifolium sp.	33	40	20	NA
+170	26.jul	Rubus idaeus	0	40	20	not in bloom
+170	26.jul	Rubus idaeus	0	40	20	not in bloom
+170	26.jul	Vicia sp.	0	40	20	not in bloom
+170	26.jul	Lathyrus pratensis	0	40	20	not in bloom
+170	26.jul	Anthriscus sylvestris	0	40	20	not in bloom
+170	26.jul	Geum sp.	0	40	20	not in bloom
+170	26.jul	Rubiaceae	0	40	20	not in bloom
+170	26.jul	Rosa canina	0	40	20	not in bloom
+170	26.jul	Lysimachia vulgaris	8	40	20	NA
+170	26.jul	Vicia sp.	3	40	20	NA
+170	26.jul	Aegopodium podagraria	18	40	20	NA
+170	26.jul	Aegopodium podagraria	27	40	20	NA
+170	26.jul	Cirsium arvense	1	40	20	NA
+170	26.jul	Cirsium arvense	7	40	20	NA
+171	26.jul	Geranium sanguineum	0	40	20	not in bloom
+171	26.jul	Polygonatum odoratum	0	40	20	not in bloom
+171	26.jul	Trifolium sp.	0	40	20	not in bloom
+171	26.jul	Thymus sp.	33	40	20	NA
+171	26.jul	Origanum sp.	63	40	20	NA
+171	26.jul	Alchemilla	16	40	20	NA
+171	26.jul	Trifolium sp.	57	40	20	NA
+171	26.jul	Galium verum	7	40	20	NA
+171	26.jul	Trifolium sp.	44	40	20	NA
+171	26.jul	Sedum album	8	40	20	NA
+171	26.jul	Hypericum sp.	14	40	20	NA
+171	26.jul	Achillea sp.	1	40	20	NA
+171	26.jul	Galium album	1	40	20	NA
+171	26.jul	Potentilla sp.	3	40	20	NA
+172	26.jul	Trifolium repens	78	40	20	Urban garden
+172	26.jul	Trifolium sp.	4	40	20	NA
+172	26.jul	Malva sylvestris	1	40	20	NA
+172	26.jul	Tripleurospermum sp.	231	40	20	NA
+172	26.jul	Trifolium sp.	2	40	20	NA
+172	26.jul	Medicago sativa	9	40	20	NA
+172	26.jul	Artemisia sp.	9	40	20	NA
+172	26.jul	Anethum graveolens	2	40	20	NA
+172	26.jul	Lamium hybridum	2	40	20	NA
+172	26.jul	Capsella sp.	2	40	20	NA
+172	26.jul	Capsella sp.	7	40	20	NA
+172	26.jul	Phacelia sp.	16	40	20	NA
+172	26.jul	Trifolium repens	6	40	20	NA
+172	26.jul	Persicaria sp.	1	40	20	NA
+172	26.jul	Persicaria sp.	1	40	20	NA
+172	26.jul	Senecio viscosus	2	40	20	NA
+172	26.jul	Cyanus segetum	26	40	20	NA
+172	26.jul	Galeopsis tetrahit	6	40	20	NA
+172	26.jul	Taraxacum sp.	1	40	20	NA
+172	26.jul	Chenopodiaceae	36	40	20	NA
+172	26.jul	Chenopodiaceae	66	40	20	NA
+172	26.jul	Trifolium sp.	4	40	20	NA
+172	26.jul	Chaenorhinum minus	3	40	20	NA
+172	26.jul	Polygonum aviculare	4	40	20	NA
+172	26.jul	Polygonum aviculare	14	40	20	NA
+172	26.jul	Stellaria media	20	40	20	NA
+172	26.jul	Sonchus arvensis	1	40	20	NA
+172	26.jul	Viola sp.	3	40	20	NA
+172	26.jul	Senecio vulgaris	3	40	20	NA
+172	26.jul	Senecio vulgaris	26	40	20	NA
+173	19.jul	NA	NA	40	20	densely forested with no understory plants in flower
+174	19.jul	Trifolium sp.	16	40	20	NA
+174	19.jul	Lysimachia vulgaris	4	40	20	NA
+174	19.jul	Lythrum salicaria	1	40	20	NA
+174	19.jul	Filipendula ulmaria	6	40	20	NA
+174	19.jul	Galium album	8	40	20	NA
+174	19.jul	Cirsium arvense	13	40	20	NA
+175	21.jul	Vicia sp.	65	40	20	NA
+175	21.jul	Filipendula ulmaria	2	40	20	NA
+175	21.jul	Trifolium sp.	26	40	20	NA
+175	21.jul	Cirsium arvense	8	40	20	NA
+176	21.jul	Tripleurospermum sp.	14	40	20	NA
+176	21.jul	Vicia sp.	21	40	20	NA
+176	21.jul	Stellaria graminea	1	40	20	NA
+176	21.jul	Trifolium repens	48	40	20	NA
+176	21.jul	Trifolium repens	70	40	20	NA
+176	21.jul	Trifolium sp.	195	40	20	NA
+178	01.aug	Campanula rotundifolia	0.75	40	20	NA
+178	01.aug	Taraxacum sp.	3	40	20	NA
+178	01.aug	Hypericum sp.	4	40	20	NA
+178	01.aug	Trifolium sp.	127	40	20	NA
+178	01.aug	Knautia arvensis	7	40	20	NA
+178	01.aug	Agrimonia eupatoria	3	40	20	NA
+179	01.aug	Campanula rotundifolia	1	40	20	NA
+179	01.aug	Succisa pratensis	6	40	20	NA
+179	01.aug	Hypericum sp.	8	40	20	NA
+179	01.aug	Galium verum	22	40	20	NA
+179	01.aug	Seseli libanotis	2	40	20	NA
+179	01.aug	Anthriscus sylvestris	3	40	20	NA
+179	01.aug	Achillea sp.	1	40	20	NA
+179	01.aug	Trifolium sp.	2	40	20	NA
+179	01.aug	Geranium sp.	4	40	20	NA
+180	02.aug	Taraxacum sp.	4	40	20	NA
+180	02.aug	Lysimachia vulgaris	22	40	20	NA
+180	02.aug	Vicia sp.	12	40	20	NA
+180	02.aug	Linaria sp.	3	40	20	NA
+180	02.aug	Filipendula ulmaria	2	40	20	NA
+180	02.aug	Achillea sp.	9	40	20	NA
+180	02.aug	Hypericum sp.	5	40	20	NA
+180	02.aug	Leucanthemum sp.	34	40	20	NA
+180	02.aug	Tanacetum sp.	2	40	20	NA
+180	02.aug	Trifolium sp.	6	40	20	NA
+181	01.aug	Artemisia sp.	4	40	20	NA
+181	01.aug	Chamerion angustifolium	1	40	20	NA
+181	01.aug	Solidago sp.	4	40	20	NA
+181	01.aug	Melilotus sp.	60	40	20	NA
+181	01.aug	Tanacetum sp.	149	40	20	NA
+181	01.aug	Bunias orientalis	1	40	20	NA
+181	01.aug	Achillea sp.	8	40	20	NA
+182	01.aug	Solidago sp.	7	40	20	NA
+182	01.aug	Senecio viscosus	24	40	20	NA
+182	01.aug	Trifolium sp.	1	40	20	NA
+182	01.aug	Campanula rapunculoides	35	40	20	NA
+183	02.aug.17	Vicia sp.	2	40	20	NA
+183	02.aug.17	Trifolium repens	9	40	20	NA
+183	02.aug.17	Galeopsis tetrahit	2	40	20	NA
+183	02.aug.17	Achillea sp.	5	40	20	NA
+183	02.aug.17	Trifolium sp.	8	40	20	NA
+183	02.aug.17	Knautia arvensis	3	40	20	NA
+183	02.aug.17	Hieracium sp.	3	40	20	NA
+183	02.aug.17	Potentilla sp.	25	40	20	NA
+184	01.aug	Solidago sp.	26	40	14	Estimated transect length, not measured
+185	01.aug	Anthriscus sylvestris	5	40	20	NA
+185	01.aug	Campanula trachelium	2	40	20	NA
+185	01.aug	Trifolium sp.	9	40	20	NA
+185	01.aug	Galium album	2	40	20	NA
+185	01.aug	Campanula rapunculoides	4	40	20	NA
+186	01.aug	Thymus sp.	8	40	20	NA
+186	01.aug	Campanula rotundifolia	5	40	20	NA
+186	01.aug	Crepis sp.	3	40	20	NA
+186	01.aug	Pimpinella sp.	27	40	20	NA
+186	01.aug	Stellaria graminea	1	40	20	NA
+186	01.aug	Galium verum	18	40	20	NA
+186	01.aug	Anthriscus sylvestris	3	40	20	NA
+186	01.aug	Hypericum sp.	24	40	20	NA
+186	01.aug	Leucanthemum sp.	2	40	20	NA
+186	01.aug	Achillea sp.	6	40	20	NA
+186	01.aug	Hieracium sp.	1	40	20	NA
+186	01.aug	Trifolium sp.	20	40	20	NA
+186	01.aug	Potentilla sp.	1	40	20	NA
+187	01.aug	Campanula rotundifolia	1	40	20	NA
+187	01.aug	Crepis sp.	4	40	20	NA
+187	01.aug	Seseli libanotis	21	40	20	NA
+187	01.aug	Anthriscus sylvestris	4	40	20	NA
+187	01.aug	Trifolium sp.	20	40	20	NA
+188	01.aug	Galium verum	7	40	20	NA
+188	01.aug	Seseli libanotis	8	40	20	NA
+188	01.aug	Inula sp.	21	40	20	NA
+188	01.aug	Achillea sp.	13	40	20	NA
+188	01.aug	Trifolium sp.	56	40	20	NA
+189	01.aug	Hypericum sp.	7	40	20	NA
+189	01.aug	Stellaria graminea	6	40	20	NA
+189	01.aug	Seseli libanotis	8	40	20	NA
+189	01.aug	Berteroa sp.	7	40	20	NA
+189	01.aug	Achillea sp.	16	40	20	NA
+189	01.aug	Trifolium sp.	3	40	20	NA
+189	01.aug	Galium album	9	40	20	NA
+189	01.aug	Convolvulus arvensis	4	40	20	NA
+190	01.aug	Trifolium sp.	1	40	20	NA
+190	01.aug	Tripleurospermum sp.	28	40	20	NA
+190	01.aug	Prunella sp.	1	40	20	NA
+190	01.aug	Alchemilla	13	40	20	NA
+190	01.aug	Achillea sp.	48	40	20	NA
+191	01.aug	Melampyrum	37	40	20	NA
+191	01.aug	Pimpinella sp.	3	40	20	NA
+191	01.aug	Vicia sp.	5	40	20	NA
+191	01.aug	Cirsium arvense	50	40	20	NA
+192	01.aug	Solidago sp.	22	40	20	NA
+192	01.aug	Filipendula ulmaria	10	40	20	NA
+192	01.aug	Cirsium arvense	10	40	20	NA
+193	01.aug	Stellaria graminea	45	40	20	NA
+193	01.aug	Trifolium repens	11	40	20	NA
+193	01.aug	Tanacetum sp.	19	40	20	NA
+193	01.aug	Achillea sp.	24	40	20	NA
+193	01.aug	Trifolium sp.	9	40	20	NA
+193	01.aug	Cirsium arvense	90	40	20	NA
+194	02.aug	Melilotus sp.	12	40	20	NA
+194	02.aug	Solidago sp.	11	40	20	NA
+194	02.aug	Tanacetum sp.	1	40	20	NA
+194	02.aug	Trifolium sp.	8	40	20	NA
+194	02.aug	Galium album	3	40	20	NA
+195	02.aug	Campanula rotundifolia	3.5	40	20	NA
+195	02.aug	Brassicaceae	7	40	20	NA
+195	02.aug	Trifolium repens	8	40	20	NA
+195	02.aug	Brassicaceae	1	40	20	NA
+195	02.aug	Tanacetum sp.	3	40	20	NA
+195	02.aug	Achillea sp.	7	40	20	NA
+195	02.aug	Trifolium sp.	27	40	20	NA
+196	02.aug	Trifolium repens	58	40	20	NA
+196	02.aug	Trifolium sp.	5	40	20	NA
+196	02.aug	Arctium sp.	1	40	20	NA
+197	02.aug	Tripleurospermum sp.	1	40	20	NA
+197	02.aug	Trifolium repens	6	40	20	NA
+197	02.aug	Melilotus sp.	4	40	20	NA
+197	02.aug	Linaria sp.	2	40	20	NA
+197	02.aug	Trifolium sp.	14	40	20	NA
+197	02.aug	Medicago lupulina	21	40	20	NA
+197	02.aug	unknown	4	40	20	NA
+198	02.aug	Stellaria graminea	1	40	20	NA
+198	02.aug	Trifolium repens	32	40	20	NA
+198	02.aug	Trifolium sp.	35	40	20	NA
+198	02.aug	Arctium sp.	2	40	20	NA
+199	02.aug	Trifolium sp.	8	40	20	NA
+199	02.aug	Vicia sp.	4	40	20	NA
+199	02.aug	Solidago sp.	2	40	20	NA
+199	02.aug	Linaria sp.	3	40	20	NA
+199	02.aug	Tanacetum sp.	2	40	20	NA
+201	02.aug	Vicia sp.	30	40	20	NA
+201	02.aug	Stellaria graminea	6	40	20	NA
+201	02.aug	Melilotus sp.	2	40	20	NA
+201	02.aug	Melilotus sp.	40	40	20	NA
+201	02.aug	Trifolium sp.	7	40	20	NA
+201	02.aug	Arctium sp.	1	40	20	NA
+201	02.aug	Galium album	18	40	20	NA
+201	02.aug	Cirsium arvense	40	40	20	NA
+203	02.08.2017	Trifolium sp.	13	40	20	NA
+203	02.08.2017	Vicia sp.	1	40	20	NA
+203	02.08.2017	Solidago sp.	60	40	20	NA
+203	02.08.2017	Epilobium montanum	1	40	20	NA
+203	02.08.2017	Linaria sp.	1	40	20	NA
+203	02.08.2017	Tanacetum sp.	20	40	20	NA
+203	02.08.2017	Achillea sp.	1	40	20	NA
+203	02.08.2017	Galium album	1	40	20	NA
+204	02.aug	Trifolium sp.	6	40	20	NA
+204	02.aug	Hypericum sp.	5	40	20	NA
+204	02.aug	Vicia sp.	2	40	20	NA
+204	02.aug	Solidago sp.	20	40	20	NA
+204	02.aug	Tanacetum sp.	3	40	20	NA
+204	02.aug	Galium album	14	40	20	NA
+204	02.aug	Cirsium arvense	70	40	20	NA
+205	27.jul	Alchemilla	50	40	20	NA
+205	27.jul	Ranunculus repens	2	40	20	NA
+205	27.jul	Achillea sp.	58	40	20	NA
+205	27.jul	Polygonum aviculare	42	40	20	NA
+207	02.aug	Anthriscus sylvestris	2	40	20	NA
+207	02.aug	Campanula trachelium	6	40	20	NA
+207	02.aug	Achillea sp.	3	40	20	NA
+207	02.aug	Cirsium arvense	20	40	20	NA
+208	02.aug	Vicia sp.	40	40	20	NA
+208	02.aug	Trifolium repens	29	40	20	NA
+208	02.aug	Filipendula ulmaria	3	40	20	NA
+208	02.aug	Trifolium sp.	7	40	20	NA
+208	02.aug	Ranunculus	91	40	20	NA
+208	02.aug	Cirsium arvense	2	40	20	NA
+209	02.aug	Trifolium repens	34	40	20	NA
+209	02.aug	Achillea sp.	53	40	20	NA
+209	02.aug	Trifolium sp.	187	40	20	NA
