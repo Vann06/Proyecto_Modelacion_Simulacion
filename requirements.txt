@@ -1,5 +1,9 @@
 numpy
 pandas
+geopandas
+requests
+shapely>=2.0
+pyproj
 scipy
 matplotlib
 pyyaml
