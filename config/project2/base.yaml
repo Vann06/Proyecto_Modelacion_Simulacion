@@ -1,0 +1,104 @@
+# Perfil operativo de PRUEBA. No constituye calibración ecológica de Oslo.
+mode: synthetic
+scenario: synthetic_base_v1
+parameters:
+  K:
+    value: 5
+    status: scenario_parameter
+    provisional: true
+    source: Diseño de prueba; variar K conjuntamente para todos los métodos.
+  max_foraging_distance_m:
+    value: 3000.0
+    status: scenario_parameter
+    provisional: true
+    source: Radio de prueba, no radio observado; sensibilidad pendiente.
+  alpha:
+    value: 1.0
+    status: pending_calibration
+    provisional: true
+    source: Penalización demostrativa; sensibilidad pendiente.
+  beta:
+    value: 2.0
+    status: pending_calibration
+    provisional: true
+    source: Exponente demostrativo; sensibilidad pendiente.
+  distance_scale_m:
+    value: 1000.0
+    status: scenario_parameter
+    provisional: true
+    source: Escala adimensional de comparación, no medición biológica.
+  resource_unit:
+    value: synthetic_RU
+    status: scenario_parameter
+    provisional: true
+    source: Fichas abstractas de prueba; no flores, ml de néctar ni masa de polen.
+  initial_resource_rule:
+    value: exclusive_area_share
+    status: scenario_parameter
+    provisional: true
+    source: Reparto del total sintético según área exclusiva; no estima capacidad floral.
+  initial_resource_total:
+    value: 1000.0
+    status: pending_calibration
+    provisional: true
+    source: Total arbitrario declarado para probar el motor, no recurso observado.
+  regeneration_rate:
+    value: 0.10
+    status: pending_calibration
+    provisional: true
+    source: Fracción del stock inicial agregada al cierre diario; no tasa real ni capacidad máxima.
+  departures_per_day:
+    value: 12.0
+    status: pending_calibration
+    provisional: true
+    source: Media Poisson de oportunidades por colonia/día; modelo agregado de prueba.
+  day_minutes:
+    value: 600.0
+    status: inherited_from_project1
+    provisional: true
+    source: config/base.yaml simulation.day_minutes; supuesto heredado, no jornada observada en Oslo.
+  flight_speed_m_s:
+    value: 5.5
+    status: inherited_from_project1
+    provisional: true
+    source: 0.33 km/min de Proyecto 1 convertido a m/s; no recalibrado.
+  search_time_mean_min:
+    value: 1.0
+    status: pending_calibration
+    provisional: true
+    source: Media exponencial sintética para búsqueda, no duración del inventario Dryad.
+  demand_mean_ru:
+    value: 1.0
+    status: pending_calibration
+    provisional: true
+    source: Media exponencial de demanda de fichas por viaje; no néctar observado.
+  foraging_rate_ru_per_min:
+    value: 1.0
+    status: pending_calibration
+    provisional: true
+    source: Conversión sintética de consumo a tiempo de servicio; no parámetro ecológico medido.
+  return_model:
+    value: within_day_only
+    status: scenario_parameter
+    provisional: true
+    source: Retorno si termina dentro de jornada; no mortalidad biológica ni logística ajustada.
+  simulation_start:
+    value: '2017-07-18'
+    status: derived
+    provisional: false
+    source: simulation_calendar.csv; ventana común contextualizada en notebook 03.
+  simulation_end:
+    value: '2017-08-04'
+    status: derived
+    provisional: false
+    source: simulation_calendar.csv; límite del inventario floral.
+  replications:
+    value: 100
+    status: derived
+    provisional: false
+    source: Número de semillas comunes existentes; smoke puede usar un prefijo menor.
+  seed_bank_file:
+    value: data/project2/processed/experiment_seeds.csv
+    status: derived
+    provisional: false
+    source: Banco reproducible del notebook 04; no regenerar por integrante.

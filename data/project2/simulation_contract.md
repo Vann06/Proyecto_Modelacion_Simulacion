@@ -1,102 +1,94 @@
 # Contrato común del simulador — Proyecto 2, Oslo
 
-Versión: 1.0. Motor espacial futuro: **no implementado ni calibrado** en esta entrega.
-Guía común para RANDOM, GREEDY y NSGA-II; ningún algoritmo redefine motor, métricas o parámetros.
+Versión operativa: **project2-synthetic-1.1.0**. Motor mínimo agregado implementado, exclusivamente **sintético**, sin calibración ecológica. RANDOM, GREEDY y NSGA-II todavía no están implementados y deben usar exactamente este motor.
 
 ## Entidades e inputs
 
-- FloralPatch: los 737 polígonos de espacios verdes como recurso potencial, incluidos 362 que no admiten colmena bajo la regla conservadora. No hay capacidades absolutas asignadas.
-- CandidateHiveSite: uno de 375 puntos representativos interiores de polígonos enteramente disjuntos de zonas libres de abejas. Validación geométrica de la regla disponible, no inferencia de otros permisos.
-- Hive: una colonia en un CandidateHiveSite; exactamente K sitios válidos distintos, sin duplicados. K aún debe fijarse por experimento y ser común a todos los métodos.
-- Inputs: processed/spatial_patches.csv, oslo_parks.geojson, bee_free_zones.geojson, simulation_calendar.csv y temporal_variable_metadata.csv; TXT Dryad originales para observación. Nuevas entradas compartidas: candidate_hive_sites.csv, hive_patch_distances.npz, experiment_seeds.csv y simulation_metrics_contract.csv.
-- Preservar IDs y hashes. Traps Dryad carecen de coordenadas; no unirlos arbitrariamente a parques. Polígonos solapados requieren política de recurso compartido antes de parametrizar stock por área.
+- `FloralPatch`: cualquiera de los 737 espacios verdes como recurso potencial, incluidos los 362 excluidos para colocar colmena. No equivale a capacidad floral observada.
+- `CandidateHiveSite`: uno de 375 puntos interiores admisibles bajo la regla de polígonos enteramente disjuntos de zonas libres de abejas. No se infieren otros permisos.
+- `Hive`: colonia agregada en un sitio candidato; exactamente K sitios distintos. El motor mínimo no representa un número finito de obreras ni mortalidad de colonia.
+- Inputs originales: `data/project2/processed/{spatial_patches.csv,oslo_parks.geojson,bee_free_zones.geojson,candidate_hive_sites.csv,hive_patch_distances.npz,simulation_calendar.csv,temporal_variable_metadata.csv,experiment_seeds.csv,simulation_metrics_contract.csv}`. Dryad es evidencia de auditoría, no stock por parque ni coordenadas de traps.
+- Nuevos derivados: `resource_patches.csv`, `resource_patches.geojson`, `resource_patch_distances.npz`, `resource_preparation.json`. Preparar explícitamente con `python scripts/project2_run.py prepare`. No se sobrescriben originales.
 
-## Horizonte y evidencia
+## Horizonte y procedencia
 
-Resolución diaria: 2017-07-18 a 2017-08-04, 18 días inclusivos. Ventana para calibrar/validar, no modelo ya calibrado. Junio–septiembre es apoyo estacional cualitativo; anual es exploratorio sin curva de recurso.
-observed = medición escrita en fuente; derived = fechas contextualizadas/densidades/distancias/agregaciones; modeled = recurso futuro y procesos ecológicos; scenario_parameter = K, sensibilidad, seeds y decisiones del experimento. Metadatos de 03 siguen vigentes. Proxies July=1 y August≈0.761 no son curva longitudinal ni recursos diarios automáticos.
+Diario, 2017-07-18 → 2017-08-04, 18 días inclusivos. Es la ventana propuesta para calibrar/validar; el motor actual sigue siendo de prueba. Junio–septiembre es contexto cualitativo y anual es arquitectura sin curva calibrada. Los proxies July=1/August≈0.761 no se aplican como recursos diarios.
 
-## Interfaz única y resultados
+Cada parámetro de `config/project2/base.yaml` tiene `value`, `status`, `provisional` y `source`. Estados: observed, derived, inherited_from_project1, scenario_parameter, pending_calibration. Heredar un supuesto no lo convierte en observación. Las etiquetas observed/derived/modeled/scenario_parameter de las variables de 03 permanecen vigentes.
 
-`simulate(hive_sites, seed, config)` devolverá un diccionario con `metrics`, `per_hive`, `trips`, `resource_log`, `provenance`.
-`hive_sites`: IDs ordenados canónicamente por el motor; colonias asociadas a hive_slot 0…K−1. Validar antes de sortear, sin reducir silenciosamente K.
-`config`: mismo motor/versiones, hashes de inputs, K, calendario, familias y parámetros de distribuciones para todos. Rechazar configuración incompleta antes de consumir RNG. Recursos/unidades no tienen defaults inventados.
-`per_hive`: K filas, incluso con entrega cero; hive_slot, site_id, resource_delivered. `trips`: date, hive_slot, trip_slot, patch_id, one_way_distance_m, foraging_start/end_min, resource_consumed/delivered, returned, competition_at_selection y other_colonies_active_at_foraging_start. `resource_log`: date/patch_id, R_before, consumption, regeneration, R_after. `provenance`: seed, config/input hashes, versiones y esquema RNG. No incluir tiempo de ejecución variable en igualdad estocástica.
-Las nueve métricas obligatorias se emiten siempre; valores indefinidos quedan ausentes con denominador documentado, no se omite la clave. Diagnósticos adicionales separados.
+## Solapamientos y recurso inicial
 
-## Flujo y recurso
+Regla fija `lexicographic_patch_id_priority_v1`: ordenar IDs como texto y asignar a cada j su geometría menos la unión de todos los polígonos anteriores. La unión territorial se conserva y los interiores no cuentan dos veces. El CSV mantiene 737 IDs; 680 tienen área positiva y 57 reciben área cero según esta convención. El GeoJSON derivado contiene solo geometrías positivas; no inventa polígonos para los restantes. Cero área asignada no significa cero flores observado.
 
-Inicio del día → generar viajes → seleccionar parche → viajar → forrajear → consumir recurso → regresar → registrar métricas; cerrar balance y trasladar estado al día siguiente.
-Procesar colonias en un reloj de eventos común; empates por (tiempo, hive_slot, trip_slot, tipo de evento), congelado en la versión del motor. Las oportunidades de viaje deben tener slots estables antes de ramas aleatorias.
-R_j(t) = stock al inicio del día, en RU simbólica pendiente de calibrar. R_j(t+1)=max(0,R_j(t)-consumption_j(t)+regeneration_j(t)). Regeneración acreditada al cierre. Consumo atómico compartido y no mayor al stock inicial; no ocultar sobreconsumo con max. Fallo de retorno no repone lo consumido. Recurso entregado solo cuenta retornos exitosos dentro del horizonte. No se ejecutó esta dinámica ecológica aún.
+Ventajas: simple, determinista, trazable, conserva IDs y unión sin doble conteo. Desventajas: prioridad arbitraria sin calidad ecológica; fragmenta parques, puede cambiar puntos representativos y afectar resultados. Requiere sensibilidad frente a otras políticas antes de conclusiones ecológicas. Los originales permanecen intactos.
 
-## Selección y competencia configurables
+`exclusive_area_share` reparte un total de fichas sintéticas según área exclusiva/área de unión. No multiplica áreas por densidad Dryad ni estima capacidad floral. Cero área asignada implica siempre cero stock bajo esta regla.
 
-score_j = R_j / ((1+d_ij/distance_scale_m)^beta * (1+alpha*competition_j)); P(j)=score_j/sum(score).
-alpha>=0, beta>=0 y distance_scale_m>0, sin valores fijados. competition_j cuenta otras colonias distintas activas al seleccionar el destino. No usa ocupación futura. Registrar también ocupación al inicio de forrajeo para la métrica de presión, que puede diferir tras viajar. Si sum(score)=0, no hay forrajeo disponible; registrar oportunidad no atendida, sin fallback uniforme silencioso. Destinos florales incluyen todos los parches, no solo candidatos para colmenas.
+## Interfaz y retorno
 
-## Distancias y unidades
+`simulate(hive_sites, seed, config)` en `bee_sim.project2.simulation`. `load_config` crea un objeto validado e inmutable. Los overrides explícitos `with_parameters` cambian config_hash; no se admiten callbacks de reglas o métricas.
 
-EPSG:25833, metros; matriz 375x737 entre puntos representativos interiores, distancia euclidiana de ida, sin rutas ni barreras. NPZ contiene distancias, IDs, coordenadas y CRS; leer con allow_pickle=False. Permitir cero al parche de origen. No confundir con km de Proyecto 1 ni con suma ida/vuelta.
-RU es símbolo, no ml ni conteo floral observado. Definir resource_unit y conversión mediante evidencia antes de simular. No asignar capacidades por área sin resolver solapamientos y falta de correspondencia entre traps y parques.
+Validar K IDs distintos del catálogo antes de sortear y ordenar canónicamente; hive_slot=0…K−1. Seed uint32 del banco común. El horizonte y las reglas no se alteran por estrategia. Falta de configuración/derivados o manifest obsoleto producen error claro, sin fallback.
 
-## Semillas y comparación justa
+Salida:
 
-100 seeds uint32 en experiment_seeds.csv, replication_id 1…100, generadas con SeedSequence(2017). Igual banco para todas las estrategias bajo igual escenario/K/config. RNG del optimizador independiente del de evaluación. Guardar también versiones de NumPy y motor.
-CRN: PCG64 por (seed, day, hive_slot, trip_slot, draw_slot, process_code), sin algoritmo ni hash() de Python en clave. Códigos fijos: {"climate": 8, "departures": 0, "flowers": 2, "foraging": 6, "nectar": 3, "patch_selection": 1, "pollination": 4, "regeneration": 9, "return": 7, "search": 5}. Crear un bloque una vez por evento y usar subslots estables por flor. Ramas de un proceso no desplazan otros procesos. Repetir clave reinicia bloque. Misma seed secuencial sola no garantiza CRN: la alineación del motor debe probarse después.
-Todos usan exactamente K, restricciones, horizonte, simulador, distribuciones, parámetros y seeds iguales. Emparejar diferencias por (scenario,K,replication_id,seed); comparar configuraciones idénticas salvo ubicaciones. No mezclar calibración y evaluación sin declarar validación interna. Las direcciones no fijan ponderaciones de objetivos; número de parches es diagnóstico.
+- `metrics`: exactamente nueve claves; None cuando el denominador no existe.
+- `per_hive`: K filas con hive_slot, site_id, resource_delivered, incluyendo entrega cero.
+- `trips`: date, hive_slot, site_id, trip_slot, patch_id, departure/arrival/foraging_start/foraging_end/return_min, one_way_distance_m, competition_at_selection, other_colonies_active_at_foraging_start, foraging_attempt, resource_consumed, resource_delivered, returned. Etapas no alcanzadas quedan ausentes. Arrival/return definidos fuera de jornada son tiempos planificados, no eventos ejecutados después del cierre.
+- `resource_log`: date/patch_id, R_before, consumption, regeneration, R_after en todos los días/parches.
+- `events`: oportunidades sin destino, salida, llegada, inicio/fin de forrajeo y retorno. amount_ru depende del tipo de evento; no sumar retiros y entregas como si ambos fueran recurso obtenido.
+- `provenance`: mode, scenario, resource_unit, seed, config_hash, engine_version, engine_hash, metric_contract_hash, input_hash (resumen) e input_hashes (detalle), rng, política y versiones NumPy/pandas. No incluir tiempo de ejecución en igualdad estocástica. El escritor rechaza mezclar datos/configuraciones/motores/contratos distintos en un archivo comparable.
 
-## Métricas comunes
+## Flujo diario implementado
 
-| metric | definition | unit | direction |
-| --- | --- | --- | --- |
-| total_resource_obtained | Sum of resource delivered to all K colonies by successful returns within horizon; consumption on failed trips is not delivered | RU: config.resource_unit, pending calibration | maximize |
-| mean_resource_per_hive | Total delivered / K, including zero-delivery colonies | RU per hive | maximize |
-| min_resource_per_hive | Minimum cumulative delivered resource across exactly K colonies | RU per hive | maximize |
-| mean_distance_m | Mean one-way point-to-point distance over initiated patch trips, including trips without return; undefined if none | m | minimize |
-| total_distance_m | Sum of one-way distances over initiated patch trips; not round-trip or realized flight path; zero if no trips | m | minimize |
-| p95_distance_m | 95th percentile of same one-way trip distances using linear quantile; undefined if no trips | m | minimize |
-| competition_pressure | Fraction of foraging attempts with at least one other distinct colony active in the patch at foraging start; undefined if no attempts | fraction [0,1] | minimize |
-| hive_balance_jain | (sum delivered_i)^2 / (K * sum delivered_i^2); includes zero-delivery hives; undefined if all zero | index [1/K,1] when defined | maximize |
-| patches_used_count | Distinct patch_id with positive resource consumption during horizon; zero if none | count | report_only |
+Inicio → oportunidades de viaje → seleccionar → viajar → buscar/forrajear → consumir → regresar → registrar → regenerar al cierre.
 
-Sin viajes: distancia total y parches usados=0; distancia media/P95 y presión ausentes. Sin entrega: total/media/mínimo=0 sobre K colonias; Jain ausente si todas entregan cero. Distancias incluyen viajes iniciados sin retorno, son siempre de ida y no trayectoria real. Presión usa fracción de intentos con otra colonia activa, no densidad de polinizadores Dryad.
+Oportunidades Poisson por colonia/día; tiempos uniformes condicionales y slots definidos antes de decisiones. Sin destinos no se inicia viaje; el slot no se recicla. Reloj común de todas las colonias, empates por `(time_min,event_priority,hive_slot,trip_slot)`: return=0, foraging_end=1, foraging_start=2, arrival=3, departure=4. Cierres antes de aperturas implementan ocupación [inicio,fin).
 
-## Reutilización de Proyecto 1
+`score_j = R_j / ((1+d_ij/distance_scale_m)^beta * (1+alpha*competition_j))`; `P(j)=score_j/sum(score)` sobre stock positivo y distancia <= max_foraging_distance_m. competition_j cuenta otras colonias distintas activas al seleccionar, sin mirar eventos futuros. Si no hay scores positivos, registrar oportunidad sin parche, no fallback uniforme. La presión se mide al inicio de forrajeo y puede diferir del snapshot de selección.
 
-| component | reusable | changes_needed |
+Búsqueda y demanda exponenciales con medias de prueba. Al iniciar forrajeo reservar/retirar atómicamente `min(stock,demanda,tiempo_restante*foraging_rate)`. Tiempo de servicio=consumo/tasa. Retorno si cabe en jornada, sin mortalidad biológica. Se generan nuevas oportunidades al siguiente día sin retirar obreras por fallos; no se representa población finita. No se calcula polinización, néctar físico o polen.
+
+## Balance del recurso
+
+R_j(t) es el stock inicial del día en **synthetic_RU**, fichas sin conversión observada.
+
+`R_j(t+1)=max(0,R_j(t)-consumption_j(t)+regeneration_j(t))`.
+
+Consumo acumulado <= stock inicial, sin esconder sobreconsumo con max. Un fallo de retorno no repone recurso. Regeneración al cierre = regeneration_rate * R_initial, sin techo adicional: puede acumularse si no se consume. Es una simplificación sintética explícita, no fenología calibrada. Recurso obtenido significa entregado por retornos dentro de jornada, no todo lo consumido.
+
+## Distancias
+
+EPSG:25833 y metros, distancia euclidiana de ida entre puntos representativos. Los destinos se recalculan dentro de las geometrías exclusivas. La nueva matriz 375x737 incluye IDs, coordenadas y CRS; leer NPZ con allow_pickle=False. Los IDs sin área mantienen referencia geométrica original solo como coordenada finita, nunca destino elegible. La matriz de 04 permanece intacta. Distancias cero son válidas. No son rutas ni trayectorias reales; convertir velocidad m/s a m/min para vuelos.
+
+## Métricas congeladas
+
+Fuente normativa: `simulation_metrics_contract.csv`, verificada por nombres, definiciones, unidades y direcciones. Única implementación: `metrics.py`.
+
+| metric | Definición resumida | direction |
 | --- | --- | --- |
-| departures — simulation/departures.py | partial | Reutilizar generar_salidas A/B; fijar el mismo método para todos. Calibrar intensidad por colonia/día y jornada; tratar cierres y continuidad entre días. |
-| distance — simulation/distance.py | partial | Sustituir sortear_distancia Weibull por matriz geográfica. Adaptar metros/km y velocidad. tiempo_vuelo usa 2D/V; permitir distancia cero; retorno logístico no calibrado. |
-| flowers visited — simulation/flowers.py | partial | Reutilizar Poisson/negbin y validaciones; ligar media al recurso del parche y limitar consumo compartido. No adoptar niveles baja/media/alta sin ajuste. |
-| pollination — simulation/pollination.py | partial | Reutilizar Bernoulli como hipótesis opcional; p_success sin evidencia aquí. Visitas Dryad no validan polinización efectiva. |
-| nectar — simulation/nectar.py | partial | Reutilizar suma Gamma y dominios; no heredar escala/unidad ml como observada. Definir conversión y conservación con R; separar consumido y entregado. |
-| trip duration — simulation/trip_duration.py | partial | Reutilizar suma vuelo+búsqueda+forrajeo; estimar escalas y velocidad, adaptar distancia métrica y jornadas. Duración de observación Dryad no es duración de un viaje. |
-| return model — simulation/return_model.py | partial | Reutilizar chequeo horario y Bernoulli; recalibrar logística y transición de colonia entre días. No inferir supervivencia de visitas observadas. |
-| random generators — generators/ | yes_with_adapter | Reutilizar RNG explícito y transformaciones; PCG64 para CRN. LCG solo diagnóstico. Separar procesos/eventos: misma seed global no garantiza alineación bajo ramas diferentes. |
+| total_resource_obtained | Total entregado a K colonias dentro de jornada | maximize |
+| mean_resource_per_hive | Entrega total/K incluyendo ceros | maximize |
+| min_resource_per_hive | Mínima entrega acumulada entre K | maximize |
+| mean_distance_m | Media de idas de viajes iniciados, incluso sin retorno | minimize |
+| total_distance_m | Suma de idas, no vuelo total ida/vuelta | minimize |
+| p95_distance_m | P95 de esas idas, quantile linear | minimize |
+| competition_pressure | Fracción de intentos con otra colonia activa al inicio de forrajeo | minimize |
+| hive_balance_jain | (suma entregas)^2/(K*suma entregas²) | maximize |
+| patches_used_count | IDs con consumo positivo | report_only |
 
-Environment sortea disponibilidad por viaje y simular_jornada reinicia una colonia de una jornada: necesitan adaptación multi-colmena/día/stock compartido. Validadores heredados con distancia estrictamente positiva deben permitir cero en Proyecto 2.
+Recurso en synthetic_RU, distancias en metros, presión [0,1], Jain [1/K,1] si definido y parches en conteo. Sin viajes: distancia total/parches=0; media/P95/presión ausentes. Sin entrega: total/media/mínimo=0 y Jain ausente. No omitir métricas ni colonias de bajo rendimiento.
 
-## Parámetros pendientes
+## Seeds y comparación
 
-| parameter | classification | requirement_or_pending_work |
-| --- | --- | --- |
-| K | scenario_parameter | Exactamente K sitios; entero entre 1 y número de candidatos; valor pendiente del diseño experimental |
-| horizon / time_resolution | scenario_parameter | Fijos para comparación principal: 2017-07-18 a 2017-08-04, diaria |
-| resource_unit / initial_resources | modeled | Unidad y stock por parche sin cuantificar; no copiar ml de Proyecto 1 ni multiplicar áreas por Dryad sin correspondencia |
-| regeneration / overlap_policy | modeled | Sin parametrizar; renovación al cierre y tratamiento de áreas solapadas antes de asignar recursos |
-| alpha / beta / distance_scale_m | scenario_parameter | Pendientes de sensibilidad; alpha>=0, beta>=0 y escala de distancia>0 |
-| departures / day_minutes / active_foragers | modeled | Familia, intensidad y esfuerzo diario/por colonia pendientes de calibración |
-| flowers / search / nectar / velocity | modeled | Familias reutilizables, parámetros y unidades por justificar; misma configuración para todos |
-| return / pollination / colony_transition | modeled | Probabilidades y continuidad de colonia entre días no identificadas con estos TXT |
-| seed bank / RNG schema / engine_version | scenario_parameter | Banco compartido, PCG64, claves de evento estables y versión congelada por comparación |
+Banco de 100 uint32, replication_id 1…100. PCG64 por `(seed,day,hive_slot,trip_slot,draw_slot,process_code)`, sin nombre de algoritmo ni hash() de Python. Acoplamiento CRN por oportunidad y proceso; mismas semillas en instalaciones distintas no significan mismas métricas. Repetir la misma clave reinicia el bloque.
 
-No adoptar automáticamente valores de config/base.yaml. Las pruebas con ese archivo y cantidades abstractas son fixtures, no parametrización de Oslo.
+Todos usan igual K, horizonte, motor/hash, datos, familias y parámetros, y seeds. RNG del optimizador separado, registrado como optimizer_seed. Solo se generan instalaciones fuera del motor. El escritor común result_row/write_results conserva esquema; ver `RESULTS_SCHEMA.md`. Cambios de reglas/contrato requieren versión y reevaluación común. Si se optimiza con réplicas 1–30, congelar soluciones y reportar 31–100 por separado; el agregado de 100 incluye entrenamiento y no es independiente de él.
 
-## Validación e intervalos
+## Pruebas y pendientes
 
-Datos actuales: geometrías/IDs/filtro/áreas, distancias no negativas, calendario y clasificación, reconstrucción de conteos/densidad Dryad. Helpers: K único/válido, balance sin sobreconsumo, RNG reproducible y bootstrap. Motor legado: prueba de misma seed con configuración sintética.
-Pendientes: motor común, invariantes en toda corrida, continuidad diaria, consumo compartido, CRN entre decisiones y determinismo de simulate incluyendo permutaciones de sitios. No etiquetar estas pruebas como aprobadas antes de ejecutarlas. validation_report.csv conserva estados separados.
-Comparación Dryad: flores/m² solo frente a un operador de observación compatible; R, néctar y composición de polen no son flores/m². Actividad requiere misma ventana, taxones, detección y esfuerzo; viajes/día no son individuos/min ni individuos únicos. La duración del muestreo no es duración de viaje. Sin coordenadas no hay validación parche/trap. Respetar agrupación por sitio y muestreo único floral.
-Bootstrap reutilizable: bee_sim.project2.contract.bootstrap_ci, IC percentil 95%, 5000 por defecto, seed explícita. Para estrategias usar diferencias emparejadas por réplica; no tratar viajes/días como réplicas independientes. Rechaza ausencias, no produce inferencia simultánea o causal. Para datos observados remuestrear sitios/bloques según dependencia y diseño.
-El siguiente trabajo es calibrar y validar antes de experimentos de ubicación. No se implementaron algoritmos, dashboard ni dinámica ecológica completa.
+`python -m unittest discover -s tests/project2 -v` comprueba reproducibilidad/permutaciones, K/sitios, distancias/cierre, balance/continuidad/no negativos, ausencia de recurso, conservación de área, protección de métricas y esquema. Bootstrap 95% de contract.py sigue disponible para diferencias emparejadas de réplicas, no viajes dependientes.
+
+04 conserva la auditoría previa; sus límites de calibración no se resuelven con pruebas sintéticas. Proyecto 1 permanece intacto. Sus componentes son referencias reutilizables; disponibilidad por viaje, Weibull espacial y logística no se heredan como calibración de Oslo.
+
+Pendientes: unidades/capacidades biológicas, calidad floral, regeneración/techo, otras políticas de solapamientos, alpha/beta/radio/escala, actividad y población de colonia, intensidad y tiempos, preferencias, supervivencia, polinización y operador de observación. Dryad flores/m² no es R, y conteos durante muestreos no son viajes/día ni individuos únicos. Se necesita correspondencia espacial y control del esfuerzo antes de equivalencias. No se implementaron algoritmos de ubicación.

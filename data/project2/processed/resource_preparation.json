@@ -1,0 +1,20 @@
+{
+  "asset_hashes": {
+    "resource_patch_distances.npz": "7a9ed412db6380528632204092ca45591ae4fe46f6f2e8f3c2f1949095ba7607",
+    "resource_patches.csv": "fb567fa96ad86a682bd263b7d8f72d7c5c1c1a42673fd68838400ebad52975d1",
+    "resource_patches.geojson": "45573791ebe4140c83703482f216e88157567ee40173b531598efc1f3ea44706"
+  },
+  "crs": "EPSG:25833",
+  "original_patch_count": 737,
+  "policy": "lexicographic_patch_id_priority_v1",
+  "positive_resource_geometries": 680,
+  "source_hashes": {
+    "bee_free_zones.geojson": "1e020dbd81b2864bd4059466dfe2ea47e5bab5c4ec1f52a000992bdb062379b5",
+    "candidate_hive_sites.csv": "25e1353400df2100a0e9cdecdc1c774fdff4dc91e4bc8f5aa43d9d6b6b866608",
+    "hive_patch_distances.npz": "adaad8b16751f7c321b624d477c79b680fb92596a661bf8ff20103569613800a",
+    "oslo_parks.geojson": "b1e37b09373c5b0e0cfca4c44ea7f8263c00d52648310e80c59dca560e9bd33d",
+    "spatial_patches.csv": "2145b59ed04aeee9e4611a7e81b6cf5afd6d94f757180af9490e0a378d45e757"
+  },
+  "sum_original_areas_m2": 26422246.491237458,
+  "union_area_m2": 23562161.30320754
+}
