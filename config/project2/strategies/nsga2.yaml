@@ -1,0 +1,13 @@
+# Parámetros EXCLUSIVOS de NSGA-II. No forman parte del config común ni de su config_hash.
+# Son decisiones de búsqueda, no mediciones ecológicas. Las direcciones de los objetivos
+# se leen del contrato de métricas para que no exista una definición por estrategia.
+objectives:
+  - total_resource_obtained
+  - mean_distance_m
+  - competition_pressure
+population: 50             # presupuesto propuesto por el piloto, cota de 6.2 h sin caché
+generations: 50
+crossover_rate: 0.9        # valor habitual de NSGA-II; sin ajuste propio
+mutation_rate: 0.2         # 1/K por sitio: en promedio cambia un sitio por hijo
+search_replications: 30    # competencia cae a fiabilidad ~0.7 con 10 réplicas
+optimizer_seed: 2026
