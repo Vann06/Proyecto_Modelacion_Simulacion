@@ -1,10 +1,37 @@
-# Integrante RANDOM — baseline pendiente de implementar
+# Integrante RANDOM — baseline
 
 ## Objetivo y alcance
 
 Crear un selector que elija exactamente K IDs distintos sin reemplazo, usando **solo `candidate_hive_sites.csv`** para decidir la instalación. No dar pesos manuales a favoritos ni filtrar usando futuros recursos o viajes. La evaluación sí usa el mismo motor y todos sus datos. Branch sugerida: `feature/random-baseline`.
 
-Archivo sugerido: `src/bee_sim/project2/strategies/random_baseline.py`, función `select_sites(candidates, K, optimizer_seed)`. No se entrega implementación de esa función ahora.
+Implementado en `src/bee_sim/project2/strategies/random_baseline.py`, función `select_sites(candidates, K, optimizer_seed)`. Ver la sección "Implementación" abajo.
+
+## Implementación: N instalaciones independientes
+
+**Decisión.** Una sola lista mide una instalación, no el azar de ubicación. Un diccionario por réplica mezcla la variación de instalación con la del motor. Por eso se usan N instalaciones (`random_001`…), cada una con su `solution_id` y evaluada en las **mismas** primeras R seeds del banco. Así las dos variaciones se reportan por separado.
+
+- Selector: ordena `site_id` y toma K sin reemplazo con `PCG64(optimizer_seed)`. Solo usa `site_id`.
+- La instalación i usa `optimizer_seed = base + i` (base 123 por defecto). `SeedSequence` decorrelaciona seeds contiguas.
+- Parámetros: N=30; R=30 para desarrollo y R=100 para la evaluación final. RANDOM no entrena, así que las 100 seeds son evaluación.
+- Costo: ~1.5 s por `simulate`; 30×30 ≈ 23 min y 30×100 ≈ 75 min.
+
+```powershell
+python scripts/random_baseline_run.py --n-installations 30 --optimizer-seed 123 --replications 100
+python scripts/project2_run.py inspect --results results/project2/random_results.csv
+python scripts/random_baseline_report.py
+```
+
+Salidas en `results/project2/`:
+
+- `random_sites.json`: instalaciones + K, base, config_hash.
+- `random_results.csv`: esquema común, una fila por instalación × réplica.
+- `random_results_example/`: logs de la primera réplica.
+- `random_summary.csv`: por métrica, media de las medias por instalación con IC bootstrap (unidad: instalación), DE entre instalaciones y DE media dentro de cada una.
+- `figures/random_*.png`.
+
+Pruebas: `python -m unittest discover -s tests/project2 -v`.
+
+**Limitación.** Con el perfil sintético base, `competition_pressure` queda cerca de 0 aun con colmenas juntas: el forrajeo dura en promedio ~1 min y casi nunca coincide. La competencia real ocurre por agotamiento del stock compartido, y se ve en el recurso total, no en esta métrica. Por eso no se grafica.
 
 ## Requisitos y pruebas del selector
 
