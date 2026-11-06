@@ -1,10 +1,10 @@
-# Integrante NSGA-II — optimización pendiente de implementar
+# Integrante NSGA-II — optimización implementada
 
 ## Objetivo y representación
 
-Estrategia multiobjetivo principal, branch `feature/nsga2-optimization`; archivo sugerido `src/bee_sim/project2/strategies/nsga2.py`. Un individuo es una lista de K IDs válidos distintos. La representación/caché debe usar el orden canónico para no tratar permutaciones de una instalación como soluciones diferentes.
+Estrategia multiobjetivo principal, branch `feature/NGSA-II`; implementada en `src/bee_sim/project2/strategies/nsga2.py`, con parámetros en `config/project2/strategies/nsga2.yaml`. Un individuo es una lista de K IDs válidos distintos. La representación/caché debe usar el orden canónico para no tratar permutaciones de una instalación como soluciones diferentes.
 
-Objetivos posibles ya disponibles: maximizar recurso total entregado, maximizar mínimo por colmena, minimizar distancia media y minimizar competencia. Definir el conjunto concreto y su signo antes de correr; siempre guardar las nueve métricas, no solo fitness. No cambiar sus fórmulas ni unidades.
+Objetivos definidos: maximizar `total_resource_obtained`, minimizar `mean_distance_m` y minimizar `competition_pressure`; las direcciones se leen del contrato de métricas. Siempre guardar las nueve métricas, no solo fitness. No cambiar sus fórmulas ni unidades.
 
 ## Qué debe documentarse
 
@@ -18,16 +18,19 @@ Si se usan réplicas 1–30 para búsqueda, congelar el frente antes de evaluar 
 
 Individuos siempre válidos, exactamente K, sin duplicados; reparación terminante; mismo optimizer_seed reproduce la búsqueda bajo mismo presupuesto; pequeña enumeración exacta sobre un subconjunto de pocos sitios si es viable. Esa enumeración usa el motor común y sirve para revisar dominancia/repair, no para afirmar que se resolvió todo Oslo exactamente.
 
-## Generar resultados cuando exista el optimizador
+## Generar resultados
 
-Guardar una solución congelada en `results/project2/nsga2_sites.json`. Evaluar cada miembro del frente con un `solution_id` distinto:
+Ejecutar desde la raíz del repositorio. La prueba corta usa su propia carpeta; la búsqueda completa se retoma con el mismo comando si se interrumpe y congela el frente en `results/project2/nsga2/front.json`. `holdout` evalúa ese frente en las réplicas 31–100 y escribe `results/project2/nsga2_results.csv`; correrlo solo cuando la búsqueda haya terminado:
 
 ```powershell
-python scripts/project2_run.py evaluate --sites-file results/project2/nsga2_sites.json --method NSGA2 --solution-id pareto_001 --optimizer-seed 123 --replications 100 --output results/project2/nsga2_results.csv
+$env:PYTHONPATH = 'src'
+python -m bee_sim.project2.strategies.nsga2 search --stop-after 2 --output results/project2/nsga2_trial
+python -m bee_sim.project2.strategies.nsga2 search
+python -m bee_sim.project2.strategies.nsga2 holdout
 python scripts/project2_run.py inspect --results results/project2/nsga2_results.csv
 ```
 
-Para varias soluciones guardar archivos separados por solution_id y unir solo con el esquema común, sin duplicar claves. El archivo consolidado esperado es `results/project2/nsga2_results.csv`. El comando actual evalúa ubicaciones ya dadas; no ejecuta NSGA-II.
+`front.json` no se sobrescribe: una búsqueda nueva necesita otra carpeta con `--output`. Las conclusiones de la corrida actual están en `results/project2/nsga2/conclusiones.md`. La caché `evaluations.jsonl` y `nsga2_trial/` no se versionan.
 
 ## Gráficos sugeridos
 
