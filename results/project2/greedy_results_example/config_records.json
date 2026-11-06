@@ -1,0 +1,122 @@
+{
+  "K": {
+    "provisional": true,
+    "source": "Diseño de prueba; variar K conjuntamente para todos los métodos.",
+    "status": "scenario_parameter",
+    "value": 5
+  },
+  "alpha": {
+    "provisional": true,
+    "source": "Penalización demostrativa; sensibilidad pendiente.",
+    "status": "pending_calibration",
+    "value": 1.0
+  },
+  "beta": {
+    "provisional": true,
+    "source": "Exponente demostrativo; sensibilidad pendiente.",
+    "status": "pending_calibration",
+    "value": 2.0
+  },
+  "day_minutes": {
+    "provisional": true,
+    "source": "config/base.yaml simulation.day_minutes; supuesto heredado, no jornada observada en Oslo.",
+    "status": "inherited_from_project1",
+    "value": 600.0
+  },
+  "demand_mean_ru": {
+    "provisional": true,
+    "source": "Media exponencial de demanda de fichas por viaje; no néctar observado.",
+    "status": "pending_calibration",
+    "value": 1.0
+  },
+  "departures_per_day": {
+    "provisional": true,
+    "source": "Media Poisson de oportunidades por colonia/día; modelo agregado de prueba.",
+    "status": "pending_calibration",
+    "value": 12.0
+  },
+  "distance_scale_m": {
+    "provisional": true,
+    "source": "Escala adimensional de comparación, no medición biológica.",
+    "status": "scenario_parameter",
+    "value": 1000.0
+  },
+  "flight_speed_m_s": {
+    "provisional": true,
+    "source": "0.33 km/min de Proyecto 1 convertido a m/s; no recalibrado.",
+    "status": "inherited_from_project1",
+    "value": 5.5
+  },
+  "foraging_rate_ru_per_min": {
+    "provisional": true,
+    "source": "Conversión sintética de consumo a tiempo de servicio; no parámetro ecológico medido.",
+    "status": "pending_calibration",
+    "value": 1.0
+  },
+  "initial_resource_rule": {
+    "provisional": true,
+    "source": "Reparto del total sintético según área exclusiva; no estima capacidad floral.",
+    "status": "scenario_parameter",
+    "value": "exclusive_area_share"
+  },
+  "initial_resource_total": {
+    "provisional": true,
+    "source": "Total arbitrario declarado para probar el motor, no recurso observado.",
+    "status": "pending_calibration",
+    "value": 1000.0
+  },
+  "max_foraging_distance_m": {
+    "provisional": true,
+    "source": "Radio de prueba, no radio observado; sensibilidad pendiente.",
+    "status": "scenario_parameter",
+    "value": 3000.0
+  },
+  "regeneration_rate": {
+    "provisional": true,
+    "source": "Fracción del stock inicial agregada al cierre diario; no tasa real ni capacidad máxima.",
+    "status": "pending_calibration",
+    "value": 0.1
+  },
+  "replications": {
+    "provisional": false,
+    "source": "Número de semillas comunes existentes; smoke puede usar un prefijo menor.",
+    "status": "derived",
+    "value": 100
+  },
+  "resource_unit": {
+    "provisional": true,
+    "source": "Fichas abstractas de prueba; no flores, ml de néctar ni masa de polen.",
+    "status": "scenario_parameter",
+    "value": "synthetic_RU"
+  },
+  "return_model": {
+    "provisional": true,
+    "source": "Retorno si termina dentro de jornada; no mortalidad biológica ni logística ajustada.",
+    "status": "scenario_parameter",
+    "value": "within_day_only"
+  },
+  "search_time_mean_min": {
+    "provisional": true,
+    "source": "Media exponencial sintética para búsqueda, no duración del inventario Dryad.",
+    "status": "pending_calibration",
+    "value": 1.0
+  },
+  "seed_bank_file": {
+    "provisional": false,
+    "source": "Banco reproducible del notebook 04; no regenerar por integrante.",
+    "status": "derived",
+    "value": "data/project2/processed/experiment_seeds.csv"
+  },
+  "simulation_end": {
+    "provisional": false,
+    "source": "simulation_calendar.csv; límite del inventario floral.",
+    "status": "derived",
+    "value": "2017-08-04"
+  },
+  "simulation_start": {
+    "provisional": false,
+    "source": "simulation_calendar.csv; ventana común contextualizada en notebook 03.",
+    "status": "derived",
+    "value": "2017-07-18"
+  }
+}
