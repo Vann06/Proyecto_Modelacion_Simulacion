@@ -220,7 +220,7 @@ class ContractTests(unittest.TestCase):
     def test_frozen_front_uses_common_schema_and_reserved_seed(self):
         candidates = pd.read_csv(ROOT / 'data/project2/processed/candidate_hive_sites.csv')
         sites = sorted(candidates.site_id)[:self.cfg['K']]
-        front = {'optimizer_seed': 11, 'solutions': [{'solution_id': 'pareto_001', 'site_ids': sites}]}
+        front = {'identity': {'config_hash': self.cfg.config_hash, 'engine_hash': nsga2._engine_hash(), 'input_hash': nsga2.current_input_hash(self.cfg)}, 'optimizer_seed': 11, 'solutions': [{'solution_id': 'pareto_001', 'site_ids': sites}]}
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder) / 'front.json'
             path.write_text(json.dumps(front), encoding='utf-8')

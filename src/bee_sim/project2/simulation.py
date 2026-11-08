@@ -1,5 +1,4 @@
 """Motor agregado SINTÉTICO; una implementación común, sin estrategias de ubicación."""
-from collections import Counter
 from pathlib import Path
 import hashlib
 import heapq
@@ -34,21 +33,22 @@ def simulate(hive_sites, seed, config):
     if isinstance(seed, bool) or not isinstance(seed, (int, np.integer)) or seed < 0 or seed >= 2**32:
         raise ValueError('seed debe ser uint32')
     seed = int(seed)
+    parameters = cfg.parameters  # Materializar una vez; evita miles de json.loads por corrida.
     metric_hash = validate_metrics_contract(cfg.root)
     candidates, patches, all_distances, manifest = load_landscape(cfg)
-    sites = validate_hive_sites(hive_sites, candidates.site_id, cfg['K'])
+    sites = validate_hive_sites(hive_sites, candidates.site_id, parameters['K'])
     calendar_path = cfg.root / 'data/project2/processed/simulation_calendar.csv'
     calendar = pd.read_csv(calendar_path, parse_dates=['date'])
-    dates = pd.date_range(cfg['simulation_start'], cfg['simulation_end'], freq='D')
+    dates = pd.date_range(parameters['simulation_start'], parameters['simulation_end'], freq='D')
     if (calendar.date.tolist() != dates.tolist() or calendar.date.duplicated().any() or
             not calendar.primary_resolution.eq('daily').all() or not calendar.inside_calibrated_window.all() or
             calendar.simulation_day.tolist() != list(range(1, len(dates) + 1))):
         raise ValueError('Calendario ajeno al horizonte común')
-    bank_path = cfg.root / cfg['seed_bank_file']
+    bank_path = cfg.root / parameters['seed_bank_file']
     bank = pd.read_csv(bank_path)
     if (not bank.seed.is_unique or not bank.replication_id.is_unique or
             bank.replication_id.tolist() != list(range(1, len(bank) + 1)) or
-            cfg['replications'] > len(bank) or seed not in set(bank.seed)):
+            parameters['replications'] > len(bank) or seed not in set(bank.seed)):
         raise ValueError('Seed o número de réplicas fuera del banco común')
     hives = [Hive(i, site_id) for i, site_id in enumerate(sites)]
     # Las tres entidades tienen papeles distintos; no se eliminan parches por no admitir colmena.
@@ -58,17 +58,17 @@ def simulate(hive_sites, seed, config):
     areas = patches.exclusive_area_m2.to_numpy(float)
     if areas.sum() <= 0:
         raise ValueError('No existe superficie exclusiva de recurso')
-    initial = cfg['initial_resource_total'] * (areas / areas.sum())
+    initial = parameters['initial_resource_total'] * (areas / areas.sum())
     stock = initial.copy()
     delivered = np.zeros(len(hives))
     trips, events, resource_rows = [], [], []
-    end_of_day = cfg['day_minutes']
-    speed_m_min = cfg['flight_speed_m_s'] * 60
+    end_of_day = parameters['day_minutes']
+    speed_m_min = parameters['flight_speed_m_s'] * 60
     priorities = {'return': 0, 'foraging_end': 1, 'foraging_start': 2, 'arrival': 3, 'departure': 4}
 
     for day, date in enumerate(dates):
         day_start_stock = stock.copy()
-        active = [Counter() for _ in floral_patches]
+        active = np.zeros((len(floral_patches), len(hives)), dtype=np.int64)
         heap, daily_trips = [], {}
 
         def schedule(time, kind, hive_slot, trip_slot):
@@ -83,7 +83,7 @@ def simulate(hive_sites, seed, config):
 
         for hive in hives:
             rng = event_rng(seed, day, hive.hive_slot, 0, 'departures')
-            n = int(rng.poisson(cfg['departures_per_day']))
+            n = int(rng.poisson(parameters['departures_per_day']))
             times = np.sort(rng.uniform(0, end_of_day, size=n))
             for trip_slot, time in enumerate(times):
                 schedule(time, 'departure', hive.hive_slot, trip_slot)
@@ -91,14 +91,14 @@ def simulate(hive_sites, seed, config):
             time, _, i, slot, kind = heapq.heappop(heap)
             key = (i, slot)
             if kind == 'departure':
-                competition = np.array([sum(1 for h, count in counts.items() if count > 0 and h != i) for counts in active])
-                eligible = (stock > 0) & (distances[i] <= cfg['max_foraging_distance_m'])
+                competition = (active > 0).sum(axis=1) - (active[:, i] > 0)
+                eligible = (stock > 0) & (distances[i] <= parameters['max_foraging_distance_m'])
                 columns = np.flatnonzero(eligible)
                 if not len(columns):
                     log(time, 'no_available_patch', i, slot)
                     continue
-                log_scores = (np.log(stock[columns]) - cfg['beta'] * np.log1p(distances[i, columns] / cfg['distance_scale_m'])
-                              - np.log1p(cfg['alpha'] * competition[columns]))
+                log_scores = (np.log(stock[columns]) - parameters['beta'] * np.log1p(distances[i, columns] / parameters['distance_scale_m'])
+                              - np.log1p(parameters['alpha'] * competition[columns]))
                 if not np.isfinite(log_scores).all():
                     raise ValueError('Score no finito; revisar parámetros')
                 scores = np.exp(log_scores - log_scores.max())
@@ -119,28 +119,28 @@ def simulate(hive_sites, seed, config):
                 row, j, flight = daily_trips[key]
                 if kind == 'arrival':
                     log(time, 'arrival', i, slot, j)
-                    search = float(event_rng(seed, day, i, slot, 'search').exponential(cfg['search_time_mean_min']))
+                    search = float(event_rng(seed, day, i, slot, 'search').exponential(parameters['search_time_mean_min']))
                     schedule(time + search, 'foraging_start', i, slot)
                 elif kind == 'foraging_start':
                     row['foraging_start_min'] = time
                     row['foraging_attempt'] = True
-                    others = sum(1 for h, count in active[j].items() if h != i and count > 0)
+                    others = np.count_nonzero(active[j]) - int(active[j, i] > 0)
                     row['other_colonies_active_at_foraging_start'] = int(others)
-                    demand = float(event_rng(seed, day, i, slot, 'nectar').exponential(cfg['demand_mean_ru']))
-                    amount = min(float(stock[j]), demand, max(0., end_of_day - time) * cfg['foraging_rate_ru_per_min'])
+                    demand = float(event_rng(seed, day, i, slot, 'nectar').exponential(parameters['demand_mean_ru']))
+                    amount = min(float(stock[j]), demand, max(0., end_of_day - time) * parameters['foraging_rate_ru_per_min'])
                     stock[j] -= amount
                     row['resource_consumed'] = amount
-                    duration = amount / cfg['foraging_rate_ru_per_min']
+                    duration = amount / parameters['foraging_rate_ru_per_min']
                     finish = min(end_of_day, time + duration)
                     row['foraging_end_min'] = finish
                     row['return_min'] = finish + flight
                     if duration > 0:
-                        active[j][i] += 1
+                        active[j, i] += 1
                     log(time, 'foraging_start', i, slot, j, amount)
                     schedule(finish, 'foraging_end', i, slot)
                 elif kind == 'foraging_end':
                     if row['resource_consumed'] > 0:
-                        active[j][i] -= 1
+                        active[j, i] -= 1
                     log(time, 'foraging_end', i, slot, j)
                     schedule(time + flight, 'return', i, slot)
                 elif kind == 'return':
@@ -148,10 +148,10 @@ def simulate(hive_sites, seed, config):
                     row['resource_delivered'] = row['resource_consumed']
                     delivered[i] += row['resource_delivered']
                     log(time, 'return', i, slot, j, row['resource_delivered'])
-        if (stock < 0).any() or any(any(count != 0 for count in c.values()) for c in active):
+        if (stock < 0).any() or np.any(active != 0):
             raise AssertionError('Stock negativo u ocupación sin cerrar')
         consumed = day_start_stock - stock
-        regeneration = cfg['regeneration_rate'] * initial
+        regeneration = parameters['regeneration_rate'] * initial
         stock = resource_step(day_start_stock, consumed, regeneration)
         for j, patch in enumerate(floral_patches):
             resource_rows.append({'date': date.strftime('%Y-%m-%d'), 'patch_id': patch.patch_id,
@@ -163,7 +163,7 @@ def simulate(hive_sites, seed, config):
     if not np.isclose(trip_frame.resource_consumed.sum(), resource_log.consumption.sum()):
         raise AssertionError('Consumos de viajes y balance no coinciden')
     summary = summarize(trip_frame, per_hive)
-    provenance = {'mode': cfg.mode, 'scenario': cfg.scenario, 'resource_unit': cfg['resource_unit'],
+    provenance = {'mode': cfg.mode, 'scenario': cfg.scenario, 'resource_unit': parameters['resource_unit'],
                   'seed': seed, 'config_hash': cfg.config_hash, 'engine_version': ENGINE_VERSION,
                   'engine_hash': _engine_hash(), 'metric_contract_hash': metric_hash,
                   'input_hashes': {**manifest['source_hashes'], **manifest['asset_hashes'],

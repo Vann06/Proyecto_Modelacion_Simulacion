@@ -1,4 +1,5 @@
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -86,7 +87,11 @@ class PilotTests(unittest.TestCase):
         self.assertEqual(again.total_resource_obtained.tolist(), frame.total_resource_obtained.tolist())
 
     def test_strategy_package_does_not_change_engine_hash(self):
-        self.assertEqual(_engine_hash(), '6a032bf015293cabcaa47dc8b0a3cd72e8b8d3e1061deeed8664cb88108f1d62')
+        original = _engine_hash()
+        with tempfile.TemporaryDirectory(dir=Path(pilot.__file__).parent) as directory:
+            Path(directory, 'new_strategy.py').write_text('VALUE = 123', encoding='utf-8')
+            self.assertEqual(_engine_hash(), original)
+
 
 
 if __name__ == '__main__':

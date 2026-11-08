@@ -1,0 +1,11 @@
+[theme]
+primaryColor = "#278875"
+backgroundColor = "#f7f8f4"
+secondaryBackgroundColor = "#edf1e9"
+textColor = "#173c37"
+
+[client]
+showSidebarNavigation = false
+
+[browser]
+gatherUsageStats = false

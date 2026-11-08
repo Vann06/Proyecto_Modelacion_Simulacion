@@ -11,3 +11,7 @@ pytest
 
 # para abrir y ejecutar los notebooks de notebooks/
 jupyterlab
+
+# Aplicación local de Proyecto 2
+streamlit>=1.51,<2
+pydeck>=0.9,<1

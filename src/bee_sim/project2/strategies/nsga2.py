@@ -17,12 +17,13 @@ import yaml
 from ..contract import _integer
 from ..metrics import METRIC_NAMES, result_row, write_results
 from ..simulation import _engine_hash, simulate
+from ..distance import load_landscape, digest
 from .nsga2_pilot import SEARCH_REPLICATIONS, _evaluate
 
 METHOD = 'NSGA2'
 HOLDOUT_REPLICATIONS = range(SEARCH_REPLICATIONS + 1, 101)
 PARAMETERS_FILE = 'config/project2/strategies/nsga2.yaml'
-OUTPUT_DIRECTORY = 'results/project2/nsga2'
+OUTPUT_DIRECTORY = 'results/project2/nsga2_fast'
 MAX_OFFSPRING_ATTEMPTS = 20
 
 
@@ -207,23 +208,41 @@ def update_archive(archive, installations, x, violation):
     return {names[n]: merged[names[n]] for n in front}
 
 
+def current_input_hash(config):
+    _, _, _, manifest = load_landscape(config)
+    hashes = {**manifest['source_hashes'], **manifest['asset_hashes']}
+    for name in ['simulation_calendar.csv', 'experiment_seeds.csv', 'temporal_variable_metadata.csv']:
+        hashes[name] = digest(config.root / 'data/project2/processed' / name)
+    return hashlib.sha256(json.dumps(hashes, sort_keys=True).encode()).hexdigest()
+
+
+class EvaluationBudgetExceeded(RuntimeError):
+    pass
+
+
 class SimulationEvaluator:
     """corre simulate una vez por instalacion y seed, con cache persistente.
 
     la clave incluye config_hash y engine_hash para no mezclar experimentos.
     """
 
-    def __init__(self, config, replications, workers=None, path=None):
+    def __init__(self, config, replications, workers=None, path=None, simulation_budget=None):
         self.config, self.path, self.simulations = config, Path(path) if path else None, 0
-        self.workers = workers or max(1, (os.cpu_count() or 2) - 2)
+        self.simulation_budget = None if simulation_budget is None else _integer(simulation_budget, 'simulation_budget', 1)
+        self.workers = min(4, max(1, (os.cpu_count() or 2) - 1)) if workers is None else _integer(workers, 'workers', 1)
+        replications = _integer(replications, 'replications', 1)
+        if replications > SEARCH_REPLICATIONS:
+            raise ValueError('La búsqueda solo usa réplicas 1–30')
         bank = pd.read_csv(config.root / config['seed_bank_file']).head(replications)
         self.seeds = [(int(s.replication_id), int(s.seed)) for s in bank.itertuples()]
         self.engine_hash, self.cache, self.pool = _engine_hash(), {}, None
+        self.input_hash = current_input_hash(config)
+        self._valid_lines, self._truncated = [], False
         if self.path and self.path.exists():
             self._load()
 
     def _key(self, installation):
-        return self.config.config_hash, self.engine_hash, tuple(installation)
+        return self.config.config_hash, self.engine_hash, self.input_hash, tuple(sorted(installation))
 
     def _load(self):
         lines = self.path.read_text(encoding='utf-8').splitlines()
@@ -231,11 +250,16 @@ class SimulationEvaluator:
             try:
                 item = json.loads(line)
             except json.JSONDecodeError:
-                if number == len(lines):  # corte durante la ultima escritura
+                if number == len(lines):
+                    self._truncated = True
                     break
-                raise
-            key = item['config_hash'], item['engine_hash'], tuple(item['site_ids'])
-            self.cache[key] = {int(k): v for k, v in item['rows'].items()}
+                raise ValueError('Cache dañada en una línea interior; conservar y revisar el archivo')
+            self._valid_lines.append(line)
+            # Cachés anteriores sin huella de datos se preservan pero no se reutilizan.
+            if not item.get('input_hash'):
+                continue
+            key = item['config_hash'], item['engine_hash'], item['input_hash'], tuple(sorted(item['site_ids']))
+            self.cache.setdefault(key, {}).update({int(k): v for k, v in item['rows'].items()})
 
     def __enter__(self):
         return self
@@ -245,30 +269,45 @@ class SimulationEvaluator:
             self.pool.shutdown()
 
     def __call__(self, installations):
-        missing = [i for i in installations if self._key(i) not in self.cache]
-        if missing:
-            self._simulate(missing)
-        return {i: [self.cache[self._key(i)][seed] for _, seed in self.seeds] for i in installations}
-
-    def _simulate(self, installations):
-        self.pool = self.pool or ProcessPoolExecutor(max_workers=self.workers)
-        tasks = [(None, list(i), replication, seed, self.config)
-                 for i in installations for replication, seed in self.seeds]
-        rows = iter(self.pool.map(_evaluate, tasks, chunksize=5))
-        lines = []
+        requested = list(dict.fromkeys(tuple(i) for i in installations))
+        installations = list(dict.fromkeys(tuple(sorted(i)) for i in requested))
+        tasks = []
         for installation in installations:
-            stored = {}
-            for _, seed in self.seeds:
-                row = next(rows)
-                stored[seed] = {m: row[m] for m in METRIC_NAMES}
-            self.cache[self._key(installation)] = stored
-            lines.append(json.dumps({'config_hash': self.config.config_hash, 'engine_hash': self.engine_hash,
-                                     'site_ids': list(installation), 'rows': stored}, separators=(',', ':')))
+            stored = self.cache.setdefault(self._key(installation), {})
+            tasks.extend((None, list(installation), replication, seed, self.config)
+                         for replication, seed in self.seeds if seed not in stored)
+        if tasks:
+            self._simulate(tasks)
+        return {i: [self.cache[self._key(i)][seed] for _, seed in self.seeds] for i in requested}
+
+    def _simulate(self, tasks):
+        if self.simulation_budget is not None and self.simulations + len(tasks) > self.simulation_budget:
+            raise EvaluationBudgetExceeded('Presupuesto de simulaciones nuevas agotado; checkpoint y caché conservados. Amplíe el presupuesto explícitamente para continuar.')
+        self.pool = self.pool or ProcessPoolExecutor(max_workers=self.workers)
+        touched = set()
+        for task, row in zip(tasks, self.pool.map(_evaluate, tasks, chunksize=5)):
+            if (row['config_hash'] != self.config.config_hash or row['engine_hash'] != self.engine_hash or row['input_hash'] != self.input_hash):
+                raise ValueError('La identidad cambió durante la evaluación; no guardar caché incompatible')
+            installation = tuple(task[1])
+            key = self._key(installation)
+            self.cache[key][task[3]] = {m: row[m] for m in METRIC_NAMES}
+            touched.add(tuple(sorted(installation)))
         self.simulations += len(tasks)
         if self.path:
             self.path.parent.mkdir(parents=True, exist_ok=True)
+            if self._truncated:
+                # Preservar los bytes interrumpidos antes de recuperar el log válido.
+                backup = self.path.with_suffix('.interrupted-' + digest(self.path)[:12] + '.jsonl')
+                if not backup.exists():
+                    backup.write_bytes(self.path.read_bytes())
+                self.path.write_text('\n'.join(self._valid_lines) + '\n', encoding='utf-8')
+                self._truncated = False
+            lines = [json.dumps({'config_hash': self.config.config_hash, 'engine_hash': self.engine_hash,
+                                 'input_hash': self.input_hash, 'site_ids': list(i),
+                                 'rows': self.cache[self._key(i)]}, separators=(',', ':')) for i in sorted(touched)]
             with self.path.open('a', encoding='utf-8') as file:
                 file.write('\n'.join(lines) + '\n')
+            self._valid_lines.extend(lines)
 
 
 def _score(installations, evaluate, directions):
@@ -380,10 +419,17 @@ def _evaluate_holdout(task):
 
 def evaluate_frozen_front(front_path, config, output, replications=HOLDOUT_REPLICATIONS, workers=None):
     """evalua el frente congelado solo en replicas reservadas, con el esquema comun."""
-    if min(replications) <= SEARCH_REPLICATIONS:
+    replications = list(replications)
+    if not replications or min(replications) <= SEARCH_REPLICATIONS:
         raise ValueError('La evaluacion final no debe reutilizar replicas de busqueda')
     front = json.loads(Path(front_path).read_text(encoding='utf-8'))
+    identity = front.get('identity', {})
+    if (identity.get('config_hash') != config.config_hash or identity.get('engine_hash') != _engine_hash()
+            or identity.get('input_hash') != current_input_hash(config)):
+        raise ValueError('Frente de otro motor/configuración/datos; no reevaluar ni reemplazar resultados históricos')
     bank = pd.read_csv(config.root / config['seed_bank_file'])
+    if len(set(replications)) != len(replications) or not set(replications).issubset(set(bank.replication_id)):
+        raise ValueError('Réplicas reservadas duplicadas o ajenas al banco')
     bank = bank[bank.replication_id.isin(replications)]
     tasks = [(s['solution_id'], s['site_ids'], int(b.replication_id), int(b.seed), config, front['optimizer_seed'])
              for s in front['solutions'] for b in bank.itertuples()]
@@ -399,26 +445,39 @@ def main():
     parser.add_argument('--output', default=OUTPUT_DIRECTORY)
     parser.add_argument('--workers', type=int)
     parser.add_argument('--stop-after', type=int, help='corta en esa generacion; para pruebas de tiempo')
+    parser.add_argument('--dry-run', action='store_true', help='mostrar presupuesto sin simular')
+    parser.add_argument('--max-new-simulations', type=int, default=3000, help='límite explícito de corridas nuevas por invocación')
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[4]
     config = load_config(root / 'config/project2/base.yaml')
     output = root / args.output
     if args.command == 'holdout':
-        frame = evaluate_frozen_front(output / 'front.json', config, root / 'results/project2/nsga2_results.csv',
+        frame = evaluate_frozen_front(output / 'front.json', config, output / 'holdout_results.csv',
                                       workers=args.workers)
         print(f'{len(frame)} filas de replicas reservadas')
         return
     params = load_parameters(root / PARAMETERS_FILE)
     directions = objective_directions(config, params.objectives)
     catalog = pd.read_csv(root / 'data/project2/processed/candidate_hive_sites.csv').site_id.tolist()
-    identity = {'config_hash': config.config_hash, 'engine_hash': _engine_hash(), 'parameters_hash': params.parameters_hash}
-    with SimulationEvaluator(config, params.search_replications, args.workers, output / 'evaluations.jsonl') as evaluate:
-        result = run_nsga2(catalog, config['K'], params, directions, evaluate, identity, output, args.stop_after)
-        result['history'].to_csv(output / 'history.csv', index=False, lineterminator='\n')
-        if result['finished']:
-            solutions = freeze_front(result, params, directions, identity, output / 'front.json')
-            print(f'Frente congelado: {len(solutions)} soluciones')
-    print(f'Generacion {result["generation"]}; simulaciones nuevas: {evaluate.simulations}')
+    identity = {'config_hash': config.config_hash, 'engine_hash': _engine_hash(), 'input_hash': current_input_hash(config), 'parameters_hash': params.parameters_hash}
+    upper = params.population * (params.generations + 1) * params.search_replications
+    if args.dry_run:
+        print(json.dumps({'upper_bound_simulations': upper, 'new_simulation_budget': args.max_new_simulations,
+                          'output': str(output), 'workers': args.workers or min(4, max(1, (os.cpu_count() or 2) - 1)),
+                          'search_replications': params.search_replications}, indent=2))
+        return
+    try:
+        with SimulationEvaluator(config, params.search_replications, args.workers, output / 'evaluations.jsonl',
+                                 simulation_budget=args.max_new_simulations) as evaluate:
+            result = run_nsga2(catalog, config['K'], params, directions, evaluate, identity, output, args.stop_after)
+            result['history'].to_csv(output / 'history.csv', index=False, lineterminator='\n')
+            if result['finished']:
+                solutions = freeze_front(result, params, directions, identity, output / 'front.json')
+                print(f'Frente congelado: {len(solutions)} soluciones')
+        print(f'Generacion {result["generation"]}; simulaciones nuevas: {evaluate.simulations}')
+    except EvaluationBudgetExceeded as exc:
+        print(str(exc))
+
 
 
 if __name__ == '__main__':

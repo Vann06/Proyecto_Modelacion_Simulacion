@@ -9,7 +9,7 @@ import json
 import math
 import yaml
 
-ENGINE_VERSION = 'project2-synthetic-1.1.0'
+ENGINE_VERSION = 'project2-synthetic-1.1.1'
 PARAMETERS = {'K', 'max_foraging_distance_m', 'alpha', 'beta', 'distance_scale_m',
               'resource_unit', 'initial_resource_rule', 'initial_resource_total', 'regeneration_rate',
               'departures_per_day', 'day_minutes', 'flight_speed_m_s', 'search_time_mean_min',

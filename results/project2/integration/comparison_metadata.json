@@ -1,0 +1,14 @@
+{
+  "candidate_ids": 375,
+  "holdout_already_inspected": true,
+  "interpretation": "descriptive synthetic comparison, not ecological validation or preregistered confirmatory test",
+  "multiple_metrics": "95% intervals are pointwise, not simultaneous; no p-value-based winner declaration",
+  "original_front_solutions": 49,
+  "physical_front_installations": 32,
+  "random_ci_limitation": "Intervals condition on the 30 saved RANDOM installations; between-placement variability is shown separately, not 2100 independent replicates",
+  "search_recorded_hours": 6.382956793250006,
+  "search_simulations": 75240,
+  "selected_nsga_solution": "pareto_047",
+  "selection_rule": "Equal-weight normalized distance to ideal using frozen SEARCH means only; illustrative choice",
+  "unique_candidate_coordinates": 351
+}
