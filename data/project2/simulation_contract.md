@@ -1,6 +1,6 @@
 # Contrato común del simulador — Proyecto 2, Oslo
 
-Versión operativa: **project2-synthetic-1.1.0**. Motor mínimo agregado implementado, exclusivamente **sintético**, sin calibración ecológica. RANDOM, GREEDY y NSGA-II todavía no están implementados y deben usar exactamente este motor.
+Estado vigente: motor **project2-synthetic-1.1.1**, exclusivamente sintético y sin calibración ecológica. RANDOM, GREEDY y NSGA-II están implementados y comparten `simulate`. Los resultados históricos se conservan con project2-synthetic-1.1.0; no mezclar cohortes. Ver docs/project2/SCIENTIFIC_AUDIT.md y REAL_WORLD_VALIDATION.md.
 
 ## Entidades e inputs
 
@@ -91,4 +91,4 @@ Todos usan igual K, horizonte, motor/hash, datos, familias y parámetros, y seed
 
 04 conserva la auditoría previa; sus límites de calibración no se resuelven con pruebas sintéticas. Proyecto 1 permanece intacto. Sus componentes son referencias reutilizables; disponibilidad por viaje, Weibull espacial y logística no se heredan como calibración de Oslo.
 
-Pendientes: unidades/capacidades biológicas, calidad floral, regeneración/techo, otras políticas de solapamientos, alpha/beta/radio/escala, actividad y población de colonia, intensidad y tiempos, preferencias, supervivencia, polinización y operador de observación. Dryad flores/m² no es R, y conteos durante muestreos no son viajes/día ni individuos únicos. Se necesita correspondencia espacial y control del esfuerzo antes de equivalencias. No se implementaron algoritmos de ubicación.
+Pendientes: unidades/capacidades biológicas, calidad floral, regeneración/techo, otras políticas de solapamientos, alpha/beta/radio/escala, actividad y población de colonia, intensidad y tiempos, preferencias, supervivencia, polinización y operador de observación. Dryad flores/m² no es R, y conteos durante muestreos no son viajes/día ni individuos únicos. Se necesita correspondencia espacial y control del esfuerzo antes de equivalencias. Los algoritmos de ubicación ya están implementados; sus resultados no resuelven estos pendientes ecológicos.

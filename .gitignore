@@ -26,3 +26,8 @@ results/project2/nsga2/evaluations.jsonl
 
 # Cache del motor acelerado; conservar resultados consolidados
 results/project2/nsga2_fast/evaluations*.jsonl
+
+# Interfaz React local
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
