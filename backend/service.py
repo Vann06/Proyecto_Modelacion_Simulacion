@@ -79,7 +79,7 @@ def run(request):
         if request.K!=5:raise ValueError('El frente guardado solo contiene K=5; no truncar ni completar soluciones.')
         front=json.loads((ROOT/'results/project2/nsga2/front.json').read_text())
         solution=next((s for s in front['solutions'] if s['solution_id']==request.solution_id),None)
-        if solution is None:raise ValueError('SoluciÃ³n del frente no encontrada')
+        if solution is None:raise ValueError('Solución del frente no encontrada')
         sites=solution['site_ids']
     else:sites=request.site_ids
     bank=pd.read_csv(ROOT/base['seed_bank_file'])
