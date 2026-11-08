@@ -119,6 +119,9 @@ cambian únicamente el reloj visual, nunca las reglas del motor.
 - `docs/project2/DEMO_SCRIPT.md`: guion de 15 minutos y participación del equipo.
 - `docs/project2/SOURCES_AND_AI.md`: bibliotecas, referencias y uso de IA.
 - `notebooks/project2/09_scientific_evidence.ipynb`: lectura ejecutable de evidencia nueva.
+- `notebooks/project2/08_final_results.ipynb`: síntesis final con tablas, diferencias pareadas, Pareto y sensibilidad, en la rama de cierre científico.
+- `docs/project2/FINAL_SCIENTIFIC_SYNTHESIS.md`: interpretación consolidada para el informe.
+- `docs/project2/FINAL_DELIVERY_CHECKLIST.md`: pruebas locales, PDF, diapositivas y defensa pendientes.
 
 Faltan calibración del motor en unidades observadas, más optimizer seeds,
 correspondencia espacial trap/parque e informe/diapositivas finales del equipo.
