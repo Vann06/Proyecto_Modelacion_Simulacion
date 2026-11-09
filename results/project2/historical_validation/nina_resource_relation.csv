@@ -1,0 +1,2 @@
+comparison,n_parks,spearman_rho_descriptive,p_value,status
+raw_NINA_index_vs_synthetic_area_share,686,-0.0948248697505279,,overlapping_parks_not_independent; raw_index_direction_unconfirmed; no_RU_calibration

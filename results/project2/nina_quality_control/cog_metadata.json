@@ -1,0 +1,55 @@
+{
+  "profile": {
+    "driver": "GTiff",
+    "dtype": "float32",
+    "nodata": "-9999.0",
+    "width": "16896",
+    "height": "17664",
+    "count": "1",
+    "crs": "EPSG:3857",
+    "transform": "| 2.39, 0.00, 1180187.72|\n| 0.00,-2.39, 8398289.17|\n| 0.00, 0.00, 1.00|",
+    "blockxsize": "256",
+    "blockysize": "256",
+    "tiled": "True",
+    "compress": "lzw",
+    "interleave": "band"
+  },
+  "block_shapes": [
+    [
+      256,
+      256
+    ]
+  ],
+  "overviews": [
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "tags": {
+    "AREA_OR_POINT": "Area"
+  },
+  "band_tags": {
+    "RepresentationType": "ATHEMATIC"
+  },
+  "bounds": [
+    1180187.7167231217,
+    8356095.932135468,
+    1220546.4676576948,
+    8398289.171748886
+  ],
+  "transform": [
+    2.388657133911758,
+    0.0,
+    1180187.7167231217,
+    0.0,
+    -2.388657133911758,
+    8398289.171748886,
+    0.0,
+    0.0,
+    1.0
+  ]
+}

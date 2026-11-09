@@ -1,0 +1,9 @@
+requested_output,status,evidence_or_reason
+Observaciones por colonia,completo,observations_by_colony.csv
+Incluidos/excluidos,completo_con_filtros_separados,inclusion_exclusion.csv
+Cobertura de parques,solo_condicional_CRS_no_verificado,park_coverage_conditional.csv
+Distancias observadas y simuladas,solo_observadas; simulación_no_habilitada,observed_distances.csv
+Errores absolutos/relativos del simulador,no_calculados_por_falta_de_correspondencia_verificada,No sustituir con diferencias entre estimandos del PDF
+Resultados por semilla histórica,no_generados; 0 simulaciones,El checkpoint detuvo la fase experimental
+Solapamiento comparable,no_reproducible_con_datos_disponibles,overlap_comparability.csv
+Limitaciones/mejoras,completo,findings_recommendations.csv

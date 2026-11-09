@@ -1,0 +1,14 @@
+{
+  "branch": "feature/project2-validacion-historica-oslo",
+  "head": "dff96a37056b668c48a40080d80783b4f0e817be",
+  "original_base_files_verified_unchanged": 299,
+  "previous_untracked_files_still_present": 37,
+  "new_qc_tests_passed": 7,
+  "cache_hash_test_executed": true,
+  "full_original_test_suite_rerun": false,
+  "new_simulations": 0,
+  "installations_classified": 0,
+  "new_dependencies": false,
+  "commit_push_pr_merge": false,
+  "scope": "only new NINA quality-control artifacts"
+}

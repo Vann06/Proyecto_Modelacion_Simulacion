@@ -1,0 +1,16 @@
+{
+  "review_date_local": "2026-11-08",
+  "branch": "feature/project2-validacion-historica-oslo",
+  "base_commit": "dff96a37056b668c48a40080d80783b4f0e817be",
+  "existing_files_verified_unchanged": 299,
+  "python_full_suite_tests_passed": 183,
+  "new_audit_tests_passed": 10,
+  "historical_notebook_run_all": true,
+  "scientific_feasibility_passed": false,
+  "historical_simulations_executed": 0,
+  "new_simulation_seed_bank_created": false,
+  "react_modified": false,
+  "pdf_or_large_raster_tracked": false,
+  "new_commit_created": false,
+  "pull_request_created": false
+}

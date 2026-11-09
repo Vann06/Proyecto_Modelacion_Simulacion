@@ -1,0 +1,507 @@
+record_id,colony,source_page,source_row,date,inside_project_window,distance_valid,clock_valid,id_prefix_consistent,dance_id_duplicated,distance_analysis_eligible,timed_analysis_eligible,distance_exclusion_reason,origin_residual_source_units
+dietz2018:Bygdoy:001,Bygdoy,50,1,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.043963120965808546
+dietz2018:Bygdoy:002,Bygdoy,50,2,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.021135140800245412
+dietz2018:Bygdoy:003,Bygdoy,50,3,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.04964711750541757
+dietz2018:Bygdoy:004,Bygdoy,50,4,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.01764221508874405
+dietz2018:Bygdoy:005,Bygdoy,50,5,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.014362502013636636
+dietz2018:Bygdoy:006,Bygdoy,50,6,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.011901976753793914
+dietz2018:Bygdoy:007,Bygdoy,50,7,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.048716938022269535
+dietz2018:Bygdoy:008,Bygdoy,50,8,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.016718455384140803
+dietz2018:Bygdoy:009,Bygdoy,50,9,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.019817123585275608
+dietz2018:Bygdoy:010,Bygdoy,50,10,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.05188020416635391
+dietz2018:Bygdoy:011,Bygdoy,50,11,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.018312160602983907
+dietz2018:Bygdoy:012,Bygdoy,50,12,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.014988539790737464
+dietz2018:Bygdoy:013,Bygdoy,50,13,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.015569313800855446
+dietz2018:Bygdoy:014,Bygdoy,50,14,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.01455576538457174
+dietz2018:Bygdoy:015,Bygdoy,50,15,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.016128687877161166
+dietz2018:Bygdoy:016,Bygdoy,50,16,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,22.550096131765724
+dietz2018:Bygdoy:017,Bygdoy,50,17,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.04546410585593373
+dietz2018:Bygdoy:018,Bygdoy,50,18,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.04824918266071622
+dietz2018:Bygdoy:019,Bygdoy,50,19,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.017895928406684247
+dietz2018:Bygdoy:020,Bygdoy,50,20,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.01858720170697082
+dietz2018:Bygdoy:021,Bygdoy,50,21,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.052096189755576214
+dietz2018:Bygdoy:022,Bygdoy,50,22,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.01609299302771093
+dietz2018:Bygdoy:023,Bygdoy,50,23,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.014365350306717414
+dietz2018:Bygdoy:024,Bygdoy,50,24,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,122.54548508780272
+dietz2018:Bygdoy:025,Bygdoy,50,25,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.020239406573609932
+dietz2018:Bygdoy:026,Bygdoy,50,26,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.05057840551522167
+dietz2018:Bygdoy:027,Bygdoy,50,27,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.018553930628545892
+dietz2018:Bygdoy:028,Bygdoy,50,28,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.015807751005156342
+dietz2018:Bygdoy:029,Bygdoy,50,29,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.016280540931323507
+dietz2018:Bygdoy:030,Bygdoy,50,30,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.018278461075472183
+dietz2018:Bygdoy:031,Bygdoy,50,31,2017-07-03,False,False,True,True,False,False,False,outside_18_day_window,0.016363464529644357
+dietz2018:Bygdoy:032,Bygdoy,50,32,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.015350768329480414
+dietz2018:Bygdoy:033,Bygdoy,50,33,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.049376157462807
+dietz2018:Bygdoy:034,Bygdoy,50,34,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.014737155918083996
+dietz2018:Bygdoy:035,Bygdoy,50,35,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.01623252484483733
+dietz2018:Bygdoy:036,Bygdoy,50,36,2017-07-03,False,True,True,True,True,False,False,outside_18_day_window,0.050746804457771855
+dietz2018:Bygdoy:037,Bygdoy,50,37,2017-07-03,False,True,True,True,True,False,False,outside_18_day_window,0.014959925600520056
+dietz2018:Bygdoy:038,Bygdoy,50,38,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.053422908656501754
+dietz2018:Bygdoy:039,Bygdoy,50,39,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.012181645024971285
+dietz2018:Bygdoy:040,Bygdoy,50,40,2017-07-03,False,True,True,False,True,False,False,outside_18_day_window,0.014230869781191367
+dietz2018:Bygdoy:041,Bygdoy,50,41,2017-07-03,False,True,True,False,True,False,False,outside_18_day_window,0.017849300249360517
+dietz2018:Bygdoy:042,Bygdoy,50,42,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.02037533118371482
+dietz2018:Bygdoy:043,Bygdoy,50,43,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.01530372652725419
+dietz2018:Bygdoy:044,Bygdoy,50,44,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.015658927848562598
+dietz2018:Bygdoy:045,Bygdoy,50,45,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.01872783355317036
+dietz2018:Bygdoy:046,Bygdoy,50,46,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.016617652520523177
+dietz2018:Bygdoy:047,Bygdoy,50,47,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.023577605384559653
+dietz2018:Bygdoy:048,Bygdoy,50,48,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.04592031234468047
+dietz2018:Bygdoy:049,Bygdoy,50,49,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.01807884489454678
+dietz2018:Bygdoy:050,Bygdoy,50,50,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.016165820538465474
+dietz2018:Bygdoy:051,Bygdoy,51,51,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.021029294826370195
+dietz2018:Bygdoy:052,Bygdoy,51,52,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.01669503515091135
+dietz2018:Bygdoy:053,Bygdoy,51,53,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.02195293335557315
+dietz2018:Bygdoy:054,Bygdoy,51,54,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.014077970475288833
+dietz2018:Bygdoy:055,Bygdoy,51,55,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.016381245220704877
+dietz2018:Bygdoy:056,Bygdoy,51,56,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.014924563578550532
+dietz2018:Bygdoy:057,Bygdoy,51,57,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.02102542686618399
+dietz2018:Bygdoy:058,Bygdoy,51,58,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.016482855183338984
+dietz2018:Bygdoy:059,Bygdoy,51,59,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.05012227193410175
+dietz2018:Bygdoy:060,Bygdoy,51,60,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.014683382765531001
+dietz2018:Bygdoy:061,Bygdoy,51,61,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.014339789516079528
+dietz2018:Bygdoy:062,Bygdoy,51,62,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.050013080322004015
+dietz2018:Bygdoy:063,Bygdoy,51,63,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.01665131856935903
+dietz2018:Bygdoy:064,Bygdoy,51,64,2017-07-05,False,True,True,False,False,False,False,outside_18_day_window,0.01683945180956674
+dietz2018:Bygdoy:065,Bygdoy,51,65,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.017150162936763087
+dietz2018:Bygdoy:066,Bygdoy,51,66,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.05034415792539025
+dietz2018:Bygdoy:067,Bygdoy,51,67,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.043717558026275964
+dietz2018:Bygdoy:068,Bygdoy,51,68,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.052706611344707575
+dietz2018:Bygdoy:069,Bygdoy,51,69,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.04889277612796449
+dietz2018:Bygdoy:070,Bygdoy,51,70,2017-07-05,False,True,True,True,False,False,False,outside_18_day_window,0.018476969165342815
+dietz2018:Bygdoy:071,Bygdoy,51,71,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.01068467901226071
+dietz2018:Bygdoy:072,Bygdoy,51,72,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.05040334105682045
+dietz2018:Bygdoy:073,Bygdoy,51,73,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.016207249738903886
+dietz2018:Bygdoy:074,Bygdoy,51,74,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.05546943958796705
+dietz2018:Bygdoy:075,Bygdoy,51,75,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.050364628637657
+dietz2018:Bygdoy:076,Bygdoy,51,76,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.01114453769981725
+dietz2018:Bygdoy:077,Bygdoy,51,77,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.016980668352397928
+dietz2018:Bygdoy:078,Bygdoy,51,78,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.01721528488818773
+dietz2018:Bygdoy:079,Bygdoy,51,79,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.05255974143209758
+dietz2018:Bygdoy:080,Bygdoy,51,80,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.04836619619797314
+dietz2018:Bygdoy:081,Bygdoy,51,81,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.05081281925275488
+dietz2018:Bygdoy:082,Bygdoy,51,82,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.01632850662796716
+dietz2018:Bygdoy:083,Bygdoy,51,83,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.01648330517530573
+dietz2018:Bygdoy:084,Bygdoy,51,84,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.04781417844148452
+dietz2018:Bygdoy:085,Bygdoy,51,85,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.018202337841566003
+dietz2018:Bygdoy:086,Bygdoy,51,86,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.052249018612785476
+dietz2018:Bygdoy:087,Bygdoy,51,87,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.015130772470081454
+dietz2018:Bygdoy:088,Bygdoy,51,88,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.05181703602914617
+dietz2018:Bygdoy:089,Bygdoy,51,89,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.0123262271278324
+dietz2018:Bygdoy:090,Bygdoy,51,90,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04599017302580932
+dietz2018:Bygdoy:091,Bygdoy,51,91,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01662016750228134
+dietz2018:Bygdoy:092,Bygdoy,51,92,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.020327131103144748
+dietz2018:Bygdoy:093,Bygdoy,51,93,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05187473022200734
+dietz2018:Bygdoy:094,Bygdoy,51,94,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04385666861246896
+dietz2018:Bygdoy:095,Bygdoy,51,95,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.019170009360198668
+dietz2018:Bygdoy:096,Bygdoy,51,96,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.047591933980584145
+dietz2018:Bygdoy:097,Bygdoy,51,97,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.021505544156128088
+dietz2018:Bygdoy:098,Bygdoy,51,98,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04785412906810399
+dietz2018:Bygdoy:099,Bygdoy,51,99,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.049771864130311934
+dietz2018:Bygdoy:100,Bygdoy,51,100,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01860009570999186
+dietz2018:Bygdoy:101,Bygdoy,52,101,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.016571786689780432
+dietz2018:Bygdoy:102,Bygdoy,52,102,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.0161781201958718
+dietz2018:Bygdoy:103,Bygdoy,52,103,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.018881392141462665
+dietz2018:Bygdoy:104,Bygdoy,52,104,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01847130818771563
+dietz2018:Bygdoy:105,Bygdoy,52,105,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.018529722024659762
+dietz2018:Bygdoy:106,Bygdoy,52,106,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.014252802176054515
+dietz2018:Bygdoy:107,Bygdoy,52,107,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.010932915766125153
+dietz2018:Bygdoy:108,Bygdoy,52,108,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.048866533099792386
+dietz2018:Bygdoy:109,Bygdoy,52,109,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04838538577301568
+dietz2018:Bygdoy:110,Bygdoy,52,110,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.016553881778543573
+dietz2018:Bygdoy:111,Bygdoy,52,111,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.017558726867914033
+dietz2018:Bygdoy:112,Bygdoy,52,112,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.013745756594149951
+dietz2018:Bygdoy:113,Bygdoy,52,113,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.015936161249982005
+dietz2018:Bygdoy:114,Bygdoy,52,114,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04693105040616907
+dietz2018:Bygdoy:115,Bygdoy,52,115,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.020191128087118558
+dietz2018:Bygdoy:116,Bygdoy,52,116,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.016753892757279242
+dietz2018:Bygdoy:117,Bygdoy,52,117,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01759655453966971
+dietz2018:Bygdoy:118,Bygdoy,52,118,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01635845087049287
+dietz2018:Bygdoy:119,Bygdoy,52,119,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.018359854591217754
+dietz2018:Bygdoy:120,Bygdoy,52,120,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04758604420520565
+dietz2018:Bygdoy:121,Bygdoy,52,121,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05052243419754422
+dietz2018:Bygdoy:122,Bygdoy,52,122,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.050343614839829236
+dietz2018:Bygdoy:123,Bygdoy,52,123,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.020522303223815576
+dietz2018:Bygdoy:124,Bygdoy,52,124,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.016759030325321538
+dietz2018:Bygdoy:125,Bygdoy,52,125,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.017063303469052722
+dietz2018:Bygdoy:126,Bygdoy,52,126,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.016740635936211945
+dietz2018:Bygdoy:127,Bygdoy,52,127,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.0428100786137568
+dietz2018:Bygdoy:128,Bygdoy,52,128,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.018996496791742867
+dietz2018:Bygdoy:129,Bygdoy,52,129,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01795985376235119
+dietz2018:Bygdoy:130,Bygdoy,52,130,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01692243870074346
+dietz2018:Bygdoy:131,Bygdoy,52,131,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.010208303971178634
+dietz2018:Bygdoy:132,Bygdoy,52,132,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02006408215208176
+dietz2018:Bygdoy:133,Bygdoy,52,133,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.014852080803334583
+dietz2018:Bygdoy:134,Bygdoy,52,134,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02255380727532011
+dietz2018:Bygdoy:135,Bygdoy,52,135,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.018461455629320892
+dietz2018:Bygdoy:136,Bygdoy,52,136,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01943081334262874
+dietz2018:Bygdoy:137,Bygdoy,52,137,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.014411669374058403
+dietz2018:Bygdoy:138,Bygdoy,52,138,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02069534142543158
+dietz2018:Bygdoy:139,Bygdoy,52,139,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.0469108338625275
+dietz2018:Bygdoy:140,Bygdoy,52,140,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.018311296642050612
+dietz2018:Bygdoy:141,Bygdoy,52,141,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04507194064897319
+dietz2018:Bygdoy:142,Bygdoy,52,142,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04629516510708265
+dietz2018:Bygdoy:143,Bygdoy,52,143,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.019240582502497647
+dietz2018:Bygdoy:144,Bygdoy,52,144,2017-08-07,False,True,True,True,False,False,False,outside_18_day_window,0.04406432247458506
+dietz2018:Bygdoy:145,Bygdoy,52,145,2017-08-07,False,True,True,True,False,False,False,outside_18_day_window,0.011883906811807992
+dietz2018:Bygdoy:146,Bygdoy,52,146,2017-08-07,False,True,True,True,False,False,False,outside_18_day_window,0.01668719114014602
+dietz2018:Bygdoy:147,Bygdoy,52,147,2017-08-07,False,True,True,True,False,False,False,outside_18_day_window,0.04370693015555746
+dietz2018:Bygdoy:148,Bygdoy,52,148,2017-08-07,False,True,True,True,False,False,False,outside_18_day_window,0.02328479099869846
+dietz2018:Bygdoy:149,Bygdoy,52,149,2017-08-08,False,True,True,True,False,False,False,outside_18_day_window,0.01820791354018645
+dietz2018:Bygdoy:150,Bygdoy,52,150,2017-08-08,False,True,True,True,False,False,False,outside_18_day_window,0.014132699929034424
+dietz2018:Bygdoy:151,Bygdoy,53,151,2017-08-10,False,True,True,True,False,False,False,outside_18_day_window,0.05117775250896967
+dietz2018:Bygdoy:152,Bygdoy,53,152,2017-08-10,False,True,True,True,False,False,False,outside_18_day_window,0.018661586031346322
+dietz2018:Bygdoy:153,Bygdoy,53,153,2017-08-10,False,True,True,True,False,False,False,outside_18_day_window,0.04676172914190343
+dietz2018:Bygdoy:154,Bygdoy,53,154,2017-08-10,False,True,True,True,False,False,False,outside_18_day_window,0.020495038175486528
+dietz2018:Bygdoy:155,Bygdoy,53,155,2017-08-11,False,True,True,True,False,False,False,outside_18_day_window,0.04900876086993423
+dietz2018:Bygdoy:156,Bygdoy,53,156,2017-08-11,False,True,True,True,False,False,False,outside_18_day_window,0.01592607532876452
+dietz2018:Bygdoy:157,Bygdoy,53,157,2017-08-11,False,True,True,True,False,False,False,outside_18_day_window,0.009913508905405226
+dietz2018:Bygdoy:158,Bygdoy,53,158,2017-08-11,False,True,True,True,False,False,False,outside_18_day_window,0.017481460383297898
+dietz2018:Bygdoy:159,Bygdoy,53,159,2017-08-11,False,True,True,True,False,False,False,outside_18_day_window,0.021560565716359503
+dietz2018:Bygdoy:160,Bygdoy,53,160,2017-08-11,False,True,True,True,False,False,False,outside_18_day_window,0.05038392589564538
+dietz2018:Bygdoy:161,Bygdoy,53,161,2017-08-11,False,True,True,True,False,False,False,outside_18_day_window,0.04959382232463801
+dietz2018:Bygdoy:162,Bygdoy,53,162,2017-08-13,False,True,True,True,False,False,False,outside_18_day_window,0.022708648600515906
+dietz2018:Bygdoy:163,Bygdoy,53,163,2017-08-13,False,True,True,True,False,False,False,outside_18_day_window,0.04988766242906829
+dietz2018:Bygdoy:164,Bygdoy,53,164,2017-08-13,False,True,False,True,False,False,False,outside_18_day_window,0.04335818590551299
+dietz2018:Bygdoy:165,Bygdoy,53,165,2017-08-13,False,True,True,True,False,False,False,outside_18_day_window,0.016376584695303738
+dietz2018:Bygdoy:166,Bygdoy,53,166,2017-08-13,False,True,True,True,False,False,False,outside_18_day_window,0.02223558349843517
+dietz2018:Bygdoy:167,Bygdoy,53,167,2017-08-13,False,True,True,True,False,False,False,outside_18_day_window,0.023226640049832527
+dietz2018:Bygdoy:168,Bygdoy,53,168,2017-08-13,False,True,True,True,False,False,False,outside_18_day_window,0.015710326790039968
+dietz2018:Bygdoy:169,Bygdoy,53,169,2017-08-13,False,True,True,True,False,False,False,outside_18_day_window,0.011776298420485375
+dietz2018:Bygdoy:170,Bygdoy,53,170,2017-08-13,False,True,True,True,False,False,False,outside_18_day_window,0.021597174158922965
+dietz2018:Bygdoy:171,Bygdoy,53,171,2017-08-13,False,True,True,True,False,False,False,outside_18_day_window,0.011128573677105017
+dietz2018:Bygdoy:172,Bygdoy,53,172,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.020095832847603814
+dietz2018:Bygdoy:173,Bygdoy,53,173,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.01890857081468412
+dietz2018:Bygdoy:174,Bygdoy,53,174,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.01907298711824642
+dietz2018:Bygdoy:175,Bygdoy,53,175,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.05180344021320937
+dietz2018:Bygdoy:176,Bygdoy,53,176,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.016528893679919766
+dietz2018:Bygdoy:177,Bygdoy,53,177,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.017929522186570655
+dietz2018:Bygdoy:178,Bygdoy,53,178,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.017314525256304236
+dietz2018:Bygdoy:179,Bygdoy,53,179,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.021401653437122383
+dietz2018:Bygdoy:180,Bygdoy,53,180,2017-07-21,True,True,False,True,False,True,False,included_for_descriptive_distance_only,0.0451210159016583
+dietz2018:Bygdoy:181,Bygdoy,53,181,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04999996218026412
+dietz2018:Bygdoy:182,Bygdoy,53,182,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.022735455630461913
+dietz2018:Bygdoy:183,Bygdoy,53,183,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.017248151365244074
+dietz2018:Bygdoy:184,Bygdoy,53,184,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01805395157496067
+dietz2018:Bygdoy:185,Bygdoy,53,185,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.015453642349357387
+dietz2018:Bygdoy:186,Bygdoy,53,186,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05190204841592436
+dietz2018:Bygdoy:187,Bygdoy,53,187,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.019972838544334882
+dietz2018:Bygdoy:188,Bygdoy,53,188,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02021959604833977
+dietz2018:Bygdoy:189,Bygdoy,53,189,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05243290815669729
+dietz2018:Bygdoy:190,Bygdoy,53,190,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.020887511980759478
+dietz2018:Bygdoy:191,Bygdoy,53,191,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04973437447287406
+dietz2018:Bygdoy:192,Bygdoy,53,192,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.013766244095515448
+dietz2018:Bygdoy:193,Bygdoy,53,193,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05228166904952018
+dietz2018:Bygdoy:194,Bygdoy,53,194,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.018645655238748327
+dietz2018:Bygdoy:195,Bygdoy,53,195,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05099881701924412
+dietz2018:Bygdoy:196,Bygdoy,53,196,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04852444908648954
+dietz2018:Bygdoy:197,Bygdoy,53,197,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05186753522498827
+dietz2018:Bygdoy:198,Bygdoy,53,198,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.0220465332242671
+dietz2018:Bygdoy:199,Bygdoy,53,199,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04695265814146739
+dietz2018:Bygdoy:200,Bygdoy,53,200,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.021623076468939992
+dietz2018:Bygdoy:201,Bygdoy,53,201,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.016046110266703637
+dietz2018:Bygdoy:202,Bygdoy,53,202,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.017713170728144666
+dietz2018:Bygdoy:203,Bygdoy,53,203,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.015511279722238456
+dietz2018:Bygdoy:204,Bygdoy,53,204,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02129494017212845
+dietz2018:Bygdoy:205,Bygdoy,53,205,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.015593959820144129
+dietz2018:Bygdoy:206,Bygdoy,53,206,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.011884570757144185
+dietz2018:Bygdoy:207,Bygdoy,53,207,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01502156810482854
+dietz2018:Bygdoy:208,Bygdoy,53,208,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05177512793748701
+dietz2018:Bygdoy:209,Bygdoy,53,209,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.022335907463822555
+dietz2018:Bygdoy:210,Bygdoy,53,210,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02341513942810327
+dietz2018:Bygdoy:211,Bygdoy,53,211,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05033506846336452
+dietz2018:Ulleval1:001,Ulleval 1,54,1,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.02129328982000443
+dietz2018:Ulleval1:002,Ulleval 1,54,2,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.005458777693068201
+dietz2018:Ulleval1:003,Ulleval 1,54,3,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.021179490377719712
+dietz2018:Ulleval1:004,Ulleval 1,54,4,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.009507297546965322
+dietz2018:Ulleval1:005,Ulleval 1,54,5,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.029568486675611544
+dietz2018:Ulleval1:006,Ulleval 1,54,6,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.012030064998827136
+dietz2018:Ulleval1:007,Ulleval 1,54,7,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.05278182186607642
+dietz2018:Ulleval1:008,Ulleval 1,54,8,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.05255213136766128
+dietz2018:Ulleval1:009,Ulleval 1,54,9,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.027481780926022017
+dietz2018:Ulleval1:010,Ulleval 1,54,10,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.021271050443642636
+dietz2018:Ulleval1:011,Ulleval 1,54,11,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.026080888357779337
+dietz2018:Ulleval1:012,Ulleval 1,54,12,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.03945883281940188
+dietz2018:Ulleval1:013,Ulleval 1,54,13,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.020627262631491634
+dietz2018:Ulleval1:014,Ulleval 1,54,14,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.01722835994341412
+dietz2018:Ulleval1:015,Ulleval 1,54,15,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.010342287537154434
+dietz2018:Ulleval1:016,Ulleval 1,54,16,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.02607265174865342
+dietz2018:Ulleval1:017,Ulleval 1,54,17,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.038775404575376246
+dietz2018:Ulleval1:018,Ulleval 1,54,18,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.014166940532521235
+dietz2018:Ulleval1:019,Ulleval 1,54,19,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.04670192289918488
+dietz2018:Ulleval1:020,Ulleval 1,54,20,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.005688058656835235
+dietz2018:Ulleval1:021,Ulleval 1,54,21,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.02192813524654376
+dietz2018:Ulleval1:022,Ulleval 1,54,22,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.04014430131833873
+dietz2018:Ulleval1:023,Ulleval 1,54,23,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.024967967209223826
+dietz2018:Ulleval1:024,Ulleval 1,54,24,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.005925742679802159
+dietz2018:Ulleval1:025,Ulleval 1,54,25,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.05435675638751778
+dietz2018:Ulleval1:026,Ulleval 1,54,26,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.01149500412783231
+dietz2018:Ulleval1:027,Ulleval 1,54,27,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.042519842925823254
+dietz2018:Ulleval1:028,Ulleval 1,54,28,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.044254271675201615
+dietz2018:Ulleval1:029,Ulleval 1,54,29,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.046209785087740644
+dietz2018:Ulleval1:030,Ulleval 1,54,30,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.024510911510641584
+dietz2018:Ulleval1:031,Ulleval 1,54,31,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.04495663616196443
+dietz2018:Ulleval1:032,Ulleval 1,54,32,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.04229435809133469
+dietz2018:Ulleval1:033,Ulleval 1,54,33,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.011708154619881833
+dietz2018:Ulleval1:034,Ulleval 1,54,34,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.013396553217233808
+dietz2018:Ulleval1:035,Ulleval 1,54,35,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.012936641475762158
+dietz2018:Ulleval1:036,Ulleval 1,54,36,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.02257082586124529
+dietz2018:Ulleval1:037,Ulleval 1,54,37,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.01210345376042957
+dietz2018:Ulleval1:038,Ulleval 1,54,38,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.020103094126102616
+dietz2018:Ulleval1:039,Ulleval 1,54,39,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.011465586634084196
+dietz2018:Ulleval1:040,Ulleval 1,54,40,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.043515970137362095
+dietz2018:Ulleval1:041,Ulleval 1,54,41,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.019403945556941235
+dietz2018:Ulleval1:042,Ulleval 1,54,42,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.028332734545314507
+dietz2018:Ulleval1:043,Ulleval 1,54,43,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.02343852975220131
+dietz2018:Ulleval1:044,Ulleval 1,54,44,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.024802508335336117
+dietz2018:Ulleval1:045,Ulleval 1,54,45,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.04796027620839216
+dietz2018:Ulleval1:046,Ulleval 1,54,46,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,122.54851087873364
+dietz2018:Ulleval1:047,Ulleval 1,54,47,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.027670946613050307
+dietz2018:Ulleval1:048,Ulleval 1,54,48,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,5.811841800634704
+dietz2018:Ulleval1:049,Ulleval 1,54,49,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.00878803477811686
+dietz2018:Ulleval1:050,Ulleval 1,54,50,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.004750530309768115
+dietz2018:Ulleval1:051,Ulleval 1,55,51,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.009711496680427773
+dietz2018:Ulleval1:052,Ulleval 1,55,52,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,55.80991503828719
+dietz2018:Ulleval1:053,Ulleval 1,55,53,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.008771841472189958
+dietz2018:Ulleval1:054,Ulleval 1,55,54,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.02701819840722575
+dietz2018:Ulleval1:055,Ulleval 1,55,55,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.007431211104833089
+dietz2018:Ulleval1:056,Ulleval 1,55,56,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.02318389912669011
+dietz2018:Ulleval1:057,Ulleval 1,55,57,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.007528922061791022
+dietz2018:Ulleval1:058,Ulleval 1,55,58,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.0036212711044102557
+dietz2018:Ulleval1:059,Ulleval 1,55,59,2017-07-15,False,True,True,True,False,False,False,outside_18_day_window,0.05039781729723617
+dietz2018:Ulleval1:060,Ulleval 1,55,60,2017-07-15,False,True,True,True,False,False,False,outside_18_day_window,0.022682704779221168
+dietz2018:Ulleval1:061,Ulleval 1,55,61,2017-07-15,False,True,True,True,False,False,False,outside_18_day_window,0.045443846040063816
+dietz2018:Ulleval1:062,Ulleval 1,55,62,2017-07-15,False,True,True,True,False,False,False,outside_18_day_window,0.04573340837635817
+dietz2018:Ulleval1:063,Ulleval 1,55,63,2017-07-15,False,True,True,True,False,False,False,outside_18_day_window,0.015949415226855456
+dietz2018:Ulleval1:064,Ulleval 1,55,64,2017-07-15,False,True,True,True,False,False,False,outside_18_day_window,0.04281967339898776
+dietz2018:Ulleval1:065,Ulleval 1,55,65,2017-07-15,False,True,True,True,False,False,False,outside_18_day_window,0.04176887529735205
+dietz2018:Ulleval1:066,Ulleval 1,55,66,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.02872872168194471
+dietz2018:Ulleval1:067,Ulleval 1,55,67,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.0370319582808803
+dietz2018:Ulleval1:068,Ulleval 1,55,68,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.028245559862590024
+dietz2018:Ulleval1:069,Ulleval 1,55,69,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.03933732830001091
+dietz2018:Ulleval1:070,Ulleval 1,55,70,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.006051992958485087
+dietz2018:Ulleval1:071,Ulleval 1,55,71,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.023348694756864505
+dietz2018:Ulleval1:072,Ulleval 1,55,72,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.06298872221472276
+dietz2018:Ulleval1:073,Ulleval 1,55,73,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,39.17182436894747
+dietz2018:Ulleval1:074,Ulleval 1,55,74,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.006219456320508514
+dietz2018:Ulleval1:075,Ulleval 1,55,75,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.05956536233961448
+dietz2018:Ulleval1:076,Ulleval 1,55,76,2017-07-17,False,True,True,True,False,False,False,outside_18_day_window,0.04183415577886066
+dietz2018:Ulleval1:077,Ulleval 1,55,77,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.016075886926488016
+dietz2018:Ulleval1:078,Ulleval 1,55,78,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01829790349572683
+dietz2018:Ulleval1:079,Ulleval 1,55,79,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,89.17643894052337
+dietz2018:Ulleval1:080,Ulleval 1,55,80,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05048177516003966
+dietz2018:Ulleval1:081,Ulleval 1,55,81,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.028061896055966665
+dietz2018:Ulleval1:082,Ulleval 1,55,82,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.009165911875856917
+dietz2018:Ulleval1:083,Ulleval 1,55,83,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.015084690651179416
+dietz2018:Ulleval1:084,Ulleval 1,55,84,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.019935237533753154
+dietz2018:Ulleval1:085,Ulleval 1,55,85,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.044408628173022
+dietz2018:Ulleval1:086,Ulleval 1,55,86,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05649399135689204
+dietz2018:Ulleval1:087,Ulleval 1,55,87,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.042046313001609
+dietz2018:Ulleval1:088,Ulleval 1,55,88,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.03866283485007235
+dietz2018:Ulleval1:089,Ulleval 1,55,89,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.026278232523738808
+dietz2018:Ulleval1:090,Ulleval 1,55,90,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04422691425593616
+dietz2018:Ulleval1:091,Ulleval 1,55,91,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02539373933135415
+dietz2018:Ulleval1:092,Ulleval 1,55,92,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.040716755413319025
+dietz2018:Ulleval1:093,Ulleval 1,55,93,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01229037871617897
+dietz2018:Ulleval1:094,Ulleval 1,55,94,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.009551464083912165
+dietz2018:Ulleval1:095,Ulleval 1,55,95,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.00833817991707557
+dietz2018:Ulleval1:096,Ulleval 1,55,96,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.014095447451876911
+dietz2018:Ulleval1:097,Ulleval 1,55,97,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01608780434772782
+dietz2018:Ulleval1:098,Ulleval 1,55,98,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.026764232947939122
+dietz2018:Ulleval1:099,Ulleval 1,55,99,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02697195804349862
+dietz2018:Ulleval1:100,Ulleval 1,55,100,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.019114906629209616
+dietz2018:Ulleval1:101,Ulleval 1,56,101,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.049434673790504965
+dietz2018:Ulleval1:102,Ulleval 1,56,102,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.009054052183375573
+dietz2018:Ulleval1:103,Ulleval 1,56,103,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.014275652651411272
+dietz2018:Ulleval1:104,Ulleval 1,56,104,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.052678007048719035
+dietz2018:Ulleval1:105,Ulleval 1,56,105,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.011946231229436074
+dietz2018:Ulleval1:106,Ulleval 1,56,106,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.048702894421163406
+dietz2018:Ulleval1:107,Ulleval 1,56,107,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.0236362778718577
+dietz2018:Ulleval1:108,Ulleval 1,56,108,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.026978823107621477
+dietz2018:Ulleval1:109,Ulleval 1,56,109,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.007001595141538143
+dietz2018:Ulleval1:110,Ulleval 1,56,110,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04511056719096501
+dietz2018:Ulleval1:111,Ulleval 1,56,111,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.019166869102030974
+dietz2018:Ulleval1:112,Ulleval 1,56,112,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.011331240745828393
+dietz2018:Ulleval1:113,Ulleval 1,56,113,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02267359085589412
+dietz2018:Ulleval1:114,Ulleval 1,56,114,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02541451485122227
+dietz2018:Ulleval1:115,Ulleval 1,56,115,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.008231045114322124
+dietz2018:Ulleval1:116,Ulleval 1,56,116,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04733457231242148
+dietz2018:Ulleval1:117,Ulleval 1,56,117,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04124037179469685
+dietz2018:Ulleval1:118,Ulleval 1,56,118,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05788578901143853
+dietz2018:Ulleval1:119,Ulleval 1,56,119,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.011933803851988787
+dietz2018:Ulleval1:120,Ulleval 1,56,120,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.027156497416133664
+dietz2018:Ulleval1:121,Ulleval 1,56,121,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.06150938873689051
+dietz2018:Ulleval1:122,Ulleval 1,56,122,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.011507911440344507
+dietz2018:Ulleval1:123,Ulleval 1,56,123,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.058889329456000214
+dietz2018:Ulleval1:124,Ulleval 1,56,124,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04426508273227119
+dietz2018:Ulleval1:125,Ulleval 1,56,125,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.019991765381531027
+dietz2018:Ulleval1:126,Ulleval 1,56,126,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.043891848247937716
+dietz2018:Ulleval1:127,Ulleval 1,56,127,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05449102217708303
+dietz2018:Ulleval1:128,Ulleval 1,56,128,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.003513853547749774
+dietz2018:Ulleval1:129,Ulleval 1,56,129,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.028375258266220855
+dietz2018:Ulleval1:130,Ulleval 1,56,130,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04017881230693458
+dietz2018:Ulleval1:131,Ulleval 1,56,131,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,22.545161711459325
+dietz2018:Ulleval1:132,Ulleval 1,56,132,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.03614475933132972
+dietz2018:Ulleval1:133,Ulleval 1,56,133,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.00755951046293114
+dietz2018:Ulleval1:134,Ulleval 1,56,134,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02331505373202674
+dietz2018:Ulleval1:135,Ulleval 1,56,135,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.007500380305179104
+dietz2018:Ulleval1:136,Ulleval 1,56,136,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04666730597640132
+dietz2018:Ulleval1:137,Ulleval 1,56,137,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.005853525325528876
+dietz2018:Ulleval1:138,Ulleval 1,56,138,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.028646819612480112
+dietz2018:Ulleval1:139,Ulleval 1,56,139,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04096240071151559
+dietz2018:Ulleval1:140,Ulleval 1,56,140,2017-08-05,False,True,True,True,False,False,False,outside_18_day_window,0.02740197724040782
+dietz2018:Ulleval1:141,Ulleval 1,56,141,2017-08-05,False,True,True,True,False,False,False,outside_18_day_window,0.0458078471760344
+dietz2018:Ulleval1:142,Ulleval 1,56,142,2017-08-05,False,True,True,True,False,False,False,outside_18_day_window,0.044152748688745524
+dietz2018:Ulleval1:143,Ulleval 1,56,143,2017-08-05,False,True,True,True,False,False,False,outside_18_day_window,0.048665315422516
+dietz2018:Ulleval1:144,Ulleval 1,56,144,2017-08-05,False,True,True,True,False,False,False,outside_18_day_window,0.017376867164459704
+dietz2018:Ulleval1:145,Ulleval 1,56,145,2017-08-05,False,True,True,True,False,False,False,outside_18_day_window,0.012318433628364586
+dietz2018:Ulleval1:146,Ulleval 1,56,146,2017-08-11,False,True,True,True,False,False,False,outside_18_day_window,0.04664146150405743
+dietz2018:Ulleval1:147,Ulleval 1,56,147,2017-08-13,False,True,True,True,False,False,False,outside_18_day_window,0.015610157239741787
+dietz2018:Ulleval1:148,Ulleval 1,56,148,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,39.190223674437334
+dietz2018:Ulleval1:149,Ulleval 1,56,149,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.0244775791679406
+dietz2018:Ulleval1:150,Ulleval 1,56,150,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.023596957139109986
+dietz2018:Ulleval1:151,Ulleval 1,57,151,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.006242455002001935
+dietz2018:Ulleval1:152,Ulleval 1,57,152,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.009830047492226655
+dietz2018:Ulleval1:153,Ulleval 1,57,153,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.04480292375929995
+dietz2018:Ulleval1:154,Ulleval 1,57,154,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.026701330800674477
+dietz2018:Ulleval1:155,Ulleval 1,57,155,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.02235204021532545
+dietz2018:Ulleval1:156,Ulleval 1,57,156,2017-08-14,False,True,True,True,False,False,False,outside_18_day_window,0.02714836931989545
+dietz2018:Ulleval1:157,Ulleval 1,57,157,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02686170408441388
+dietz2018:Ulleval1:158,Ulleval 1,57,158,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02715154163266043
+dietz2018:Ulleval1:159,Ulleval 1,57,159,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.06200606958409523
+dietz2018:Ulleval1:160,Ulleval 1,57,160,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.008810338726639999
+dietz2018:Ulleval1:161,Ulleval 1,57,161,2017-07-21,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.025784708507209986
+dietz2018:Ulleval1:162,Ulleval 1,57,162,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.022354854789116214
+dietz2018:Ulleval1:163,Ulleval 1,57,163,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.008500877910792223
+dietz2018:Ulleval1:164,Ulleval 1,57,164,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.010886545563642453
+dietz2018:Ulleval1:165,Ulleval 1,57,165,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04474384103145129
+dietz2018:Ulleval1:166,Ulleval 1,57,166,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02779097073954072
+dietz2018:Ulleval1:167,Ulleval 1,57,167,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.021770886345849977
+dietz2018:Ulleval1:168,Ulleval 1,57,168,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.052632667029205445
+dietz2018:Ulleval1:169,Ulleval 1,57,169,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.019362729859427462
+dietz2018:Ulleval1:170,Ulleval 1,57,170,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.0423464567450096
+dietz2018:Ulleval1:171,Ulleval 1,57,171,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.028782330842337556
+dietz2018:Ulleval1:172,Ulleval 1,57,172,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.024654125044286216
+dietz2018:Ulleval1:173,Ulleval 1,57,173,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.047341651989147644
+dietz2018:Ulleval1:174,Ulleval 1,57,174,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.021747903789292863
+dietz2018:Ulleval1:175,Ulleval 1,57,175,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.009006090075685046
+dietz2018:Ulleval1:176,Ulleval 1,57,176,2017-07-31,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.011454725696383995
+dietz2018:Ulleval1:177,Ulleval 1,57,177,2017-07-31,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.0067376495749749
+dietz2018:Ulleval1:178,Ulleval 1,57,178,2017-07-31,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.023719189541800214
+dietz2018:Ulleval1:179,Ulleval 1,57,179,2017-07-31,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.012410211147754445
+dietz2018:Ulleval1:180,Ulleval 1,57,180,2017-07-31,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.011800951058948654
+dietz2018:Ulleval1:181,Ulleval 1,57,181,2017-07-31,True,True,True,True,False,True,True,included_for_descriptive_distance_only,39.183346268374294
+dietz2018:Ulleval1:182,Ulleval 1,57,182,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04094439533218364
+dietz2018:Ulleval1:183,Ulleval 1,57,183,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05121839837115915
+dietz2018:Ulleval1:184,Ulleval 1,57,184,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.026090834744797866
+dietz2018:Ulleval1:185,Ulleval 1,57,185,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.038057799355367586
+dietz2018:Ulleval1:186,Ulleval 1,57,186,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,5.809752758981343
+dietz2018:Ulleval1:187,Ulleval 1,57,187,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01889100492129993
+dietz2018:Ulleval1:188,Ulleval 1,57,188,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.0270280295175073
+dietz2018:Ulleval1:189,Ulleval 1,57,189,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.0160451279527322
+dietz2018:Ulleval1:190,Ulleval 1,57,190,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02175780760640262
+dietz2018:Ulleval2:001,Ulleval 2,58,1,2017-07-19,True,True,True,False,False,True,True,included_for_descriptive_distance_only,39.1831509823447
+dietz2018:Ulleval2:002,Ulleval 2,58,2,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,22.546280776794777
+dietz2018:Ulleval2:003,Ulleval 2,58,3,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.012201049681677437
+dietz2018:Ulleval2:004,Ulleval 2,58,4,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.020496672064483017
+dietz2018:Ulleval2:005,Ulleval 2,58,5,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.020656456615091193
+dietz2018:Ulleval2:006,Ulleval 2,58,6,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.020715529693544135
+dietz2018:Ulleval2:007,Ulleval 2,58,7,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.013414575751069337
+dietz2018:Ulleval2:008,Ulleval 2,58,8,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.04905268876196261
+dietz2018:Ulleval2:009,Ulleval 2,58,9,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.044105905954157656
+dietz2018:Ulleval2:010,Ulleval 2,58,10,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.01745350679060665
+dietz2018:Ulleval2:011,Ulleval 2,58,11,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.01159187802737329
+dietz2018:Ulleval2:012,Ulleval 2,58,12,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.02186927164687737
+dietz2018:Ulleval2:013,Ulleval 2,58,13,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.04533584901968691
+dietz2018:Ulleval2:014,Ulleval 2,58,14,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04867014261271499
+dietz2018:Ulleval2:015,Ulleval 2,58,15,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.04503197472494871
+dietz2018:Ulleval2:016,Ulleval 2,58,16,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.02110302555442474
+dietz2018:Ulleval2:017,Ulleval 2,58,17,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.022421380153636677
+dietz2018:Ulleval2:018,Ulleval 2,58,18,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.01203958666883409
+dietz2018:Ulleval2:019,Ulleval 2,58,19,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.019992977860882954
+dietz2018:Ulleval2:020,Ulleval 2,58,20,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.009924322366714478
+dietz2018:Ulleval2:021,Ulleval 2,58,21,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.019117887099414255
+dietz2018:Ulleval2:022,Ulleval 2,58,22,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.05101947438443239
+dietz2018:Ulleval2:023,Ulleval 2,58,23,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.02090430121046259
+dietz2018:Ulleval2:024,Ulleval 2,58,24,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.011406567516242744
+dietz2018:Ulleval2:025,Ulleval 2,58,25,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.023432844274418427
+dietz2018:Ulleval2:026,Ulleval 2,58,26,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.01863516347783494
+dietz2018:Ulleval2:027,Ulleval 2,58,27,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.04921834302507997
+dietz2018:Ulleval2:028,Ulleval 2,58,28,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.046377459351844535
+dietz2018:Ulleval2:029,Ulleval 2,58,29,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.01287842434046309
+dietz2018:Ulleval2:030,Ulleval 2,58,30,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.015351631799432606
+dietz2018:Ulleval2:031,Ulleval 2,58,31,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.012943076877018577
+dietz2018:Ulleval2:032,Ulleval 2,58,32,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.05359047844278506
+dietz2018:Ulleval2:033,Ulleval 2,58,33,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05534940723726511
+dietz2018:Ulleval2:034,Ulleval 2,58,34,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.022429068046714146
+dietz2018:Ulleval2:035,Ulleval 2,58,35,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.012554548168432796
+dietz2018:Ulleval2:036,Ulleval 2,58,36,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.016591581429897504
+dietz2018:Ulleval2:037,Ulleval 2,58,37,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.020927315945059248
+dietz2018:Ulleval2:038,Ulleval 2,58,38,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.0167746673285586
+dietz2018:Ulleval2:039,Ulleval 2,58,39,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.022104240544236008
+dietz2018:Ulleval2:040,Ulleval 2,58,40,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.014784982408323277
+dietz2018:Ulleval2:041,Ulleval 2,58,41,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.009499741041516664
+dietz2018:Ulleval2:042,Ulleval 2,58,42,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.01781354658161793
+dietz2018:Ulleval2:043,Ulleval 2,58,43,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.02247117476574316
+dietz2018:Ulleval2:044,Ulleval 2,58,44,2017-08-01,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.045628185780578645
+dietz2018:Ulleval2:045,Ulleval 2,58,45,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.053827342721564544
+dietz2018:Ulleval2:046,Ulleval 2,58,46,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.015143561236937518
+dietz2018:Ulleval2:047,Ulleval 2,58,47,2017-08-04,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01594352827876481
+dietz2018:Ulleval2:048,Ulleval 2,58,48,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.012272103475063526
+dietz2018:Ulleval2:049,Ulleval 2,58,49,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.022266743806570042
+dietz2018:Ulleval2:050,Ulleval 2,58,50,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.01706477388662466
+dietz2018:Ulleval2:051,Ulleval 2,59,51,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.01623820871668076
+dietz2018:Ulleval2:052,Ulleval 2,59,52,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.011368773864325726
+dietz2018:Ulleval2:053,Ulleval 2,59,53,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04695352396752057
+dietz2018:Ulleval2:054,Ulleval 2,59,54,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.022410811848357675
+dietz2018:Ulleval2:055,Ulleval 2,59,55,2017-08-03,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.018845341803235723
+dietz2018:Ulleval2:056,Ulleval 2,59,56,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04551984582120376
+dietz2018:Ulleval2:057,Ulleval 2,59,57,2017-07-19,True,True,True,False,False,True,True,included_for_descriptive_distance_only,0.04305719457380562
+dietz2018:Ulleval2:058,Ulleval 2,59,58,2017-07-22,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.020304615527218475
+dietz2018:Ulleval2:059,Ulleval 2,59,59,2017-07-15,False,True,True,True,False,False,False,outside_18_day_window,0.016488487782256797
+dietz2018:Ulleval2:060,Ulleval 2,59,60,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.009405775355117049
+dietz2018:Ulleval2:061,Ulleval 2,59,61,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.018942587926225895
+dietz2018:Ulleval2:062,Ulleval 2,59,62,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.05182787019229585
+dietz2018:Ulleval2:063,Ulleval 2,59,63,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.05204787408655304
+dietz2018:Ulleval2:064,Ulleval 2,59,64,2017-07-03,False,True,True,True,False,False,False,outside_18_day_window,0.05090760000697992
+dietz2018:Ulleval2:065,Ulleval 2,59,65,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.013214120382943444
+dietz2018:Ulleval2:066,Ulleval 2,59,66,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.015186612777045541
+dietz2018:Ulleval2:067,Ulleval 2,59,67,2017-07-01,False,True,True,True,False,False,False,outside_18_day_window,0.021381535577188422
+dietz2018:Ulleval2:068,Ulleval 2,59,68,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.021381573838252284
+dietz2018:Ulleval2:069,Ulleval 2,59,69,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.020964886849433068
+dietz2018:Ulleval2:070,Ulleval 2,59,70,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.04866444317173452
+dietz2018:Ulleval2:071,Ulleval 2,59,71,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.01136331315532603
+dietz2018:Ulleval2:072,Ulleval 2,59,72,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.021593293987821643
+dietz2018:Ulleval2:073,Ulleval 2,59,73,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.05175812739451444
+dietz2018:Ulleval2:074,Ulleval 2,59,74,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.013510323754544844
+dietz2018:Ulleval2:075,Ulleval 2,59,75,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.018716800165873064
+dietz2018:Ulleval2:076,Ulleval 2,59,76,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.01248996808842728
+dietz2018:Ulleval2:077,Ulleval 2,59,77,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.05246912247902547
+dietz2018:Ulleval2:078,Ulleval 2,59,78,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.04861739288583944
+dietz2018:Ulleval2:079,Ulleval 2,59,79,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.013055347539518073
+dietz2018:Ulleval2:080,Ulleval 2,59,80,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.018568363282912913
+dietz2018:Ulleval2:081,Ulleval 2,59,81,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.05518089358621706
+dietz2018:Ulleval2:082,Ulleval 2,59,82,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.012159652888026146
+dietz2018:Ulleval2:083,Ulleval 2,59,83,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.01795685635934975
+dietz2018:Ulleval2:084,Ulleval 2,59,84,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.022720855037414285
+dietz2018:Ulleval2:085,Ulleval 2,59,85,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.04836908492406669
+dietz2018:Ulleval2:086,Ulleval 2,59,86,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.016976703503823635
+dietz2018:Ulleval2:087,Ulleval 2,59,87,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.01797034247266586
+dietz2018:Ulleval2:088,Ulleval 2,59,88,2017-08-02,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.051182242405033454
+dietz2018:Ulleval2:089,Ulleval 2,59,89,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.016938872349329764
+dietz2018:Ulleval2:090,Ulleval 2,59,90,2017-07-02,False,True,True,True,False,False,False,outside_18_day_window,0.013330019365365289
+dietz2018:Ulleval2:091,Ulleval 2,59,91,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.0548840821891094
+dietz2018:Ulleval2:092,Ulleval 2,59,92,2017-07-14,False,True,True,True,False,False,False,outside_18_day_window,0.018754219476543984
+dietz2018:Ulleval2:093,Ulleval 2,59,93,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.05206673619082327
+dietz2018:Ulleval2:094,Ulleval 2,59,94,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.04745286522269638
+dietz2018:Ulleval2:095,Ulleval 2,59,95,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.01661681143062868
+dietz2018:Ulleval2:096,Ulleval 2,59,96,2017-07-18,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.011032789525778207
+dietz2018:Ulleval2:097,Ulleval 2,59,97,2017-07-07,False,True,True,True,False,False,False,outside_18_day_window,0.01689825240312338
+dietz2018:Ulleval2:098,Ulleval 2,59,98,2017-07-04,False,True,True,True,False,False,False,outside_18_day_window,0.016288585855783605
+dietz2018:Ulleval2:099,Ulleval 2,59,99,2017-07-20,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.018576021921506976
+dietz2018:Ulleval2:100,Ulleval 2,59,100,2017-07-13,False,True,True,True,False,False,False,outside_18_day_window,0.017906944780678977
+dietz2018:Ulleval2:101,Ulleval 2,59,101,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.04512812708310523
+dietz2018:Ulleval2:102,Ulleval 2,59,102,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.0112890378731666
+dietz2018:Ulleval2:103,Ulleval 2,59,103,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.013014791865158741
+dietz2018:Ulleval2:104,Ulleval 2,59,104,2017-07-06,False,True,True,True,False,False,False,outside_18_day_window,0.020996552650323578
+dietz2018:Ulleval2:105,Ulleval 2,59,105,2017-07-19,True,True,True,True,False,True,True,included_for_descriptive_distance_only,0.020738393677418688

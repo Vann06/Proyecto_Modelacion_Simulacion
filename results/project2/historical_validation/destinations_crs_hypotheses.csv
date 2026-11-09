@@ -1,0 +1,433 @@
+record_id,colony,date,assumed_epsg,project_x_m_conditional,project_y_m_conditional,covered_by_park_conditional,distance_to_park_m_conditional,interpretation
+dietz2018:Bygdoy:089,Bygdoy,2017-07-18,25832,258059.88874301256,6651208.326354771,False,56.04159355040372,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:090,Bygdoy,2017-07-18,25832,259191.26407861005,6648629.61198013,False,231.08554935078467,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:091,Bygdoy,2017-07-18,25832,259057.5975636541,6649207.541712711,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:092,Bygdoy,2017-07-18,25832,259041.3725824994,6648899.289315982,False,187.7218746117295,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:093,Bygdoy,2017-07-18,25832,258230.07712967184,6649514.767743522,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:094,Bygdoy,2017-07-18,25832,258627.05722168426,6648925.581643262,False,227.28937962557575,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:095,Bygdoy,2017-07-18,25832,258858.61740243284,6649199.152301841,False,118.5334626362088,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:096,Bygdoy,2017-07-18,25832,258704.89979289853,6647767.750802238,False,408.3649019052631,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:097,Bygdoy,2017-07-18,25832,258909.6291996306,6649488.428956418,False,102.00770188151112,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:098,Bygdoy,2017-07-18,25832,258593.62361735574,6649155.990784317,False,260.5836150947189,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:099,Bygdoy,2017-07-18,25832,258861.730060838,6649191.414311364,False,110.237402965614,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:100,Bygdoy,2017-07-18,25832,258258.10327702315,6648948.293778801,False,231.43655109936958,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:101,Bygdoy,2017-07-19,25832,257655.57965848313,6648699.946127271,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:102,Bygdoy,2017-07-19,25832,258868.09993617333,6648947.007954109,False,79.32851996858979,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:103,Bygdoy,2017-07-19,25832,258624.15886110128,6648739.045694691,False,354.2588742479607,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:104,Bygdoy,2017-07-20,25832,258222.48919021967,6648599.562587421,False,245.70217829882188,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:105,Bygdoy,2017-07-20,25832,258102.00539084,6648579.61708475,False,123.60663670773927,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:106,Bygdoy,2017-07-20,25832,258856.6092146954,6649207.302319666,False,126.92134517252782,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:107,Bygdoy,2017-07-20,25832,258911.76765939535,6648886.010785886,False,146.41793224634958,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:108,Bygdoy,2017-07-20,25832,259065.6138918219,6648653.39982211,False,305.13227171578285,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:109,Bygdoy,2017-07-20,25832,258151.4081393399,6648343.244755654,False,128.7146335508436,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:110,Bygdoy,2017-07-20,25832,258897.11584118954,6648732.051746921,False,296.21807982209026,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:111,Bygdoy,2017-07-20,25832,258930.75822708357,6648484.122059532,False,279.63638428212454,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:112,Bygdoy,2017-07-20,25832,258224.67680198172,6648826.403287106,False,184.33561894321645,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:113,Bygdoy,2017-07-20,25832,258657.46417871505,6649846.466424878,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:114,Bygdoy,2017-07-20,25832,258917.01504493557,6649135.9521754375,False,41.09877474832125,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:115,Bygdoy,2017-08-01,25832,260417.80142896852,6649943.23754657,False,483.33207319342256,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:116,Bygdoy,2017-08-01,25832,260329.67699457245,6649701.033018593,False,235.69798419423566,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:117,Bygdoy,2017-08-01,25832,260364.63308013964,6649562.550591144,False,108.53107172413384,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:118,Bygdoy,2017-08-01,25832,259155.9452422803,6648592.381725613,False,207.77242140394247,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:119,Bygdoy,2017-08-01,25832,260042.5680265297,6649801.9006176805,False,307.2540630564653,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:120,Bygdoy,2017-08-01,25832,259306.80710875485,6648554.01484095,False,160.9441383255176,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:121,Bygdoy,2017-08-03,25832,260250.20515985138,6649143.4146424355,False,114.660551687261,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:122,Bygdoy,2017-08-03,25832,258442.92365503765,6649990.815038576,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:123,Bygdoy,2017-08-03,25832,259090.9172543823,6648591.650508133,False,238.9804232303542,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:124,Bygdoy,2017-08-03,25832,259526.21479165752,6649374.765747649,False,211.09726749468575,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:125,Bygdoy,2017-08-03,25832,260593.95376775166,6649509.596401464,False,167.63873809102307,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:126,Bygdoy,2017-08-03,25832,259279.91740113212,6648742.885271163,False,339.5353244655298,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:127,Bygdoy,2017-08-03,25832,258761.27262041272,6648921.531579914,False,126.12277634512668,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:128,Bygdoy,2017-08-03,25832,258792.48477620815,6648949.359120257,False,86.08141978224475,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:129,Bygdoy,2017-08-03,25832,258858.53684447674,6649096.918480889,False,21.72635867512237,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:130,Bygdoy,2017-08-03,25832,260029.35740788537,6649390.965653109,False,171.3301807542525,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:131,Bygdoy,2017-08-03,25832,258793.13187259124,6648932.390726018,False,101.08783995610665,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:132,Bygdoy,2017-08-03,25832,258270.24566283458,6649695.947531564,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:133,Bygdoy,2017-08-03,25832,258829.33351279722,6648970.897164669,False,53.846745350334736,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:134,Bygdoy,2017-08-03,25832,258792.26300101873,6649000.158259743,False,46.86310947896461,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:135,Bygdoy,2017-08-04,25832,260719.2635937641,6649658.910622705,False,163.48441365623037,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:136,Bygdoy,2017-08-04,25832,258866.53490872285,6649022.293801225,False,4.668056891005977,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:137,Bygdoy,2017-08-04,25832,258895.95340344374,6648773.883729559,False,254.6647067164896,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:138,Bygdoy,2017-08-04,25832,258811.98866659522,6648495.920959444,False,394.768906369777,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:139,Bygdoy,2017-08-04,25832,258832.42617196307,6648186.918287194,False,361.4774196502249,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:140,Bygdoy,2017-08-04,25832,258395.05017634667,6648103.236208239,False,41.0163833044384,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:141,Bygdoy,2017-08-04,25832,258448.07801908464,6647891.975064694,False,130.14614899398563,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:142,Bygdoy,2017-08-04,25832,258949.6335878493,6649129.762344254,False,22.4595447556707,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:143,Bygdoy,2017-08-04,25832,258703.6939194301,6648869.11336479,False,202.57465582759477,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:180,Bygdoy,2017-07-21,25832,258871.50634617405,6648788.343201177,False,237.18782052505352,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:181,Bygdoy,2017-07-21,25832,258343.8467406021,6648848.055405278,False,300.78046406724064,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:182,Bygdoy,2017-07-21,25832,258872.64268080782,6648596.296752666,False,386.38517167190975,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:183,Bygdoy,2017-07-21,25832,258569.81234427172,6648264.849368159,False,123.23495737517199,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:184,Bygdoy,2017-07-21,25832,258481.99627130423,6648400.82284023,False,204.98598747267766,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:185,Bygdoy,2017-07-21,25832,258426.26018956534,6648960.088026819,False,395.3950368664029,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:186,Bygdoy,2017-07-21,25832,260275.63168916982,6650188.641735161,False,456.44396580374723,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:187,Bygdoy,2017-07-21,25832,260180.3144714889,6650121.0879212925,False,532.0053479981515,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:188,Bygdoy,2017-07-21,25832,258857.45823827133,6648395.535633746,False,329.87689754979294,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:189,Bygdoy,2017-07-21,25832,259557.60637798609,6650725.526037854,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:190,Bygdoy,2017-07-21,25832,258973.79609090614,6648583.78791008,False,300.93870241639735,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:191,Bygdoy,2017-07-21,25832,258277.05021674384,6649211.379160077,False,231.15170378535626,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:192,Bygdoy,2017-07-22,25832,259033.2636168746,6648298.06467743,False,169.54171303430587,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:193,Bygdoy,2017-07-22,25832,261408.66277527428,6649961.610922354,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:194,Bygdoy,2017-07-22,25832,259070.2287446306,6648152.446126481,False,227.99527796405854,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:195,Bygdoy,2017-07-22,25832,258399.20906777467,6649105.459688708,False,378.8425501554173,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:196,Bygdoy,2017-07-22,25832,258586.13966241787,6649178.202365886,False,277.01301526079124,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:197,Bygdoy,2017-07-22,25832,258836.03192795225,6648762.259405239,False,261.7070790193956,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:198,Bygdoy,2017-07-22,25832,258839.71776929818,6649070.757752411,False,7.904784604204066,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:199,Bygdoy,2017-07-22,25832,258451.65907789604,6649107.062593928,False,382.90720648606253,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:200,Bygdoy,2017-07-22,25832,259300.46882129202,6648109.588675488,False,244.1134161740739,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:201,Bygdoy,2017-07-22,25832,258252.56468535194,6648496.8583074445,False,247.8992552463243,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:202,Bygdoy,2017-07-22,25832,259164.07705846636,6648325.450821056,False,41.85277102961566,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:203,Bygdoy,2017-08-02,25832,260192.07279264185,6649720.01075557,False,261.6087995957014,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:204,Bygdoy,2017-08-02,25832,258951.37249379818,6648993.865630517,False,58.13986149673909,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:205,Bygdoy,2017-08-02,25832,259116.51102983367,6648932.287561514,False,198.58826986427042,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:206,Bygdoy,2017-08-02,25832,258883.47727208486,6648906.757528825,False,121.43729090437654,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:207,Bygdoy,2017-08-02,25832,260070.96546147446,6650119.071274693,False,493.860773049526,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:208,Bygdoy,2017-08-02,25832,258297.37923217117,6648335.434317778,False,154.38061951327134,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:209,Bygdoy,2017-08-02,25832,258862.73502538222,6649047.033961501,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:210,Bygdoy,2017-08-02,25832,258762.92227431876,6648929.710849658,False,118.4505101330783,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:211,Bygdoy,2017-08-02,25832,258653.4155701123,6649220.354956289,False,245.24128235979984,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:077,Ulleval 1,2017-07-18,25832,261388.38559613778,6653699.066198663,False,58.07768085706571,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:078,Ulleval 1,2017-07-18,25832,261370.1009149322,6653556.271298363,False,92.37414091335783,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:079,Ulleval 1,2017-07-18,25832,261569.00442555462,6653381.019058066,False,318.24120679462067,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:080,Ulleval 1,2017-07-18,25832,261934.77000789336,6653140.3102191975,False,111.63810900313234,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:081,Ulleval 1,2017-07-18,25832,261348.0618030387,6653210.011969416,False,258.9085349140291,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:082,Ulleval 1,2017-07-18,25832,261204.461809533,6653037.467919701,False,313.47158556567985,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:083,Ulleval 1,2017-07-18,25832,261242.66545778027,6653754.041824944,False,6.334271138166033,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:084,Ulleval 1,2017-07-18,25832,261942.1968894688,6653174.699212723,False,77.43086428031333,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:085,Ulleval 1,2017-07-18,25832,261458.55468755602,6653253.878416727,False,298.81230215730005,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:086,Ulleval 1,2017-07-18,25832,261544.90759727554,6653724.580482391,False,55.12663431272741,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:087,Ulleval 1,2017-07-19,25832,260762.305025912,6652809.882501139,False,24.650409547370113,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:088,Ulleval 1,2017-07-19,25832,261429.88025831673,6653209.987566138,False,308.29174103959656,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:089,Ulleval 1,2017-07-19,25832,261442.82366984474,6653307.965632381,False,251.43673023865338,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:090,Ulleval 1,2017-07-19,25832,261499.0209551198,6653247.596890748,False,333.3173360222211,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:091,Ulleval 1,2017-07-19,25832,261270.83000545923,6653144.433604068,False,268.3534584561011,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:092,Ulleval 1,2017-07-19,25832,261277.1570967459,6653166.05242181,False,254.46237064968275,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:093,Ulleval 1,2017-07-19,25832,260782.32428471453,6653099.982606372,False,64.55043360556658,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:094,Ulleval 1,2017-07-20,25832,261383.4649167229,6653215.93588892,False,274.7483944236958,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:095,Ulleval 1,2017-07-20,25832,261186.12331858985,6653061.419812199,False,283.5811309992401,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:096,Ulleval 1,2017-07-20,25832,262247.82022679085,6653138.973962052,False,150.2899757452261,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:097,Ulleval 1,2017-07-20,25832,261818.16612448273,6653274.661991119,False,121.5439790860973,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:098,Ulleval 1,2017-07-20,25832,261360.8468398087,6652903.698575595,False,387.0324801627731,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:099,Ulleval 1,2017-07-20,25832,261467.99110859048,6653310.268843015,False,269.74303638817713,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:100,Ulleval 1,2017-07-20,25832,261971.9971773523,6653088.106749207,False,138.8878082373911,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:101,Ulleval 1,2017-07-20,25832,262029.58037706002,6653054.397803275,False,149.78298934614355,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:102,Ulleval 1,2017-07-20,25832,261078.2590005109,6652997.390607906,False,312.8887908651509,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:103,Ulleval 1,2017-07-20,25832,261223.9490731245,6653363.523798829,False,61.82221390563639,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:104,Ulleval 1,2017-07-20,25832,261795.50774677168,6653257.090176715,False,143.80391528884263,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:105,Ulleval 1,2017-08-01,25832,261349.5759810939,6656536.118085469,False,1512.190368859328,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:106,Ulleval 1,2017-08-01,25832,261883.76214173288,6653106.2768022865,False,135.74918457647468,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:107,Ulleval 1,2017-08-01,25832,261439.93153127507,6653344.468521939,False,226.8048886433225,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:108,Ulleval 1,2017-08-01,25832,261665.86675194738,6654279.213520799,False,178.68443784528603,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:109,Ulleval 1,2017-08-01,25832,261224.85386547618,6653014.12304475,False,343.9435213757268,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:110,Ulleval 1,2017-08-01,25832,261519.93485053614,6653234.301917224,False,357.86709872098976,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:111,Ulleval 1,2017-08-01,25832,261690.15957395112,6653251.206323651,False,249.31142830321625,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:112,Ulleval 1,2017-08-01,25832,261186.81798434202,6652783.925338415,False,399.7218255945972,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:113,Ulleval 1,2017-08-01,25832,261565.53704357691,6653256.09723199,False,363.19698200442883,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:114,Ulleval 1,2017-08-01,25832,261199.75369697053,6653248.825391454,False,143.1479152829013,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:115,Ulleval 1,2017-08-01,25832,261442.5130833403,6653154.544379399,False,359.186730858554,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:116,Ulleval 1,2017-08-01,25832,261186.08947253725,6653397.911315792,False,11.806893311759982,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:117,Ulleval 1,2017-08-03,25832,261243.89609384217,6653124.658260055,False,266.21906822010675,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:118,Ulleval 1,2017-08-03,25832,261251.85664965573,6655806.198365875,False,863.3547125493903,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:119,Ulleval 1,2017-08-03,25832,261697.58100389392,6652650.670325321,False,23.68265738254515,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:120,Ulleval 1,2017-08-03,25832,261405.75507212966,6655378.089438053,False,408.4263289616941,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:121,Ulleval 1,2017-08-03,25832,261327.61178611114,6655739.367612502,False,776.3784338449035,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:122,Ulleval 1,2017-08-03,25832,261775.4551342145,6657539.280428415,False,2312.605415523386,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:123,Ulleval 1,2017-08-03,25832,262566.61948521395,6656049.658340225,False,748.1775381239755,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:124,Ulleval 1,2017-08-03,25832,261560.35801701766,6653197.943303294,False,324.35272781183727,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:125,Ulleval 1,2017-08-03,25832,261695.08858431835,6653206.098855469,False,250.7012940839207,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:126,Ulleval 1,2017-08-03,25832,261364.70550343482,6653277.060190677,False,214.90582669523175,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:127,Ulleval 1,2017-08-03,25832,261555.7023453975,6656602.0480456585,False,1472.5469559067974,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:128,Ulleval 1,2017-08-03,25832,261405.0730769418,6653002.730708743,False,354.38052938510924,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:129,Ulleval 1,2017-08-04,25832,262552.4016702445,6655957.101961833,False,655.0029341906355,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:130,Ulleval 1,2017-08-04,25832,261290.22125125147,6653145.343040579,False,278.9221630390292,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:131,Ulleval 1,2017-08-04,25832,261581.14437231046,6653338.963267045,False,349.26255408954256,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:132,Ulleval 1,2017-08-04,25832,261470.4825747722,6653092.070340361,False,330.35170698680105,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:133,Ulleval 1,2017-08-04,25832,261702.3915203998,6653693.361707196,False,125.13944802757544,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:134,Ulleval 1,2017-08-04,25832,261281.67902517173,6656145.380603289,False,1181.1249586309307,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:135,Ulleval 1,2017-08-04,25832,261483.33180615358,6653131.884201496,False,343.39961421370253,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:136,Ulleval 1,2017-08-04,25832,261358.08139245198,6653363.957162316,False,150.59891106050452,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:137,Ulleval 1,2017-08-04,25832,262665.55472863145,6655784.50133172,False,501.39344184826456,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:138,Ulleval 1,2017-08-04,25832,260894.5969741561,6653057.623678556,False,160.32434657466436,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:139,Ulleval 1,2017-08-04,25832,261365.46677578794,6653035.4884841,False,401.60209100308316,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:157,Ulleval 1,2017-07-21,25832,261472.56907236876,6653296.439709451,False,281.8327415030861,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:158,Ulleval 1,2017-07-21,25832,261252.29796786007,6652943.106420541,False,419.14338755435205,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:159,Ulleval 1,2017-07-21,25832,261744.39253039018,6653460.479139376,False,169.21675468119693,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:160,Ulleval 1,2017-07-21,25832,261557.90866304422,6653318.047997617,False,339.92673886339435,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:161,Ulleval 1,2017-07-21,25832,261809.25686008862,6653466.637844116,False,139.2778241882374,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:162,Ulleval 1,2017-07-22,25832,261842.40351766426,6653333.64493816,False,117.9251094253796,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:163,Ulleval 1,2017-07-22,25832,261364.76891231857,6653198.837633072,False,277.73043419601,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:164,Ulleval 1,2017-07-22,25832,261274.3542224771,6653208.565462205,False,217.64757854107728,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:165,Ulleval 1,2017-07-22,25832,261356.9943013899,6653319.2157224985,False,179.1237239667444,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:166,Ulleval 1,2017-07-22,25832,261295.61367060692,6653202.241900344,False,234.68903363037614,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:167,Ulleval 1,2017-07-22,25832,261516.42476574294,6653217.520896435,False,366.2449341529327,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:168,Ulleval 1,2017-07-22,25832,262209.4816128892,6653079.103142521,False,171.48931183297694,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:169,Ulleval 1,2017-07-22,25832,261747.27992976984,6653202.217514224,False,201.38391870597067,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:170,Ulleval 1,2017-07-22,25832,261560.67345672246,6653326.477306305,False,338.009716367792,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:171,Ulleval 1,2017-07-22,25832,260895.7140867232,6652995.2096736105,False,156.82317973950265,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:172,Ulleval 1,2017-07-22,25832,262267.5359724567,6653349.746605336,False,80.98264624219011,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:173,Ulleval 1,2017-07-22,25832,261556.49106328507,6653337.839066643,False,328.6220049661911,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:174,Ulleval 1,2017-07-22,25832,261869.03826966562,6653062.13243229,False,89.55559531129738,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:175,Ulleval 1,2017-07-22,25832,261387.93863442537,6653209.269773782,False,282.77250366679584,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:176,Ulleval 1,2017-07-31,25832,261466.58996966365,6653139.836555495,False,361.50428048674917,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:177,Ulleval 1,2017-07-31,25832,261434.63474727166,6652883.928514578,False,314.44645016784295,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:178,Ulleval 1,2017-07-31,25832,262210.25475973624,6652889.143728142,False,55.88096624474345,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:179,Ulleval 1,2017-07-31,25832,261995.34079558286,6655629.109771474,False,404.9017396429938,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:180,Ulleval 1,2017-07-31,25832,261762.9077011698,6652824.071266772,False,37.70770115903056,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:181,Ulleval 1,2017-07-31,25832,261585.63743592557,6653324.388331446,False,358.77955805955935,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:182,Ulleval 1,2017-08-02,25832,261660.18446801062,6652881.214887442,False,93.01965269329733,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:183,Ulleval 1,2017-08-02,25832,261494.2865941453,6653382.538000689,False,252.32271777579393,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:184,Ulleval 1,2017-08-02,25832,261133.87974352314,6653080.708085684,False,243.89263086970715,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:185,Ulleval 1,2017-08-02,25832,261259.6690658156,6653026.0785213895,False,353.5016760951229,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:186,Ulleval 1,2017-08-02,25832,261572.34804164313,6653338.376565174,False,341.99253841784144,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:187,Ulleval 1,2017-08-02,25832,261565.7620050668,6653339.568172982,False,335.71834365540303,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:188,Ulleval 1,2017-08-02,25832,261126.4861851143,6653001.776886905,False,317.00078951675175,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:189,Ulleval 1,2017-08-02,25832,262320.34054003283,6653428.988863707,False,126.83831047510937,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:190,Ulleval 1,2017-08-02,25832,261524.3312224452,6653604.7809780175,False,166.51592767596924,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:001,Ulleval 2,2017-07-19,25832,261572.9201127931,6653314.070853201,False,354.86873167676356,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:003,Ulleval 2,2017-07-18,25832,261548.74124669764,6653339.789551608,False,320.9597632109285,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:009,Ulleval 2,2017-07-20,25832,261538.6907004921,6653356.437149516,False,303.8295305081183,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:014,Ulleval 2,2017-07-20,25832,261527.24281413542,6653286.012997476,False,331.8289582178731,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:019,Ulleval 2,2017-07-19,25832,261549.75157381943,6653411.333521378,False,288.10476062377256,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:021,Ulleval 2,2017-07-18,25832,261559.7927823782,6653430.042516569,False,290.9022260640974,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:023,Ulleval 2,2017-07-18,25832,261674.9326714777,6653271.057355681,False,264.35887819309033,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:028,Ulleval 2,2017-07-20,25832,261584.95900368132,6653471.449118139,False,282.5574453716897,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:031,Ulleval 2,2017-07-18,25832,261526.31382987546,6653500.010343972,False,243.33187728787738,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:033,Ulleval 2,2017-07-20,25832,261753.55793332585,6653289.397925857,False,187.44575134720785,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:035,Ulleval 2,2017-07-19,25832,261472.905539733,6653505.127736795,False,189.67913896878596,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:040,Ulleval 2,2017-07-18,25832,261774.56249331226,6653227.275953722,False,168.51020700103962,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:041,Ulleval 2,2017-08-01,25832,261446.68474177748,6653547.770647913,False,164.56305466709685,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:044,Ulleval 2,2017-08-01,25832,261476.7305206819,6653580.344255634,False,199.33169111860744,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:045,Ulleval 2,2017-07-18,25832,261451.26546249728,6653097.705828295,False,349.5921948660231,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:046,Ulleval 2,2017-07-18,25832,261474.80900318068,6653588.526517841,False,192.93670046527,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:047,Ulleval 2,2017-08-04,25832,261460.0654331496,6653582.53270186,False,184.60877035188645,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:050,Ulleval 2,2017-07-18,25832,261374.63174019154,6653109.31528764,False,356.19722814869334,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:053,Ulleval 2,2017-08-03,25832,261272.1330664608,6653234.00578836,False,195.20446918051502,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:055,Ulleval 2,2017-08-03,25832,261758.12163390615,6653071.835386462,False,103.08307683423257,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:056,Ulleval 2,2017-07-18,25832,261250.1723264632,6653445.937217659,False,15.637659605601991,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:057,Ulleval 2,2017-07-19,25832,261388.1647163593,6653619.543254225,False,104.75948762767582,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:058,Ulleval 2,2017-07-22,25832,261382.4284675452,6653635.627815233,False,90.60732863598608,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:060,Ulleval 2,2017-07-19,25832,261325.77804457498,6653614.525706803,False,57.80961856682268,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:069,Ulleval 2,2017-07-19,25832,261175.90144524377,6653429.953625662,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:078,Ulleval 2,2017-08-02,25832,261588.6381741311,6653822.11005512,False,16.393128223592292,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:081,Ulleval 2,2017-07-19,25832,262006.92786240022,6653649.023172364,False,3.102781146772801,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:082,Ulleval 2,2017-08-02,25832,261727.0443437909,6652800.375637278,False,78.47418445010312,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:088,Ulleval 2,2017-08-02,25832,261033.49537924604,6652985.957828571,False,294.58224696890346,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:096,Ulleval 2,2017-07-18,25832,261443.50214232446,6654247.359335773,False,110.45008299727728,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:099,Ulleval 2,2017-07-20,25832,260886.15037558603,6654327.016278927,False,61.56209884357757,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:105,Ulleval 2,2017-07-19,25832,261030.96539443394,6651271.021856398,False,279.23301319253414,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:089,Bygdoy,2017-07-18,32632,258059.88873301353,6651208.326232058,False,56.04165324034283,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:090,Bygdoy,2017-07-18,32632,259191.2640686292,6648629.611857412,False,231.08543246233214,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:091,Bygdoy,2017-07-18,32632,259057.59755367055,6649207.541589991,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:092,Bygdoy,2017-07-18,32632,259041.3725725162,6648899.289193262,False,187.72196941645637,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:093,Bygdoy,2017-07-18,32632,258230.0771196776,6649514.767620803,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:094,Bygdoy,2017-07-18,32632,258627.0572116959,6648925.581520541,False,227.28944471889503,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:095,Bygdoy,2017-07-18,32632,258858.617392447,6649199.152179123,False,118.53334741705078,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:096,Bygdoy,2017-07-18,32632,258704.89978291295,6647767.7506795125,False,408.3649241109707,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:097,Bygdoy,2017-07-18,32632,258909.62918964494,6649488.428833702,False,102.00775864398128,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:098,Bygdoy,2017-07-18,32632,258593.6236073667,6649155.990661598,False,260.58357386600045,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:099,Bygdoy,2017-07-18,32632,258861.73005085206,6649191.414188646,False,110.23728774648006,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:100,Bygdoy,2017-07-18,32632,258258.10326703012,6648948.293656081,False,231.43649718943595,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:101,Bygdoy,2017-07-19,32632,257655.57964848325,6648699.946004549,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:102,Bygdoy,2017-07-19,32632,258868.099926188,6648947.00783139,False,79.32863991909454,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:103,Bygdoy,2017-07-19,32632,258624.1588511131,6648739.045571969,False,354.25897961809676,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:104,Bygdoy,2017-07-20,32632,258222.4891802272,6648599.562464702,False,245.70215136799055,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:105,Bygdoy,2017-07-20,32632,258102.0053808459,6648579.61696203,False,123.606607358493,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:106,Bygdoy,2017-07-20,32632,258856.60920470962,6649207.302196949,False,126.92122995424909,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:107,Bygdoy,2017-07-20,32632,258911.76764941038,6648886.010663162,False,146.41805131822753,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:108,Bygdoy,2017-07-20,32632,259065.61388183932,6648653.399699389,False,305.13216950193635,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:109,Bygdoy,2017-07-20,32632,258151.40812934685,6648343.244632931,False,128.71461428138915,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:110,Bygdoy,2017-07-20,32632,258897.11583120475,6648732.051624199,False,296.21819977451406,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:111,Bygdoy,2017-07-20,32632,258930.7582170998,6648484.121936813,False,279.63634368094176,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:112,Bygdoy,2017-07-20,32632,258224.67679198866,6648826.403164389,False,184.33563089914463,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:113,Bygdoy,2017-07-20,32632,258657.46416872565,6649846.466302162,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:114,Bygdoy,2017-07-20,32632,258917.01503495075,6649135.952052721,False,41.09866358114668,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:115,Bygdoy,2017-08-01,32632,260417.80141900087,6649943.237423854,False,483.33216846413796,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:116,Bygdoy,2017-08-01,32632,260329.67698460413,6649701.032895877,False,235.6978610991655,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:117,Bygdoy,2017-08-01,32632,260364.6330701721,6649562.550468433,False,108.53095553332659,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:118,Bygdoy,2017-08-01,32632,259155.9452322992,6648592.381602897,False,207.77231508790646,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:119,Bygdoy,2017-08-01,32632,260042.56801655763,6649801.900494964,False,307.2540023285057,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:120,Bygdoy,2017-08-01,32632,259306.80709877564,6648554.014718231,False,160.94402097095704,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:121,Bygdoy,2017-08-03,32632,260250.2051498827,6649143.414519717,False,114.66067251310974,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:122,Bygdoy,2017-08-03,32632,258442.9236450456,6649990.814915862,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:123,Bygdoy,2017-08-03,32632,259090.91724440028,6648591.6503854105,False,238.98032199168725,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:124,Bygdoy,2017-08-03,32632,259526.21478167965,6649374.765624932,False,211.09724516343854,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:125,Bygdoy,2017-08-03,32632,260593.95375778692,6649509.596278749,False,167.63871426485213,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:126,Bygdoy,2017-08-03,32632,259279.91739115256,6648742.885148446,False,339.53520136689883,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:127,Bygdoy,2017-08-03,32632,258761.27261042595,6648921.531457192,False,126.12288388730195,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:128,Bygdoy,2017-08-03,32632,258792.484766222,6648949.358997538,False,86.08153260320024,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:129,Bygdoy,2017-08-03,32632,258858.5368344914,6649096.918358172,False,21.726249269978815,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:130,Bygdoy,2017-08-03,32632,260029.35739791393,6649390.965530394,False,171.33010203773497,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:131,Bygdoy,2017-08-03,32632,258793.131862605,6648932.3906033,False,101.08795656270695,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:132,Bygdoy,2017-08-03,32632,258270.24565284082,6649695.94740885,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:133,Bygdoy,2017-08-03,32632,258829.33350281138,6648970.897041949,False,53.846868216026586,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:134,Bygdoy,2017-08-03,32632,258792.26299103236,6649000.158137025,False,46.86319009582051,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:135,Bygdoy,2017-08-04,32632,260719.26358380067,6649658.910499991,False,163.48430632347112,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:136,Bygdoy,2017-08-04,32632,258866.53489873753,6649022.293678508,False,4.668176670980555,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:137,Bygdoy,2017-08-04,32632,258895.9533934589,6648773.883606837,False,254.66482660093016,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:138,Bygdoy,2017-08-04,32632,258811.98865661008,6648495.920836724,False,394.7688769468901,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:139,Bygdoy,2017-08-04,32632,258832.42616197834,6648186.91816447,False,361.47741009753054,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:140,Bygdoy,2017-08-04,32632,258395.05016635687,6648103.236085516,False,41.01648909773749,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:141,Bygdoy,2017-08-04,32632,258448.07800909565,6647891.974941971,False,130.14614648441707,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:142,Bygdoy,2017-08-04,32632,258949.63357786476,6649129.7622215375,False,22.459437201474334,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:143,Bygdoy,2017-08-04,32632,258703.69390944304,6648869.113242072,False,202.57475737448937,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:180,Bygdoy,2017-07-21,32632,258871.50633618905,6648788.343078458,False,237.18794167616406,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:181,Bygdoy,2017-07-21,32632,258343.8467306106,6648848.055282562,False,300.7804586027179,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:182,Bygdoy,2017-07-21,32632,258872.64267082335,6648596.296629949,False,386.3851081634341,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:183,Bygdoy,2017-07-21,32632,258569.81233428384,6648264.849245437,False,123.23488086787144,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:184,Bygdoy,2017-07-21,32632,258481.9962613148,6648400.822717507,False,204.98586435042165,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:185,Bygdoy,2017-07-21,32632,258426.2601795744,6648960.087904098,False,395.39499670756663,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:186,Bygdoy,2017-07-21,32632,260275.63167919996,6650188.641612447,False,456.4440726286456,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:187,Bygdoy,2017-07-21,32632,260180.3144615181,6650121.087798581,False,532.0054582024584,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:188,Bygdoy,2017-07-21,32632,258857.45822828676,6648395.535511023,False,329.87689830677243,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:189,Bygdoy,2017-07-21,32632,259557.6063680064,6650725.525915143,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:190,Bygdoy,2017-07-21,32632,258973.7960809226,6648583.787787357,False,300.9386226166476,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:191,Bygdoy,2017-07-21,32632,258277.0502067506,6649211.379037358,False,231.151817226865,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:192,Bygdoy,2017-07-22,32632,259033.26360689223,6648298.064554708,False,169.5417747057824,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:193,Bygdoy,2017-07-22,32632,261408.66276531876,6649961.610799641,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:194,Bygdoy,2017-07-22,32632,259070.2287346492,6648152.44600376,False,227.995382211803,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:195,Bygdoy,2017-07-22,32632,258399.2090577832,6649105.459565991,False,378.8426511063053,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:196,Bygdoy,2017-07-22,32632,258586.1396524285,6649178.202243168,False,277.0129680657495,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:197,Bygdoy,2017-07-22,32632,258836.03191796693,6648762.25928252,False,261.7072019206131,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:198,Bygdoy,2017-07-22,32632,258839.71775931233,6649070.757629692,False,7.904690115402376,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:199,Bygdoy,2017-07-22,32632,258451.65906790516,6649107.062471209,False,382.90719532362533,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:200,Bygdoy,2017-07-22,32632,259300.4688113134,6648109.588552766,False,244.11352567249634,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:201,Bygdoy,2017-07-22,32632,258252.56467535984,6648496.858184724,False,247.89922156126545,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:202,Bygdoy,2017-07-22,32632,259164.0770484857,6648325.450698334,False,41.85284044551263,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:203,Bygdoy,2017-08-02,32632,260192.0727826716,6649720.010632853,False,261.608680460322,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:204,Bygdoy,2017-08-02,32632,258951.37248381384,6648993.865507797,False,58.1399538138547,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:205,Bygdoy,2017-08-02,32632,259116.5110198514,6648932.287438797,False,198.58837518698095,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:206,Bygdoy,2017-08-02,32632,258883.47726209968,6648906.757406107,False,121.43741068529374,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:207,Bygdoy,2017-08-02,32632,260070.96545150212,6650119.0711519765,False,493.86068908353906,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:208,Bygdoy,2017-08-02,32632,258297.3792221797,6648335.434195056,False,154.38049638497625,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:209,Bygdoy,2017-08-02,32632,258862.73501539647,6649047.033838781,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:210,Bygdoy,2017-08-02,32632,258762.92226433207,6648929.710726937,False,118.45061602689425,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Bygdoy:211,Bygdoy,2017-08-02,32632,258653.41556012377,6649220.354833569,False,245.24120786871458,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:077,Ulleval 1,2017-07-18,32632,261388.3855861762,6653699.066075967,False,58.077744894865205,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:078,Ulleval 1,2017-07-18,32632,261370.10090497084,6653556.271175665,False,92.3740870439328,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:079,Ulleval 1,2017-07-18,32632,261569.00441559567,6653381.018935364,False,318.2412525051034,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:080,Ulleval 1,2017-07-18,32632,261934.76999793932,6653140.310096493,False,111.63822480044347,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:081,Ulleval 1,2017-07-18,32632,261348.06179307718,6653210.011846715,False,258.90862876641637,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:082,Ulleval 1,2017-07-18,32632,261204.46179957007,6653037.467796998,False,313.47168676379,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:083,Ulleval 1,2017-07-18,32632,261242.66544781692,6653754.041702247,False,6.334202477951737,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:084,Ulleval 1,2017-07-18,32632,261942.19687951475,6653174.699090021,False,77.43097797528642,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:085,Ulleval 1,2017-07-18,32632,261458.55467759626,6653253.878294029,False,298.81237103498006,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:086,Ulleval 1,2017-07-18,32632,261544.90758731592,6653724.580359695,False,55.126717741604374,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:087,Ulleval 1,2017-07-19,32632,260762.30501594406,6652809.882378436,False,24.650419307276174,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:088,Ulleval 1,2017-07-19,32632,261429.88024835626,6653209.987443437,False,308.2918261956547,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:089,Ulleval 1,2017-07-19,32632,261442.82365988448,6653307.965509683,False,251.43680062917522,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:090,Ulleval 1,2017-07-19,32632,261499.02094516027,6653247.596768046,False,333.31740801279665,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:091,Ulleval 1,2017-07-19,32632,261270.82999549722,6653144.433481367,False,268.35354438909457,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:092,Ulleval 1,2017-07-19,32632,261277.1570867838,6653166.052299109,False,254.46246543797585,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:093,Ulleval 1,2017-07-19,32632,260782.32427474624,6653099.98248367,False,64.55034975725033,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:094,Ulleval 1,2017-07-20,32632,261383.4649067621,6653215.935766219,False,274.7484882757341,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:095,Ulleval 1,2017-07-20,32632,261186.1233086269,6653061.419689501,False,283.581233140465,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:096,Ulleval 1,2017-07-20,32632,262247.82021684095,6653138.973839352,False,150.29006234529666,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:097,Ulleval 1,2017-07-20,32632,261818.16611452692,6653274.661868417,False,121.5439775254357,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:098,Ulleval 1,2017-07-20,32632,261360.8468298482,6652903.698452893,False,387.03249291679356,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:099,Ulleval 1,2017-07-20,32632,261467.99109863036,6653310.268720311,False,269.74310249421836,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:100,Ulleval 1,2017-07-20,32632,261971.99716739895,6653088.106626506,False,138.8879217848643,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:101,Ulleval 1,2017-07-20,32632,262029.5803671075,6653054.397680577,False,149.78311204884915,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:102,Ulleval 1,2017-07-20,32632,261078.25899054663,6652997.390485205,False,312.88891198503194,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:103,Ulleval 1,2017-07-20,32632,261223.94906316136,6653363.523676129,False,61.82230775556008,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:104,Ulleval 1,2017-07-20,32632,261795.50773681607,6653257.0900540175,False,143.80393053139093,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:105,Ulleval 1,2017-08-01,32632,261349.57597112766,6656536.117962787,False,1512.1902705546267,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:106,Ulleval 1,2017-08-01,32632,261883.76213177838,6653106.276679584,False,135.74906251192988,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:107,Ulleval 1,2017-08-01,32632,261439.93152131492,6653344.468399241,False,226.80495205998224,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:108,Ulleval 1,2017-08-01,32632,261665.86674198866,6654279.2133981045,False,178.6843165775137,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:109,Ulleval 1,2017-08-01,32632,261224.85385551365,6653014.12292205,False,343.94362134357925,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:110,Ulleval 1,2017-08-01,32632,261519.93484057704,6653234.301794524,False,357.8671704402777,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:111,Ulleval 1,2017-08-01,32632,261690.15956399412,6653251.206200953,False,249.3114441991332,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:112,Ulleval 1,2017-08-01,32632,261186.8179743794,6652783.925215714,False,399.7217194527918,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:113,Ulleval 1,2017-08-01,32632,261565.53703361857,6653256.097109292,False,363.1968939109491,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:114,Ulleval 1,2017-08-01,32632,261199.75368700764,6653248.825268756,False,143.1480182144824,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:115,Ulleval 1,2017-08-01,32632,261442.51307338028,6653154.5442566965,False,359.18682253964676,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:116,Ulleval 1,2017-08-01,32632,261186.0894625738,6653397.911193093,False,11.806987160740468,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:117,Ulleval 1,2017-08-03,32632,261243.8960838797,6653124.658137356,False,266.21915660046255,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:118,Ulleval 1,2017-08-03,32632,261251.8566396892,6655806.198243185,False,863.3546003524816,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:119,Ulleval 1,2017-08-03,32632,261697.5809939379,6652650.670202618,False,23.68255728748994,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:120,Ulleval 1,2017-08-03,32632,261405.7550621658,6655378.089315361,False,408.42621663762117,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:121,Ulleval 1,2017-08-03,32632,261327.6117761457,6655739.367489812,False,776.3783187944467,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:122,Ulleval 1,2017-08-03,32632,261775.4551242518,6657539.28030573,False,2312.6052961871133,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:123,Ulleval 1,2017-08-03,32632,262566.6194752633,6656049.658217536,False,748.1774150622215,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:124,Ulleval 1,2017-08-03,32632,261560.35800705908,6653197.9431805955,False,324.3526513263292,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:125,Ulleval 1,2017-08-03,32632,261695.08857436126,6653206.098732767,False,250.70133177355413,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:126,Ulleval 1,2017-08-03,32632,261364.7054934738,6653277.060067978,False,214.90591357902142,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:127,Ulleval 1,2017-08-03,32632,261555.7023354335,6656602.047922971,False,1472.5468480616687,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:128,Ulleval 1,2017-08-03,32632,261405.0730669817,6653002.730586043,False,354.38050778181673,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:129,Ulleval 1,2017-08-04,32632,262552.40166029404,6655957.101839147,False,655.0028111778786,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:130,Ulleval 1,2017-08-04,32632,261290.2212412896,6653145.342917878,False,278.9222581587801,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:131,Ulleval 1,2017-08-04,32632,261581.1443623518,6653338.963144346,False,349.2626080365039,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:132,Ulleval 1,2017-08-04,32632,261470.48256481273,6653092.070217665,False,330.3516486591131,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:133,Ulleval 1,2017-08-04,32632,261702.39151044202,6653693.361584496,False,125.1395145211029,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:134,Ulleval 1,2017-08-04,32632,261281.67901520513,6656145.380480602,False,1181.1248412216607,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:135,Ulleval 1,2017-08-04,32632,261483.33179619396,6653131.884078796,False,343.3995469307351,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:136,Ulleval 1,2017-08-04,32632,261358.08138249046,6653363.957039614,False,150.59898490942547,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:137,Ulleval 1,2017-08-04,32632,262665.5547186824,6655784.50120903,False,501.3933209942056,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:138,Ulleval 1,2017-08-04,32632,260894.59696418946,6653057.623555857,False,160.32432955506002,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:139,Ulleval 1,2017-08-04,32632,261365.4667658271,6653035.488361401,False,401.60206291481757,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:157,Ulleval 1,2017-07-21,32632,261472.56906240887,6653296.439586752,False,281.83281026392996,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:158,Ulleval 1,2017-07-21,32632,261252.29795789797,6652943.106297839,False,419.14348972555587,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:159,Ulleval 1,2017-07-21,32632,261744.39252043323,6653460.479016675,False,169.21686375193795,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:160,Ulleval 1,2017-07-21,32632,261557.90865308538,6653318.047874916,False,339.9267931094805,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:161,Ulleval 1,2017-07-21,32632,261809.25685013275,6653466.637721417,False,139.27794663973705,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:162,Ulleval 1,2017-07-22,32632,261842.40350770875,6653333.644815459,False,117.92506398819124,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:163,Ulleval 1,2017-07-22,32632,261364.7689023576,6653198.837510373,False,277.73052804645056,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:164,Ulleval 1,2017-07-22,32632,261274.3542125149,6653208.565339504,False,217.64767691813563,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:165,Ulleval 1,2017-07-22,32632,261356.99429142842,6653319.215599796,False,179.1237997612603,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:166,Ulleval 1,2017-07-22,32632,261295.61366064506,6653202.241777644,False,234.68912857605764,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:167,Ulleval 1,2017-07-22,32632,261516.42475578366,6653217.520773733,False,366.24500859866214,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:168,Ulleval 1,2017-07-22,32632,262209.48160293873,6653079.1030198205,False,171.4894124261774,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:169,Ulleval 1,2017-07-22,32632,261747.27991981365,6653202.2173915235,False,201.38396540845676,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:170,Ulleval 1,2017-07-22,32632,261560.67344676363,6653326.4771836065,False,338.00977031460314,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:171,Ulleval 1,2017-07-22,32632,260895.71407675665,6652995.20955091,False,156.82316632648778,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:172,Ulleval 1,2017-07-22,32632,262267.53596250666,6653349.746482637,False,80.98265800934125,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:173,Ulleval 1,2017-07-22,32632,261556.49105332623,6653337.838943944,False,328.62205891300226,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:174,Ulleval 1,2017-07-22,32632,261869.0382597108,6653062.13230959,False,89.55547275982674,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:175,Ulleval 1,2017-07-22,32632,261387.93862446473,6653209.269651081,False,282.77259751893604,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:176,Ulleval 1,2017-07-31,32632,261466.589959704,6653139.836432794,False,361.5042132032343,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:177,Ulleval 1,2017-07-31,32632,261434.6347373121,6652883.928391879,False,314.446471241975,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:178,Ulleval 1,2017-07-31,32632,262210.254749786,6652889.14360544,False,55.880983601828866,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:179,Ulleval 1,2017-07-31,32632,261995.34078562597,6655629.109648784,False,404.9016314139517,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:180,Ulleval 1,2017-07-31,32632,261762.9076912143,6652824.071144073,False,37.70781280065756,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:181,Ulleval 1,2017-07-31,32632,261585.63742596694,6653324.388208746,False,358.77954698015355,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:182,Ulleval 1,2017-08-02,32632,261660.18445805358,6652881.214764738,False,93.01970336206708,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:183,Ulleval 1,2017-08-02,32632,261494.2865841854,6653382.537877989,False,252.32277172217803,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:184,Ulleval 1,2017-08-02,32632,261133.8797335595,6653080.707962984,False,243.8927420643502,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:185,Ulleval 1,2017-08-02,32632,261259.66905585345,6653026.078398689,False,353.5017682300646,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:186,Ulleval 1,2017-08-02,32632,261572.34803168435,6653338.376442473,False,341.9925923656517,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:187,Ulleval 1,2017-08-02,32632,261565.76199510798,6653339.568050282,False,335.71839760271365,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:188,Ulleval 1,2017-08-02,32632,261126.48617515067,6653001.776764205,False,317.00090585106557,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:189,Ulleval 1,2017-08-02,32632,262320.34053008317,6653428.988741007,False,126.83837035771425,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval1:190,Ulleval 1,2017-08-02,32632,261524.33121248544,6653604.780855319,False,166.51604460433634,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:001,Ulleval 2,2017-07-19,32632,261572.9201028343,6653314.070730502,False,354.86878562359976,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:003,Ulleval 2,2017-07-18,32632,261548.74123673857,6653339.789428907,False,320.9598171584883,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:009,Ulleval 2,2017-07-20,32632,261538.690690533,6653356.4370268155,False,303.8295844556531,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:014,Ulleval 2,2017-07-20,32632,261527.2428041762,6653286.012874775,False,331.8290214403635,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:019,Ulleval 2,2017-07-19,32632,261549.7515638604,6653411.333398677,False,288.10479886958683,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:021,Ulleval 2,2017-07-18,32632,261559.7927724193,6653430.042393871,False,290.9022557062662,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:023,Ulleval 2,2017-07-18,32632,261674.93266152032,6653271.057232985,False,264.35888454460843,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:028,Ulleval 2,2017-07-20,32632,261584.95899372245,6653471.448995438,False,282.557511547233,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:031,Ulleval 2,2017-07-18,32632,261526.31381991605,6653500.010221274,False,243.3318788139643,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:033,Ulleval 2,2017-07-20,32632,261753.55792336937,6653289.397803158,False,187.4457441216307,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:035,Ulleval 2,2017-07-19,32632,261472.90552977263,6653505.127614094,False,189.6791404198407,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:040,Ulleval 2,2017-07-18,32632,261774.56248335642,6653227.275831022,False,168.5102429556434,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:041,Ulleval 2,2017-08-01,32632,261446.68473181713,6653547.770525217,False,164.5630261321676,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:044,Ulleval 2,2017-08-01,32632,261476.73051072177,6653580.344132937,False,199.33175577543759,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:045,Ulleval 2,2017-07-18,32632,261451.26545253728,6653097.705705592,False,349.5921383150938,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:046,Ulleval 2,2017-07-18,32632,261474.80899322045,6653588.526395143,False,192.93676512255803,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:047,Ulleval 2,2017-08-04,32632,261460.06542318917,6653582.532579162,False,184.6088350090103,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:050,Ulleval 2,2017-07-18,32632,261374.63173023076,6653109.315164937,False,356.1973220030179,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:053,Ulleval 2,2017-08-03,32632,261272.1330564987,6653234.00566566,False,195.2045643509148,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:055,Ulleval 2,2017-08-03,32632,261758.12162395017,6653071.835263763,False,103.08296716804398,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:056,Ulleval 2,2017-07-18,32632,261250.17231650042,6653445.9370949585,False,15.637736716554853,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:057,Ulleval 2,2017-07-19,32632,261388.16470639783,6653619.543131527,False,104.75955303615798,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:058,Ulleval 2,2017-07-22,32632,261382.4284575836,6653635.627692534,False,90.60739329272374,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:060,Ulleval 2,2017-07-19,32632,261325.77803461286,6653614.525584108,False,57.809684085987406,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:069,Ulleval 2,2017-07-19,32632,261175.9014352802,6653429.953502964,True,0.0,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:078,Ulleval 2,2017-08-02,32632,261588.63816417183,6653822.109932423,False,16.39309707654811,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:081,Ulleval 2,2017-07-19,32632,262006.92785244677,6653649.023049668,False,3.102899177013702,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:082,Ulleval 2,2017-08-02,32632,261727.04433383507,6652800.375514579,False,78.47427969461674,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:088,Ulleval 2,2017-08-02,32632,261033.49536928098,6652985.9577058675,False,294.58223902200274,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:096,Ulleval 2,2017-07-18,32632,261443.50213236234,6654247.359213075,False,110.45015317502667,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:099,Ulleval 2,2017-07-20,32632,260886.1503656174,6654327.016156229,False,61.56214845021744,conditional_on_unverified_crs_not_a_geographic_validation
+dietz2018:Ulleval2:105,Ulleval 2,2017-07-19,32632,261030.9653844718,6651271.021733694,False,279.2331362956285,conditional_on_unverified_crs_not_a_geographic_validation

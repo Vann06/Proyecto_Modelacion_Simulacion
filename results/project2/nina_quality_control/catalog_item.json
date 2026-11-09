@@ -1,0 +1,24 @@
+{
+  "name": "Egnethet for pollinerede insekter  (NINA)",
+  "description": "#### Description\n\nPollinatorhabitatets egnethet viser lave verdier - lav etterspørsel etter treplanting på grunn av høyt pollinatorpotensial - og høye verdier - høy etterspørsel etter treplanting på grunn av lavt pollinatorpotensial.\n\n**Tags:** _tilstand_\n\n#### Temporal scope\n\n\n\n**Aquisition period:** _2022_\n\n#### Geographic scope\n\nOslobyggesonen\n\n**Location:** _Norge, Oslo, Oslo (0301)_\n\n#### Taxonomic scope\n\n\n\n\n\n#### Methodology\n\n\n\n\n  \n- **Acquisition method:** modelled\n- **Unit:** n/a\n- **Measuring scale:** \n- **Platform:** \n- **Sensor:** \n- **Spatial resolution:** 1\n- **Temporal resolution:** \n  \n\n#### Data description\n\n- **Project ID:** nina-15216100\n- **Data type:** raster\n- **File type:** GeoTIFF\n- **Dataset name:** pollinator_potentential_0301\n- **Dataset alias:** Egnethet for pollinerede insekter  (NINA)\n- **Ecosystem accounting category:** condition\n- **License:** CC-BY 4.0\n- **Data language:** \n- **Metadata language:** Bokmål, Norwegian\n- **Dataset owner:** NINA\n- **Dataset manager:** Maria Korkou\n\n#### Contacts\n\n\n**David Barton**\n\n- **Role:** project leader\n- **Organisation:** Norsk institutt for naturforskning\n- **Email:** [david.barton@nina.no](mailto:david.barton@nina.no)\n- **Orcid:** [https://orcid.org/0000-0002-6501-9381](https://orcid.org/0000-0002-6501-9381)\n\n\n**Maria Korkou**\n\n- **Role:** data manager\n- **Organisation:** Norsk institutt for naturforskning\n- **Email:** [maria.korkou@nina.no](mailto:maria.korkou@nina.no)\n- **Orcid:** [https://orcid.org/0000-0001-5766-9109](https://orcid.org/0000-0001-5766-9109)\n\n\n**Willeke A'Campo**\n\n- **Role:** participant\n- **Organisation:** Norsk institutt for naturforskning\n- **Email:** [willeke.acampo@nina.no](mailto:willeke.acampo@nina.no)\n- **Orcid:** [https://orcid.org/0000-0001-8723-3832](https://orcid.org/0000-0001-8723-3832)\n\n\n**Sunniva Bahlk**\n\n- **Role:** participant\n- **Organisation:** Norsk institutt for naturforskning\n- **Email:** [sunniva.bahlk@gmail.com](mailto:sunniva.bahlk@gmail.com)\n- **Orcid:** [None](None)\n\n\n\n#### Citation\n\n\n[Stange et al. 2017](https://doi.org/10.3897/oneeco.2.e14014)",
+  "type": "layer",
+  "download_url": "https://s3-ext-1.nina.no/dms/maps/sources/192/pollinator_potentential_0301.tif",
+  "layer": {
+    "type": "titiler",
+    "titiler": {
+      "url": "https://s3-ext-1.nina.no/dms/maps/sources/192/pollinator_potentential_0301.tif.cog",
+      "colormap_name": "ylorbr_r",
+      "rescale": [
+        "0,1"
+      ],
+      "bidx": "single",
+      "minzoom": "0"
+    },
+    "legend": {
+      "type": "linear",
+      "colormap_name": "ylorbr_r",
+      "min": "Lav (0)",
+      "max": "Høy (1)"
+    }
+  }
+}

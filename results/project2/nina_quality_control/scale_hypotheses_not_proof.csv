@@ -1,0 +1,3 @@
+hypothesis,n_native_sample_values,fraction_on_table_score_lattice_at_1e_6,identifies_transform
+raw_equal_ESTIMAP_table_scores,103102,0.19993792554945589,False
+hypothesis_reversed_minmax_0_05_1,103102,0.8820973404977595,False

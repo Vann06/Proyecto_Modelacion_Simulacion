@@ -1,0 +1,4 @@
+colony,published_n,recovered_n,published_posterior_mean_m,published_ci_low_m,published_ci_high_m,published_posterior_min_m,published_posterior_max_m,appendix_mean_including_negative_m,appendix_mean_nonnegative_m,difference_of_distinct_estimands_m,comparison_status
+Bygdoy,211,211,688.39,685.95,690.84,0.007,4039.79,678.5132701421801,681.7580952380952,-6.631904761904821,counts_reproduced; point_estimates_are_not_posterior_samples; not_simulator_error
+Ulleval 1,190,190,490.95,488.03,493.87,0.006,5236.82,471.54263157894746,471.54263157894746,-19.407368421052524,counts_reproduced; point_estimates_are_not_posterior_samples; not_simulator_error
+Ulleval 2,105,105,425.27,422.98,427.56,0.019,2741.46,403.0809523809524,403.0809523809524,-22.189047619047585,counts_reproduced; point_estimates_are_not_posterior_samples; not_simulator_error

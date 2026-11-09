@@ -1,0 +1,28 @@
+{
+  "source_sha256": "f540f7ade82453d54de2a2e94942cca2f64e316941f4f6ba02a01420b662975f",
+  "review_date_local": "2026-11-08",
+  "method": "Visual comparison against locally rendered PDF pages 50, 53, 54, 58, 59; all 506 rows additionally compared between pypdf and PyMuPDF",
+  "scope": "20 sampled rows and selected cells; not a claim of visual verification of every cell",
+  "checks": [
+    {"source_page":50,"colony":"Bygdoy","source_row":1,"movie_id":"4556","dance_id_source":"4556_1","day":1,"month":7,"year":2017,"distance_m":163.8,"easting_source":594224.279,"northing_source":6642442.83},
+    {"source_page":50,"colony":"Bygdoy","source_row":2,"distance_m":3097.1,"easting_source":592040.769,"northing_source":6644715.82},
+    {"source_page":50,"colony":"Bygdoy","source_row":16,"distance_m":11.3,"easting_source":594305.108,"northing_source":6642589.22},
+    {"source_page":50,"colony":"Bygdoy","source_row":31,"average_length_s":0.31,"distance_m":-2.9},
+    {"source_page":50,"colony":"Bygdoy","source_row":40,"movie_id":"4604","dance_id_source":"4601_1"},
+    {"source_page":50,"colony":"Bygdoy","source_row":41,"movie_id":"4604","dance_id_source":"4601_2"},
+    {"source_page":53,"colony":"Bygdoy","source_row":164,"day":13,"month":8,"second":69,"distance_m":213.8},
+    {"source_page":53,"colony":"Bygdoy","source_row":180,"day":21,"month":7,"hour":10,"minute":24,"second":86,"distance_m":463.8},
+    {"source_page":53,"colony":"Bygdoy","source_row":211,"day":2,"month":8,"distance_m":188.8,"easting_source":594111.362,"northing_source":6642543.36},
+    {"source_page":54,"colony":"Ulleval 1","source_row":1,"distance_m":305.4,"easting_source":596669.521,"northing_source":6646599.83},
+    {"source_page":54,"colony":"Ulleval 1","source_row":46,"movie_id":"4706","dance_id_source":"4706_2","distance_m":61.3},
+    {"source_page":54,"colony":"Ulleval 1","source_row":48,"day":14,"month":7,"distance_m":2.9},
+    {"source_page":58,"colony":"Ulleval 2","source_row":1,"movie_id":"4818","dance_id_source":"4181_2","day":19,"month":7,"distance_m":19.6,"easting_source":596646.754,"northing_source":6646882.0},
+    {"source_page":58,"colony":"Ulleval 2","source_row":2,"day":3,"month":7,"distance_m":11.3},
+    {"source_page":58,"colony":"Ulleval 2","source_row":40,"day":18,"month":7,"distance_m":230.4,"easting_source":596855.306,"northing_source":6646813.86},
+    {"source_page":58,"colony":"Ulleval 2","source_row":50,"distance_m":297.1},
+    {"source_page":59,"colony":"Ulleval 2","source_row":51,"day":1,"month":7,"distance_m":305.4},
+    {"source_page":59,"colony":"Ulleval 2","source_row":57,"movie_id":"4818","dance_id_source":"4181_1","day":19,"month":7,"distance_m":338.8},
+    {"source_page":59,"colony":"Ulleval 2","source_row":100,"day":13,"month":7,"distance_m":1222.1,"easting_source":596105.891,"northing_source":6647999.21},
+    {"source_page":59,"colony":"Ulleval 2","source_row":105,"day":19,"month":7,"distance_m":2130.4,"easting_source":596292.214,"northing_source":6644799.49}
+  ]
+}

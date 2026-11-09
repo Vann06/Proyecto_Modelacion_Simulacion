@@ -1,0 +1,14 @@
+{
+  "original": {
+    "url": "https://s3-ext-1.nina.no/dms/maps/sources/192/pollinator_potentential_0301.tif",
+    "etag": "\"0f0b5ede572d75bd5a0c4e22af461537-312\"",
+    "content_length": "1635594178",
+    "last_modified": "Thu, 13 Nov 2025 14:08:59 GMT"
+  },
+  "cog": {
+    "url": "https://s3-ext-1.nina.no/dms/maps/sources/192/pollinator_potentential_0301.tif.cog",
+    "etag": "\"1f8605bc650eed1462cada73383e9ee5-53\"",
+    "content_length": "276610786",
+    "last_modified": "Thu, 13 Nov 2025 14:08:22 GMT"
+  }
+}

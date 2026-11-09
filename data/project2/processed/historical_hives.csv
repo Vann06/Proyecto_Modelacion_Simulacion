@@ -1,0 +1,4 @@
+colony,origin_x_implied_median,origin_y_implied_median,source_crs,coordinate_status,surveyed_location_available,n_vectors,n_origin_consistent_0_1,max_origin_residual_source_units,source_pages,placement_allowed_for_historical_simulation
+Bygdoy,594293.9999988546,6642591.002408066,UNCONFIRMED,algebraic_inference_not_verified_historical_location,False,211,209,122.54548508780272,"14-19,50-59",False
+Ulleval 1,596642.0041227244,6646904.008618619,UNCONFIRMED,algebraic_inference_not_verified_historical_location,False,190,181,122.54851087873364,"14-19,50-59",False
+Ulleval 2,596642.0044869817,6646900.998472044,UNCONFIRMED,algebraic_inference_not_verified_historical_location,False,105,103,39.1831509823447,"14-19,50-59",False

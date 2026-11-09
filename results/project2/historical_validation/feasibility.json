@@ -1,0 +1,20 @@
+{
+  "ready_for_historical_simulation": false,
+  "verified_historical_hive_positions": false,
+  "source_crs_verified": false,
+  "appendix_individual_rows_recovered": 506,
+  "project_window_rows": 216,
+  "implied_ulleval_separation_source_units": 3.0101465970879158,
+  "published_ulleval_separation_approx_m": 0.2,
+  "posterior_probability_rasters_available": false,
+  "decision": "STOP_AFTER_FEASIBILITY_AUDIT",
+  "reasons": [
+    "No declared source CRS/datum or georeferencing in the supplied PDF",
+    "Hive coordinates are algebraically inferred, not a published surveyed coordinate table",
+    "Implied Ulleval origins differ by about 3 source units; text reports about 0.2 m",
+    "No original posterior distance/direction draws or probability rasters for comparable Jaccard"
+  ],
+  "simulation_runs_executed": 0,
+  "new_simulation_seed_bank_created": false,
+  "optimization_validated_in_real_world": false
+}

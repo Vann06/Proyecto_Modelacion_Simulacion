@@ -1,0 +1,44 @@
+{
+  "source_url": "https://bybi.no/wp-content/uploads/2018/12/Sabrinas-Master-thesis-181210.pdf",
+  "pdf_sha256": "f540f7ade82453d54de2a2e94942cca2f64e316941f4f6ba02a01420b662975f",
+  "pages": 62,
+  "appendix_pages": [
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+  ],
+  "extracted_rows": 506,
+  "dual_pdf_parser_all_cells_agree": true,
+  "visually_checked_rows": 20,
+  "public_open_access_checkbox_page": 2,
+  "explicit_reuse_license_found": false,
+  "pdf_in_repository": false,
+  "derived_records_redistribution_requires_human_rights_review": true,
+  "crs_terms_found": [],
+  "geopdf_reference_available": false,
+  "embedded_data_files": [],
+  "year_conflict": {
+    "methods_and_appendix": 2017,
+    "results_page_27_written_year": 2018,
+    "action": "preserve_source_dates_2017; flag_text_typo_not_correct_rows"
+  },
+  "published_sampling": "28 filming dates, 1-2 h/hive/day, selected suitable weather; not continuous observation",
+  "uncertainty": "Sussex calibration; 1000 modeled distances/headings per dance; von Mises kappa=24.9; posterior rasters not included",
+  "coordinate_hypotheses": [
+    "EPSG:25832",
+    "EPSG:32632"
+  ],
+  "project_crs": "EPSG:25833",
+  "conditional_coverage_rule": "point center covered_by original 737-park union; no RU or coordinate assertion",
+  "bootstrap_seed_for_descriptive_data_only": 20261108,
+  "bootstrap_unit": "filming_date",
+  "simulation_seed_bank": "not_generated_because_feasibility_checkpoint_failed",
+  "module_location_reason": "analysis directory avoids changing engine hash which includes every project2/*.py"
+}

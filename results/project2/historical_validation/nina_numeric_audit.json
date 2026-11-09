@@ -1,0 +1,172 @@
+{
+  "catalog_url": "https://s3-ext-1.nina.no/dms/maps/main/localEA/config.json",
+  "catalog_sha256": "cbd382d97239d34aae1e35a2f21189ff854fa7dc4fcc001f94943ad5d989baa2",
+  "catalog_item": "15216100_pollinator_potentential_0301",
+  "name": "Egnethet for pollinerede insekter  (NINA)",
+  "attribution": "NINA, pollinator_potentential_0301, CC-BY 4.0, official localEA catalog",
+  "license": "CC-BY 4.0 according to official catalog",
+  "catalog_acquisition_period": 2022,
+  "catalog_spatial_resolution_field": 1,
+  "unit": "raw modeled index, not flowers/nectar/RU",
+  "source_identity": {
+    "original": {
+      "url": "https://s3-ext-1.nina.no/dms/maps/sources/192/pollinator_potentential_0301.tif",
+      "content_length": 1635594178,
+      "etag": "\"0f0b5ede572d75bd5a0c4e22af461537-312\"",
+      "last_modified": "Thu, 13 Nov 2025 14:08:59 GMT"
+    },
+    "cog": {
+      "url": "https://s3-ext-1.nina.no/dms/maps/sources/192/pollinator_potentential_0301.tif.cog",
+      "content_length": 276610786,
+      "etag": "\"1f8605bc650eed1462cada73383e9ee5-53\"",
+      "last_modified": "Thu, 13 Nov 2025 14:08:22 GMT"
+    }
+  },
+  "original_raster": {
+    "crs": "EPSG:25832",
+    "shape": [
+      20614,
+      19697
+    ],
+    "resolution_projected_units": [
+      1.0,
+      1.0
+    ],
+    "bounds": [
+      589882.0,
+      6631133.0,
+      609579.0,
+      6651747.0
+    ],
+    "transform": [
+      1.0,
+      0.0,
+      589882.0,
+      0.0,
+      -1.0,
+      6651747.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "nodata": -9999.0,
+    "dtypes": [
+      "float32"
+    ],
+    "count": 1,
+    "overviews": [],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "band_tags": {
+      "RepresentationType": "ATHEMATIC"
+    }
+  },
+  "cog_raster": {
+    "crs": "EPSG:3857",
+    "shape": [
+      17664,
+      16896
+    ],
+    "resolution_projected_units": [
+      2.388657133911758,
+      2.388657133911758
+    ],
+    "bounds": [
+      1180187.7167231217,
+      8356095.932135468,
+      1220546.4676576948,
+      8398289.171748886
+    ],
+    "transform": [
+      2.388657133911758,
+      0.0,
+      1180187.7167231217,
+      0.0,
+      -2.388657133911758,
+      8398289.171748886,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "nodata": -9999.0,
+    "dtypes": [
+      "float32"
+    ],
+    "count": 1,
+    "overviews": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "band_tags": {
+      "RepresentationType": "ATHEMATIC"
+    }
+  },
+  "analysis_overview": {
+    "crs": "EPSG:3857",
+    "shape": [
+      2208,
+      2112
+    ],
+    "resolution_projected_units": [
+      19.109257071294063,
+      19.109257071294063
+    ],
+    "bounds": [
+      1180187.7167231217,
+      8356095.932135468,
+      1220546.4676576948,
+      8398289.171748886
+    ],
+    "transform": [
+      19.109257071294063,
+      0.0,
+      1180187.7167231217,
+      0.0,
+      -19.109257071294063,
+      8398289.171748886,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "nodata": -9999.0,
+    "dtypes": [
+      "float32"
+    ],
+    "count": 1,
+    "overviews": [],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "band_tags": {}
+  },
+  "analysis_overview_factor": 8,
+  "derived_overview_sha256": "0e1e0b5d65d334978d930c4cb2c870c5ddacd97b99d741c7bebeeccf682ca1e2",
+  "full_tiff_downloaded": false,
+  "large_raster_committed": false,
+  "source_overview_resampling_lineage": "not specified by provider; do not interpret as exact full-resolution zonal averages",
+  "zonal_rule": "existing overview pixels whose centers fall in original park polygon; no imputation if no centers",
+  "n_original_parks": 737,
+  "n_parks_with_numeric_overview_values": 686,
+  "spearman_rho_raw_index_vs_area_share": -0.0948248697505279,
+  "semantic_limitation": "description associates high values with low pollinator potential/tree-planting demand; title/legend suggest suitability; retain raw direction until confirmed",
+  "temporal_limitation": "2022 catalog context is not a historical 2017 resource measurement",
+  "historical_destinations_joined": false,
+  "reason_no_historical_join": "Dietz source CRS/hive coordinates unverified",
+  "network_method": "HTTP range reads through GDAL COG overview, no bulk tile scraping",
+  "n_parks_with_values_outside_legend_0_1": 349,
+  "range_in_park_overview_samples": [
+    -0.1118325889110565,
+    1.0984501838684082
+  ],
+  "out_of_range_values_clipped": false,
+  "review_date_local": "2026-11-08"
+}

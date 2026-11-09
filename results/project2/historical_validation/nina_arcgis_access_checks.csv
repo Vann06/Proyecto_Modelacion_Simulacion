@@ -1,0 +1,6 @@
+probe,url,http_status,response_bytes,capabilities,numeric_data_recovered_from_this_endpoint
+service,https://tiles.arcgis.com/tiles/PHc9pAOcTcVH6T4R/arcgis/rest/services/Egnethet_for_pollinerende_insekter/MapServer?f=pjson,200,,"Map,TilesOnly",False
+query,https://tiles.arcgis.com/tiles/PHc9pAOcTcVH6T4R/arcgis/rest/services/Egnethet_for_pollinerende_insekter/MapServer/0/query?f=json&where=1%3D1&returnCountOnly=true,404,7087.0,,False
+identify,"https://tiles.arcgis.com/tiles/PHc9pAOcTcVH6T4R/arcgis/rest/services/Egnethet_for_pollinerende_insekter/MapServer/identify?f=json&geometry=10.7,59.9&geometryType=esriGeometryPoint&sr=4326&tolerance=2&mapExtent=10.6,59.8,10.8,60&imageDisplay=256,256,96&returnGeometry=false",404,7087.0,,False
+item_data,https://www.arcgis.com/sharing/rest/content/items/e590700234f34f5d8afe35f2ad8b3313/data?f=json,200,0.0,,False
+resources,https://www.arcgis.com/sharing/rest/content/items/e590700234f34f5d8afe35f2ad8b3313/resources?f=json,200,59.0,,False

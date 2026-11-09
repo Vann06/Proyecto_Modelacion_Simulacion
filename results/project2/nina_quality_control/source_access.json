@@ -1,0 +1,38 @@
+[
+  {
+    "source": "catalog",
+    "url": "https://s3-ext-1.nina.no/dms/maps/main/localEA/config.json",
+    "http_status": 200,
+    "sha256": "cbd382d97239d34aae1e35a2f21189ff854fa7dc4fcc001f94943ad5d989baa2"
+  },
+  {
+    "source": "portal",
+    "url": "https://ninanor.github.io/SPARE_project/layers.html",
+    "http_status": 200,
+    "sha256": "536561f56a6f3c33e0b1703d9469ceb06a428c737db504a9b7c2ebaa7fc89d1c"
+  },
+  {
+    "source": "article",
+    "url": "https://oneecosystem.pensoft.net/article/14014/",
+    "http_status": 200,
+    "sha256": "dfa79a889a89f1f89ec67f63fccbb863b4c24505bee3c76528feb7b6fe297095"
+  },
+  {
+    "source": "article_methods",
+    "url": "https://oneecosystem.pensoft.net/article/14014/instance/3642699/",
+    "http_status": 200,
+    "sha256": "a75a8f7ff4ea5c76c7d9d310a600e498b6a4d384cd100ddce89cc18b1cd6476b"
+  },
+  {
+    "source": "article_pdf",
+    "url": "https://oneecosystem.pensoft.net/article/14014/download/pdf",
+    "http_status": 200,
+    "sha256": "032fa2076d8bc9adc9ed66cc5a017822ce9e0adabfd6f9546baadf1dc6a3ce7d"
+  },
+  {
+    "source": "jrc",
+    "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC107786",
+    "http_status": 200,
+    "sha256": "ebd4755beba0af49ef3b4d48a1fec908c5b67bd30865f8d80e0e065905d7555b"
+  }
+]

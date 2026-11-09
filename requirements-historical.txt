@@ -1,0 +1,4 @@
+# Optional dependencies for the Dietz PDF and official NINA raster audit.
+-r requirements.txt
+PyMuPDF>=1.24,<2
+rasterio>=1.4,<2

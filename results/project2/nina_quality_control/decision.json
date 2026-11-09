@@ -1,0 +1,24 @@
+{
+  "decision": "NO APTO",
+  "scope": "ranking installations as higher/lower ecological suitability; not a judgment that all raw data are unusable",
+  "numeric_access": "APTO CON LIMITACIONES",
+  "direction_confirmed": false,
+  "exact_2017_to_2022_processing_lineage_confirmed": false,
+  "original_sample_range": [
+    0.0,
+    1.0
+  ],
+  "cog_sample_range": [
+    -0.1178675964474678,
+    1.0903526544570923
+  ],
+  "overview_sample_range": [
+    -0.1522807776927948,
+    1.1108882427215576
+  ],
+  "sample_design": "16 systematic windows plus 8 targeted overview extremes; not global exhaustive statistics",
+  "recommendation": "close as complementary reference until publisher provides the numeric lineage/direction; no installation ranking",
+  "simulations_run": 0,
+  "installations_classified": 0,
+  "checked_at_utc": "2026-11-09T01:37:42.473539+00:00"
+}

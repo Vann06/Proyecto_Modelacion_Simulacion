@@ -1,0 +1,46 @@
+{
+  "profile": {
+    "driver": "GTiff",
+    "dtype": "float32",
+    "nodata": "-9999.0",
+    "width": "19697",
+    "height": "20614",
+    "count": "1",
+    "crs": "EPSG:25832",
+    "transform": "| 1.00, 0.00, 589882.00|\n| 0.00,-1.00, 6651747.00|\n| 0.00, 0.00, 1.00|",
+    "blockxsize": "128",
+    "blockysize": "128",
+    "tiled": "True",
+    "interleave": "band"
+  },
+  "block_shapes": [
+    [
+      128,
+      128
+    ]
+  ],
+  "overviews": [],
+  "tags": {
+    "AREA_OR_POINT": "Area"
+  },
+  "band_tags": {
+    "RepresentationType": "ATHEMATIC"
+  },
+  "bounds": [
+    589882.0,
+    6631133.0,
+    609579.0,
+    6651747.0
+  ],
+  "transform": [
+    1.0,
+    0.0,
+    589882.0,
+    0.0,
+    -1.0,
+    6651747.0,
+    0.0,
+    0.0,
+    1.0
+  ]
+}

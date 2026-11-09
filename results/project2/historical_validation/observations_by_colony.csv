@@ -1,0 +1,4 @@
+colony,rows,valid_distances_all_dates,first_date,last_date,n_film_dates,rows_in_project_window,distance_eligible_in_project_window,clock_eligible_in_project_window,invalid_clocks_all_dates,id_prefix_mismatches
+Bygdoy,211,210,2017-07-01,2017-08-14,23,87,87,86,2,3
+Ulleval 1,190,190,2017-07-01,2017-08-14,24,97,97,97,0,0
+Ulleval 2,105,105,2017-07-01,2017-08-04,17,32,32,32,0,2

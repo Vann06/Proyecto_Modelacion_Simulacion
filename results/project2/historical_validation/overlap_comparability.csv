@@ -1,0 +1,3 @@
+analysis,published_value,source_page,reproduced_value,status
+Jaccard_all_probability_cells,0.5,32,,not_reproducible_without_original_probability_rasters_and_grid
+Jaccard_within_50th_distance_percentile,0.39,32,,point_cell_overlap_would_be_a_different_statistic

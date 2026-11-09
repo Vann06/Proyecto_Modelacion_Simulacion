@@ -1,0 +1,17 @@
+{
+  "catalog_id": "15216100_pollinator_potentential_0301",
+  "catalog_sha256": "cbd382d97239d34aae1e35a2f21189ff854fa7dc4fcc001f94943ad5d989baa2",
+  "paper_pdf_sha256": "032fa2076d8bc9adc9ed66cc5a017822ce9e0adabfd6f9546baadf1dc6a3ce7d",
+  "paper_method_pages": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "paper_final_grid_m": 10,
+  "paper_high_value_means": "higher habitat suitability",
+  "downloadable_catalog_high_value_description": "lower pollinator potential, greater tree-planting demand",
+  "numeric_original_direction": "unconfirmed",
+  "numeric_cog_direction_relative_original": "preserved in tested windows, no inversion supported",
+  "paper_to_raster_transform": "unconfirmed; reversed min-max is exploratory only"
+}

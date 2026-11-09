@@ -1,0 +1,7 @@
+colony,assumed_epsg,n,covered_centers,percent_covered_conditional,percent_outside_conditional,percent_within_25m_of_park_conditional,median_distance_to_park_m_conditional,status
+Bygdoy,25832,87,9,10.344827586206897,89.65517241379311,14.942528735632186,184.33561894321645,CRS_hypothesis_only; decoded_points_not_posterior_footprints
+Ulleval 1,25832,97,0,0.0,100.0,4.123711340206185,268.3534584561011,CRS_hypothesis_only; decoded_points_not_posterior_footprints
+Ulleval 2,25832,32,1,3.125,96.875,12.5,191.30791971702797,CRS_hypothesis_only; decoded_points_not_posterior_footprints
+Bygdoy,32632,87,9,10.344827586206897,89.65517241379311,14.942528735632186,184.33563089914463,CRS_hypothesis_only; decoded_points_not_posterior_footprints
+Ulleval 1,32632,97,0,0.0,100.0,4.123711340206185,268.35354438909457,CRS_hypothesis_only; decoded_points_not_posterior_footprints
+Ulleval 2,32632,32,1,3.125,96.875,12.5,191.30795277119938,CRS_hypothesis_only; decoded_points_not_posterior_footprints
