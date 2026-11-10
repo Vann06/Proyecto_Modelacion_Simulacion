@@ -1,0 +1,88 @@
+{
+  "branch": "feature/project2-entrega-final",
+  "base_commit": "dff96a37056b668c48a40080d80783b4f0e817be",
+  "verified_at_utc": "2026-11-09T02:49:47.663080+00:00",
+  "baseline_python_suite": {
+    "passed": 173,
+    "seconds": 87.81
+  },
+  "regression_python_suite_after_P0": {
+    "passed": 177,
+    "seconds": 90.361
+  },
+  "post_label_fix_python_tests": {
+    "passed": 5,
+    "seconds": 3.737
+  },
+  "final_combined_178_suite_executed": false,
+  "frontend_tests": {
+    "passed": 22,
+    "files": 4
+  },
+  "typescript_vite_build": "passed",
+  "npm_ci_audit_reported_vulnerabilities": 0,
+  "research_files_hash_checked_unchanged": 359,
+  "protected_base_files_modified": [],
+  "modified_base_files": [
+    "README_REACT.md",
+    "backend/main.py",
+    "backend/service.py",
+    "frontend/src/App.tsx",
+    "frontend/src/components/Charts.tsx",
+    "frontend/src/components/Common.tsx",
+    "frontend/src/components/OsloMap.tsx",
+    "frontend/src/styles.css",
+    "frontend/src/types.ts"
+  ],
+  "selected_evidence_files": {
+    "dietz_window_summary.csv": "753300d4c2f7cdf26e1171139bd7e087bd00a98549b60626f80b9cfffb749d9c",
+    "metric_correspondence.csv": "d8a029ffe1d24fa04e6280fe4488496b5cb8772c698f25177fdcdfd9c6641fdf",
+    "nina_decision.json": "a18389fd109a309b460afe9058e3f0d265dea673b58501dc7f35bdd57e101b38",
+    "provenance.json": "5b5bce71f8fd7309471c130d919301a41b2b731bab3e452b2e9d0cceaa50de6a"
+  },
+  "browser": {
+    "real_backend": "http://127.0.0.1:8011",
+    "browser": "Edge",
+    "sections_visited": 7,
+    "mobile_viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "mobile_document_scroll_width": 375,
+    "mobile_sections_checked": 7,
+    "console_errors_and_warnings_at_last_check": [],
+    "checked_interactions": [
+      "navigation",
+      "layer toggles",
+      "park selection and label repair",
+      "archived solution selection",
+      "K3 comparison and missing NSGA",
+      "trip selection",
+      "play/pause",
+      "day 18",
+      "exposure navigation"
+    ],
+    "dietz_download_hash_matches": true,
+    "resource_download_18_rows_match_logs": true,
+    "download_automation_note": "Browser attachment interrupted after resource download; file existence and all numeric balances subsequently verified from downloaded CSV.",
+    "temporary_viewport_reset": true
+  },
+  "screenshots": {
+    "mobile-results.jpg": "969ac496d7d4ef3580b0332d683cd7a4b351d0ad43d4227c1793911002195d19",
+    "optimization.jpg": "ab048b78e499263a1cb95b3f6ba4c8292b3c4277241d908295ed253437933099",
+    "oslo.jpg": "0185e0444e50e7789455819302f67d4d5c1cd73242ee97e1679442cb7fa844d0",
+    "resources.jpg": "be428093e1a0d0542b65641245ccf4d2e380564346ad6e96de3cb7f06b2eeacc",
+    "sensitivity.jpg": "30c148e176b11857bc94ab2366b20feae01e65acf69b2854b83d3415cc547cb2",
+    "trip-inspector.jpg": "589bc748446cef4a9264c99a597e9a4133e058a915aba3ae6aba3f69f427f444",
+    "validation.jpg": "623a34a3f99de0421d3b448ac965c13a418f984097ed532475a20f5d92ddb60a"
+  },
+  "historical_simulation_campaigns_run": 0,
+  "new_nsga_searches_run": 0,
+  "unit_suite_contains_existing_small_simulator_tests": true,
+  "word_or_slides_modified": false,
+  "commits_pushes_pr_merges": false,
+  "warnings": [
+    "Existing Starlette TestClient/httpx deprecation warning; tests pass.",
+    "Full 178-test combined suite was not repeated after the label-only backend fix; five targeted tests were rerun."
+  ]
+}

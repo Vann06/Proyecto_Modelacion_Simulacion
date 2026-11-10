@@ -1,6 +1,7 @@
 # Oslo Pollinator Lab — React + FastAPI
 
-Entrega local en `integracion/project2-comparacion-app`. Streamlit, notebooks 01–08,
+Entrega local en `feature/project2-entrega-final`, desde `integracion/project2-comparacion-app`
+en `dff96a3`. Streamlit, notebooks 01–08,
 motor y resultados históricos se conservan. No se inicia NSGA-II completo desde la
 interfaz ni al cargar datos. La API llama al motor Python; JavaScript únicamente
 interpela visualmente intervalos de viajes registrados y representa sus stocks.
@@ -19,10 +20,23 @@ Set-Location ..
 ```
 
 El checkout de esta sesión es
-`C:\Projects\Proyecto_Modelacion_Simulacion\.build\integration-worktree`.
+`C:\Projects\Proyecto_Modelacion_Simulacion\.build\entrega-final-worktree`.
 La rama del directorio original permanece separada; no contiene estos cambios.
 `frontend/package-lock.json` fija las dependencias JS. Los paquetes científicos
 usados quedan registrados en `results/project2/scientific_validation/environment.json`.
+
+Para revisar este worktree con el Python ya disponible en esta máquina, sin crear
+otro entorno, después de `npm run build` en `frontend`:
+
+```powershell
+Set-Location C:\Projects\Proyecto_Modelacion_Simulacion\.build\entrega-final-worktree
+& C:\Projects\Proyecto_Modelacion_Simulacion\.build\integration-worktree\.venv\Scripts\python.exe -m uvicorn backend.main:app --host 127.0.0.1 --port 8011
+```
+
+Abrir http://127.0.0.1:8011. Esta alternativa reutiliza solo el intérprete y las
+bibliotecas; carga código y datos del worktree de entrega. La instalación estándar
+anterior sigue siendo la opción portable. El servidor de comprobación de la sesión
+se detiene al terminar; no se modifica la instancia que pueda existir en el 8000.
 
 ## Desarrollo: dos terminales
 
@@ -72,6 +86,19 @@ usuarios, cola durable ni almacenamiento de experimentos multiusuario.
    exploratoria. Su resultado solo vive en memoria de la pestaña; no se sobreescribe
    evidencia. Guardar parámetros/provenance del panel para reproducirla.
 7. Resultados: conclusiones acotadas, descargas y modo exposición.
+
+El cierre incorpora un inspector de eventos por viaje, balances de recursos de los
+18 días y descargas de logs filtrados. El comparador de soluciones conserva la
+comparación oficial y distingue IDs de coordenadas. Sensibilidad dispone de base/
+condición, diferencias, IC y desempeño por colmena sin nuevas simulaciones.
+
+Validación usa solo cuatro archivos en `results/project2/selected_validation/`:
+resumen Dietz (216 registros), cierre NINA NO APTO, matriz de correspondencia y
+procedencia. La extracción PDF y las auditorías completas permanecen en la rama
+local de investigación. Los errores Dryad siguen perteneciendo a referentes
+estadísticos independientes. No se trasladan rásteres ni ubicaciones inferidas.
+Los detalles de alcance, aceptación y pruebas están en
+`docs/project2/FRONTEND_DELIVERY.md` y `FRONTEND_VERIFICATION.json`.
 
 La comparación histórica usa motor **1.1.0**. Sensibilidad y demos visuales usan
 **1.1.1**; los JSON de demo se generaron explícitamente una vez, no al abrir la app.

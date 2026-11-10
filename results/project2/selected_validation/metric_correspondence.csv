@@ -1,0 +1,10 @@
+metric,unit,reference,correspondence,limitation
+total_resource_obtained,synthetic_RU,No comparable,Sin equivalencia,Sin medición física equivalente
+mean_resource_per_hive,synthetic_RU,No comparable,Sin equivalencia,No hay entregas observadas por colonia
+min_resource_per_hive,synthetic_RU,No comparable,Sin equivalencia,No hay entregas observadas por colonia
+mean_distance_m,m,Dietz: distancias decodificadas,Contraste parcial,Danzas seleccionadas y colonias distintas; no emparejar viajes
+total_distance_m,m,No comparable,Sin equivalencia,Falta esfuerzo y registro completo de viajes reales
+p95_distance_m,m,Dietz: percentiles descriptivos,Contraste parcial,Muestra dependiente y proceso de observación distinto
+competition_pressure,fracción,No comparable,Sin equivalencia,Coincidencia simulada no equivale a competencia ecológica ni Jaccard
+hive_balance_jain,índice Jain,No comparable,Sin equivalencia,Sin recursos entregados reales comparables
+patches_used_count,parches,No comparable,Sin equivalencia,Destinos de danzas no equivalen a parches municipales

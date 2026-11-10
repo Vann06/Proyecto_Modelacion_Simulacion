@@ -24,6 +24,29 @@ def file_records(path):
     return records(pd.read_csv(ROOT/path))
 
 
+def display_name(value):
+    """Reversible UTF-8/Latin-1 mojibake repair for labels only; retain source Navn."""
+    if not isinstance(value,str) or not any(c in value for c in ['Ã','Â']):
+        return value
+    try:
+        repaired=value.encode('latin1').decode('utf-8')
+    except (UnicodeEncodeError,UnicodeDecodeError):
+        return value
+    return repaired
+
+
+@lru_cache(maxsize=1)
+def sensitivity_per_hive():
+    """Read archived per-colony means; no simulator call or new bootstrap."""
+    frame=pd.read_csv(ROOT/'results/project2/sensitivity_v111/replicates.csv')
+    groups=frame.groupby(['experiment_condition','method'])
+    result=groups.agg(K=('K','first'),mean_resource_per_hive=('mean_resource_per_hive','mean'),
+                      std_resource_per_hive=('mean_resource_per_hive','std'),
+                      min_resource_per_hive=('min_resource_per_hive','mean'),
+                      hive_balance_jain=('hive_balance_jain','mean'),n=('seed','size')).reset_index()
+    return records(result.rename(columns={'experiment_condition':'condition'}))
+
+
 @lru_cache(maxsize=1)
 def comparison():
     d=build_comparison(ROOT)
@@ -38,11 +61,13 @@ def landscape():
     parks.geometry=parks.geometry.simplify(6,preserve_topology=True)
     table=pd.read_csv(folder/'spatial_patches.csv')
     parks=parks.merge(table[['patch_id','Navn','area_m2','intersects_restricted_zone','is_initial_candidate']],on='patch_id')
+    parks['display_name']=parks.Navn.map(display_name)
     zones=gpd.read_file(folder/'bee_free_zones.geojson').to_crs(25833)[['geometry']]
     zones.geometry=zones.geometry.simplify(6,preserve_topology=True)
     candidates=pd.read_csv(folder/'candidate_hive_sites.csv')
     candidates['longitude'],candidates['latitude']=GEO.transform(candidates.x_m,candidates.y_m)
     candidates=candidates.merge(table[['patch_id','Navn']],on='patch_id')
+    candidates['display_name']=candidates.Navn.map(display_name)
     resources=pd.read_csv(folder/'resource_patches.csv')
     resources['longitude'],resources['latitude']=GEO.transform(resources.resource_x_m,resources.resource_y_m)
     exclusive=gpd.read_file(folder/'resource_patches.geojson').to_crs(25833)[['patch_id','geometry']]

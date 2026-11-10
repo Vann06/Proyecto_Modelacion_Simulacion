@@ -57,7 +57,11 @@ def validation():
     return {'metadata':json.loads((folder/'metadata.json').read_text(encoding='utf-8')),
       'errors':service.file_records('results/project2/scientific_validation/empirical_errors.csv'),
       'flowers':service.file_records('results/project2/scientific_validation/flowers_evaluation.csv'),
-      'activity':service.file_records('results/project2/scientific_validation/activity_evaluation.csv')}
+      'activity':service.file_records('results/project2/scientific_validation/activity_evaluation.csv'),
+      'dietz':service.file_records('results/project2/selected_validation/dietz_window_summary.csv'),
+      'nina':json.loads((service.ROOT/'results/project2/selected_validation/nina_decision.json').read_text(encoding='utf-8')),
+      'correspondence':service.file_records('results/project2/selected_validation/metric_correspondence.csv'),
+      'sources':json.loads((service.ROOT/'results/project2/selected_validation/provenance.json').read_text(encoding='utf-8'))}
 
 
 @app.get('/api/sensitivity')
@@ -66,7 +70,8 @@ def sensitivity():
     if not (folder/'metadata.json').exists():raise HTTPException(503,'La evidencia de sensibilidad todavía no está disponible.')
     return {'metadata':json.loads((folder/'metadata.json').read_text(encoding='utf-8')),
       'summary':service.file_records('results/project2/sensitivity_v111/summary.csv'),
-      'paired':service.file_records('results/project2/sensitivity_v111/paired_vs_base.csv')}
+      'paired':service.file_records('results/project2/sensitivity_v111/paired_vs_base.csv'),
+      'per_hive_summary':service.sensitivity_per_hive()}
 
 
 @app.get('/api/landscape')
@@ -94,7 +99,9 @@ DOWNLOADS={
  'validation':'results/project2/scientific_validation/empirical_errors.csv',
  'sensitivity':'results/project2/sensitivity_v111/summary.csv',
  'sensitivity-replicates':'results/project2/sensitivity_v111/replicates.csv',
- 'seeds':'data/project2/processed/experiment_seeds.csv'}
+ 'seeds':'data/project2/processed/experiment_seeds.csv',
+ 'dietz':'results/project2/selected_validation/dietz_window_summary.csv',
+ 'correspondence':'results/project2/selected_validation/metric_correspondence.csv'}
 
 
 @app.get('/api/download/{name}')
