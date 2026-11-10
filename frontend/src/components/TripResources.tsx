@@ -33,7 +33,7 @@ export function TripInspector({run,date,landscape,selected,onSelect}:{run:Run|nu
 export function ResourceEvolution({run,date}:{run:Run|null;date:string}){
  const days=resourceDays(run),selected=days.find(d=>d.date===date);
  if(!selected)return <Notice>No hay balances de recursos disponibles.</Notice>;
- return <Panel title="Recursos durante los 18 días" eyebrow={`BALANCES ARCHIVADOS · ${run?.provenance.engine_version}`}>
+ return <Panel title="Recursos durante los 18 días" eyebrow={`${run?.kind==='archived_demo_v111'?'BALANCES ARCHIVADOS':'BALANCES DE CORRIDA INDIVIDUAL'} · ${run?.provenance.engine_version}`}>
   <p>Para cada día: stock final = stock inicial − consumo + regeneración. Son cantidades sintéticas del modelo; la regeneración se agrega al cierre y no representa floración medida.</p>
   <div className="stats-grid">{[['initial','Stock inicial'],['consumption','Consumo'],['regeneration','Regeneración'],['final','Stock final']].map(([field,label])=><Stat key={field} label={`${label} · ${date}`} value={fmt(selected[field])} unit="RU"/>)}</div>
   <ResponsiveContainer width="100%" height={300}><LineChart data={days} margin={{left:5,right:20,bottom:25}}><CartesianGrid stroke="#e4e9e1"/><XAxis dataKey="date" tickFormatter={x=>String(x).slice(5)} label={{value:'Fecha de simulación',position:'insideBottom',offset:-15}}/><YAxis width={65} label={{value:'synthetic_RU',angle:-90,position:'insideLeft'}}/><Tooltip/><Legend verticalAlign="top"/>

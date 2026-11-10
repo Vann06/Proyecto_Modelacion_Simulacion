@@ -103,9 +103,40 @@ Los detalles de alcance, aceptación y pruebas están en
 La comparación histórica usa motor **1.1.0**. Sensibilidad y demos visuales usan
 **1.1.1**; los JSON de demo se generaron explícitamente una vez, no al abrir la app.
 La semilla común por defecto es réplica 31. Cambiar parámetros y revaluar una
-solución NSGA-II guardada no es reoptimizarla. K diferente de cinco requiere otro
-frente; la API rechaza truncar o completar sus sitios. Sitios manuales exigen K
+solución NSGA-II guardada no es reoptimizarla. El modo histórico conserva K=5;
+la API rechaza truncar o completar sus sitios. El modo rápido genera su propio frente con K variable. Sitios manuales exigen K
 IDs válidos y distintos; el contrato aún permite IDs con coordenadas coincidentes.
+
+## NSGA-II rápido en Configura una pregunta
+
+Disponible en los mismos controles de Movimiento y Sensibilidad: seleccionar NSGA2,
+Modo NSGA-II → Nueva optimización rápida, ajustar K/escenario y pulsar Ejecutar
+búsqueda rápida. No se dispara al mover sliders. Población 8, cinco generaciones,
+dos réplicas de búsqueda (1–2), cruce 0.90, mutación 0.20 y seed 2026 fijos.
+Reutiliza `run_nsga2`, `SimulationEvaluator`, reparación, caché y checkpoints;
+no modifica el motor ni busca con las 70 seeds de evaluación histórica.
+
+La API inicia un proceso controlado, permite **un trabajo a la vez por servidor
+local de un solo worker**, máximo 96 simulaciones y 15 minutos. No usar `--workers`
+para este servidor de demostración. Al detenerlo termina su proceso de búsqueda.
+Una búsqueda interrumpida no publica el frente provisional como definitivo.
+
+Endpoints: `POST /api/quick-nsga2`, `GET /api/quick-nsga2/{job_id}` y
+`POST /api/quick-nsga2/{job_id}/simulate` (solution_id y replication_id 31–100).
+Los archivos de cada UUID quedan en `results/project2/quick_nsga2/`, ignorados por
+Git: solicitud, metadatos/huellas, evaluación, checkpoint, frente, historia y
+simulaciones individuales. Ningún resultado histórico se sobrescribe.
+
+Seleccionar un punto solo muestra sus K ubicaciones. Simular solución seleccionada
+usa el escenario **guardado al iniciar la búsqueda**, aunque después cambien los
+sliders. Los viajes y métricas individuales son distintos del promedio de las dos
+seeds de búsqueda. No es un óptimo global ni una nueva comparación científica
+contra los resultados de 70 réplicas.
+
+Verificación real y tiempos: `python scripts/project2_verify_quick_nsga.py`
+(cinco búsquedas acotadas, no es necesario al abrir la app). Reporte en
+`docs/project2/QUICK_NSGA_VERIFICATION.json`. Pruebas de interfaz con un frente real
+ya calculado: `scripts/project2_verify_quick_ui.cjs`; ese ensayo no repite NSGA-II.
 
 ## Reproducir evidencia (no necesario para abrir)
 

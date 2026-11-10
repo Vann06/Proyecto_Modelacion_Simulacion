@@ -1,4 +1,4 @@
-"""FastAPI service, local by default. No NSGA search endpoint."""
+"""Local archives, individual runs and explicitly bounded exploratory NSGA-II jobs."""
 from pathlib import Path
 from typing import Literal
 from functools import lru_cache
@@ -12,6 +12,13 @@ from . import service
 app=FastAPI(title='Oslo Pollinator Lab',version='0.1.0',description='Archived evidence and bounded common-engine experiments; no ecological calibration.')
 app.add_middleware(GZipMiddleware,minimum_size=1000)
 RUN_LOCK=threading.Lock()
+from .quick_nsga import QuickJobs, selected_run
+QUICK_JOBS=QuickJobs(service.ROOT,RUN_LOCK)
+
+
+@app.on_event('shutdown')
+def stop_quick_jobs():
+    QUICK_JOBS.close()
 
 
 class RunRequest(BaseModel):
@@ -30,6 +37,33 @@ class RunRequest(BaseModel):
     replication_id:int=Field(default=31,ge=1,le=100,strict=True)
     solution_id:str=Field(default='pareto_047',pattern=r'^pareto_\d{3}$')
     site_ids:list[str]=Field(default_factory=list,max_length=20)
+
+
+class QuickSelection(BaseModel):
+    model_config=ConfigDict(extra='forbid')
+    solution_id:str=Field(pattern=r'^quick_\d{3}$')
+    replication_id:int=Field(default=31,ge=31,le=100,strict=True)
+
+
+@app.post('/api/quick-nsga2',status_code=202)
+def start_quick_nsga(request:RunRequest):
+    try:return QUICK_JOBS.start(request.model_dump())
+    except BlockingIOError as exc:raise HTTPException(429,str(exc)) from exc
+    except ValueError as exc:raise HTTPException(422,str(exc)) from exc
+
+
+@app.get('/api/quick-nsga2/{job_id}')
+def quick_nsga_status(job_id:str):
+    try:return QUICK_JOBS.status(job_id)
+    except ValueError as exc:raise HTTPException(404,str(exc)) from exc
+
+
+@app.post('/api/quick-nsga2/{job_id}/simulate')
+def simulate_quick_solution(job_id:str,request:QuickSelection):
+    if not RUN_LOCK.acquire(blocking=False):raise HTTPException(429,'Ya hay una búsqueda o escenario en ejecución.')
+    try:return selected_run(job_id,request.solution_id,request.replication_id)
+    except (ValueError,TypeError) as exc:raise HTTPException(422,str(exc)) from exc
+    finally:RUN_LOCK.release()
 
 
 @app.get('/api/health')

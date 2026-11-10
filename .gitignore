@@ -31,3 +31,6 @@ results/project2/nsga2_fast/evaluations*.jsonl
 frontend/node_modules/
 frontend/dist/
 frontend/*.tsbuildinfo
+
+# Local exploratory jobs: requests, caches, checkpoints, logs and individual runs.
+results/project2/quick_nsga2/

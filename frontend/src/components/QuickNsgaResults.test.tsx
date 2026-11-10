@@ -1,0 +1,16 @@
+import {afterEach,describe,it,expect,vi} from 'vitest';
+import {render,screen,fireEvent,cleanup} from '@testing-library/react';
+import {QuickNsgaResults} from './QuickNsgaResults';
+import type {QuickJob,QuickSolution} from '../types';
+vi.mock('recharts',()=>({ResponsiveContainer:({children}:any)=><div>{children}</div>,ScatterChart:({children}:any)=><div>{children}</div>,Scatter:({data,onClick}:any)=><div>{data.map((p:any)=><button key={p.solution_id} onClick={()=>onClick({payload:p})}>Punto {p.solution_id}</button>)}</div>,XAxis:()=>null,YAxis:()=>null,CartesianGrid:()=>null,Tooltip:()=>null,Cell:()=>null,ZAxis:()=>null}));
+afterEach(cleanup);
+const solution=(id:string):QuickSolution=>({solution_id:id,K:8,site_ids:Array.from({length:8},(_,i)=>'s'+i),search_means:{total_resource_obtained:200,mean_distance_m:50},search_metrics:{total_resource_obtained:200,mean_distance_m:50}});
+const job={job_id:'a'.repeat(32),status:'completed',generations:5,generation:5,simulations:96,max_simulations:96,elapsed_s:123,installations:48,front_size:2,result:{K:8,label:'Optimización exploratoria rápida — NSGA-II',solutions:[solution('quick_001'),solution('quick_002')]}} as QuickJob;
+const props=()=>({job,selected:'',onSelect:vi.fn(),onSimulate:vi.fn(),running:false,replicationId:31,error:''});
+describe('Quick Pareto inside existing scenario controls',()=>{
+ it('selects a plotted point without starting a simulation',()=>{const p=props();render(<QuickNsgaResults {...p}/>);fireEvent.click(screen.getByRole('button',{name:'Punto quick_002'}));expect(p.onSelect).toHaveBeenCalledWith('quick_002');expect(p.onSimulate).not.toHaveBeenCalled();expect(screen.getByText(/Frente nuevo · K=8/)).toBeInTheDocument()});
+ it('shows exactly eight sites and runs an individual only on explicit click',()=>{const p=props();render(<QuickNsgaResults {...p} selected="quick_001"/>);expect(screen.getAllByRole('listitem')).toHaveLength(8);expect(screen.getByText(/réplica 31/)).toBeInTheDocument();fireEvent.click(screen.getByRole('button',{name:'Simular solución seleccionada'}));expect(p.onSimulate).toHaveBeenCalledOnce()});
+ it('renders one nondominated solution without fabricating more points',()=>{render(<QuickNsgaResults {...props()} job={{...job,result:{...job.result!,solutions:[solution('quick_001')]}}}/>);expect(screen.getAllByRole('button',{name:/Punto quick_/})).toHaveLength(1)});
+ it('never shows provisional solutions as final',()=>{render(<QuickNsgaResults {...props()} job={{...job,status:'running',generation:2}}/>);expect(screen.getByText('2 / 5')).toBeInTheDocument();expect(screen.queryByLabelText('Solución rápida')).not.toBeInTheDocument();expect(screen.queryByRole('button',{name:/Punto/})).not.toBeInTheDocument()});
+ it('reports failure and undefined objectives honestly',()=>{const view=render(<QuickNsgaResults {...props()} job={{...job,status:'failed',error:'Presupuesto agotado'}}/>);expect(screen.getByRole('alert')).toHaveTextContent('Presupuesto agotado');expect(screen.queryByLabelText('Solución rápida')).not.toBeInTheDocument();view.rerender(<QuickNsgaResults {...props()} job={{...job,result:{...job.result!,solutions:[],empty_reason:'Sin viajes con distancia definida'}}}/>);expect(screen.getByText('Sin viajes con distancia definida')).toBeInTheDocument()});
+});

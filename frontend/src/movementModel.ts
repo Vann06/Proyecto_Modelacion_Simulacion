@@ -1,7 +1,7 @@
 /** Display-only queries of archived trip intervals. No random draws or model rules. */
 import type {Run,Trip} from './types';
 
-export const colonyColors=['#a96213','#27766b','#7463a0','#be5960','#386fa4'];
+export const colonyColors=['#a96213','#27766b','#7463a0','#be5960','#386fa4','#746c24','#aa4079','#475436','#be743f','#43589a','#587f78','#9b4233','#6b5293','#58712a','#8a5e48','#3b798c','#805339','#927324','#74566b','#3f6356'];
 export const colonyColor=(slot:number)=>colonyColors[slot%colonyColors.length];
 export const tripKey=(t:Trip)=>`${t.hive_slot}-${t.trip_slot}`;
 

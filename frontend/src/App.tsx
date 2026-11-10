@@ -9,6 +9,8 @@ import {Panel,Notice,Stat,DataTable,DownloadCSV} from './components/Common';
 import {ComparisonBars,Pareto,Convergence,SensitivityPlot} from './components/Charts';
 import {OsloMap} from './components/OsloMap';
 import {MovementView} from './components/MovementView';
+import {QuickNsgaResults} from './components/QuickNsgaResults';
+import {useQuickNsga} from './useQuickNsga';
 import {SolutionEvidence,SelectedValidation,SensitivityComparator,Glossary} from './components/EvidencePanels';
 import {accessDistances,parameterHelp} from './evidence';
 
@@ -16,6 +18,8 @@ const pages=[{id:'inicio',name:'Inicio y contexto',icon:Leaf},{id:'oslo',name:'E
 const defaults:RunOptions={method:'GREEDY',K:5,resource_factor:1,alpha:1,beta:2,radius_m:3000,regeneration:.1,departures:12,demand_mean:1,speed_m_s:5.5,optimizer_seed:2026,replication_id:31,solution_id:'pareto_047',site_ids:[]};
 
 export default function App(){
+ const quick=useQuickNsga();
+ const [nsgaMode,setNsgaMode]=useState<'historical'|'quick'>('historical'),[previewQuick,setPreviewQuick]=useState(false);
  const [page,setPage]=useState('inicio'),[presentation,setPresentation]=useState(false);
  const [comparison,setComparison]=useState<Comparison|null>(null),[landscape,setLandscape]=useState<Landscape|null>(null),[validation,setValidation]=useState<Validation|null>(null),[sensitivity,setSensitivity]=useState<Sensitivity|null>(null),[overview,setOverview]=useState<Row|null>(null);
  const [run,setRun]=useState<Run|null>(null),[options,setOptions]=useState(defaults),[selected,setSelected]=useState('pareto_047'),[park,setPark]=useState<Row|null>(null);
@@ -30,9 +34,12 @@ export default function App(){
  const bees=useMemo(()=>landscape?activeTrips(run,date,minute,landscape.candidates,landscape.resources):[],[run,date,minute,landscape]);
  const stock=useMemo(()=>stocks(run,date,minute),[run,date,minute]);
  const selectedFront=comparison?.front.solutions.find(s=>s.solution_id===selected);
+ const quickSolution=quick.job?.result?.solutions.find(s=>s.solution_id===quick.selected);
+ const installationPreview=useMemo(()=>previewQuick&&nsgaMode==='quick'&&options.method==='NSGA2'&&quickSolution&&quick.job?.result?{sites:quickSolution.site_ids,parameters:quick.job.result.parameters,label:quickSolution.solution_id}:undefined,[previewQuick,nsgaMode,options.method,quickSolution,quick.job?.result]);
+ async function simulateQuick(){if(!quick.job||!quickSolution)return;setRunning(true);setError('');setPlaying(false);try{const r=await api<Run>('quick-nsga2/'+quick.job.job_id+'/simulate',{solution_id:quick.selected,replication_id:options.replication_id});setRun(r);setPreviewQuick(false);setDay(0);setMinute(10);setPage('simulacion');setNotice('Simulación individual de '+quick.selected+' · réplica '+options.replication_id+'. Sus métricas no son los promedios de búsqueda.');}catch(e){setError(String(e));}finally{setRunning(false);}}
  const changeOptions=(key:keyof RunOptions,value:RunOptions[keyof RunOptions])=>setOptions(o=>({...o,[key]:value}));
- async function loadDemo(method:Exclude<Method,'MANUAL'>){setRunning(true);setError('');try{setRun(await api<Run>('demo/'+method));setOptions({...defaults,method});setDay(0);setMinute(10);setPlaying(false);setNotice('Demo archivada cargada. No se ejecutó una búsqueda.')}catch(e){setError(String(e))}finally{setRunning(false)}}
- async function newRun(){setRunning(true);setError('');setPlaying(false);try{const r=await api<Run>('runs',{...options,solution_id:selected});setRun(r);setDay(0);setMinute(10);setNotice('Corrida nueva de exploración: una seed. Para inferencia usa la evidencia de 30 réplicas.')}catch(e){setError(String(e))}finally{setRunning(false)}}
+ async function loadDemo(method:Exclude<Method,'MANUAL'>){setPreviewQuick(false);setRunning(true);setError('');try{setRun(await api<Run>('demo/'+method));setOptions({...defaults,method});setDay(0);setMinute(10);setPlaying(false);setNotice('Demo archivada cargada. No se ejecutó una búsqueda.')}catch(e){setError(String(e))}finally{setRunning(false)}}
+ async function newRun(){if(options.method==='NSGA2'&&nsgaMode==='quick'){setPlaying(false);setPreviewQuick(false);await quick.start(options);return;}setRunning(true);setError('');setPlaying(false);setPreviewQuick(false);try{const r=await api<Run>('runs',{...options,solution_id:selected});setRun(r);setDay(0);setMinute(10);setNotice('Corrida nueva de exploración: una seed. Para inferencia usa la evidencia de 30 réplicas.')}catch(e){setError(String(e))}finally{setRunning(false)}}
 
  function ScenarioControls(){const controls:{key:keyof RunOptions;label:string;min:number;max:number;step:number;unit:string}[]=[
   {key:'K',label:'Número de colmenas',min:1,max:20,step:1,unit:''},{key:'resource_factor',label:'Recurso relativo',min:0,max:3,step:.1,unit:'× base'},
@@ -40,12 +47,14 @@ export default function App(){
   {key:'alpha',label:'Penalización de competencia α',min:0,max:5,step:.1,unit:''},{key:'beta',label:'Sensibilidad a distancia β',min:0,max:5,step:.1,unit:''},
   {key:'departures',label:'Oportunidades de viaje',min:0,max:60,step:1,unit:'/colmena/día'},{key:'demand_mean',label:'Demanda media',min:.1,max:3,step:.1,unit:'RU/viaje'},
   {key:'speed_m_s',label:'Velocidad de vuelo',min:2,max:10,step:.5,unit:'m/s'}];
- return <Panel title="Configura una pregunta" eyebrow="NUEVO ESCENARIO · MOTOR 1.1.1"><label className="field">Propuesta de ubicaciones<select value={options.method} onChange={e=>{changeOptions('method',e.target.value);if(e.target.value==='NSGA2')changeOptions('K',5)}}>{['GREEDY','RANDOM','NSGA2','MANUAL'].map(m=><option key={m}>{m}</option>)}</select></label>
-  {options.method==='NSGA2'&&<label className="field">Solución conservada<select value={selected} onChange={e=>setSelected(e.target.value)}>{comparison?.nsga_installations.filter(s=>!s.physical_duplicate).map(s=><option key={s.solution_id}>{s.solution_id}</option>)}</select><small>K=5 fijo. Reevalúa ubicaciones; no reoptimiza.</small></label>}
-  {controls.map(c=><label className="range-field" key={c.key}><span>{c.label}<b>{fmt(Number(options[c.key]),2)} <small>{c.unit}</small></b></span><input aria-label={c.label} type="range" min={c.min} max={c.max} step={c.step} disabled={c.key==='K'&&options.method==='NSGA2'} value={Number(options[c.key])} onChange={e=>changeOptions(c.key,Number(e.target.value))}/><small className="control-help">{parameterHelp[c.key]}</small></label>)}
-  <div className="two"><label className="field">Réplica común<input type="number" min={1} max={100} value={options.replication_id} onChange={e=>changeOptions('replication_id',Number(e.target.value))}/></label><label className="field">Semilla RANDOM<input type="number" min={0} max={4294967295} value={options.optimizer_seed} onChange={e=>changeOptions('optimizer_seed',Number(e.target.value))}/></label></div>
+ return <Panel title="Configura una pregunta" eyebrow="NUEVO ESCENARIO · MOTOR 1.1.1"><label className="field">Propuesta de ubicaciones<select value={options.method} onChange={e=>{changeOptions('method',e.target.value);setPreviewQuick(false);if(e.target.value==='NSGA2'&&nsgaMode==='historical')changeOptions('K',5)}}>{['GREEDY','RANDOM','NSGA2','MANUAL'].map(m=><option key={m}>{m}</option>)}</select></label>
+  {options.method==='NSGA2'&&<label className="field">Modo NSGA-II<select value={nsgaMode} onChange={e=>{setNsgaMode(e.target.value as 'historical'|'quick');setPreviewQuick(false);if(e.target.value==='historical')changeOptions('K',5);else if(options.replication_id<31)changeOptions('replication_id',31);}}><option value="historical">Frente histórico K=5</option><option value="quick">Nueva optimización rápida</option></select></label>}
+  {options.method==='NSGA2'&&nsgaMode==='historical'&&<label className="field">Solución conservada<select value={selected} onChange={e=>setSelected(e.target.value)}>{comparison?.nsga_installations.filter(s=>!s.physical_duplicate).map(s=><option key={s.solution_id}>{s.solution_id}</option>)}</select><small>K=5 fijo. Reevalúa ubicaciones; no reoptimiza.</small></label>}
+  {controls.map(c=><label className="range-field" key={c.key}><span>{c.label}<b>{fmt(Number(options[c.key]),2)} <small>{c.unit}</small></b></span><input aria-label={c.label} type="range" min={c.min} max={c.max} step={c.step} disabled={c.key==='K'&&options.method==='NSGA2'&&nsgaMode==='historical'} value={Number(options[c.key])} onChange={e=>changeOptions(c.key,Number(e.target.value))}/><small className="control-help">{parameterHelp[c.key]}</small></label>)}
+  <div className="two"><label className="field">Réplica común<input type="number" min={options.method==='NSGA2'&&nsgaMode==='quick'?31:1} max={100} value={options.replication_id} onChange={e=>changeOptions('replication_id',Number(e.target.value))}/></label><label className="field">Semilla RANDOM<input type="number" min={0} max={4294967295} value={options.optimizer_seed} onChange={e=>changeOptions('optimizer_seed',Number(e.target.value))}/></label></div>
   {options.method==='MANUAL'&&<label className="field">Sitios manuales ({options.site_ids.length}/{options.K})<select multiple value={options.site_ids} onChange={e=>changeOptions('site_ids',Array.from(e.target.selectedOptions).map(o=>o.value))}>{landscape?.candidates.map(s=><option key={s.site_id} value={s.site_id}>{s.display_name||s.Navn||s.site_id} · {s.site_id}</option>)}</select><small>Ctrl + clic para elegir exactamente K IDs distintos.</small></label>}
-  <button className="button primary full" disabled={running} onClick={newRun}>{running?<LoaderCircle className="spin" size={17}/>:<Play size={17}/>} {running?'Calculando…':'Ejecutar escenario'}</button><p className="chart-note">No modifica resultados archivados. Una corrida exploratoria, no un experimento de robustez.</p>
+  <button className="button primary full" disabled={running||quick.active} onClick={newRun}>{running||quick.active?<LoaderCircle className="spin" size={17}/>:<Play size={17}/>} {quick.active?'Optimizando…':running?'Calculando…':options.method==='NSGA2'&&nsgaMode==='quick'?'Ejecutar búsqueda rápida':'Ejecutar escenario'}</button><p className="chart-note">No modifica resultados archivados. Una corrida exploratoria, no un experimento de robustez.</p>
+  {options.method==='NSGA2'&&nsgaMode==='quick'&&<><QuickNsgaResults job={quick.job} selected={quick.selected} onSelect={id=>{quick.setSelected(id);setPreviewQuick(true);setPlaying(false);}} onSimulate={simulateQuick} running={running||quick.active} replicationId={options.replication_id} error={quick.error}/>{previewQuick&&quickSolution&&page!=='simulacion'&&<button className="button secondary full" onClick={()=>setPage('simulacion')}>Ver ubicaciones en Abejas en movimiento</button>}</>}
  </Panel>}
 
  function EvidenceTable(){return <DataTable rows={comparison?.summary??[]} columns={[{key:'method',label:'Método'},{key:'metric',label:'Métrica'},{key:'mean',label:'Media'},{key:'ci95_low',label:'IC 95% inferior'},{key:'ci95_high',label:'IC 95% superior'},{key:'n_seeds',label:'Seeds'}]}/>}
@@ -71,7 +80,7 @@ export default function App(){
  </>}
 
 
- {page==='simulacion'&&<MovementView scenarioControls={<>{ScenarioControls()}{notice&&<Notice>{notice}</Notice>}</>} weather={overview.weather} landscape={landscape} run={run} running={running} onLoadDemo={loadDemo} day={day} setDay={setDay} minute={minute} setMinute={setMinute} playing={playing} setPlaying={setPlaying} speed={speed} setSpeed={setSpeed}/>}
+ {page==='simulacion'&&<MovementView installationPreview={installationPreview} scenarioControls={<>{ScenarioControls()}{notice&&<Notice>{notice}</Notice>}</>} weather={overview.weather} landscape={landscape} run={run} running={running||quick.active} onLoadDemo={loadDemo} day={day} setDay={setDay} minute={minute} setMinute={setMinute} playing={playing} setPlaying={setPlaying} speed={speed} setSpeed={setSpeed}/>}
 
  {page==='optimizacion'&&<>
   <Notice>Cohorte archivada 1.1.0 · K=5 · 70 seeds comunes. No hay un ganador universal. NSGA-II ofrece compromisos y se evalúa aquí con una alternativa ilustrativa elegida usando datos de búsqueda.</Notice>

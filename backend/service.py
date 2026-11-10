@@ -91,12 +91,18 @@ def payload(result,sites,method,kind,config):
         'interpretation':'synthetic_RU; locations from chosen method; linear travel interpolation is visual only'}
 
 
-def run(request):
+def scenario_config(request):
     base=load_config(ROOT/'config/project2/base.yaml')
     cfg=with_parameters(base,K=request.K,initial_resource_total=base['initial_resource_total']*request.resource_factor,
         alpha=request.alpha,beta=request.beta,max_foraging_distance_m=request.radius_m,
         regeneration_rate=request.regeneration,departures_per_day=request.departures,
         demand_mean_ru=request.demand_mean,flight_speed_m_s=request.speed_m_s)
+    return cfg
+
+
+def run(request):
+    cfg=scenario_config(request)
+    base=load_config(ROOT/'config/project2/base.yaml')
     candidates=pd.read_csv(ROOT/'data/project2/processed/candidate_hive_sites.csv')
     if request.method=='RANDOM':sites=list(random_select(candidates,request.K,request.optimizer_seed))
     elif request.method=='GREEDY':sites=greedy_select(cfg)['site_ids']
