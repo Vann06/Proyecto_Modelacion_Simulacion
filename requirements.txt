@@ -1,5 +1,9 @@
 numpy
 pandas
+geopandas
+requests
+shapely>=2.0
+pyproj
 scipy
 matplotlib
 pyyaml
@@ -7,3 +11,13 @@ pytest
 
 # para abrir y ejecutar los notebooks de notebooks/
 jupyterlab
+
+# Aplicación local de Proyecto 2
+streamlit>=1.51,<2
+pydeck>=0.9,<1
+
+# API local React; PDF de referencia de la rúbrica
+fastapi>=0.115,<1
+uvicorn>=0.30,<1
+httpx>=0.27,<1
+pypdf>=5,<8

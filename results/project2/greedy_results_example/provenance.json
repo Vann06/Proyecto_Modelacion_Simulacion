@@ -1,0 +1,28 @@
+{
+  "config_hash": "32b62484aff30d3403707694d538d776600f9dec8381d4f6dae22405452e673d",
+  "engine_hash": "6a032bf015293cabcaa47dc8b0a3cd72e8b8d3e1061deeed8664cb88108f1d62",
+  "engine_version": "project2-synthetic-1.1.0",
+  "input_hash": "df45f2a5654d783531ea18cb0fb116eab76f3c215b84997c9d9be1dbc9017ae4",
+  "input_hashes": {
+    "bee_free_zones.geojson": "1e020dbd81b2864bd4059466dfe2ea47e5bab5c4ec1f52a000992bdb062379b5",
+    "candidate_hive_sites.csv": "25e1353400df2100a0e9cdecdc1c774fdff4dc91e4bc8f5aa43d9d6b6b866608",
+    "experiment_seeds.csv": "6b4d8ec53c46b6457870b2ce36e3b9020f6afe813b0345164f7835e362df1ad3",
+    "hive_patch_distances.npz": "adaad8b16751f7c321b624d477c79b680fb92596a661bf8ff20103569613800a",
+    "oslo_parks.geojson": "b1e37b09373c5b0e0cfca4c44ea7f8263c00d52648310e80c59dca560e9bd33d",
+    "resource_patch_distances.npz": "7a9ed412db6380528632204092ca45591ae4fe46f6f2e8f3c2f1949095ba7607",
+    "resource_patches.csv": "fb567fa96ad86a682bd263b7d8f72d7c5c1c1a42673fd68838400ebad52975d1",
+    "resource_patches.geojson": "45573791ebe4140c83703482f216e88157567ee40173b531598efc1f3ea44706",
+    "simulation_calendar.csv": "267dc546d4c7317a521fa1fdb80ccea60fc1624a7a35f9f28f72206d4401f046",
+    "spatial_patches.csv": "2145b59ed04aeee9e4611a7e81b6cf5afd6d94f757180af9490e0a378d45e757",
+    "temporal_variable_metadata.csv": "81d4be4b3a37f2da01d99943fd2c195f51d0d18835163bdf9e5df815dd5937ef"
+  },
+  "metric_contract_hash": "290ae72c96171b1ab6055b939488527f02d4eab04cfd52082f8394b18730706b",
+  "mode": "synthetic",
+  "numpy_version": "2.5.3",
+  "overlap_policy": "lexicographic_patch_id_priority_v1",
+  "pandas_version": "3.0.5",
+  "resource_unit": "synthetic_RU",
+  "rng": "PCG64_event_key_v1",
+  "scenario": "synthetic_base_v1",
+  "seed": 3743917570
+}

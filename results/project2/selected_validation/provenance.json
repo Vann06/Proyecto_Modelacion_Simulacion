@@ -1,0 +1,27 @@
+{
+  "source_research_branch": "feature/project2-validacion-historica-oslo",
+  "sources": {
+    "Dietz": "https://bybi.no/wp-content/uploads/2018/12/Sabrinas-Master-thesis-181210.pdf",
+    "Dryad": "https://doi.org/10.5061/dryad.9kd51c5qk"
+  },
+  "source_artifact_hashes": {
+    "results\\project2\\historical_validation\\observed_distances.csv": "9b82874aec63efdc3532e3c007630d68165c805f500411f4ed6d23fbec5221f0",
+    "results\\project2\\nina_quality_control\\decision.json": "77c23ec7d5be9658bf8a56cd1c0c05ea61c2e212a4be2d5980f199ce47887096"
+  },
+  "dietz_filter": "scope == 'project_18_day_window'; distances decoded from appendix, not GPS",
+  "dietz_window": [
+    "2017-07-18",
+    "2017-08-04"
+  ],
+  "distinct_dates": 10,
+  "colony_dates": 27,
+  "clock_valid_rows": 215,
+  "independent_bees_known": false,
+  "limitations": [
+    "216 danzas no son 216 réplicas independientes",
+    "Filmación selectiva de tiempo favorable",
+    "Bootstrap por fechas no incluye incertidumbre de calibración de distancias",
+    "No hay validación predictiva del motor; los errores Dryad son de referentes independientes"
+  ],
+  "reproduction": "CSV summaries are the delivery input. Full PDF extraction and NINA source audit remain local to research; this package does not claim to reproduce them."
+}

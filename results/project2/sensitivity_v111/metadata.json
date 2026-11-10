@@ -1,0 +1,772 @@
+{
+  "engine_version": "project2-synthetic-1.1.1",
+  "engine_hash": "4b82bd4c710b47acf26e050518674a870f16d19cfd19ea624d108c06764acb0f",
+  "input_hash": "df45f2a5654d783531ea18cb0fb116eab76f3c215b84997c9d9be1dbc9017ae4",
+  "replications": 30,
+  "replication_ids": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "seeds": [
+    3601570807,
+    310060167,
+    2322557565,
+    3502835773,
+    269209942,
+    2056196044,
+    1254887033,
+    4045206265,
+    3558527957,
+    513501628,
+    1959163066,
+    3111922651,
+    2463430150,
+    575614330,
+    2146737769,
+    575202724,
+    1280442950,
+    457920055,
+    3423087446,
+    708971284,
+    3628323456,
+    953501618,
+    3139522680,
+    176379586,
+    2333737349,
+    2214751240,
+    113758247,
+    1176075108,
+    785861261,
+    902443344
+  ],
+  "simulations": 1200,
+  "elapsed_seconds": 193.79911370016634,
+  "optimizer_seed": 2026,
+  "nsga_solution_id": "pareto_047",
+  "conditions": [
+    {
+      "condition": "base",
+      "config_hash": "19363fe3a4f2d273594084684f7806b1783965b1c65322eb98c515d2142b6d5a",
+      "parameters": {
+        "K": 5,
+        "alpha": 1.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    },
+    {
+      "condition": "resource_low",
+      "config_hash": "dc709bcfa032f4e6297c0d0525400b684b9729bd6cc093425f142328e18a9abb",
+      "parameters": {
+        "K": 5,
+        "alpha": 1.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 500.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    },
+    {
+      "condition": "resource_high",
+      "config_hash": "33a1498ef6d3420a439163858a437e83b4286652acba3260837a04cafd342ddb",
+      "parameters": {
+        "K": 5,
+        "alpha": 1.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1500.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    },
+    {
+      "condition": "K3",
+      "config_hash": "68786964bdc103308d4ac05fb682002065c4ae8280ba1cdbb649bb551db56838",
+      "parameters": {
+        "K": 3,
+        "alpha": 1.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_671"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ]
+      },
+      "nsga_status": "not available for different K"
+    },
+    {
+      "condition": "K8",
+      "config_hash": "e43fc8710d0d3d587a177127a9f471a94138abc0de128cdefd89880d6a165b2b",
+      "parameters": {
+        "K": 8,
+        "alpha": 1.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_148",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_344",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_35",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_402",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_507",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_654"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_156",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_410",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_462",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ]
+      },
+      "nsga_status": "not available for different K"
+    },
+    {
+      "condition": "competition_off",
+      "config_hash": "5b6aced38bd6339f85b96ef755e1b87a14025aa72a88a2d6f27bfae9358fd7f4",
+      "parameters": {
+        "K": 5,
+        "alpha": 0.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    },
+    {
+      "condition": "competition_high",
+      "config_hash": "d01480179734c821ca540b942179f93c63ffc8b2351cfd8cc7944608efa2a502",
+      "parameters": {
+        "K": 5,
+        "alpha": 4.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    },
+    {
+      "condition": "radius_short",
+      "config_hash": "cf47d831b7e04e98ca388e90b339d10b39cac2f507a2f5ce3c6efa42c2e0f4b7",
+      "parameters": {
+        "K": 5,
+        "alpha": 1.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 1500.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_148",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_532",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    },
+    {
+      "condition": "radius_long",
+      "config_hash": "0f333441ecc9eaa9ac806a407e562c8027d1494225fa1398d291e9730ea0ffd0",
+      "parameters": {
+        "K": 5,
+        "alpha": 1.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 5000.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_121",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_200",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    },
+    {
+      "condition": "regeneration_off",
+      "config_hash": "e5f431b421d9c8d7083f50b45660e73f171a08f1485dbc9ccd8dd364543d4d70",
+      "parameters": {
+        "K": 5,
+        "alpha": 1.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.0,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    },
+    {
+      "condition": "regeneration_high",
+      "config_hash": "458126134542703420ef76bf48766d0fef820a8eed51d81eb7299cf76e4b7f71",
+      "parameters": {
+        "K": 5,
+        "alpha": 1.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.2,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    },
+    {
+      "condition": "distance_low",
+      "config_hash": "d4f94a46e62ece4118139f88ab261c45a8209f6cbf67cac3af1f88e450d64847",
+      "parameters": {
+        "K": 5,
+        "alpha": 1.0,
+        "beta": 1.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    },
+    {
+      "condition": "distance_high",
+      "config_hash": "02a09d6b29ec5fd98a2f644610b62b5d095f21fe564d986f59d3dc857416b9a1",
+      "parameters": {
+        "K": 5,
+        "alpha": 1.0,
+        "beta": 3.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 12.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    },
+    {
+      "condition": "activity_high",
+      "config_hash": "f15ad9a079c1165d7059ef5ae73ee0d5858b85fcd92037d3fd891c305a40744a",
+      "parameters": {
+        "K": 5,
+        "alpha": 1.0,
+        "beta": 2.0,
+        "day_minutes": 600.0,
+        "demand_mean_ru": 1.0,
+        "departures_per_day": 24.0,
+        "distance_scale_m": 1000.0,
+        "flight_speed_m_s": 5.5,
+        "foraging_rate_ru_per_min": 1.0,
+        "initial_resource_rule": "exclusive_area_share",
+        "initial_resource_total": 1000.0,
+        "max_foraging_distance_m": 3000.0,
+        "regeneration_rate": 0.1,
+        "replications": 100,
+        "resource_unit": "synthetic_RU",
+        "return_model": "within_day_only",
+        "search_time_mean_min": 1.0,
+        "seed_bank_file": "data/project2/processed/experiment_seeds.csv",
+        "simulation_end": "2017-08-04",
+        "simulation_start": "2017-07-18"
+      },
+      "sites": {
+        "RANDOM": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_111",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_218",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_348",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_509",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_67"
+        ],
+        "GREEDY": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+        ],
+        "NSGA2": [
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_404",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_44",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_638",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_679",
+          "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_723"
+        ]
+      },
+      "nsga_status": "reevaluate frozen sites"
+    }
+  ],
+  "design": "OAT synthetic sensitivity, common seeds 31–60; fixed RANDOM optimizer seed; reselect GREEDY for each config",
+  "limitations": [
+    "not ecological calibration",
+    "NSGA sites frozen, not reoptimized",
+    "not independent holdout after prior inspection",
+    "no interactions or optimizer-seed robustness",
+    "changing K changes total travel opportunities; not a controlled density-only intervention"
+  ]
+}

@@ -1,0 +1,16 @@
+check,status,details
+parques_geometries,passed,737 geometrías válidas; CRS original EPSG:4326
+zonas_geometries,passed,6 geometrías válidas; CRS original EPSG:4326
+spatial_ids_and_candidates,passed,737 parches; 375 candidatos; 362 parches restringidos conservados como recurso potencial
+distances,passed,"276,375 distancias finitas y no negativas, en metros"
+daily_calendar_and_Dryad,passed,"18 días; 12 con inventario floral, 18 con visitas; conteos y densidad reconstruidos sin imputación"
+evidence_classification,passed,"4 categorías presentes, coherentes con 03 y disponibles para todas las columnas del calendario"
+resource_balance_unit_invariant,passed,Balance y rechazo de sobreconsumo probados con fixtures; no simulan disponibilidad de Oslo
+K_valid_unique_sites,passed,"Se rechazan IDs ajenos, duplicados y cantidades distintas de K; no se fijó K experimental"
+seeds_and_event_streams,passed,100 seeds únicas; primitivas deterministas; procesos separados; prueba de CRN del motor completo pendiente
+legacy_engine_same_seed,passed,"2 viajes de prueba reproducidos; configuración sintética, sin afirmar calibración de Oslo"
+bootstrap_reproducibility,passed,"IC percentil 95% reproducible; diferencias emparejadas nulas comprobadas con fixtures, sin resultados experimentales"
+future_simulate_same_seed_and_order,pending_implementation_or_calibration,"Requiere simulate común implementado, config completa e igualdad de metrics/per_hive/trips/resource_log al repetir seed y permutar los mismos sitios"
+future_resource_nonnegative_full_run,pending_implementation_or_calibration,"Requiere logs de todas las fechas/parches y comprobar balance, no sobreconsumo y continuidad de R"
+future_CRN_alignment,pending_implementation_or_calibration,Comprobar oportunidades/eventos compartidos bajo decisiones y ramas diferentes; no inferirlo de seeds iguales
+ecological_validation_against_Dryad,pending_implementation_or_calibration,"Pendiente de calibración y operador de observación con unidades compatibles, esfuerzo y posible separación ajuste/evaluación"

@@ -19,3 +19,18 @@ Claude outputs/
 .build/
 tmp/
 results/campana/
+
+# NSGA-II: prueba corta y cache de busqueda; front.json y nsga2_results.csv guardan lo necesario
+results/project2/nsga2_trial/
+results/project2/nsga2/evaluations.jsonl
+
+# Cache del motor acelerado; conservar resultados consolidados
+results/project2/nsga2_fast/evaluations*.jsonl
+
+# Interfaz React local
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+
+# Local exploratory jobs: requests, caches, checkpoints, logs and individual runs.
+results/project2/quick_nsga2/

@@ -1,0 +1,19 @@
+{
+  "method": "GREEDY",
+  "config_hash": "32b62484aff30d3403707694d538d776600f9dec8381d4f6dae22405452e673d",
+  "K": 5,
+  "selection_order": [
+    "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643",
+    "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+    "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+    "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+    "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274"
+  ],
+  "greedy_params": {
+    "distance_exponent": 2.0,
+    "overlap_penalty": 1.0
+  },
+  "tie_break": "menor site_id",
+  "uses_randomness": false,
+  "note": "Score ex ante sintetico: no es competencia observada ni resultado de simulate."
+}

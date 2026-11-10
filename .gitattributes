@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# load_landscape compara hashes de bytes crudos: estos derivados deben quedar en LF en todo sistema
+data/project2/processed/*.csv text eol=lf

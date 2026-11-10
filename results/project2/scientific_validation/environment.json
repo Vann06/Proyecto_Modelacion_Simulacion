@@ -1,0 +1,20 @@
+{
+  "python": "3.10.11",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "geopandas": "1.1.4",
+    "shapely": "2.1.2",
+    "pyproj": "3.7.1",
+    "matplotlib": "3.10.9",
+    "scipy": "1.15.3",
+    "fastapi": "0.162.2",
+    "pydantic": "2.14.3",
+    "starlette": "1.7.0",
+    "uvicorn": "0.54.0",
+    "httpx": "0.28.1",
+    "streamlit": "1.65.0",
+    "pypdf": "7.0.0"
+  }
+}

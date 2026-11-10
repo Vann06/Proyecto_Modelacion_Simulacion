@@ -1,5 +1,7 @@
 # Simulación Estocástica del Forrajeo y Polinización de Abejas
 
+> **Proyecto 2 Oslo:** aplicación React + FastAPI, evidencia empírica y sensibilidad: [instalación y ejecución en Windows](README_REACT.md). Streamlit y Proyecto 1 se conservan.
+
 ## Descripción
 
 Este repositorio contiene una simulación estocástica del comportamiento de forrajeo de una colonia de abejas melíferas.

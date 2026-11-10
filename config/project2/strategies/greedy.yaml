@@ -1,0 +1,12 @@
+# Parámetros EXCLUSIVOS de la heurística GREEDY. No forman parte del config común
+# ni de su config_hash. Son estimaciones de diseño, no mediciones ecológicas.
+# K, radio de forrajeo, escala de distancia y recurso inicial se leen del config
+# común (config/project2/base.yaml) para que todos los métodos usen la misma regla.
+distance_exponent:
+  value: 2.0
+  unit: adimensional
+  source: Mismo orden de magnitud que beta del motor (2.0) por coherencia de diseño, pero es un parámetro propio de la heurística y no se enlaza con beta.
+overlap_penalty:
+  value: 1.0
+  unit: adimensional
+  source: Peso de cobertura compartida. Valor 0 desactiva la penalización. Estimación de diseño, no competencia observada.

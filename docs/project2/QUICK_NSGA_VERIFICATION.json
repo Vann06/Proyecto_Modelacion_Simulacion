@@ -1,0 +1,71 @@
+{
+  "label": "Acceptance tests of exploratory quick NSGA-II",
+  "searches": [
+    {
+      "K": 3,
+      "overrides": {},
+      "job_id": "3b6d1d86f0854bd2a468312e3b5705a4",
+      "wall_s": 164.7172304999549,
+      "worker_s": 140.3654326000251,
+      "installations": 48,
+      "simulations": 96,
+      "solutions": 3,
+      "result_hash": "37e68d53987e1140d4304c057896af068645e09536989de2d1929db1a4e32615"
+    },
+    {
+      "K": 5,
+      "overrides": {},
+      "job_id": "2b393b5876f04e8f9e02b309ccd5d23d",
+      "wall_s": 223.37114980001934,
+      "worker_s": 211.3760591999162,
+      "installations": 48,
+      "simulations": 96,
+      "solutions": 7,
+      "result_hash": "d81f1617ecaa1df935945ad6c3d41d3f3f8dc4b883a3b97b7ec222ef5661faaf"
+    },
+    {
+      "K": 8,
+      "overrides": {},
+      "job_id": "4d4d11f560a84922980f80dbb6bd1e06",
+      "wall_s": 344.637861300027,
+      "worker_s": 313.3262961998116,
+      "installations": 48,
+      "simulations": 96,
+      "solutions": 4,
+      "result_hash": "998a39d0db1648dacf7f72c238270386fb38749f5beff0334411d8aa1b9bf03c"
+    },
+    {
+      "K": 3,
+      "overrides": {},
+      "job_id": "e9e657ed9e7640059c7bab283f59edea",
+      "wall_s": 214.18487709993497,
+      "worker_s": 198.83014660002664,
+      "installations": 48,
+      "simulations": 96,
+      "solutions": 3,
+      "result_hash": "37e68d53987e1140d4304c057896af068645e09536989de2d1929db1a4e32615"
+    },
+    {
+      "K": 3,
+      "overrides": {
+        "resource_factor": 1.5,
+        "radius_m": 1500
+      },
+      "job_id": "1df395242ed145fa8349f1a5a85552e1",
+      "wall_s": 241.51501680002548,
+      "worker_s": 195.2367368999403,
+      "installations": 48,
+      "simulations": 96,
+      "solutions": 3,
+      "result_hash": "92e8796751e0a16d554bab19a7b2d499c22d5bd2df75ede9020241a74504be34"
+    }
+  ],
+  "checks": {
+    "reproducible_K3": true,
+    "modified_resource_and_radius_used": true,
+    "different_solutions_individual_runs_K3_K8": true,
+    "RANDOM_K3_GREEDY_K8_historical_pareto047_K5": true
+  },
+  "protected_files_checked": 176,
+  "protected_changes": []
+}

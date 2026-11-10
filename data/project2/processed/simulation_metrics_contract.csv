@@ -1,0 +1,10 @@
+metric,definition,unit,direction
+total_resource_obtained,Sum of resource delivered to all K colonies by successful returns within horizon; consumption on failed trips is not delivered,"RU: config.resource_unit, pending calibration",maximize
+mean_resource_per_hive,"Total delivered / K, including zero-delivery colonies",RU per hive,maximize
+min_resource_per_hive,Minimum cumulative delivered resource across exactly K colonies,RU per hive,maximize
+mean_distance_m,"Mean one-way point-to-point distance over initiated patch trips, including trips without return; undefined if none",m,minimize
+total_distance_m,Sum of one-way distances over initiated patch trips; not round-trip or realized flight path; zero if no trips,m,minimize
+p95_distance_m,95th percentile of same one-way trip distances using linear quantile; undefined if no trips,m,minimize
+competition_pressure,Fraction of foraging attempts with at least one other distinct colony active in the patch at foraging start; undefined if no attempts,"fraction [0,1]",minimize
+hive_balance_jain,(sum delivered_i)^2 / (K * sum delivered_i^2); includes zero-delivery hives; undefined if all zero,"index [1/K,1] when defined",maximize
+patches_used_count,Distinct patch_id with positive resource consumption during horizon; zero if none,count,report_only

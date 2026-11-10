@@ -1,0 +1,11 @@
+{
+  "cpu_s_per_simulation": 4.063447665054168,
+  "n_clustered": 50,
+  "n_uniform": 150,
+  "pilot_seed": 2026,
+  "replications": 30,
+  "simulations": 6000,
+  "wall_s": 1751.3594308330003,
+  "wall_s_per_simulation": 0.2918932384721667,
+  "workers": 14
+}

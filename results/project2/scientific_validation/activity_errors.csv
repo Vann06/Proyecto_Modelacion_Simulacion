@@ -1,0 +1,5 @@
+dataset,method,metric,estimate,ci95_low,ci95_high,unit,train_sites,test_sites,train_units,test_units,train_bootstrap_replicates
+activity,global,MAE,0.9250993914784436,0.6972865820020522,1.1781318388518527,conteos registrados/minuto de sesión candidata,79,20,169,47,30
+activity,global,RMSE,1.1265829999093029,0.8424738168900879,1.4329223190221012,conteos registrados/minuto de sesión candidata,79,20,169,47,30
+activity,stratified,MAE,0.8424943823693821,0.6262025334057854,1.0684600140193043,conteos registrados/minuto de sesión candidata,79,20,169,47,30
+activity,stratified,RMSE,1.0554417882471459,0.8087939812705025,1.3002518247918244,conteos registrados/minuto de sesión candidata,79,20,169,47,30

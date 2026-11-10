@@ -1,0 +1,19 @@
+{
+  "job_id": "4d4d11f560a84922980f80dbb6bd1e06",
+  "origin": "http://127.0.0.1:8024",
+  "K": 8,
+  "search_response": "replayed real completed backend result; no extra optimization",
+  "search_clicks": 1,
+  "individual_simulations": 1,
+  "console_errors": [],
+  "mobile_width": {
+    "scroll": 430,
+    "client": 430
+  },
+  "captures": [
+    "01-configuracion.png",
+    "02-frente-y-vista-previa.png",
+    "03-simulacion-individual-k8.png",
+    "04-movil-k8.png"
+  ]
+}

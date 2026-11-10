@@ -1,0 +1,5 @@
+horizon,start,end,evidence_type,intended_use
+calibrated_window,2017-07-18,2017-08-04,overlap_of_floral_and_visitation_sampling_windows_not_daily_resource_fit,"Future calibration, validation, main simulation and algorithm comparison after validation"
+observed_visitation_extension,2017-07-18,2017-08-10,visitation_observations_only_beyond_floral_end,Complementary visitation analysis; no assumed floral observations after floral end
+supported_season,2017-06-01,2017-09-30,external_qualitative_pollen_seasonality_with_partial_Dryad_support,Seasonal context and sensitivity; not full quantitative validation
+exploratory_annual,2017-01-01,2017-12-31,future_architecture_unparameterized_outside_main_window,Future exploratory scenarios; not an observed annual Oslo reconstruction

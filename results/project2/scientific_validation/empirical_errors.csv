@@ -1,0 +1,9 @@
+dataset,method,metric,estimate,ci95_low,ci95_high,unit,train_sites,test_sites,train_units,test_units,train_bootstrap_replicates
+flowers,global,MAE,10.227027953585761,7.676632468736307,12.969134352397525,flores/m²,79,20,79,20,30
+flowers,global,RMSE,11.78849862032156,8.933878375008257,14.797095372319234,flores/m²,79,20,79,20,30
+flowers,stratified,MAE,11.106329365078484,8.462745039683492,13.920433035706813,flores/m²,79,20,79,20,30
+flowers,stratified,RMSE,12.700898928311753,9.89350829304068,15.306625115577788,flores/m²,79,20,79,20,30
+activity,global,MAE,0.9250993914784436,0.6972865820020522,1.1781318388518527,conteos registrados/minuto de sesión candidata,79,20,169,47,30
+activity,global,RMSE,1.1265829999093029,0.8424738168900879,1.4329223190221012,conteos registrados/minuto de sesión candidata,79,20,169,47,30
+activity,stratified,MAE,0.8424943823693821,0.6262025334057854,1.0684600140193043,conteos registrados/minuto de sesión candidata,79,20,169,47,30
+activity,stratified,RMSE,1.0554417882471459,0.8087939812705025,1.3002518247918244,conteos registrados/minuto de sesión candidata,79,20,169,47,30

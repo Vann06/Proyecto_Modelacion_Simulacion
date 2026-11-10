@@ -1,0 +1,27 @@
+{
+  "metrics": {
+    "total_resource_obtained": 913.6040373622552,
+    "mean_resource_per_hive": 182.72080747245104,
+    "min_resource_per_hive": 164.21559550328635,
+    "mean_distance_m": 1321.0593969025524,
+    "total_distance_m": 1445238.9802113923,
+    "p95_distance_m": 2665.4369961448874,
+    "competition_pressure": 0.0,
+    "hive_balance_jain": 0.9876382142911504,
+    "patches_used_count": 238
+  },
+  "seed": 3743917570,
+  "sites": [
+    "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_172",
+    "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_188",
+    "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_274",
+    "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_553",
+    "site_patch_941ca1ab497f4ce18f56f9d5cc1a4f6f_0_643"
+  ],
+  "tables": {
+    "trips": "4c447ea2c5946deaed038646ebc89f4209d44b449ec2a0fc665f34afbda3542c",
+    "events": "05a309dd68d591a73458562a03cab4743c55d5cac838cdcb262f7ca89e3e1ce7",
+    "per_hive": "3f0ccde86f780a66f6a03398ace3bbf2c200451261b0432a2670aa2547e325bc",
+    "resource_log": "791078bfcb3a91b0a3211ab0dc23322a5625e2fc5dafb5d8417802b1cb83c822"
+  }
+}

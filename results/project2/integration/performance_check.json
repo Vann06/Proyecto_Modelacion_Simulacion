@@ -1,0 +1,9 @@
+{
+  "baseline_profiled_s": 2.5172135001048446,
+  "optimized_profiled_s": 0.5046580999623984,
+  "speedup": 4.987958184545932,
+  "exact_logs_match": true,
+  "scope": "single profiled baseline seed; not a full search benchmark",
+  "baseline_engine_version": "project2-synthetic-1.1.0",
+  "optimized_engine_version": "project2-synthetic-1.1.1"
+}

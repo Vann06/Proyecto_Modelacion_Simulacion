@@ -1,0 +1,8 @@
+{
+  "decision": "NO APTO para clasificar instalaciones por idoneidad ecológica",
+  "reason": "Dirección del índice y vínculo exacto con ESTIMAP no confirmados; el remuestreo altera el rango.",
+  "status": "Investigación cerrada; referencia complementaria",
+  "ecological_ranking_allowed": false,
+  "raster_included": false,
+  "catalog_url": "https://s3-ext-1.nina.no/dms/maps/main/localEA/config.json"
+}
