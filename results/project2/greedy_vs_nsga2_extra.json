@@ -1,0 +1,19 @@
+{
+  "selected_solution": "pareto_013",
+  "front_solutions": 49,
+  "front_dominating_greedy": 9,
+  "front_dominated_by_greedy": 0,
+  "front_better_in_resource_and_distance": 13,
+  "front_resource_range": [
+    757.9077398100675,
+    965.7123575840833
+  ],
+  "front_distance_range": [
+    1237.907578015901,
+    1493.1000188611868
+  ],
+  "replications": [
+    31,
+    100
+  ]
+}

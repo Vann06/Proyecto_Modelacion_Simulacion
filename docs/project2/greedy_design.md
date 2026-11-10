@@ -62,6 +62,8 @@ python scripts/project2_run.py inspect --results results/project2/greedy_results
 python scripts/project2_greedy_figures.py
 # con results/project2/random_results.csv presente (rama RANDOM):
 python scripts/project2_greedy_vs_random.py
+# con results/project2/nsga2_results.csv presente (rama NSGA-II):
+python scripts/project2_greedy_vs_nsga2.py
 ```
 
 ## Resultados (100 réplicas, semillas comunes, config `synthetic_base_v1`)
@@ -98,10 +100,29 @@ Diseño: GREEDY es una instalación determinista evaluada en las 100 semillas co
 
 GREEDY supera a las 30 instalaciones RANDOM en recurso total, recurso mínimo y distancia media. En Jain supera a 25 de 30 (83%). En competencia el intervalo incluye 0, por lo que no hay diferencia distinguible.
 
+## Comparación con NSGA-II (réplicas reservadas 31 a 100)
+
+Script: `scripts/project2_greedy_vs_nsga2.py`. Tabla: `results/project2/greedy_vs_nsga2.csv` y `greedy_vs_nsga2_extra.json`. Figura: `figures_greedy/greedy_fig6_vs_nsga2.png`.
+
+NSGA-II congeló un frente de 49 soluciones con las réplicas 1 a 30 y lo evaluó en las réplicas 31 a 100. GREEDY se recorta a esas mismas 70 semillas. El script verifica hashes y semillas y se detiene si no coinciden. La diferencia pareada usa la solución recomendada por NSGA-II (`pareto_013`, que se eligió viendo el conjunto reservado) y, para no depender de esa elección, también se reporta la mediana del frente y cuántas de las 49 soluciones superan a GREEDY.
+
+| Métrica | GREEDY | pareto_013 | Cambio | IC95% pareado | Frente mejor que GREEDY |
+|---|---|---|---|---|---|
+| Recurso total (synthetic_RU) | 914.4 | 957.5 | +43.1 (+4.7%) | 39.5 a 46.7 | 48 de 49 |
+| Distancia media (m) | 1318.7 | 1395.6 | +76.8 | 70.9 a 82.8 | 14 de 49 |
+| Distancia P95 (m) | 2670.2 | 2600.9 | -69.3 | -81.0 a -57.6 | 39 de 49 |
+| Jain | 0.9885 | 0.9921 | +0.0036 | 0.0019 a 0.0053 | 48 de 49 |
+
+Nueve soluciones del frente dominan a GREEDY en los tres objetivos de NSGA-II y GREEDY no domina a ninguna. NSGA-II gana en recurso y GREEDY queda en el extremo de poca distancia. La búsqueda de NSGA-II usó unas 75 mil simulaciones y GREEDY se calcula en menos de un segundo.
+
 ## Limitaciones
 
-- La comparación con NSGA-II sigue pendiente. La comparación con RANDOM es solo sobre el motor sintético y no es evidencia sobre Oslo.
+- Las comparaciones con RANDOM y NSGA-II son solo sobre el motor sintético y no son evidencia sobre Oslo.
 - La puntuación de GREEDY usa la misma forma funcional de atracción que el motor (recurso y distancia con exponente), así que su ventaja sobre RANDOM es esperable y no prueba que una regla distinta bajo otro motor se comporte igual.
 - La competencia baja es consecuencia de los parámetros sintéticos de prueba (12 salidas por día, 1000 synthetic_RU totales). No debe interpretarse como un hallazgo sobre Oslo.
 - El score usa recurso inicial según área exclusiva. La asignación por orden de `patch_id` es arbitraria y puede fragmentar parques.
 - Una heurística sin retroalimentación del motor puede quedar lejos del óptimo si la dinámica de agotamiento domina.
+
+## Archivos propios
+
+`src/bee_sim/project2/strategies/{__init__,greedy_baseline}.py`, `config/project2/strategies/greedy.yaml`, `tests/project2/test_greedy_selector.py`, `scripts/project2_greedy.py`, `scripts/project2_greedy_figures.py`, `scripts/project2_greedy_vs_random.py`, `scripts/project2_greedy_vs_nsga2.py`, `docs/project2/greedy_design.md` y `results/project2/greedy_*`.
